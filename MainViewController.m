@@ -8,6 +8,9 @@
 
 #import "MainViewController.h"
 #import "DetailViewController.h"
+#import "MBProgressHUD.h"
+#import "Reachability.h"
+
 #define ITEM_SPACING 200
 
 @interface MainViewController ()
@@ -30,6 +33,9 @@
 
 -(void)dealloc
 {
+    //注销网络连接状态的通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
+    
     self.carousel = nil;
     [_carousel release];
     [_label release];
@@ -59,6 +65,48 @@
     _label.text = @"CHIC展会历程";
     _label.font = [UIFont systemFontOfSize:20];
     [self.view addSubview:_label];
+    
+    ///注册一个通知，为了检测单前用户的网络连接状态
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
+    hostReach = [[Reachability reachabilityWithHostname:@"http://baidu.com"] retain];
+    ///开始通知
+    [hostReach startNotifier];
+}
+
+#pragma mark - 
+#pragma mark - ReachabilityNotification Methods
+
+-(void)reachabilityChanged:(NSNotification *)notification
+{
+    Reachability *curReach = [notification object];
+    NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
+    NetworkStatus curStatus = [curReach currentReachabilityStatus];
+    NSString *strMessage;
+    if (curStatus == NotReachable) {
+        strMessage = @"没有检测可用网络,请检查下网络";
+    }
+    
+    hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+	
+	// Configure for text only and offset down
+	hud.mode = MBProgressHUDModeText;
+    hud.delegate = self;
+	hud.labelText = strMessage;
+	hud.margin = 10.f;
+	hud.yOffset = 150.f;
+	hud.removeFromSuperViewOnHide = YES;
+	
+	[hud hide:YES afterDelay:2.0f];
+
+}
+
+#pragma mark - 
+#pragma mark - MBProgressHUD delegate Methods
+
+- (void)hudWasHidden:(MBProgressHUD *)HUD {
+	// Remove HUD from screen when the HUD was hidded
+	[hud removeFromSuperview];
+	hud = nil;
 }
 
 - (void)didReceiveMemoryWarning

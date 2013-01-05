@@ -53,13 +53,12 @@
 		0A8C4916168EA52500615C6F /* 资讯.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8C490C168EA52500615C6F /* 资讯.png */; };
 		0A8C491E168EDB3000615C6F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C491D168EDB3000615C6F /* InfoViewController.m */; };
 		0A8C491F168EDB3000615C6F /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C491D168EDB3000615C6F /* InfoViewController.m */; };
-		0A8C492B168EE9D400615C6F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C492A168EE9D400615C6F /* MBProgressHUD.m */; };
-		0A8C492C168EE9D400615C6F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C492A168EE9D400615C6F /* MBProgressHUD.m */; };
 		0A8C492E168EEA0500615C6F /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8C492D168EEA0500615C6F /* 37x-Checkmark.png */; };
 		0A8C492F168EEA0500615C6F /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8C492D168EEA0500615C6F /* 37x-Checkmark.png */; };
 		0A8C4934168F0EA100615C6F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C4933168F0EA100615C6F /* Reachability.m */; };
 		0A8C4935168F0EA100615C6F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8C4933168F0EA100615C6F /* Reachability.m */; };
 		0A8C493B168F0F0000615C6F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8C493A168F0EFF00615C6F /* SystemConfiguration.framework */; };
+		0AA0F0551697F97E003A2ADE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0F0541697F97E003A2ADE /* MBProgressHUD.m */; };
 		0AD8E6691696B5B000607B42 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8E6681696B5B000607B42 /* DataBase.m */; };
 		0AD8E66B1696B5D100607B42 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD8E66A1696B5D100607B42 /* libsqlite3.dylib */; };
 		0AD8E6721696BB5D00607B42 /* DatePlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8E6711696BB5D00607B42 /* DatePlan.m */; };
@@ -135,12 +134,12 @@
 		0A8C490C168EA52500615C6F /* 资讯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资讯.png"; sourceTree = "<group>"; };
 		0A8C491C168EDB3000615C6F /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		0A8C491D168EDB3000615C6F /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		0A8C4929168EE9D400615C6F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		0A8C492A168EE9D400615C6F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		0A8C492D168EEA0500615C6F /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
 		0A8C4932168F0EA100615C6F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		0A8C4933168F0EA100615C6F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		0A8C493A168F0EFF00615C6F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0AA0F0531697F97E003A2ADE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = "untitled folder 2/MBProgressHUD.h"; sourceTree = "<group>"; };
+		0AA0F0541697F97E003A2ADE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = "untitled folder 2/MBProgressHUD.m"; sourceTree = "<group>"; };
 		0AD8E6671696B5B000607B42 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
 		0AD8E6681696B5B000607B42 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
 		0AD8E66A1696B5D100607B42 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -394,8 +393,8 @@
 		0A8C4930168F0E3800615C6F /* MBProgress */ = {
 			isa = PBXGroup;
 			children = (
-				0A8C4929168EE9D400615C6F /* MBProgressHUD.h */,
-				0A8C492A168EE9D400615C6F /* MBProgressHUD.m */,
+				0AA0F0541697F97E003A2ADE /* MBProgressHUD.m */,
+				0AA0F0531697F97E003A2ADE /* MBProgressHUD.h */,
 			);
 			name = MBProgress;
 			sourceTree = "<group>";
@@ -578,7 +577,6 @@
 				0A8C48FB168E9A8800615C6F /* ThirdViewController.m in Sources */,
 				0A8C4903168E9AB600615C6F /* FourViewController.m in Sources */,
 				0A8C491E168EDB3000615C6F /* InfoViewController.m in Sources */,
-				0A8C492B168EE9D400615C6F /* MBProgressHUD.m in Sources */,
 				0A8C4934168F0EA100615C6F /* Reachability.m in Sources */,
 				0AF8E8761693EBBF00C8C473 /* Place.m in Sources */,
 				0AFBBB7B169415A2003C29EB /* MessageViewController.m in Sources */,
@@ -586,6 +584,7 @@
 				0AFBBC2816952BCD003C29EB /* DetailViewController.m in Sources */,
 				0AD8E6691696B5B000607B42 /* DataBase.m in Sources */,
 				0AD8E6721696BB5D00607B42 /* DatePlan.m in Sources */,
+				0AA0F0551697F97E003A2ADE /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +599,6 @@
 				0A8C48FC168E9A8800615C6F /* ThirdViewController.m in Sources */,
 				0A8C4904168E9AB600615C6F /* FourViewController.m in Sources */,
 				0A8C491F168EDB3000615C6F /* InfoViewController.m in Sources */,
-				0A8C492C168EE9D400615C6F /* MBProgressHUD.m in Sources */,
 				0A8C4935168F0EA100615C6F /* Reachability.m in Sources */,
 				0AFBBB7C169415A2003C29EB /* MessageViewController.m in Sources */,
 			);

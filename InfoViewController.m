@@ -35,10 +35,9 @@
     self.title = @"资讯";
         
     NSURL *url = [NSURL URLWithString:_urlString];
-    NSLog(@"%@",_urlString);
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
     _infoWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT - 49 - 44)];
-    NSLog(@"%f,%f",WIDTH,HEIGHT);
     _infoWebView.scalesPageToFit = YES;
     _infoWebView.delegate = self;
     [_infoWebView loadRequest:request];
@@ -52,7 +51,7 @@
 {
     _hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
     _hud.mode = MBProgressHUDModeCustomView;
-    _hud.labelText = @"数据加载中。。。";
+    _hud.labelText = @"加载中。。。";
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView
@@ -63,7 +62,8 @@
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-    hud.mode = MBProgressHUDModeCustomView;
+    hud.mode = MBProgressHUDModeText;
+    hud.removeFromSuperViewOnHide = YES;
     hud.labelText = [NSString stringWithFormat:@"%@",error];
     [hud show:YES];
     [hud hide:YES afterDelay:1.0f];

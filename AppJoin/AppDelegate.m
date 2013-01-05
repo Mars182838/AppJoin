@@ -68,9 +68,9 @@
     NSArray *viewController = [[NSArray alloc] initWithObjects:navMain,navFirst,navSecond,navThird,navFour, nil];
     tabBar.viewControllers = viewController;
     
-//    _isFirstRun = [[[NSUserDefaults standardUserDefaults] valueForKey:IS_FIRST_RUN] boolValue];
-//    if (!IS_FIRST_RUN) {
-//        [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:IS_FIRST_RUN];
+    _isFirstRun = [[[NSUserDefaults standardUserDefaults] valueForKey:IS_FIRST_RUN] boolValue];
+    if (!IS_FIRST_RUN) {
+        [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:IS_FIRST_RUN];
         sqlite3 *db;
         db = [DataBase openDB];
         char *errorMsg;
@@ -84,7 +84,7 @@
         
         ///关闭数据库
         [DataBase closeDB];
-//    }
+    }
     self.window.rootViewController = tabBar;
     
     [navMain   release];
