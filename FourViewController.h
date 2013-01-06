@@ -11,6 +11,8 @@
 @interface FourViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property (retain, nonatomic) IBOutlet UITableView *editerTableView;
+
+///存放相关数据，例如:关于、大会微博、意见反馈等
 @property (nonatomic, retain) NSArray *messageArray;
 
 

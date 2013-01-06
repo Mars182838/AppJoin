@@ -8,6 +8,8 @@
 
 #import "FourViewController.h"
 #import "InfoViewController.h"
+#import "OpinionViewController.h"
+#import "CardViewController.h"
 
 @interface FourViewController ()
 
@@ -21,7 +23,7 @@
     if (self) {
         
         self.title = @"更多";
-        _messageArray = [[NSArray alloc] initWithObjects:@"关于",@"大会官网",@"意见反馈",@"评分",@"版本升级",nil];
+        _messageArray = [[NSArray alloc] initWithObjects:@"关于",@"名片管理",@"大会官网",@"意见反馈",@"评分",@"版本升级",nil];
     
     }
     return self;
@@ -63,19 +65,11 @@
     static NSString *indentifier = @"cellIndentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indentifier] autorelease];
         cell.selectionStyle = UITableViewCellSelectionStyleBlue;
         cell.textLabel.text = [_messageArray objectAtIndex:indexPath.row];
-        
-//        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(90, 13, 260, 30)];
-//        textField.textAlignment = NSTextAlignmentLeft;
-//        textField.font = [UIFont systemFontOfSize:16];
-//        textField.textColor = [UIColor grayColor];
-//        
-//        [cell.contentView addSubview: textField];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    
     return cell;
 }
 
@@ -87,13 +81,27 @@
         
         url = @"http://www.baidu.com";
         info.urlString = url;
+        [self.navigationController pushViewController:info animated:YES];
     }
-    else if (indexPath.row ==1){
+    else if (indexPath.row == 1){
+    
+        CardViewController *cardController = [[CardViewController alloc] init];
+        [self.navigationController pushViewController:cardController animated:YES];
+        
+        [cardController release];
+    }
+    else if (indexPath.row ==2){
         
        url = @"http://www.xiximu.com";
         info.urlString = url;
+        [self.navigationController pushViewController:info animated:YES];
     }
-    [self.navigationController pushViewController:info animated:YES];
+    else if(indexPath.row == 3)
+    {
+        OpinionViewController *opinionView = [[OpinionViewController alloc] initWithNibName:nil bundle:nil];
+        [self.navigationController pushViewController:opinionView animated:YES];
+        [opinionView release];
+    }
 }
 
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Card</key>
+	<array>
+		<string>姓      名：</string>
+		<string>职务名称：</string>
+		<string>公司名称：</string>
+		<string>公司地址：</string>
+		<string>地方邮编：</string>
+		<string>手机号码：</string>
+		<string>电话号码：</string>
+		<string>传真号码：</string>
+		<string>电子邮件：</string>
+		<string>公司网址：</string>
+		<string>      用于生成个人二维码名片！</string>
+	</array>
+</dict>
+</plist>

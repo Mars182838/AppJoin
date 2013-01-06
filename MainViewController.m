@@ -84,20 +84,19 @@
     NSString *strMessage;
     if (curStatus == NotReachable) {
         strMessage = @"没有检测可用网络,请检查下网络";
+        
+        hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+        
+        // Configure for text only and offset down
+        hud.mode = MBProgressHUDModeText;
+        hud.delegate = self;
+        hud.labelText = strMessage;
+        hud.margin = 10.f;
+        hud.yOffset = 150.f;
+        hud.removeFromSuperViewOnHide = YES;
+        
+        [hud hide:YES afterDelay:2.0f];
     }
-    
-    hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-	
-	// Configure for text only and offset down
-	hud.mode = MBProgressHUDModeText;
-    hud.delegate = self;
-	hud.labelText = strMessage;
-	hud.margin = 10.f;
-	hud.yOffset = 150.f;
-	hud.removeFromSuperViewOnHide = YES;
-	
-	[hud hide:YES afterDelay:2.0f];
-
 }
 
 #pragma mark - 

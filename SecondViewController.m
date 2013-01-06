@@ -92,7 +92,6 @@
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    _hud.mode = MBProgressHUDModeCustomView;
     _hud.labelText = @"下载中，请稍后";
     expectedLength = [response expectedContentLength];
     currentLength = 0;

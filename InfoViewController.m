@@ -50,13 +50,12 @@
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
     _hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-    _hud.mode = MBProgressHUDModeCustomView;
     _hud.labelText = @"加载中。。。";
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [_hud hide:YES afterDelay:1.0f];
+    [_hud hide:YES afterDelay:2.0f];
 }
 
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
