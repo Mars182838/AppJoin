@@ -9,11 +9,6 @@
 #import "OpinionViewController.h"
 #import "URLEncode.h"
 
-#define HEIGHT self.view.frame.size.height
-
-#define WIDTH  self.view.frame.size.width
-
-
 @interface OpinionViewController ()
 
 @end

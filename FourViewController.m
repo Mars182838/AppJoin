@@ -10,6 +10,7 @@
 #import "InfoViewController.h"
 #import "OpinionViewController.h"
 #import "CardViewController.h"
+#import "MScanViewController.h"
 
 @interface FourViewController ()
 
@@ -23,7 +24,7 @@
     if (self) {
         
         self.title = @"更多";
-        _messageArray = [[NSArray alloc] initWithObjects:@"关于",@"名片管理",@"大会官网",@"意见反馈",@"评分",@"版本升级",nil];
+        _messageArray = [[NSArray alloc] initWithObjects:@"关于",@"二维码名片",@"扫一扫",@"大会官网",@"意见反馈",@"评分",@"版本升级",nil];
     
     }
     return self;
@@ -90,14 +91,20 @@
         
         [cardController release];
     }
-    else if (indexPath.row ==2){
+    else if (indexPath.row == 2){
+        MScanViewController *mscanController = [[MScanViewController alloc] initWithNibName:nil bundle:nil];
+        [self.navigationController pushViewController:mscanController animated:YES];
         
-       url = @"http://www.xiximu.com";
+    }
+    else if (indexPath.row == 3){
+        
+        url = @"http://www.xiximu.com";
         info.urlString = url;
         [self.navigationController pushViewController:info animated:YES];
     }
-    else if(indexPath.row == 3)
+    else if(indexPath.row == 4)
     {
+        
         OpinionViewController *opinionView = [[OpinionViewController alloc] initWithNibName:nil bundle:nil];
         [self.navigationController pushViewController:opinionView animated:YES];
         [opinionView release];

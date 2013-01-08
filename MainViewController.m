@@ -133,44 +133,14 @@
     view.frame = CGRectMake(20, 20, 260, 240);
     
     _label = [[UILabel alloc] init];
-    _label.frame = CGRectMake(0, 220, 320, 100);
-    _label.textAlignment = NSTextAlignmentLeft;
+    _label.frame = CGRectMake(0, 280, 320, 30);
+    _label.textAlignment = NSTextAlignmentCenter;
     _label.font = [UIFont systemFontOfSize:20];
     
-    switch (index) {
-        case 0:
-        {
-            _label.text = @"2008年展会";
-            break;
-        }
-        case 1:
-        {
-            _label.text = @"2009年";
-            break;
-        }
-        case 2:
-        {
-            _label.text = @"2010年";
-            break;
-        }
-        case 3:
-        {
-            _label.text = @"2011年";
-            break;
-        }
-        case 4:
-        {
-            _label.text = @"2012年";
-            break;
-        }
-        case 5:
-        {
-            _label.text = @"2013年";
-            break;
-        }
-    }
+    NSArray *array = [[NSArray alloc] initWithObjects:@"2008",@"2009",@"2010",@"2011",@"2012",@"2013", nil];
+    _label.text = [array objectAtIndex:index];
     
-    [view addSubview:_label];
+    [self.view addSubview:_label];
     
     return view;
 }
@@ -197,11 +167,11 @@
     return ITEM_SPACING;
 }
 
-/** 是否支持循环查看图片 */
--(BOOL)carouselShouldWrap:(iCarousel *)carousel
-{
-    return wrap;
-}
+///** 是否支持循环查看图片 */
+//-(BOOL)carouselShouldWrap:(iCarousel *)carousel
+//{
+//    return wrap;
+//}
 
 /** 该方法是点击之后会进入DetailViewController界面，显示点击的图片，并且附带图片的介绍
  *case0： case1：case2：case3：case4：case5：分别进入第一、二、三、四、五、六张图及其介绍

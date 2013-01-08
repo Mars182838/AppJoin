@@ -8,13 +8,6 @@
 
 #import "MessageViewController.h"
 
-
-/** 屏幕的宽度 */
-#define WIDTH  self.view.frame.size.width
-
-/** 屏幕的高度 */
-#define HEIGHT self.view.frame.size.height
-
 @interface MessageViewController ()
 
 @end

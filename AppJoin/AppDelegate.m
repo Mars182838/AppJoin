@@ -14,6 +14,7 @@
 #import "FourViewController.h"
 #import "DataBase.h"
 #import <sqlite3.h>
+#import "ZBarSDK.h"
 
 @implementation AppDelegate
 
@@ -81,10 +82,12 @@
         if (errorMsg!=nil) {
             NSLog(@"%s",errorMsg);
         }
-        
+    
         ///关闭数据库
         [DataBase closeDB];
     }
+    
+    [ZBarReaderView class];
     self.window.rootViewController = tabBar;
     
     [navMain   release];
