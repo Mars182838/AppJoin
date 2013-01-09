@@ -26,6 +26,12 @@
 @property (nonatomic, retain) NSMutableArray *myDateArray;
 ///显示我的收藏日程的tableView
 @property (retain, nonatomic) IBOutlet UITableView *dateTableView;
+
+///显示二维码信息TableView
+@property (nonatomic, retain) UITableView *qrTableView;
+///存储名片信息的数组
+@property (nonatomic, retain) NSMutableArray *qrArray;
+
 ///segment方法，0代表显示我的日程，1是行车路线，2是我的当前位置地图
 - (IBAction)segmentActive:(id)sender;
 

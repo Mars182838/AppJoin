@@ -43,12 +43,12 @@
     _firstContrller = [[FirstViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navFirst = [[UINavigationController alloc] initWithRootViewController:_firstContrller];
     navFirst.tabBarItem.title  = @"看展会";
-    navFirst.tabBarItem.image  = [UIImage imageNamed:@"看展会.png"];
+    navFirst.tabBarItem.image  = [UIImage imageNamed:@"icon_eyes.png"];
     
     _secondController = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navSecond = [[UINavigationController alloc] initWithRootViewController:_secondController];
     navSecond.tabBarItem.title = @"资讯";
-    navSecond.tabBarItem.image = [UIImage imageNamed:@"资讯.png"];
+    navSecond.tabBarItem.image = [UIImage imageNamed:@"icon_information.png"];
     
 
     _thirdContrller = [[ThirdViewController alloc] initWithNibName:nil bundle:nil];
@@ -69,23 +69,30 @@
     NSArray *viewController = [[NSArray alloc] initWithObjects:navMain,navFirst,navSecond,navThird,navFour, nil];
     tabBar.viewControllers = viewController;
     
-    _isFirstRun = [[[NSUserDefaults standardUserDefaults] valueForKey:IS_FIRST_RUN] boolValue];
-    if (!IS_FIRST_RUN) {
-        [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:IS_FIRST_RUN];
+//    _isFirstRun = [[[NSUserDefaults standardUserDefaults] valueForKey:IS_FIRST_RUN] boolValue];
+//    if (!IS_FIRST_RUN) {
+//        [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:IS_FIRST_RUN];
         sqlite3 *db;
         db = [DataBase openDB];
         char *errorMsg;
-        const char *createSql="create table if not exists 'appJion' (id integer primary key, name text,date text,place text)";
+        
+        const char *createSql = "create table if not exists 'appJion' (id integer primary key, name text,date text,place text)";
         if (sqlite3_exec(db, createSql, NULL, NULL, &errorMsg) == SQLITE_OK) {
             NSLog(@"creat table ok");
         }
+        
+        const char *createTable = "create table if not exists 'appCard' (id integer primary key, name text,message text)";
+        if (sqlite3_exec(db, createTable, NULL, NULL, &errorMsg) == SQLITE_OK) {
+            NSLog(@"creat table ok");
+        }
+        
         if (errorMsg!=nil) {
             NSLog(@"%s",errorMsg);
         }
     
         ///关闭数据库
         [DataBase closeDB];
-    }
+//    }
     
     [ZBarReaderView class];
     self.window.rootViewController = tabBar;

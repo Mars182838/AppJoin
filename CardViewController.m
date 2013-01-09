@@ -11,6 +11,8 @@
 #import "QRCodeGenerator.h"
 #import <QuartzCore/QuartzCore.h>
 
+#define CardNumber 10
+
 @interface CardViewController ()
 
 @end
@@ -25,7 +27,9 @@
         self.title = @"个人名片";
         _cardArray = [[NSArray alloc] init];
         
-        _cardArr = [[NSMutableArray alloc] initWithCapacity:0];
+        ///初始化TextField上面的文字默认是空
+        self.cardArr = [[NSMutableArray alloc] initWithObjects:@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"", nil];
+        
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Card" ofType:@"plist"];
         ///获取项目的根路径
         NSDictionary *cardDictionary = [[NSDictionary alloc] initWithContentsOfFile:filePath];
@@ -41,8 +45,6 @@
     if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
         NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] initWithContentsOfFile:filePath];
         self.cardArr = [dictionary objectForKey:@"UserInfo"];
-        
-        NSLog(@"%@",self.cardArr);
     }
 }
 
@@ -50,7 +52,7 @@
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentPath = [paths objectAtIndex:0];
-    return [documentPath stringByAppendingFormat:@"card.plist"];
+    return [documentPath stringByAppendingFormat:@"/card.plist"];
 }
 
 - (void)viewDidLoad
@@ -67,6 +69,8 @@
     self.navigationItem.rightBarButtonItem = rightBtn;
     [rightBtn release];
 }
+
+#pragma mark - SaveQRcode Methods
 
 -(void)saveCardByQrcode:(id)sender
 {
@@ -86,17 +90,14 @@
     NSString *appStr = [[NSString alloc] init];
     
     ///获取名片的内容
-    for (int i = 0; i < self.cardArr.count; i++) {
+    for (int i = 0; i < 10; i++) {
         
         ///采用字符串拼接的方法
         appStr = [appStr stringByAppendingFormat:@"%@ \n",[self.cardArr objectAtIndex:i]];
        
     }
     
-    NSString *filePath = [self dataFilePath];
-    NSMutableDictionary *dictinoary = [[NSMutableDictionary alloc] init];
-    [dictinoary setObject:self.cardArr forKey:@"UserInfo"];
-    [dictinoary writeToFile:filePath atomically:YES];
+    
     
      _qrImage.image = [QRCodeGenerator qrImageForString:appStr imageSize:self.qrImage.bounds.size.width];
     
@@ -125,6 +126,7 @@
 
 }
 
+/**@prama image生成二维码图片*/
 -(void)image:(UIImage *)image didFinishSaving:(NSError *)error andContextInfo:(void*)contextInfo
 {
     if (error == nil) {
@@ -181,21 +183,22 @@
 {
     static NSString *indentifer = @"cellIndetifer";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifer];
-    
     if (cell == nil) {
         
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:indentifer] autorelease];
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(95, 11, 260, 30)];
-        textField.delegate = self;
-        textField.tag = indexPath.row;
-        textField.textAlignment = NSTextAlignmentLeft;
-        textField.font = [UIFont systemFontOfSize:18.0f];
-        textField.textColor = [UIColor grayColor];
-        [cell.contentView addSubview:textField];
-        
     }
+    
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(95, 11, 260, 30)];
+    textField.delegate = self;
+    textField.tag = indexPath.row;
+    textField.textAlignment = NSTextAlignmentLeft;
+    textField.font = [UIFont systemFontOfSize:18.0f];
+    textField.textColor = [UIColor grayColor];
+    textField.text = [self.cardArr objectAtIndex:indexPath.row];
+    [cell.contentView addSubview:textField];
+    
     cell.textLabel.text = [_cardArray objectAtIndex:indexPath.row];
     return cell;
 }
@@ -236,7 +239,93 @@
 
 -(BOOL)textFieldShouldEndEditing:(UITextField *)textField
 {
-    [self.cardArr addObject:textField.text];
+    switch (textField.tag) {
+        case 0: {
+            if ([textField.text isEqualToString:@""]) {
+                textField.text = @"";
+            }
+            
+            [self.cardArr insertObject:textField.text atIndex:0];
+            break;
+        }
+        case 1: {
+            if ([textField.text isEqualToString:@""]) {
+                textField.text = @"";
+            }
+            
+            [self.cardArr insertObject:textField.text atIndex:1];
+            break;
+        }
+        case 2: {
+            if ([textField.text isEqualToString:@""]) {
+                textField.text = @"";
+            }
+            
+            [self.cardArr insertObject:textField.text atIndex:2];
+            break;
+        }
+        case 3: {
+            if ([textField.text isEqualToString:@""]) {
+                textField.text = @"";
+            }
+            
+            [self.cardArr insertObject:textField.text atIndex:3];
+            break;
+        }
+        case 4: {
+            if ([textField.text isEqualToString:@""]) {
+                textField.text = @"";
+            }
+            
+            [self.cardArr insertObject:textField.text atIndex:4];
+            break;
+        }
+        case 5: {
+            if ([textField.text isEqualToString:@""]) {
+                textField.text = @"";
+            }
+            
+            [self.cardArr insertObject:textField.text atIndex:5];
+            break;
+        }
+        case 6: {
+            if ([textField.text isEqualToString:@""]) {
+                textField.text = @"";
+            }
+            
+            [self.cardArr insertObject:textField.text atIndex:6];
+            break;
+        }
+        case 7: {
+            if ([textField.text isEqualToString:@""]) {
+                textField.text = @"";
+            }
+            
+            [self.cardArr insertObject:textField.text atIndex:7];
+            break;
+        }
+        case 8: {
+            if ([textField.text isEqualToString:@""]) {
+                textField.text = @"";
+            }
+            
+            [self.cardArr insertObject:textField.text atIndex:8];
+            break;
+        }
+        case 9: {
+            if ([textField.text isEqualToString:@""]) {
+                textField.text = @"";
+            }
+            
+            [self.cardArr insertObject:textField.text atIndex:9];
+            break;
+        }
+    }
+    
+    NSString *filePath = [self dataFilePath];
+    NSMutableDictionary *dictinoary = [[NSMutableDictionary alloc] init];
+    [dictinoary setObject:self.cardArr forKey:@"UserInfo"];
+    [dictinoary writeToFile:filePath atomically:YES];
     return YES;
 };
 

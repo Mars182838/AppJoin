@@ -4,7 +4,7 @@
 <dict>
 	<key>Card</key>
 	<array>
-		<string>姓      名：</string>
+		<string>姓       名：</string>
 		<string>职务名称：</string>
 		<string>公司名称：</string>
 		<string>公司地址：</string>
@@ -14,7 +14,6 @@
 		<string>传真号码：</string>
 		<string>电子邮件：</string>
 		<string>公司网址：</string>
-		<string>      用于生成个人二维码名片！</string>
 	</array>
 </dict>
 </plist>

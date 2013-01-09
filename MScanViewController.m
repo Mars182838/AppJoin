@@ -7,10 +7,14 @@
 //
 
 #import "MScanViewController.h"
+#import "MBProgressHUD.h"
+#import "QRcodeData.h"
 
 @implementation MScanViewController
 
 @synthesize readerView, resultText;
+
+#pragma mark - lifeCycle
 
 - (void) viewDidLoad
 {
@@ -23,15 +27,24 @@
     readerView.zoom = 0.5;//调整扫描区域
     readerView.trackingColor = [UIColor orangeColor];//扫描框颜色
     
-    UIBarButtonItem *editerBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(editerPress:)];
+    UIBarButtonItem *editerBtn = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonSystemItemDone target:self action:@selector(editerPress:)];
     self.navigationItem.rightBarButtonItem = editerBtn;
     [editerBtn release];
+    
+    _messageTextField.delegate = self;
 }
 
-//启动扫描视图
-- (void)viewWillAppear:(BOOL)animated
+- (void)dealloc
 {
-    [super viewWillAppear:animated];
+    [readerView release];
+    [resultText release];
+    [_messageTextField release];
+    [super dealloc];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 - (void)readerView:(ZBarReaderView*)view didReadSymbols:(ZBarSymbolSet*)syms  fromImage: (UIImage*) img
@@ -52,75 +65,45 @@
 /** 从相册中获取二维码 */
 -(void)editerPress:(id)sender
 {
-    
-    ZBarReaderController * reader = [[ZBarReaderController alloc] init];
-    reader.allowsEditing = YES;//是否可以对二维码图片进行编辑
-    reader.readerDelegate = self;
-    
-    //UIImagePickerController默认sourceType就是PhotoLibrary，但ZBarReaderController继承他后把sourceType改成Camera，所以在这需要我们手动设置，否则在真机上会打开摄象头而不是相册
-    reader.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;//从相册中获取二维码图片
-    
-    [reader.scanner setSymbology:ZBAR_QRCODE config:ZBAR_CFG_ENABLE to:1];//配置解码器
-    
-    [self presentViewController:reader animated:YES completion:nil];
-    [reader release];
-    
-}
-
-
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    id<NSFastEnumeration> results = [info objectForKey:ZBarReaderControllerResults];
-    
-    ZBarSymbol *symbol = nil;
-    for (symbol in results) {
+    if ([_messageTextField.text isEqualToString:@""]) {
+        UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"你没有输入任何信息" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [alterView show];
+        [alterView release];
+    }else{
         
-        break;
-    }
-    
-    ///取出二维码中封装的数据
-    NSString *qrString = symbol.data;
-    
-    ///很多二维码是日本人开发，所以会用到日文编写，因此要解决乱码问题
-    if ([qrString canBeConvertedToEncoding:NSShiftJISStringEncoding]) {
-        NSString *newString = [NSString stringWithCString:[symbol.data cStringUsingEncoding:NSShiftJISStringEncoding] encoding:NSUTF8StringEncoding];
+        ///往数据库里面添加数据
+        [QRcodeData addMessageWithName:_messageTextField.text andMessage:resultText.text];
         
-        ///判断是否转码有效
-        if (newString != nil) {
-            qrString = newString;
-        }
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+        hud.labelText = @"名片保存成功";
+        hud.delegate = self;
+        hud.removeFromSuperViewOnHide = YES;
+        [hud hide:YES afterDelay:1.0f];
     }
-    resultText.text = qrString;
-    
-    ///获得编辑过的图片
-    if (picker.allowsEditing == YES) {
-        self.qrImage.image = [info objectForKey:UIImagePickerControllerEditedImage];
-    }
-    else {
-        self.qrImage.image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    }
-    
-    [picker dismissViewControllerAnimated:YES completion:nil];
-    
 }
 
-- (void)viewDidUnload
+#pragma mark - MBProgressHUD Delegate Methods
+
+-(void)hudWasHidden:(MBProgressHUD *)hud
 {
-    [super viewDidUnload];
-    self.readerView = nil;
-    self.resultText = nil;
+    [hud removeFromSuperview];
+    hud = nil;
 }
 
-- (void)dealloc
+#pragma mark - UITextFieldDelegate Methods
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [readerView release];
-    [resultText release];
-    [super dealloc];
+    [_messageTextField resignFirstResponder];
+    return YES;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+///点击屏幕的人一个位置返回键盘
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    [_messageTextField resignFirstResponder];
+    [resultText resignFirstResponder];
 }
+
 
 @end
