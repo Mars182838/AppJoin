@@ -11,6 +11,7 @@
 #import "MBProgressHUD.h"
 #import "Reachability.h"
 #import "TopBarView.h"
+#import "DownLoadString.h"
 
 #define ITEM_SPACING 200
 
@@ -27,7 +28,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
+        _mainDic = [[NSDictionary alloc] init];
     }
     return self;
 }
@@ -41,6 +42,8 @@
     [_carousel release];
     [_topBar   release];
     [_label    release];
+    [_downLoad release];
+    [_mainDic  release];
     [super dealloc];
 }
 
@@ -62,7 +65,6 @@
     _carousel.delegate = self;
     _carousel.dataSource = self;
     _carousel.type = iCarouselTypeCoverFlow;
-    
     [self.view addSubview:_carousel];
     
     _label = [[UILabel alloc] init];
@@ -78,36 +80,11 @@
     ///开始通知
     [hostReach startNotifier];
     
-    NSURL *url = [NSURL URLWithString:@"http://42.121.237.116/customapp/?cat=1&author=2&json=1"];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
-    connection = [NSURLConnection connectionWithRequest:request delegate:self];
-    if (connection) {
-        picData = [[NSMutableData alloc] initWithLength:0];
-    }
-}
-
-
-#pragma mark - NSURLConnection Delegate 
-
--(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
-{
-    [picData setLength:0];
-}
-
--(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-    [picData appendData:data];
-}
-
--(void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
-    /** NSJSONSerialization利用解析Json数据 */
-    NSError *error = nil;
-    NSDictionary *serial = [NSJSONSerialization JSONObjectWithData:picData options:NSJSONReadingMutableLeaves error:&error];
-    NSArray *array = [serial objectForKey:@"posts"];
+    _downLoad = [[DownLoadString alloc] initWithShareTarget:NSStringWithUrlMain];
+    _downLoad.delegate = self;
     
-    NSLog(@"%@",[[[[array objectAtIndex:0] objectForKey:@"content"] objectAtIndex:0]  objectForKey:@"text"]);
 }
+
 
 #pragma mark - 
 #pragma mark - ReachabilityNotification Methods
@@ -189,6 +166,7 @@
 {
     NSArray *array = [[NSArray alloc] initWithObjects:@"2008",@"2009",@"2010",@"2011",@"2012",@"2013", nil];
     _detailLabel.text = [array objectAtIndex:carousel.currentItemIndex];
+    [array release];
 }
 
 - (CATransform3D)carousel:(iCarousel *)carousel transformForItemView:(UIView *)view withOffset:(CGFloat)offset
@@ -264,6 +242,14 @@
         }
     }
     [self.navigationController pushViewController:_detailController animated:YES];
+}
+
+#pragma mark - DownLoadDelegate 
+
+-(void)downLoadFinished:(NSDictionary *)info
+{
+    _mainDic = info;
+    NSLog(@"mainDic:%@ ",_mainDic);
 }
 
 @end

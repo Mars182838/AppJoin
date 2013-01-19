@@ -56,6 +56,9 @@
     
     [scroll addSubview:label];
     [self.view addSubview:scroll];
+    
+    [label release];
+    [scroll release];
 }
 
 -(void)backPress:(id)sender

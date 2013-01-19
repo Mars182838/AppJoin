@@ -26,7 +26,7 @@
     sqlite3 *db = [DataBase openDB];
     sqlite3_stmt *stmt = nil;
     
-    NSString *insert = [[NSString alloc] initWithFormat:@"%@",@"insert into appCard(name,message) values(?,?)"];
+    NSString *insert = @"insert into appCard(name,message) values(?,?)";
     
     sqlite3_prepare_v2(db, [insert UTF8String], -1, &stmt, nil);
     if (theName == NULL) {

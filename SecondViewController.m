@@ -37,10 +37,10 @@
     [self.view addSubview:_topBar.navImage];
     [self.view addSubview:_topBar.navLabel];
     
-    self.infoTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, WIDTH, HEIGHT -44) style:UITableViewStylePlain];
-    self.infoTableView.delegate   = self;
-    self.infoTableView.dataSource = self;
-    [self.view addSubview:self.infoTableView];
+    _infoTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, WIDTH, HEIGHT -44) style:UITableViewStylePlain];
+    _infoTableView.delegate   = self;
+    _infoTableView.dataSource = self;
+    [self.view addSubview:_infoTableView];
     
     NSURL *url = [NSURL URLWithString:@"http:www.baidu.com"];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
@@ -76,7 +76,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *indentifier = @"cellIndentifer";
-    UITableViewCell *cell = [[tableView dequeueReusableCellWithIdentifier:indentifier] autorelease];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifier] ;
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indentifier] autorelease];
             cell.textLabel.text = [_messageArray objectAtIndex:indexPath.row];
@@ -93,6 +93,8 @@
     NSString *string = [[NSString alloc] initWithFormat:@"%@",@"王俊"];
     info.urlString = string;
     [self.navigationController pushViewController:info animated:YES];
+    [info release];
+    [string release];
 }
 
 #pragma mark - 

@@ -182,13 +182,13 @@
     NSUInteger number = [regulare numberOfMatchesInString:self.emailTextField.text options:NSMatchingReportProgress range:NSMakeRange(0, self.emailTextField.text.length)];
     [regulare release];
     
-    NSRegularExpression *phoneRegulare = [[NSRegularExpression alloc] initWithPattern:@"((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)" options:NSRegularExpressionCaseInsensitive error:nil];
+//    NSRegularExpression *phoneRegulare = [[NSRegularExpression alloc] initWithPattern:@"((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)" options:NSRegularExpressionCaseInsensitive error:nil];
+//    
+//    NSUInteger phoneNumber = [phoneRegulare numberOfMatchesInString:self.phoneTextField.text options:NSMatchingReportProgress range:NSMakeRange(0, self.phoneTextField.text.length)];
+//    [phoneRegulare release];
     
-    NSUInteger phoneNumber = [phoneRegulare numberOfMatchesInString:self.phoneTextField.text options:NSMatchingReportProgress range:NSMakeRange(0, self.phoneTextField.text.length)];
-    [phoneRegulare release];
-    
-    if (number > 0|phoneNumber > 0) {
-        NSString *postString = [NSString stringWithFormat:@"act=advise&dev=ios&ver=1.1&email=%@&phone=%@&advise=%@",self.emailTextField.text,self.phoneTextField.text,[URLEncode encodeUrlStr:self.opinionTextView.text]];
+    if (number > 0) {
+        NSString *postString = [NSString stringWithFormat:@"act=advise&dev=ios&ver=1.1&email=%@&advise=%@",self.emailTextField.text,[URLEncode encodeUrlStr:self.opinionTextView.text]];
         
         NSURL *url = [NSURL URLWithString:@"http://ibokan.gicp.net/ibokan/map/map.php"];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];

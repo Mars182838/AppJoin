@@ -72,6 +72,7 @@
     NSArray *viewController = [[NSArray alloc] initWithObjects:navMain,navFirst,navSecond,navThird,navFour, nil];
     tabBar.viewControllers = viewController;
     
+    [viewController release];
 //    _isFirstRun = [[[NSUserDefaults standardUserDefaults] valueForKey:IS_FIRST_RUN] boolValue];
 //    if (!IS_FIRST_RUN) {
 //       [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:IS_FIRST_RUN];

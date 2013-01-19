@@ -9,6 +9,7 @@
 #import "FirstViewController.h"
 #import "MessageViewController.h"
 #import "DateViewController.h"
+#import "DownLoadString.h"
 
 @interface FirstViewController ()
 
@@ -29,6 +30,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _downLoad = [[DownLoadString alloc] initWithShareTarget:NSStringWithUrlFirst];
+    _downLoad.delegate = self;
     
     ///通过封装导航栏的视图
     _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
@@ -73,6 +77,12 @@
         }
     }
 
+}
+
+-(void)downLoadFinished:(NSDictionary *)info
+{
+    NSDictionary *down = info;
+    NSLog(@"info :%@",down);
 }
 
 - (void)didReceiveMemoryWarning

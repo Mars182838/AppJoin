@@ -34,6 +34,7 @@
         ///获取项目的根路径
         NSDictionary *cardDictionary = [[NSDictionary alloc] initWithContentsOfFile:filePath];
         _cardArray = [cardDictionary objectForKey:@"Card"];
+        [cardDictionary release];
     }
     return self;
 }
@@ -45,6 +46,7 @@
     if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
         NSMutableDictionary *dictionary = [[NSMutableDictionary alloc] initWithContentsOfFile:filePath];
         self.cardArr = [dictionary objectForKey:@"UserInfo"];
+        [dictionary release];
     }
 }
 
@@ -352,6 +354,7 @@
     NSMutableDictionary *dictinoary = [[NSMutableDictionary alloc] init];
     [dictinoary setObject:self.cardArr forKey:@"UserInfo"];
     [dictinoary writeToFile:filePath atomically:YES];
+    [dictinoary release];
     return YES;
 };
 

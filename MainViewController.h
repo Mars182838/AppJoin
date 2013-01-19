@@ -8,6 +8,7 @@
 
 #import "iCarousel.h"
 #import "MBProgressHUD.h"
+#import "DownLoadString.h"
 @class DetailViewController;
 @class Reachability;
 @class TopBarView;
@@ -18,7 +19,7 @@
 
 @end
 
-@interface MainViewController : UIViewController<UIWebViewDelegate,iCarouselDataSource,iCarouselDelegate,MBProgressHUDDelegate,NSURLConnectionDataDelegate>
+@interface MainViewController : UIViewController<UIWebViewDelegate,iCarouselDataSource,iCarouselDelegate,MBProgressHUDDelegate,NSURLConnectionDataDelegate,downLoadStringProtocal>
 {
     
     id <DetailViewDelegate> delegate;
@@ -29,9 +30,6 @@
     MBProgressHUD *hud;
     ///检测是否联网
     Reachability *hostReach;
-    
-    NSURLConnection *connection;
-    NSMutableData *picData;
 }
 
 /** casousel 第三方库用于实现Cover flow 效果，
@@ -50,9 +48,16 @@
 ///label 显示图片下面的文字介绍
 @property (nonatomic, retain) UILabel *label;
 
+///detailLabel 关于图片的详细介绍
 @property (nonatomic, retain) UILabel *detailLabel;
 
+///导航栏的视图重绘
 @property (nonatomic, retain) TopBarView *topBar;
 
+///下载数据类
+@property (nonatomic, retain) DownLoadString *downLoad;
+
+///接收下载完的数据
+@property (nonatomic, retain) NSDictionary *mainDic;
 
 @end

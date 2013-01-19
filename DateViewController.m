@@ -21,8 +21,7 @@
     if (self) {
         self.dateArray = [[NSMutableArray alloc] initWithObjects:@"北京",@"杭州",@"上海",@"深圳", nil];
         self.detailArray = [[NSMutableArray alloc] initWithObjects:@"2013年 4月5-6日",@"2013年 6月7-8日",@"2013年 9月7-8日",@"2013年 10月7-8日",nil];
-//        self.dateArray = [[NSMutableArray alloc] initWithCapacity:0];
-//        self.detailArray = [[NSMutableArray alloc] initWithCapacity:0];
+
     }
     return self;
 }
@@ -73,10 +72,10 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *indentifier = [NSString stringWithFormat:@"cell%d%d",[indexPath section],[indexPath row]];
-    UITableViewCell *cell = nil;
+    static NSString *indentifier = @"cellIndentifer";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indentifier];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indentifier] autorelease];
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
         
         }
@@ -87,21 +86,6 @@
     return cell;
 }
 
-
--(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return YES;
-}
-
--(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return UITableViewCellEditingStyleDelete|UITableViewCellEditingStyleInsert;
-}
-
--(void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"sdgdsgd");
-}
 
 #pragma mark - NSURLConnection Delegate
 

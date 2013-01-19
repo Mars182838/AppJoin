@@ -106,7 +106,7 @@
     else if (indexPath.row == 2){
         MScanViewController *mscanController = [[MScanViewController alloc] initWithNibName:nil bundle:nil];
         [self.navigationController pushViewController:mscanController animated:YES];
-        
+        [mscanController release];
     }
     else if (indexPath.row == 3){
         
