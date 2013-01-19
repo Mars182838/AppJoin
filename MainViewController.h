@@ -10,6 +10,7 @@
 #import "MBProgressHUD.h"
 @class DetailViewController;
 @class Reachability;
+@class TopBarView;
 
 @protocol DetailViewDelegate <NSObject>
 
@@ -17,7 +18,7 @@
 
 @end
 
-@interface MainViewController : UIViewController<UIWebViewDelegate,iCarouselDataSource,iCarouselDelegate,MBProgressHUDDelegate>
+@interface MainViewController : UIViewController<UIWebViewDelegate,iCarouselDataSource,iCarouselDelegate,MBProgressHUDDelegate,NSURLConnectionDataDelegate>
 {
     
     id <DetailViewDelegate> delegate;
@@ -28,6 +29,9 @@
     MBProgressHUD *hud;
     ///检测是否联网
     Reachability *hostReach;
+    
+    NSURLConnection *connection;
+    NSMutableData *picData;
 }
 
 /** casousel 第三方库用于实现Cover flow 效果，
@@ -45,6 +49,10 @@
 
 ///label 显示图片下面的文字介绍
 @property (nonatomic, retain) UILabel *label;
+
+@property (nonatomic, retain) UILabel *detailLabel;
+
+@property (nonatomic, retain) TopBarView *topBar;
 
 
 @end

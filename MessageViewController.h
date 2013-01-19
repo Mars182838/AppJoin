@@ -17,4 +17,6 @@
 /** 接收从FirstViewController类传递过来的数据 */
 @property (nonatomic, copy) NSString *infoString;
 
+@property (nonatomic, retain) TopBarView *topBar;
+
 @end

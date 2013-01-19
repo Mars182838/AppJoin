@@ -2,42 +2,93 @@
 //  OpinionViewController.m
 //  AppJoin
 //
-//  Created by Mars on 13-1-5.
+//  Created by Mars on 13-1-16.
 //  Copyright (c) 2013年 Mars. All rights reserved.
 //
 
-#import "OpinionViewController.h"
+#import "OpinionsViewController.h"
 #import "URLEncode.h"
+#import "TopBarView.h"
 
-@interface OpinionViewController ()
+@interface OpinionsViewController ()
 
 @end
 
-@implementation OpinionViewController
+@implementation OpinionsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
-        self.title = @"意见反馈";
-        
     }
     return self;
 }
-#pragma mark - lifeCycle
+
+#pragma mark - LifeCycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    _emailTextField.delegate  = self;
-    _opinionTextView.delegate = self;
-    _phoneTextField.delegate  = self;
+    ///定制导航栏上面的视图
+    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     
-    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(commiterOpinion:)];
-    self.navigationItem.rightBarButtonItem = rightBtn;
-    [rightBtn release];
+    _topBar.navLabel.text = @"意见反馈";
+    
+    [_topBar.backBtn addTarget:self action:@selector(backPress:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_topBar];
+    
+    _numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(160, 47, 200, 30)];
+    _numberLabel.text = @"还可以输入200个字";
+    _numberLabel.font = [UIFont systemFontOfSize:16.0f];
+    [self.view addSubview:_numberLabel];
+    
+    if (iPhone5) {
+        _opinionTextView = [[UITextView alloc] initWithFrame:CGRectMake(25, 80, WIDTH - 50, 250)];
+        _opinionBackImage = [[UIImageView alloc] initWithFrame:CGRectMake(20, 75, WIDTH - 40, 260)];
+    }
+    else{
+        _opinionBackImage = [[UIImageView alloc] initWithFrame:CGRectMake(20, 75, WIDTH - 40, 180)];
+      _opinionTextView = [[UITextView alloc] initWithFrame:CGRectMake(25, 80, WIDTH - 50, 170)];
+    }
+    
+    _opinionBackImage.image = [UIImage imageNamed:@"意见输入框.png"];
+    [self.view addSubview:_opinionBackImage];
+
+    _opinionTextView.delegate = self;
+    _opinionTextView.font = [UIFont systemFontOfSize:16.0f];
+    _opinionTextView.keyboardType = UIKeyboardTypeDefault;
+    _opinionTextView.returnKeyType = UIReturnKeyDefault;
+    _opinionTextView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_opinionTextView];
+    
+    _emailTextField = [[UITextField alloc] initWithFrame:CGRectMake(20, HEIGHT-150, WIDTH - 40, 30)];
+    _emailTextField.placeholder = @"邮箱:";
+    _emailTextField.borderStyle = UITextBorderStyleRoundedRect;
+    _emailTextField.returnKeyType = UIKeyboardTypeTwitter;
+    _emailTextField.delegate  = self;
+    [self.view addSubview:_emailTextField];
+    
+    UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, HEIGHT - 180, WIDTH, 30)];
+    nameLabel.text = @"请留下邮箱或手机号码";
+    nameLabel.font = [UIFont systemFontOfSize:16.0f];
+    [self.view addSubview:nameLabel];
+    [nameLabel release];
+    
+    _phoneTextField = [[UITextField alloc] initWithFrame:CGRectMake(20, HEIGHT-110, WIDTH - 40, 30)];
+    _phoneTextField.placeholder = @"电话:";
+    _phoneTextField.borderStyle = UITextBorderStyleRoundedRect;
+    _phoneTextField.keyboardType = UIKeyboardTypeNumberPad;
+    _phoneTextField.delegate  = self;
+    [self.view addSubview:_phoneTextField];
+    
+    _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    _rightBtn.frame = CGRectMake(265, 6, 50, 30);
+    [_rightBtn setImage:[UIImage imageNamed:@"finish.png"] forState:UIControlStateNormal];
+    [_rightBtn addTarget:self action:@selector(commiterOpinion:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:_rightBtn];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,6 +102,12 @@
     [_phoneTextField release];
     [_numberLabel release];
     [super dealloc];
+}
+
+/** 返回到上一个界面的方法 */
+-(void)backPress:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - UITextView Delegate Methods
@@ -100,7 +157,6 @@
     return YES;
 }
 
-
 /** 点击屏幕的任意位置返回键盘 */
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
@@ -114,7 +170,7 @@
     CGRect rect=CGRectMake(0,0,WIDTH,HEIGHT);//上移80个单位，按实际情况设置
     self.view.frame = rect;
     [UIView commitAnimations];
-   
+    
 }
 
 #pragma mark - UIButtonPress Methods
@@ -126,8 +182,13 @@
     NSUInteger number = [regulare numberOfMatchesInString:self.emailTextField.text options:NSMatchingReportProgress range:NSMakeRange(0, self.emailTextField.text.length)];
     [regulare release];
     
-    if (number > 0) {
-        NSString *postString = [NSString stringWithFormat:@"act=advise&dev=ios&ver=1.1&email=%@&advise=%@",self.emailTextField.text,[URLEncode encodeUrlStr:self.opinionTextView.text]];
+    NSRegularExpression *phoneRegulare = [[NSRegularExpression alloc] initWithPattern:@"((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)" options:NSRegularExpressionCaseInsensitive error:nil];
+    
+    NSUInteger phoneNumber = [phoneRegulare numberOfMatchesInString:self.phoneTextField.text options:NSMatchingReportProgress range:NSMakeRange(0, self.phoneTextField.text.length)];
+    [phoneRegulare release];
+    
+    if (number > 0|phoneNumber > 0) {
+        NSString *postString = [NSString stringWithFormat:@"act=advise&dev=ios&ver=1.1&email=%@&phone=%@&advise=%@",self.emailTextField.text,self.phoneTextField.text,[URLEncode encodeUrlStr:self.opinionTextView.text]];
         
         NSURL *url = [NSURL URLWithString:@"http://ibokan.gicp.net/ibokan/map/map.php"];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -169,4 +230,5 @@
 	[alert show];
 	[alert release];
 }
+
 @end

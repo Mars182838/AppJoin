@@ -19,19 +19,46 @@
 - (void) viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"扫一扫";
     self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
-    [readerView start];
+    
+    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    
+    _topBar.navLabel.text = @"扫一扫";
+    
+    [_topBar.backBtn addTarget:self action:@selector(backPress:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_topBar];
+
 
     readerView.readerDelegate = self;
     readerView.zoom = 0.5;//调整扫描区域
     readerView.trackingColor = [UIColor orangeColor];//扫描框颜色
+    [readerView start];
     
-    UIBarButtonItem *editerBtn = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonSystemItemDone target:self action:@selector(editerPress:)];
-    self.navigationItem.rightBarButtonItem = editerBtn;
-    [editerBtn release];
+    UIButton *saveBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    saveBtn.frame = CGRectMake(265, 6, 50, 30);
+    [saveBtn setImage:[UIImage imageNamed:@"finish.png"] forState:UIControlStateNormal];
+    [saveBtn addTarget:self action:@selector(editerPress:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:saveBtn];
     
+    _messageTextField = [[UITextField alloc] initWithFrame:CGRectMake(30, 80, WIDTH - 60, 30)];
+    _messageTextField.keyboardType = UIKeyboardTypeDefault;
+    _messageTextField.returnKeyType = UIReturnKeyDone;
+    _messageTextField.borderStyle = UITextBorderStyleRoundedRect;
     _messageTextField.delegate = self;
+    [self.view addSubview:_messageTextField];
+    
+    resultText = [[UITextView alloc] initWithFrame:CGRectMake(30, HEIGHT-150, 260, 100)];
+    resultText.keyboardType = UIKeyboardTypeDefault;
+    resultText.scrollEnabled = YES;
+    resultText.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
+    resultText.textColor = [UIColor whiteColor];
+    resultText.font = [UIFont systemFontOfSize:16.0f];
+    [self.view addSubview:resultText];
+}
+
+-(void)backPress:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)dealloc
@@ -52,6 +79,7 @@
     for(ZBarSymbol *sym in syms) {
         
         resultText.text = sym.data;
+        NSLog(@"%@",resultText.text);
         break;
     }
     

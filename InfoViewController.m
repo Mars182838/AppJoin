@@ -7,12 +7,7 @@
 //
 
 #import "InfoViewController.h"
-
-/** 设备的宽度 */
-#define WIDTH  self.view.frame.size.width
-
-/** 设备的高度 */
-#define HEIGHT self.view.frame.size.height
+#import "TopBarView.h"
 
 @interface InfoViewController ()
 
@@ -32,12 +27,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"资讯";
-        
+    
+    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    
+    _topBar.navLabel.text = _navTitle;
+    
+    [_topBar.backBtn addTarget:self action:@selector(backPress:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_topBar];
+    
     NSURL *url = [NSURL URLWithString:_urlString];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
-    _infoWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT - 49 - 44)];
+    _infoWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 44, WIDTH, HEIGHT - 49 - 44)];
     _infoWebView.scalesPageToFit = YES;
     _infoWebView.delegate = self;
     [_infoWebView loadRequest:request];
@@ -66,6 +67,13 @@
     hud.labelText = [NSString stringWithFormat:@"%@",error];
     [hud show:YES];
     [hud hide:YES afterDelay:1.0f];
+}
+
+#pragma mark - BackPress
+
+-(void)backPress:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning

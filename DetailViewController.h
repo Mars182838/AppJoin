@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @interface DetailViewController : UIViewController
 
 /** imageView 显示图片*/
@@ -14,5 +15,7 @@
 
 /** messageString 用于显示图片下面文字介绍*/
 @property (nonatomic, retain) UITextView *messageString;
+
+@property (nonatomic, retain) TopBarView *topBar;
 
 @end

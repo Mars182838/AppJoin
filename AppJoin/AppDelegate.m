@@ -39,28 +39,31 @@
     UINavigationController *navMain = [[UINavigationController alloc] initWithRootViewController:_mainController];
     navMain.tabBarItem.title   = @"首页";
     navMain.tabBarItem.image   = [UIImage imageNamed:@"主页.png"];
+    navMain.navigationBarHidden = YES;
     
     _firstContrller = [[FirstViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navFirst = [[UINavigationController alloc] initWithRootViewController:_firstContrller];
     navFirst.tabBarItem.title  = @"看展会";
     navFirst.tabBarItem.image  = [UIImage imageNamed:@"icon_eyes.png"];
+    navFirst.navigationBarHidden = YES;
     
     _secondController = [[SecondViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navSecond = [[UINavigationController alloc] initWithRootViewController:_secondController];
     navSecond.tabBarItem.title = @"资讯";
     navSecond.tabBarItem.image = [UIImage imageNamed:@"icon_information.png"];
-    
+    navSecond.navigationBarHidden = YES;
 
     _thirdContrller = [[ThirdViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navThird = [[UINavigationController alloc] initWithRootViewController:_thirdContrller];
     navThird.tabBarItem.title  = @"收藏";
     navThird.tabBarItem.image  = [UIImage imageNamed:@"收藏.png"];
-    
+    navThird.navigationBarHidden = YES;
     
     _fourController = [[FourViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navFour = [[UINavigationController alloc] initWithRootViewController:_fourController];
     navFour.tabBarItem.title   = @"更多";
     navFour.tabBarItem.image   =  [UIImage imageNamed:@"更多.png"];
+    navFour.navigationBarHidden = YES;
     
     /** UITabBarController 控制视图的切换，将5个需要切换的视图控制器
      *  的视图数组里面
@@ -71,7 +74,7 @@
     
 //    _isFirstRun = [[[NSUserDefaults standardUserDefaults] valueForKey:IS_FIRST_RUN] boolValue];
 //    if (!IS_FIRST_RUN) {
-//        [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:IS_FIRST_RUN];
+//       [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:IS_FIRST_RUN];
         sqlite3 *db;
         db = [DataBase openDB];
         char *errorMsg;
@@ -131,7 +134,6 @@
     _location.longitude += 0.005958;
     lat = _location.latitude;
     lon = _location.longitude;
-    NSLog(@"--------%f,%f",lat,lon);
     
     MKCoordinateSpan theSpan;
     theSpan.latitudeDelta = 0.01f;

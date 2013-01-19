@@ -13,12 +13,13 @@
 @interface MScanViewController : UIViewController<ZBarReaderViewDelegate,ZBarReaderDelegate,MBProgressHUDDelegate,UITextFieldDelegate>
 
 ///对名片进行标注
-@property (retain, nonatomic) IBOutlet UITextField *messageTextField;
+@property (retain, nonatomic) UITextField *messageTextField;
 
 ///二维码视图
 @property (nonatomic, retain) IBOutlet ZBarReaderView *readerView;
 
 ///显示二维码信息的TextView
-@property (nonatomic, retain) IBOutlet UITextView *resultText;
+@property (nonatomic, retain) UITextView *resultText;
 
+@property (nonatomic, retain) TopBarView *topBar;
 @end

@@ -23,7 +23,7 @@
 }
 
 /** infoTableView 用于显示从服务器中下载的数据 */
-@property (retain, nonatomic) IBOutlet UITableView *infoTableView;
+@property (retain, nonatomic) UITableView *infoTableView;
 
 /** messageArray 用于存储从服务其中下载的数据，
  *  并且通过TabelView显示给用户
@@ -32,5 +32,7 @@
 
 /**  hud 是第三方库 用于提醒用户正在请求网络下载数据 */
 @property (nonatomic, retain) MBProgressHUD *hud;
+
+@property (nonatomic, retain) TopBarView *topBar;
 
 @end

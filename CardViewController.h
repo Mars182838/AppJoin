@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
 #import "ZBarSDK.h"
+#import "TopBarView.h"
 
 
 @interface CardViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate,MBProgressHUDDelegate,ZBarReaderDelegate>
@@ -27,5 +28,9 @@
 
 ///用于存储UITextView中的信息
 @property (nonatomic, retain) NSMutableArray *cardArr;
+
+@property (nonatomic, retain) TopBarView *topBar;
+
+@property (nonatomic, retain) UIButton *rightBtn;
 
 @end

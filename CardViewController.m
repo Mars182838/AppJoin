@@ -59,15 +59,25 @@
 {
     [super viewDidLoad];
     
-    _cardTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT - 49 - 44) style:UITableViewStyleGrouped];
+    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    
+    _topBar.navLabel.text = @"二维码名片";
+    
+    [_topBar.backBtn addTarget:self action:@selector(backPress:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_topBar];
+    
+    _cardTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, WIDTH, HEIGHT - 49 - 44) style:UITableViewStyleGrouped];
     _cardTableView.delegate   = self;
     _cardTableView.dataSource = self;
     _cardTableView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_cardTableView];
     
-    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStyleDone target:self action:@selector(saveCardByQrcode:)];
-    self.navigationItem.rightBarButtonItem = rightBtn;
-    [rightBtn release];
+    
+    _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    _rightBtn.frame = CGRectMake(265, 6, 50, 30);
+    [_rightBtn setImage:[UIImage imageNamed:@"finish.png"] forState:UIControlStateNormal];
+    [_rightBtn addTarget:self action:@selector(saveCardByQrcode:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_rightBtn];
 }
 
 #pragma mark - SaveQRcode Methods
@@ -83,9 +93,9 @@
     animation.subtype = @"fromRight";
     animation.removedOnCompletion = NO;
     
-   _qrView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+   _qrView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, WIDTH, HEIGHT)];
     
-    _qrImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, WIDTH , HEIGHT - 20)];
+    _qrImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, WIDTH , HEIGHT - 40)];
     
     NSString *appStr = [[NSString alloc] init];
     
@@ -96,8 +106,6 @@
         appStr = [appStr stringByAppendingFormat:@"%@ \n",[self.cardArr objectAtIndex:i]];
        
     }
-    
-    
     
      _qrImage.image = [QRCodeGenerator qrImageForString:appStr imageSize:self.qrImage.bounds.size.width];
     
@@ -116,14 +124,12 @@
     [_qrView addSubview:_qrImage];
     [self.view addSubview:_qrView];
     
-    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithTitle:@"编辑" style:UIBarButtonItemStyleDone target:self action:@selector(scanCard:)];
-    self.navigationItem.rightBarButtonItem = rightBtn;
-    
+    [_rightBtn setImage:[UIImage imageNamed:@"editer.png"] forState:UIControlStateNormal];
+    [_rightBtn addTarget:self action:@selector(scanCard:) forControlEvents:UIControlEventTouchUpInside];
+
     [self.view.layer addAnimation:animation forKey:@"animation"];
     
-    [rightBtn release];
     [qrLabel  release];
-
 }
 
 /**@prama image生成二维码图片*/
@@ -154,13 +160,12 @@
     
     ///要从界面上移除
     [_qrImage removeFromSuperview];
-    
+        
     ///返回到个人名片设置界面
     [self.view addSubview:_cardTableView];
     
-    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStyleDone target:self action:@selector(saveCardByQrcode:)];
-    self.navigationItem.rightBarButtonItem = rightBtn;
-    [rightBtn release];
+    [_rightBtn setImage:[UIImage imageNamed:@"finish.png"] forState:UIControlStateNormal];
+    [_rightBtn addTarget:self action:@selector(saveCardByQrcode:) forControlEvents:UIControlEventTouchUpInside];
     
     ///这个是动画必不可少的一步
     [self.view.layer addAnimation:animation forKey:@"animation"];
@@ -182,22 +187,23 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *indentifer = @"cellIndetifer";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifer];
+    ///手动去掉重用，不去掉的话，数据会有重复；这里的cell数据量不多，没有必要用到重用
+    UITableViewCell *cell = nil;
     if (cell == nil) {
         
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:indentifer] autorelease];
         
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        
+        UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(95, 11, 260, 30)];
+        textField.delegate = self;
+        textField.tag = indexPath.row;
+        textField.textAlignment = NSTextAlignmentLeft;
+        textField.font = [UIFont systemFontOfSize:18.0f];
+        textField.textColor = [UIColor grayColor];
+        textField.text = [self.cardArr objectAtIndex:indexPath.row];
+        [cell.contentView addSubview:textField];
     }
-    
-    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(95, 11, 260, 30)];
-    textField.delegate = self;
-    textField.tag = indexPath.row;
-    textField.textAlignment = NSTextAlignmentLeft;
-    textField.font = [UIFont systemFontOfSize:18.0f];
-    textField.textColor = [UIColor grayColor];
-    textField.text = [self.cardArr objectAtIndex:indexPath.row];
-    [cell.contentView addSubview:textField];
     
     cell.textLabel.text = [_cardArray objectAtIndex:indexPath.row];
     return cell;
@@ -211,12 +217,19 @@
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:animationDuration];
     
-    if (textField.tag >= 3) {
+    if (textField.tag >= 4) {
        
-        CGRect rect = CGRectMake(0, -140,WIDTH,HEIGHT);//上移80个单位，按实际情况设置
+        if (iPhone5) {
+            CGRect rect = CGRectMake(0, -165,WIDTH,HEIGHT);//上移80个单位，按实际情况设置
+            self.view.frame = rect;
+        }
+    else{
+        CGRect rect = CGRectMake(0, -80, WIDTH, HEIGHT);
         self.view.frame = rect;
+    }
+
    }
-    
+
     [UIView commitAnimations];
 
     return YES;
@@ -241,6 +254,7 @@
 {
     switch (textField.tag) {
         case 0: {
+            
             if ([textField.text isEqualToString:@""]) {
                 textField.text = @"";
             }
@@ -249,6 +263,7 @@
             break;
         }
         case 1: {
+
             if ([textField.text isEqualToString:@""]) {
                 textField.text = @"";
             }
@@ -257,6 +272,7 @@
             break;
         }
         case 2: {
+
             if ([textField.text isEqualToString:@""]) {
                 textField.text = @"";
             }
@@ -265,6 +281,7 @@
             break;
         }
         case 3: {
+
             if ([textField.text isEqualToString:@""]) {
                 textField.text = @"";
             }
@@ -273,6 +290,7 @@
             break;
         }
         case 4: {
+
             if ([textField.text isEqualToString:@""]) {
                 textField.text = @"";
             }
@@ -281,6 +299,7 @@
             break;
         }
         case 5: {
+
             if ([textField.text isEqualToString:@""]) {
                 textField.text = @"";
             }
@@ -289,6 +308,7 @@
             break;
         }
         case 6: {
+
             if ([textField.text isEqualToString:@""]) {
                 textField.text = @"";
             }
@@ -297,6 +317,8 @@
             break;
         }
         case 7: {
+            NSLog(@"7:%d",textField.tag);
+
             if ([textField.text isEqualToString:@""]) {
                 textField.text = @"";
             }
@@ -305,6 +327,8 @@
             break;
         }
         case 8: {
+            NSLog(@"8:%d",textField.tag);
+
             if ([textField.text isEqualToString:@""]) {
                 textField.text = @"";
             }
@@ -313,6 +337,8 @@
             break;
         }
         case 9: {
+            NSLog(@"9:%d",textField.tag);
+
             if ([textField.text isEqualToString:@""]) {
                 textField.text = @"";
             }
@@ -329,6 +355,11 @@
     return YES;
 };
 
+-(void)backPress:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -336,11 +367,12 @@
 
 -(void)dealloc
 {
-    [_cardArr release];
+//    [_topBar    release];
+    [_cardArr   release];
     [_cardArray release];
     [_cardTableView release];
-    [_qrImage release];
-    [_qrView release];
+    [_qrImage   release];
+    [_qrView    release];
     [super dealloc];
 }
 

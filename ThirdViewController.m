@@ -22,7 +22,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
     
-        self.title = @"收藏";
         ///初始化日程数组
         _myDateArray = [[NSMutableArray alloc] initWithObjects:@"10即消息上下的空间，可自由调整 ",@" 确定单元格高度。最关键的长度不一的消息所需的高度已经确定，下面只要加上上所需固定空间即可以确定单元格高度，完整代码 ",@"size即返回的完全显示消息实际需要的空间 ",@"size即返回的完全显示消息实际需要的空间 ",@"size即返回的完全",@"首先要确定一条消息所占的宽度，这个一般都是固定的，然后根据这个宽度来计算一段文字在这个宽度，某个字体下需要多少高度", nil];
         
@@ -36,6 +35,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    isEditer = YES;
+    
+    ///通过封装导航栏的视图
+    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    _topBar.navLabel.text = @"收藏";
+    [self.view addSubview:_topBar.navImage];
+    [self.view addSubview:_topBar.navLabel];
+    
+    _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    _rightBtn.frame = CGRectMake(265, 6, 50, 30);
+    [_rightBtn setImage:[UIImage imageNamed:@"editer.png"] forState:UIControlStateNormal];
+    [_rightBtn addTarget:self action:@selector(deleteMethods:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:_rightBtn];
+    
     _dateTableView.delegate   = self;
     _dateTableView.dataSource = self;
     
@@ -73,6 +88,7 @@
 - (void)dealloc {
     
     [_dateTableView release];
+    [_topBar release];
     [super dealloc];
 }
 
@@ -87,16 +103,19 @@
     switch ([segmentControl selectedSegmentIndex]) {
             
         case 0:{
-
-            _dateTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 40, WIDTH, HEIGHT) style:UITableViewStylePlain];
+            
+            _rightBtn.alpha = 1.0;
+            _dateTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 84, WIDTH, HEIGHT) style:UITableViewStylePlain];
             _dateTableView.delegate = self;
             _dateTableView.dataSource = self;
             [self.view addSubview:_dateTableView];
+            [self.dateTableView reloadData];
             break;
         }
         case 1:{
-            
-            _label = [[UILabel alloc] initWithFrame:CGRectMake(10, 40, WIDTH, HEIGHT)];
+        
+            _rightBtn.alpha = 0.0;
+            _label = [[UILabel alloc] initWithFrame:CGRectMake(10, 84, WIDTH, HEIGHT)];
             _label.text =[[NSString alloc]
                           initWithFormat:@"%@",@"where are you? where are you? where are you? where are you? where are you? where are you? where are you? where are you? where are you? where are you?"];             
             _label.lineBreakMode = NSLineBreakByWordWrapping;
@@ -109,7 +128,8 @@
         }
         case 2:{
             
-            _myMapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 40, WIDTH, HEIGHT - 40)];
+            _rightBtn.alpha = 0.0;
+            _myMapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 84, WIDTH, HEIGHT - 40)];
             _myMapView.delegate = self;
             [self performSelector:@selector(optionalPlace)];
             [self.view addSubview:_myMapView];
@@ -117,17 +137,12 @@
         }
         case 3:
         {
+            _rightBtn.alpha = 1.0;
+            
             NSMutableArray *array = [QRcodeData findAllMessage];
-            
             self.qrArray = array;
-//            NSLog(@"数组：%@",array);
-//            
-//            for (int count = 0; count < [array count]; count++) {
-//                QRcodeData *message = (QRcodeData *)[array objectAtIndex:count];
-//                [self.qrArray insertObject:message atIndex:0];
-//            }
-            
-            _qrTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 40, WIDTH, HEIGHT - 40) style:UITableViewStylePlain];
+    
+            _qrTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 84, WIDTH, HEIGHT - 40) style:UITableViewStylePlain];
             _qrTableView.delegate   = self;
             _qrTableView.dataSource = self;
             
@@ -156,22 +171,22 @@
     }
 }
 
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    if ([tableView isEqual:_qrTableView]) {
-//        
-//        UIFont *font = [UIFont systemFontOfSize:17.0f];
-//        
-//        ///这个其实应该是_qrArray
-//        QRcodeData *qrMessage = (QRcodeData *)[self.qrArray objectAtIndex:indexPath.row];
-//        CGSize size = [qrMessage.message  sizeWithFont:font constrainedToSize:CGSizeMake(100, 1000) lineBreakMode:NSLineBreakByCharWrapping];
-//        return size.height + 10;
-//    }
-//    else
-//    {
-//        return 44;
-//    }
-//}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([tableView isEqual:_qrTableView]) {
+        
+        UIFont *font = [UIFont systemFontOfSize:17.0f];
+        
+        ///这个其实应该是_qrArray
+        QRcodeData *qrMessage = (QRcodeData *)[self.qrArray objectAtIndex:indexPath.row];
+        CGSize size = [qrMessage.message  sizeWithFont:font constrainedToSize:CGSizeMake(100, 1000) lineBreakMode:NSLineBreakByCharWrapping];
+        return size.height + 10;
+    }
+    else
+    {
+        return 44;
+    }
+}
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -179,24 +194,53 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifer];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indentifer] autorelease];
-        
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     if ([tableView isEqual:_qrTableView]) {
         
         QRcodeData *qrMessage = (QRcodeData *)[self.qrArray objectAtIndex:indexPath.row];
-
+        
+        cell.textLabel.text = qrMessage.name;
         ///这里面的_myDateArray其实应该是_qrArray
         cell.detailTextLabel.text = qrMessage.message;
-        cell.textLabel.text = qrMessage.name;
-//        cell.detailTextLabel.numberOfLines = 0;
-//        cell.detailTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        cell.detailTextLabel.numberOfLines = 0;
+        cell.detailTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
     }
     else{
         cell.textLabel.text = [_myDateArray objectAtIndex:indexPath.row];
         cell.detailTextLabel.text = [_myDateArray objectAtIndex:indexPath.row];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     return cell;
+}
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        if (tableView == _dateTableView) {
+            [self.myDateArray removeObjectAtIndex:indexPath.row];
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+            [self.dateTableView reloadData];
+        }
+        else{
+            QRcodeData *data = [self.qrArray objectAtIndex:indexPath.row];
+            [QRcodeData deleteMessageID:data.ID];
+            [self.qrArray removeObjectAtIndex:indexPath.row];
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
+                             withRowAnimation:UITableViewRowAnimationLeft];
+            [self.qrTableView reloadData];
+        }
+    }
 }
 
 #pragma mark -
@@ -216,22 +260,16 @@
         customPinView.canShowCallout = YES;
         customPinView.animatesDrop = YES;
         
-//        //右按钮 推出下一个页面
-//        UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//        rightBtn.frame = CGRectMake(0, 0, 40, 30);
-//        rightBtn.tag = 1;
-//        UIImage *image = [UIImage imageNamed:@"Arrow-Icon.png"];
-//        [rightBtn setBackgroundImage:image forState:UIControlStateNormal];
-//        [rightBtn addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
-//        customPinView.rightCalloutAccessoryView = rightBtn;
+        //右按钮 推出下一个页面
+        UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        rightBtn.frame = CGRectMake(0, 0, 40, 30);
+        rightBtn.tag = 1;
         
-//        //左按钮 显示周边信息
-//        UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//        leftBtn.frame = CGRectMake(0, 0, 53, 30);
-//        UIImage *imageView =[UIImage imageNamed:@"附近.png"];
-//        [leftBtn setBackgroundImage:imageView forState:UIControlStateNormal];
-//        [leftBtn addTarget:self action:@selector(removeTabelView) forControlEvents:UIControlEventTouchUpInside];
-//        customPinView.leftCalloutAccessoryView = leftBtn;
+        UIImage *image = [UIImage imageNamed:@"Arrow-Icon.png"];
+        [rightBtn setBackgroundImage:image forState:UIControlStateNormal];
+        [rightBtn addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
+        customPinView.rightCalloutAccessoryView = rightBtn;
+        
         return customPinView;
     }
     else {
@@ -240,5 +278,21 @@
     return pinView;
 }
 
+-(void)deleteMethods:(id)sender
+{
+    if (isEditer) {
+    
+        [self.dateTableView setEditing:YES animated:YES];
+        [self.qrTableView setEditing:YES animated:YES];
+        [_rightBtn setImage:[UIImage imageNamed:@"finish.png"] forState:UIControlStateNormal];
+        isEditer = NO;
+    }
+    else{
+        [self.dateTableView setEditing:NO animated:YES];
+        [self.qrTableView setEditing:NO animated:YES];
+         [_rightBtn setImage:[UIImage imageNamed:@"editer.png"] forState:UIControlStateNormal];
+        isEditer = YES;
+    }
+}
 
 @end

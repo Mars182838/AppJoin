@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -27,26 +27,40 @@
 {
     [_messageString release];
     [_imageView release];
+    [_topBar   release];
     [super dealloc];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    
+    _topBar.navLabel.text = @"详细介绍";
+    
+    [_topBar.backBtn addTarget:self action:@selector(backPress:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_topBar];
+    
     self.view.backgroundColor = [UIColor grayColor];
 }
 
 -(void)transferImage:(UIImage *)image andString:(NSString *)message
 {
-    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 240)];
+    _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 44, self.view.frame.size.width, self.view.frame.size.height - 240)];
     _imageView.image = image;
     [self.view addSubview:_imageView];
     
-    _messageString = [[UITextView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 240, self.view.frame.size.width, 143)];
+    _messageString = [[UITextView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 196, self.view.frame.size.width, 146)];
     _messageString.text = message;
     _messageString.textColor = [UIColor redColor];
     [self.view addSubview:_messageString];
 
+}
+
+-(void)backPress:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

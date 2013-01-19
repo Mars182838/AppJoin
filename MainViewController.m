@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "MBProgressHUD.h"
 #import "Reachability.h"
+#import "TopBarView.h"
 
 #define ITEM_SPACING 200
 
@@ -38,7 +39,8 @@
     
     self.carousel = nil;
     [_carousel release];
-    [_label release];
+    [_topBar   release];
+    [_label    release];
     [super dealloc];
 }
 
@@ -48,11 +50,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"主页";
-    wrap = YES;
+    
+    ///通过封装导航栏的视图
+    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    _topBar.navLabel.text = @"主页";
+    [self.view addSubview:_topBar.navImage];
+    [self.view addSubview:_topBar.navLabel];
     
     _carousel = [[iCarousel alloc] init];
-    _carousel.frame = CGRectMake(0, -60, self.view.frame.size.width, self.view.frame.size.height);
+    _carousel.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     _carousel.delegate = self;
     _carousel.dataSource = self;
     _carousel.type = iCarouselTypeCoverFlow;
@@ -60,9 +66,9 @@
     [self.view addSubview:_carousel];
     
     _label = [[UILabel alloc] init];
-    _label.frame = CGRectMake(0, 0, 320, 60);
+    _label.frame = CGRectMake(0, 44, 320, 60);
     _label.textAlignment = NSTextAlignmentCenter;
-    _label.text = @"CHIC展会历程";
+    _label.text = @"特许加盟展会";
     _label.font = [UIFont systemFontOfSize:20];
     [self.view addSubview:_label];
     
@@ -71,6 +77,36 @@
     hostReach = [[Reachability reachabilityWithHostname:@"http://baidu.com"] retain];
     ///开始通知
     [hostReach startNotifier];
+    
+    NSURL *url = [NSURL URLWithString:@"http://42.121.237.116/customapp/?cat=1&author=2&json=1"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
+    connection = [NSURLConnection connectionWithRequest:request delegate:self];
+    if (connection) {
+        picData = [[NSMutableData alloc] initWithLength:0];
+    }
+}
+
+
+#pragma mark - NSURLConnection Delegate 
+
+-(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
+    [picData setLength:0];
+}
+
+-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    [picData appendData:data];
+}
+
+-(void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    /** NSJSONSerialization利用解析Json数据 */
+    NSError *error = nil;
+    NSDictionary *serial = [NSJSONSerialization JSONObjectWithData:picData options:NSJSONReadingMutableLeaves error:&error];
+    NSArray *array = [serial objectForKey:@"posts"];
+    
+    NSLog(@"%@",[[[[array objectAtIndex:0] objectForKey:@"content"] objectAtIndex:0]  objectForKey:@"text"]);
 }
 
 #pragma mark - 
@@ -129,20 +165,30 @@
 -(UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index
 {
     UIView *view = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"huan%d.jpg",index+1]]] autorelease];
+    _detailLabel = [[UILabel alloc] init];
+
+    if (iPhone5) {
+        view.frame = CGRectMake(20, 20, 260, HEIGHT - 100);
+    _detailLabel.frame = CGRectMake(0, HEIGHT - 66, 320, 30);
+    }
+    else{
+        view.frame = CGRectMake(20, 20, 260, HEIGHT - 200);
+        _detailLabel.frame = CGRectMake(0, HEIGHT - 124, 320, 30);
+    }
     
-    view.frame = CGRectMake(20, 20, 260, 240);
+    _detailLabel.textAlignment = NSTextAlignmentCenter;
+    _detailLabel.font = [UIFont systemFontOfSize:20];
     
-    _label = [[UILabel alloc] init];
-    _label.frame = CGRectMake(0, 280, 320, 30);
-    _label.textAlignment = NSTextAlignmentCenter;
-    _label.font = [UIFont systemFontOfSize:20];
-    
-    NSArray *array = [[NSArray alloc] initWithObjects:@"2008",@"2009",@"2010",@"2011",@"2012",@"2013", nil];
-    _label.text = [array objectAtIndex:index];
-    
-    [self.view addSubview:_label];
+    [self.view addSubview:_detailLabel];
     
     return view;
+}
+
+///根据滑动到哪个图片，下面会有文字变化
+-(void)carouselDidScroll:(iCarousel *)carousel
+{
+    NSArray *array = [[NSArray alloc] initWithObjects:@"2008",@"2009",@"2010",@"2011",@"2012",@"2013", nil];
+    _detailLabel.text = [array objectAtIndex:carousel.currentItemIndex];
 }
 
 - (CATransform3D)carousel:(iCarousel *)carousel transformForItemView:(UIView *)view withOffset:(CGFloat)offset
@@ -153,6 +199,7 @@
     CATransform3D transform = CATransform3DIdentity;
     transform.m34 = self.carousel.perspective;
     transform = CATransform3DRotate(transform, M_PI / 8.0, 0, 1.0, 0);
+
     return CATransform3DTranslate(transform, 100.0, 200.0, offset *_carousel.itemWidth);
 }
 
@@ -212,7 +259,7 @@
         }
         case 5:{
             
-            [delegate transferImage:[UIImage imageNamed:@"huan4.jpg"] andString:str];
+            [delegate transferImage:[UIImage imageNamed:@"huan6.jpg"] andString:str];
             break;
         }
     }

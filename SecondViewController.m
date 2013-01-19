@@ -31,8 +31,16 @@
 {
     [super viewDidLoad];
     
+    ///通过封装出导航栏的视图
+    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    _topBar.navLabel.text = @"资讯";
+    [self.view addSubview:_topBar.navImage];
+    [self.view addSubview:_topBar.navLabel];
+    
+    self.infoTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, WIDTH, HEIGHT -44) style:UITableViewStylePlain];
     self.infoTableView.delegate   = self;
     self.infoTableView.dataSource = self;
+    [self.view addSubview:self.infoTableView];
     
     NSURL *url = [NSURL URLWithString:@"http:www.baidu.com"];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
@@ -53,6 +61,7 @@
 
 - (void)dealloc {
     [_infoTableView release];
+    [_topBar release];
     [super dealloc];
 }
 

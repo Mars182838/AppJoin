@@ -8,9 +8,10 @@
 
 #import "FourViewController.h"
 #import "InfoViewController.h"
-#import "OpinionViewController.h"
+#import "OpinionsViewController.h"
 #import "CardViewController.h"
 #import "MScanViewController.h"
+#import "TopBarView.h"
 
 @interface FourViewController ()
 
@@ -37,19 +38,29 @@
 {
     [super viewDidLoad];
     
+    ///通过封装导航栏的视图
+    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    
+    _topBar.navLabel.text = @"更多";
+    
+    [self.view addSubview:_topBar.navImage];
+    [self.view addSubview:_topBar.navLabel];
+    
+    self.editerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, WIDTH, HEIGHT) style:UITableViewStyleGrouped];
+    
     self.editerTableView.delegate   = self;
     self.editerTableView.dataSource = self;
-
+    [self.view addSubview:self.editerTableView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)dealloc {
     [_editerTableView release];
+    [_topBar release];
     [super dealloc];
 }
 
@@ -82,6 +93,7 @@
         
         url = @"http://www.baidu.com";
         info.urlString = url;
+        info.navTitle  = @"关于";
         [self.navigationController pushViewController:info animated:YES];
     }
     else if (indexPath.row == 1){
@@ -100,12 +112,13 @@
         
         url = @"http://www.xiximu.com";
         info.urlString = url;
+        info.navTitle  = @"大会官网";
         [self.navigationController pushViewController:info animated:YES];
     }
     else if(indexPath.row == 4)
     {
         
-        OpinionViewController *opinionView = [[OpinionViewController alloc] initWithNibName:nil bundle:nil];
+        OpinionsViewController *opinionView = [[OpinionsViewController alloc] initWithNibName:nil bundle:nil];
         [self.navigationController pushViewController:opinionView animated:YES];
         [opinionView release];
     }

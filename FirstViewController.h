@@ -21,12 +21,15 @@
 
 @interface FirstViewController : UIViewController
 
+///背景图片
+@property (retain, nonatomic) UIImageView *backImage;
+
 ///详细信息类属性
 @property (nonatomic, retain) MessageViewController *messageController;
 
 ///代理属性
 @property (nonatomic, assign) id<MessageViewControllerDelegate>delegate;
 
-- (IBAction)buttonPress:(id)sender;
+@property (nonatomic, retain) TopBarView *topBar;
 
 @end

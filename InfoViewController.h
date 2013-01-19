@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
+@class TopBarView;
 
 @interface InfoViewController : UIViewController<UIWebViewDelegate>
 {
@@ -27,5 +28,11 @@
 
 /** urlString 用于接收从SecondViewController传过来的网址*/
 @property (nonatomic, copy) NSString *urlString;
+
+/** topBar 用于实现导航栏的自定义定制 */
+@property (nonatomic, retain) TopBarView *topBar;
+
+/** navTitle 导航栏上面的文字 */
+@property (nonatomic, copy) NSString *navTitle;
 
 @end

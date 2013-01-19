@@ -26,7 +26,6 @@ static sqlite3 *dbPointer = nil;
     NSArray *documentPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *filePath = [documentPath objectAtIndex:0];
     NSString *sqlitePath = [filePath stringByAppendingPathComponent:KDBPATH];
-    NSLog(@"%@",sqlitePath);
     sqlite3_open([sqlitePath UTF8String], &dbPointer);
     return dbPointer;
 }
