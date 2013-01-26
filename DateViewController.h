@@ -8,7 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
+#import "Const.h"
+#import "FirstViewController.h"
 
+typedef enum{
+    BeiJing1 = 0,
+    ZhengZhou,
+    XiAn,
+    WenZhou,
+    BeiJing2
+}Place;
 
 @interface DateViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,NSURLConnectionDataDelegate>
 {
@@ -22,7 +31,6 @@
     long long currentLength;
     
     BOOL isEditer;
-
 }
 
 @property (nonatomic, retain) UITableView *dateTableView;
@@ -34,10 +42,8 @@
 /**  hud 是第三方库 用于提醒用户正在请求网络下载数据 */
 @property (nonatomic, retain) MBProgressHUD *hud;
 
-@property (nonatomic, retain) UIButton *rightBtn;
-
 @property (nonatomic, retain) TopBarView *topBar;
 
-
+@property  Place placeName;
 
 @end

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_opinions_view_controller_8h" kind="file">
+    <compoundname>OpinionsViewController.h</compoundname>
+    <includes local="no">UIKit/UIKit.h</includes>
+    <includedby refid="_four_view_controller_8m" local="yes">FourViewController.m</includedby>
+    <includedby refid="_opinions_view_controller_8m" local="yes">OpinionsViewController.m</includedby>
+    <incdepgraph>
+      <node id="306">
+        <label>UIKit/UIKit.h</label>
+      </node>
+      <node id="305">
+        <label>OpinionsViewController.h</label>
+        <link refid="OpinionsViewController.h"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_opinions_view_controller" prot="public">OpinionsViewController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>OpinionViewController.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AppJoin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Mars<sp/>on<sp/>13-1-16.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2013年<sp/>Mars.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;UIKit/UIKit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="interface_opinions_view_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_opinions_view_controller" kindref="compound">OpinionsViewController</ref><sp/>:<sp/>UIViewController&lt;UITextFieldDelegate,UITextViewDelegate,NSURLConnectionDataDelegate&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>NSURLConnection<sp/>*coonection;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>NSMutableData<sp/>*mutableData;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>UIImageView<sp/>*opinionBackImage;</highlight></codeline>
+<codeline lineno="20" refid="interface_opinions_view_controller_1a4bcebb6115f963c0e469fca9b438ee7b" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain,<sp/>nonatomic)<sp/>UITextView<sp/>*opinionTextView;</highlight></codeline>
+<codeline lineno="23" refid="interface_opinions_view_controller_1a84c76f22c30a5776ac625ea7cd737aaf" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain,<sp/>nonatomic)<sp/>UITextField<sp/>*emailTextField;</highlight></codeline>
+<codeline lineno="26" refid="interface_opinions_view_controller_1a894f5cea593018dfb32ebd371d938c6a" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain,<sp/>nonatomic)<sp/>UITextField<sp/>*phoneTextField;</highlight></codeline>
+<codeline lineno="29" refid="interface_opinions_view_controller_1a47800b4c0b7dd773c2866a369b2bf873" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain,<sp/>nonatomic)<sp/>UILabel<sp/>*numberLabel;</highlight></codeline>
+<codeline lineno="32" refid="interface_opinions_view_controller_1add082cf6b064ec7c0b26fb1c89a86af9" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref><sp/>*topBar;</highlight></codeline>
+<codeline lineno="35" refid="interface_opinions_view_controller_1a16f05df059e1a23bd623fa19b8c66a7b" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>UIButton<sp/>*rightBtn;</highlight></codeline>
+<codeline lineno="38" refid="interface_opinions_view_controller_1a1637be3d7112e3e645fdbc7a55ffe1d4" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h"/>
+  </compounddef>
+</doxygen>

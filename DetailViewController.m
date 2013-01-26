@@ -42,18 +42,18 @@
     [_topBar.backBtn addTarget:self action:@selector(backPress:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_topBar];
     
-    self.view.backgroundColor = [UIColor grayColor];
 }
 
--(void)transferImage:(UIImage *)image andString:(NSString *)message
+-(void)transferImageUrl:(NSString *)urlString andString:(NSString *)message
 {
+    
     _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 44, self.view.frame.size.width, self.view.frame.size.height - 240)];
-    _imageView.image = image;
+    [_imageView setImageWithURL:[NSURL URLWithString:urlString] refreshCache:YES placeholderImage:[UIImage imageNamed:@"place.png"]];
     [self.view addSubview:_imageView];
     
     _messageString = [[UITextView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 196, self.view.frame.size.width, 146)];
+    _messageString.font = [UIFont systemFontOfSize:16];
     _messageString.text = message;
-    _messageString.textColor = [UIColor redColor];
     [self.view addSubview:_messageString];
 
 }
@@ -73,5 +73,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end

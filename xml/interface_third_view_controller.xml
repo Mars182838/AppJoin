@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_third_view_controller" kind="class" prot="public">
+    <compoundname>ThirdViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITableViewDataSource&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITableViewDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;MKMapViewDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;CLLocationManagerDelegate&gt;</basecompoundref>
+    <basecompoundref refid="protocoldown_load_string_protocal-p" prot="public" virt="non-virtual">&lt;downLoadStringProtocal&gt;</basecompoundref>
+    <basecompoundref refid="protocol_e_g_o_refresh_table_header_delegate-p" prot="public" virt="non-virtual">&lt;EGORefreshTableHeaderDelegate&gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_third_view_controller_1a07b1ad7f982c6ff1fde210551a322e25" prot="protected" static="no" mutable="no">
+        <type><ref refid="interface_place" kindref="compound">Place</ref> *</type>
+        <definition>Place* ThirdViewController::place</definition>
+        <argsstring></argsstring>
+        <name>place</name>
+        <briefdescription>
+<para>自定义的大头针对象 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="23" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_third_view_controller_1a2cc2e4087a178600c4dc2bfd2170b3d4" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL ThirdViewController::isEditer</definition>
+        <argsstring></argsstring>
+        <name>isEditer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="24" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_third_view_controller_1a08e18d607bbc0cd9239a557f940b2784" prot="protected" static="no" mutable="no">
+        <type><ref refid="interface_e_g_o_refresh_table_header_view" kindref="compound">EGORefreshTableHeaderView</ref> *</type>
+        <definition>EGORefreshTableHeaderView* ThirdViewController::_refreshHeaderView</definition>
+        <argsstring></argsstring>
+        <name>_refreshHeaderView</name>
+        <briefdescription>
+<para>下拉刷新 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="27" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_third_view_controller_1a55e896c20fdbba3723bf0b89e66d366c" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL ThirdViewController::_reloading</definition>
+        <argsstring></argsstring>
+        <name>_reloading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="28" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_third_view_controller_1accc75979633ac923b79bfd904970545e" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UILabel *</type>
+        <definition>UILabel* ThirdViewController::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>显示行车路线的Label </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="33" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_third_view_controller_1a47fc40aa5fe0c94a700df0c369d980cb" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>MKMapView *</type>
+        <definition>MKMapView* ThirdViewController::myMapView</definition>
+        <argsstring></argsstring>
+        <name>myMapView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>地图类 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="36" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_third_view_controller_1a8d32e1defe1b863e1665cbdfc7cc183b" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>CLLocation *</type>
+        <definition>CLLocation* ThirdViewController::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>当前位置的定位类 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="39" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_third_view_controller_1a035cc582faa9fd494eb6685abc8253ac" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray* ThirdViewController::myDateArray</definition>
+        <argsstring></argsstring>
+        <name>myDateArray</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>我的收藏日程数组 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="42" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_third_view_controller_1acb3d719781c1a8152d2d288fdf75e2ad" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITableView *</type>
+        <definition>UITableView* ThirdViewController::dateTableView</definition>
+        <argsstring></argsstring>
+        <name>dateTableView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>显示我的收藏日程的tableView </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="45" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_third_view_controller_1ad8291a0e3ff00b6e7a806086c4076030" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITableView *</type>
+        <definition>UITableView* ThirdViewController::qrTableView</definition>
+        <argsstring></argsstring>
+        <name>qrTableView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>显示二维码信息TableView </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="48" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_third_view_controller_1aa0b92a67003d6d8d7e6760a79470d7ef" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray* ThirdViewController::qrArray</definition>
+        <argsstring></argsstring>
+        <name>qrArray</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>存储名片信息的数组 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="51" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_third_view_controller_1aebb42a65b7995a2ea03fbf8e3e948e2e" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIButton *</type>
+        <definition>UIButton* ThirdViewController::rightBtn</definition>
+        <argsstring></argsstring>
+        <name>rightBtn</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>导航栏右按钮 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="54" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_third_view_controller_1a33f49c284d72176cdab3d655ad97b611" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* ThirdViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>自定义的导航栏 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="57" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_third_view_controller_1a4b6940f055ef4eb1b37115d77358106a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_down_load_string" kindref="compound">DownLoadString</ref> *</type>
+        <definition>DownLoadString* ThirdViewController::downLoad</definition>
+        <argsstring></argsstring>
+        <name>downLoad</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>下载类，传递一个字典 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="60" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_third_view_controller_1a6a6f71aaa12135c0a17a257869782f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>IBAction</type>
+        <definition>IBAction ThirdViewController::segmentActive:</definition>
+        <argsstring>(id sender)</argsstring>
+        <name>segmentActive:</name>
+        <param>
+          <type>id</type>
+          <declname>sender</declname>
+        </param>
+        <briefdescription>
+<para>segment方法，0代表显示我的日程，1是行车路线，2是我的当前位置地图 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>用segment选择视图显示之前，先把其他的视图从主视图移除，然后从新创建 </para>        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="63" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.m" bodystart="124" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_third_view_controller_1a981c86d06f15523843abc1591da5f6b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ThirdViewController::reloadTableViewDataSource</definition>
+        <argsstring>()</argsstring>
+        <name>reloadTableViewDataSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="65" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.m" bodystart="332" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_third_view_controller_1a1bb13b98f0a3c114e2c53131c4c53d55" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ThirdViewController::doneLoadingTableViewData</definition>
+        <argsstring>()</argsstring>
+        <name>doneLoadingTableViewData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="66" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.m" bodystart="341" bodyend="347"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="351">
+        <label>&lt;UITableViewDataSource&gt;</label>
+      </node>
+      <node id="355">
+        <label>&lt;downLoadStringProtocal&gt;</label>
+        <link refid="protocoldown_load_string_protocal-p"/>
+        <childnode refid="356" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>&lt;EGORefreshTableHeaderDelegate&gt;</label>
+        <link refid="protocol_e_g_o_refresh_table_header_delegate-p"/>
+      </node>
+      <node id="352">
+        <label>&lt;UITableViewDelegate&gt;</label>
+      </node>
+      <node id="354">
+        <label>&lt;CLLocationManagerDelegate&gt;</label>
+      </node>
+      <node id="350">
+        <label>UIViewController</label>
+      </node>
+      <node id="349">
+        <label>ThirdViewController</label>
+        <link refid="interface_third_view_controller"/>
+        <childnode refid="350" relation="public-inheritance">
+        </childnode>
+        <childnode refid="351" relation="public-inheritance">
+        </childnode>
+        <childnode refid="352" relation="public-inheritance">
+        </childnode>
+        <childnode refid="353" relation="public-inheritance">
+        </childnode>
+        <childnode refid="354" relation="public-inheritance">
+        </childnode>
+        <childnode refid="355" relation="public-inheritance">
+        </childnode>
+        <childnode refid="357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="353">
+        <label>&lt;MKMapViewDelegate&gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="367">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>&lt;UITableViewDataSource&gt;</label>
+      </node>
+      <node id="364">
+        <label>&lt;downLoadStringProtocal&gt;</label>
+        <link refid="protocoldown_load_string_protocal-p"/>
+        <childnode refid="365" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="366">
+        <label>&lt;EGORefreshTableHeaderDelegate&gt;</label>
+        <link refid="protocol_e_g_o_refresh_table_header_delegate-p"/>
+      </node>
+      <node id="361">
+        <label>&lt;UITableViewDelegate&gt;</label>
+      </node>
+      <node id="373">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="372">
+        <label>DownLoadString</label>
+        <link refid="interface_down_load_string"/>
+        <childnode refid="370" relation="public-inheritance">
+        </childnode>
+        <childnode refid="373" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>&lt;CLLocationManagerDelegate&gt;</label>
+      </node>
+      <node id="359">
+        <label>UIViewController</label>
+      </node>
+      <node id="371">
+        <label>&lt;MKAnnotation&gt;</label>
+      </node>
+      <node id="374">
+        <label>EGORefreshTableHeaderView</label>
+        <link refid="interface_e_g_o_refresh_table_header_view"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>ThirdViewController</label>
+        <link refid="interface_third_view_controller"/>
+        <childnode refid="359" relation="public-inheritance">
+        </childnode>
+        <childnode refid="360" relation="public-inheritance">
+        </childnode>
+        <childnode refid="361" relation="public-inheritance">
+        </childnode>
+        <childnode refid="362" relation="public-inheritance">
+        </childnode>
+        <childnode refid="363" relation="public-inheritance">
+        </childnode>
+        <childnode refid="364" relation="public-inheritance">
+        </childnode>
+        <childnode refid="366" relation="public-inheritance">
+        </childnode>
+        <childnode refid="367" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+        <childnode refid="369" relation="usage">
+          <edgelabel>place</edgelabel>
+        </childnode>
+        <childnode refid="372" relation="usage">
+          <edgelabel>downLoad</edgelabel>
+        </childnode>
+        <childnode refid="374" relation="usage">
+          <edgelabel>_refreshHeaderView</edgelabel>
+        </childnode>
+      </node>
+      <node id="365">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="369">
+        <label>Place</label>
+        <link refid="interface_place"/>
+        <childnode refid="370" relation="public-inheritance">
+        </childnode>
+        <childnode refid="371" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="368">
+        <label>UIView</label>
+      </node>
+      <node id="362">
+        <label>&lt;MKMapViewDelegate&gt;</label>
+      </node>
+      <node id="370">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" line="21" bodyfile="/Users/dengkawakou/Desktop/AppJoin/ThirdViewController.h" bodystart="19" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_third_view_controller_1a08e18d607bbc0cd9239a557f940b2784" prot="protected" virt="non-virtual"><scope>ThirdViewController</scope><name>_refreshHeaderView</name></member>
+      <member refid="interface_third_view_controller_1a55e896c20fdbba3723bf0b89e66d366c" prot="protected" virt="non-virtual"><scope>ThirdViewController</scope><name>_reloading</name></member>
+      <member refid="interface_third_view_controller_1acb3d719781c1a8152d2d288fdf75e2ad" prot="public" virt="non-virtual"><scope>ThirdViewController</scope><name>dateTableView</name></member>
+      <member refid="interface_third_view_controller_1a1bb13b98f0a3c114e2c53131c4c53d55" prot="public" virt="virtual"><scope>ThirdViewController</scope><name>doneLoadingTableViewData</name></member>
+      <member refid="interface_third_view_controller_1a4b6940f055ef4eb1b37115d77358106a" prot="public" virt="non-virtual"><scope>ThirdViewController</scope><name>downLoad</name></member>
+      <member refid="protocoldown_load_string_protocal-p_1a4ce73ee56600cc02c8a245cc21286277" prot="public" virt="virtual"><scope>ThirdViewController</scope><name>downLoadFinished:</name></member>
+      <member refid="protocol_e_g_o_refresh_table_header_delegate-p_1a6e51969fde015d59e9314a4ec41c21b8" prot="public" virt="virtual"><scope>ThirdViewController</scope><name>egoRefreshTableHeaderDataSourceIsLoading:</name></member>
+      <member refid="protocol_e_g_o_refresh_table_header_delegate-p_1aaa03c7c1a490ebb17fcff24f7f1c5d35" prot="public" virt="virtual"><scope>ThirdViewController</scope><name>egoRefreshTableHeaderDataSourceLastUpdated:</name></member>
+      <member refid="protocol_e_g_o_refresh_table_header_delegate-p_1a3a71311636e9d10813ffeabe19d6adb7" prot="public" virt="virtual"><scope>ThirdViewController</scope><name>egoRefreshTableHeaderDidTriggerRefresh:</name></member>
+      <member refid="interface_third_view_controller_1a2cc2e4087a178600c4dc2bfd2170b3d4" prot="protected" virt="non-virtual"><scope>ThirdViewController</scope><name>isEditer</name></member>
+      <member refid="interface_third_view_controller_1accc75979633ac923b79bfd904970545e" prot="public" virt="non-virtual"><scope>ThirdViewController</scope><name>label</name></member>
+      <member refid="interface_third_view_controller_1a8d32e1defe1b863e1665cbdfc7cc183b" prot="public" virt="non-virtual"><scope>ThirdViewController</scope><name>location</name></member>
+      <member refid="interface_third_view_controller_1a035cc582faa9fd494eb6685abc8253ac" prot="public" virt="non-virtual"><scope>ThirdViewController</scope><name>myDateArray</name></member>
+      <member refid="interface_third_view_controller_1a47fc40aa5fe0c94a700df0c369d980cb" prot="public" virt="non-virtual"><scope>ThirdViewController</scope><name>myMapView</name></member>
+      <member refid="interface_third_view_controller_1a07b1ad7f982c6ff1fde210551a322e25" prot="protected" virt="non-virtual"><scope>ThirdViewController</scope><name>place</name></member>
+      <member refid="interface_third_view_controller_1aa0b92a67003d6d8d7e6760a79470d7ef" prot="public" virt="non-virtual"><scope>ThirdViewController</scope><name>qrArray</name></member>
+      <member refid="interface_third_view_controller_1ad8291a0e3ff00b6e7a806086c4076030" prot="public" virt="non-virtual"><scope>ThirdViewController</scope><name>qrTableView</name></member>
+      <member refid="interface_third_view_controller_1a981c86d06f15523843abc1591da5f6b6" prot="public" virt="virtual"><scope>ThirdViewController</scope><name>reloadTableViewDataSource</name></member>
+      <member refid="interface_third_view_controller_1aebb42a65b7995a2ea03fbf8e3e948e2e" prot="public" virt="non-virtual"><scope>ThirdViewController</scope><name>rightBtn</name></member>
+      <member refid="interface_third_view_controller_1a6a6f71aaa12135c0a17a257869782f7c" prot="public" virt="virtual"><scope>ThirdViewController</scope><name>segmentActive:</name></member>
+      <member refid="interface_third_view_controller_1a33f49c284d72176cdab3d655ad97b611" prot="public" virt="non-virtual"><scope>ThirdViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

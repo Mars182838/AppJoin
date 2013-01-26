@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project: qrencode.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>属性</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">qrencode.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#ifndef __QRENCODE_H__</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __QRENCODE_H__</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    QR_MODE_NUL = -1,  </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    QR_MODE_NUM = 0,   </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    QR_MODE_AN,        </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    QR_MODE_8,         </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    QR_MODE_KANJI,     </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    QR_MODE_STRUCTURE, </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} QRencodeMode;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    QR_ECLEVEL_L = 0, </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    QR_ECLEVEL_M,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    QR_ECLEVEL_Q,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    QR_ECLEVEL_H      </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} QRecLevel;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"> * Input data (qrinput.c)</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___q_rinput.html">_QRinput</a> <a class="code" href="struct___q_rinput.html">QRinput</a>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___q_rinput.html">QRinput</a> *QRinput_new(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___q_rinput.html">QRinput</a> *QRinput_new2(<span class="keywordtype">int</span> version, QRecLevel level);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> QRinput_append(<a class="code" href="struct___q_rinput.html">QRinput</a> *input, QRencodeMode mode, <span class="keywordtype">int</span> size, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> QRinput_getVersion(<a class="code" href="struct___q_rinput.html">QRinput</a> *input);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> QRinput_setVersion(<a class="code" href="struct___q_rinput.html">QRinput</a> *input, <span class="keywordtype">int</span> version);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keyword">extern</span> QRecLevel QRinput_getErrorCorrectionLevel(<a class="code" href="struct___q_rinput.html">QRinput</a> *input);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> QRinput_setErrorCorrectionLevel(<a class="code" href="struct___q_rinput.html">QRinput</a> *input, QRecLevel level);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> QRinput_free(<a class="code" href="struct___q_rinput.html">QRinput</a> *input);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> QRinput_check(QRencodeMode mode, <span class="keywordtype">int</span> size, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *data);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___q_rinput___struct.html">_QRinput_Struct</a> <a class="code" href="struct___q_rinput___struct.html">QRinput_Struct</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___q_rinput___struct.html">QRinput_Struct</a> *QRinput_Struct_new(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> QRinput_Struct_setParity(<a class="code" href="struct___q_rinput___struct.html">QRinput_Struct</a> *s, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> parity);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> QRinput_Struct_appendInput(<a class="code" href="struct___q_rinput___struct.html">QRinput_Struct</a> *s, <a class="code" href="struct___q_rinput.html">QRinput</a> *input);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> QRinput_Struct_free(<a class="code" href="struct___q_rinput___struct.html">QRinput_Struct</a> *s);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___q_rinput___struct.html">QRinput_Struct</a> *QRinput_splitQRinputToStruct(<a class="code" href="struct___q_rinput.html">QRinput</a> *input);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> QRinput_Struct_insertStructuredAppendHeaders(<a class="code" href="struct___q_rinput___struct.html">QRinput_Struct</a> *s);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment"> * QRcode output (qrencode.c)</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno"><a class="code" href="struct_q_rcode.html">  310</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="code" href="struct_q_rcode.html#aa84ee8368a0cb437726e4eb4497784c0">  311</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_q_rcode.html#aa84ee8368a0cb437726e4eb4497784c0" title="version of the symbol">version</a>;         </div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="code" href="struct_q_rcode.html#a70faea92be5450849d2252f286fc4cb2">  312</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_q_rcode.html#a70faea92be5450849d2252f286fc4cb2" title="width of the symbol">width</a>;           </div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="code" href="struct_q_rcode.html#ae6f826314cfb99f4926c4c5734997c35">  313</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code" href="struct_q_rcode.html#ae6f826314cfb99f4926c4c5734997c35" title="symbol data">data</a>; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;} <a class="code" href="struct_q_rcode.html">QRcode</a>;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___q_rcode___list.html">_QRcode_List</a> <a class="code" href="struct___q_rcode___list.html">QRcode_List</a>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno"><a class="code" href="struct___q_rcode___list.html">  322</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct___q_rcode___list.html">_QRcode_List</a> {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <a class="code" href="struct_q_rcode.html">QRcode</a> *code;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <a class="code" href="struct___q_rcode___list.html">QRcode_List</a> *next;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;};</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct_q_rcode.html">QRcode</a> *QRcode_encodeInput(<a class="code" href="struct___q_rinput.html">QRinput</a> *input);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct_q_rcode.html">QRcode</a> *QRcode_encodeString(<span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keywordtype">string</span>, <span class="keywordtype">int</span> version, QRecLevel level, QRencodeMode hint, <span class="keywordtype">int</span> casesensitive);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct_q_rcode.html">QRcode</a> *QRcode_encodeString8bit(<span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keywordtype">string</span>, <span class="keywordtype">int</span> version, QRecLevel level);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> QRcode_free(<a class="code" href="struct_q_rcode.html">QRcode</a> *qrcode);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___q_rcode___list.html">QRcode_List</a> *QRcode_encodeInputStructured(<a class="code" href="struct___q_rinput___struct.html">QRinput_Struct</a> *s);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___q_rcode___list.html">QRcode_List</a> *QRcode_encodeStringStructured(<span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keywordtype">string</span>, <span class="keywordtype">int</span> version, QRecLevel level, QRencodeMode hint, <span class="keywordtype">int</span> casesensitive);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___q_rcode___list.html">QRcode_List</a> *QRcode_encodeString8bitStructured(<span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keywordtype">string</span>, <span class="keywordtype">int</span> version, QRecLevel level);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> QRcode_List_size(<a class="code" href="struct___q_rcode___list.html">QRcode_List</a> *qrlist);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> QRcode_List_free(<a class="code" href="struct___q_rcode___list.html">QRcode_List</a> *qrlist);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#if defined(__cplusplus)</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __QRENCODE_H__ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 一月 26日 星期六 00:06:39 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_detail_view_controller_8h" kind="file">
+    <compoundname>DetailViewController.h</compoundname>
+    <includes local="no">UIKit/UIKit.h</includes>
+    <includes local="yes">SDImageView+SDWebCache.h</includes>
+    <includes refid="_top_bar_view_8h" local="yes">TopBarView.h</includes>
+    <includedby refid="_detail_view_controller_8m" local="yes">DetailViewController.m</includedby>
+    <includedby refid="_main_view_controller_8m" local="yes">MainViewController.m</includedby>
+    <incdepgraph>
+      <node id="106">
+        <label>DetailViewController.h</label>
+        <link refid="DetailViewController.h"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>SDImageView+SDWebCache.h</label>
+      </node>
+      <node id="109">
+        <label>TopBarView.h</label>
+        <link refid="_top_bar_view_8h_source"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>UIKit/UIKit.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_detail_view_controller" prot="public">DetailViewController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>DetailViewController.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AppProject</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Mars<sp/>on<sp/>12-12-26.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2012年<sp/>Mars.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;UIKit/UIKit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;SDImageView+SDWebCache.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;TopBarView.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="interface_detail_view_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_detail_view_controller" kindref="compound">DetailViewController</ref><sp/>:<sp/>UIViewController</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="interface_detail_view_controller_1abbfe3bd7006a8d1bc65ab912baba010c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>UIImageView<sp/>*<ref refid="interface_detail_view_controller_1abbfe3bd7006a8d1bc65ab912baba010c" kindref="member">imageView</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="interface_detail_view_controller_1a3dc13cf075c44441185fc0f91e363607" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>UITextView<sp/>*<ref refid="interface_detail_view_controller_1a3dc13cf075c44441185fc0f91e363607" kindref="member">messageString</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref><sp/>*topBar;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/DetailViewController.h"/>
+  </compounddef>
+</doxygen>

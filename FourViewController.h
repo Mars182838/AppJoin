@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DownLoadString.h"
+#import "MBProgressHUD.h"
 @class TopBarView;
 
-@interface FourViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface FourViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,downLoadStringProtocal,MBProgressHUDDelegate>
 
 @property (retain, nonatomic) UITableView *editerTableView;
 
@@ -18,6 +20,11 @@
 
 /// topBar 实现导航栏的自定义的定制
 @property (nonatomic, retain) TopBarView *topBar;
+
+///关于模块数组
+@property (nonatomic, retain) NSArray *aboutArray;
+
+@property (nonatomic, retain) DownLoadString *downLoad;
 
 
 @end

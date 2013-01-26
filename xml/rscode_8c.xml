@@ -1,0 +1,672 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="rscode_8c" kind="file">
+    <compoundname>rscode.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="rscode_8h" local="yes">rscode.h</includes>
+    <incdepgraph>
+      <node id="409">
+        <label>stdlib.h</label>
+      </node>
+      <node id="410">
+        <label>string.h</label>
+      </node>
+      <node id="408">
+        <label>rscode.c</label>
+        <link refid="rscode.c"/>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>rscode.h</label>
+        <link refid="rscode_8h_source"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct___r_s" prot="public">_RS</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="rscode_8c_1a3ed9b2483e4d6616a203769ad381c97c" prot="public" static="no">
+        <name>MODNN</name>
+        <param><defname>x</defname></param>
+        <initializer>modnn(rs,x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="66" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1afdc383f8992f4a960bb22998f57b6d37" prot="public" static="no">
+        <name>MM</name>
+        <initializer>(rs-&gt;mm)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="68" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1a170755e30c36be4904106b7bb279b1ec" prot="public" static="no">
+        <name>NN</name>
+        <initializer>(rs-&gt;nn)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="69" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1afae14aea58e6520b2057147833c699de" prot="public" static="no">
+        <name>ALPHA_TO</name>
+        <initializer>(rs-&gt;alpha_to)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="70" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1a690b4c8564b1cb507383e7a78f4cd6dc" prot="public" static="no">
+        <name>INDEX_OF</name>
+        <initializer>(rs-&gt;index_of)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="71" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1a90fbc87e4b99a54543c8f37087cb4f03" prot="public" static="no">
+        <name>GENPOLY</name>
+        <initializer>(rs-&gt;genpoly)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="72" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1a5f5b4d84f10e6a71bef7c65548a8e317" prot="public" static="no">
+        <name>NROOTS</name>
+        <initializer>(rs-&gt;nroots)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="73" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1a264b36b13386e3f62fe69e04711bc006" prot="public" static="no">
+        <name>FCR</name>
+        <initializer>(rs-&gt;fcr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="74" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1a6dd0302d2b9ced6e396b9182a6287b9e" prot="public" static="no">
+        <name>PRIM</name>
+        <initializer>(rs-&gt;prim)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="75" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1a8487c20a46e1e08f7aeabec7cef80945" prot="public" static="no">
+        <name>IPRIM</name>
+        <initializer>(rs-&gt;iprim)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="76" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1a323d60150d94a9f5f599bb97726ac384" prot="public" static="no">
+        <name>PAD</name>
+        <initializer>(rs-&gt;pad)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="77" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1a0d158f1e3af2ab523eb8423db3e5bd6e" prot="public" static="no">
+        <name>A0</name>
+        <initializer>(NN)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="78" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="rscode_8c_1a0d158f1e3af2ab523eb8423db3e5bd6e" prot="public" static="no">
+        <name>A0</name>
+        <initializer>(NN) /* Special reserved value encoding zero in index form */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="276" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="rscode_8c_1ae91c9d70e1e2c8b657e51de1fff60ada" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char data_t</definition>
+        <argsstring></argsstring>
+        <name>data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="34" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="rscode_8c_1ac8d9be2062392ec20cfa780b2cc90e2d" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct___r_s" kindref="compound">RS</ref> *</type>
+        <definition>RS* rslist</definition>
+        <argsstring></argsstring>
+        <name>rslist</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="55" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="rscode_8c_1a940e8c928469742f9f3574c72d8a4754" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int modnn</definition>
+        <argsstring>(RS *rs, int x)</argsstring>
+        <name>modnn</name>
+        <param>
+          <type><ref refid="struct___r_s" kindref="compound">RS</ref> *</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="57" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="57" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="rscode_8c_1ab46bcabad74e2419539d64659328bf38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct___r_s" kindref="compound">RS</ref> *</type>
+        <definition>static RS* init_rs_char</definition>
+        <argsstring>(int symsize, int gfpoly, int fcr, int prim, int nroots, int pad)</argsstring>
+        <name>init_rs_char</name>
+        <param>
+          <type>int</type>
+          <declname>symsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gfpoly</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fcr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nroots</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="90" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="89" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="rscode_8c_1a30b2083fc85bcf1d600d701ec30db161" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct___r_s" kindref="compound">RS</ref> *</type>
+        <definition>RS* init_rs</definition>
+        <argsstring>(int symsize, int gfpoly, int fcr, int prim, int nroots, int pad)</argsstring>
+        <name>init_rs</name>
+        <param>
+          <type>int</type>
+          <declname>symsize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gfpoly</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fcr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nroots</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="203" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="202" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="rscode_8c_1aaf057e5186c6e64286c81ccb50245954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_rs_char</definition>
+        <argsstring>(RS *rs)</argsstring>
+        <name>free_rs_char</name>
+        <param>
+          <type><ref refid="struct___r_s" kindref="compound">RS</ref> *</type>
+          <declname>rs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="228" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="227" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="rscode_8c_1a77bd8e628e81d37df803a8ddbd2e1c23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_rs_cache</definition>
+        <argsstring>(void)</argsstring>
+        <name>free_rs_cache</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="236" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="235" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="rscode_8c_1aa3c4c7ec9c867587450e6e6a15deaf95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void encode_rs_char</definition>
+        <argsstring>(RS *rs, const data_t *data, data_t *parity)</argsstring>
+        <name>encode_rs_char</name>
+        <param>
+          <type><ref refid="struct___r_s" kindref="compound">RS</ref> *</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>const data_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>data_t *</type>
+          <declname>parity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="279" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="278" bodyend="304"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>qrencode<sp/>-<sp/>QR<sp/>Code<sp/>encoder</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Reed<sp/>solomon<sp/>encoder.<sp/>This<sp/>code<sp/>is<sp/>taken<sp/>from<sp/>Phil<sp/>Karn&apos;s<sp/>libfec<sp/>then</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>editted<sp/>and<sp/>packed<sp/>into<sp/>a<sp/>pair<sp/>of<sp/>.c<sp/>and<sp/>.h<sp/>files.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2002,<sp/>2003,<sp/>2004,<sp/>2006<sp/>Phil<sp/>Karn,<sp/>KA9Q</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>(libfec<sp/>is<sp/>released<sp/>under<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License.)</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2006,<sp/>2007,<sp/>2008,<sp/>2009<sp/>Kentaro<sp/>Fukuchi<sp/>&lt;fukuchi@megaui.net&gt;</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rscode.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Stuff<sp/>specific<sp/>to<sp/>the<sp/>8-bit<sp/>symbol<sp/>version<sp/>of<sp/>the<sp/>general<sp/>purpose<sp/>RS<sp/>codecs</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data_t;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="struct___r_s" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___r_s" kindref="compound">_RS</ref><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mm;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Bits<sp/>per<sp/>symbol<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nn;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Symbols<sp/>per<sp/>block<sp/>(=<sp/>(1&lt;&lt;mm)-1)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*alpha_to;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>log<sp/>lookup<sp/>table<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*index_of;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Antilog<sp/>lookup<sp/>table<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>data_t<sp/>*genpoly;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Generator<sp/>polynomial<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nroots;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>generator<sp/>roots<sp/>=<sp/>number<sp/>of<sp/>parity<sp/>symbols<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fcr;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>First<sp/>consecutive<sp/>root,<sp/>index<sp/>form<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prim;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Primitive<sp/>element,<sp/>index<sp/>form<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iprim;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>prim-th<sp/>root<sp/>of<sp/>1,<sp/>index<sp/>form<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pad;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Padding<sp/>bytes<sp/>in<sp/>shortened<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gfpoly;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___r_s" kindref="compound">_RS</ref><sp/>*next;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct___r_s" kindref="compound">RS</ref><sp/>*rslist<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>modnn(<ref refid="struct___r_s" kindref="compound">RS</ref><sp/>*rs,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(x<sp/>&gt;=<sp/>rs-&gt;nn)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>-=<sp/>rs-&gt;nn;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>(x<sp/>&gt;&gt;<sp/>rs-&gt;mm)<sp/>+<sp/>(x<sp/>&amp;<sp/>rs-&gt;nn);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODNN(x)<sp/>modnn(rs,x)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MM<sp/>(rs-&gt;mm)</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NN<sp/>(rs-&gt;nn)</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ALPHA_TO<sp/>(rs-&gt;alpha_to)<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INDEX_OF<sp/>(rs-&gt;index_of)</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GENPOLY<sp/>(rs-&gt;genpoly)</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NROOTS<sp/>(rs-&gt;nroots)</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FCR<sp/>(rs-&gt;fcr)</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PRIM<sp/>(rs-&gt;prim)</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>IPRIM<sp/>(rs-&gt;iprim)</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PAD<sp/>(rs-&gt;pad)</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>A0<sp/>(NN)</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialize<sp/>a<sp/>Reed-Solomon<sp/>codec</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/>symsize<sp/>=<sp/>symbol<sp/>size,<sp/>bits</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/>gfpoly<sp/>=<sp/>Field<sp/>generator<sp/>polynomial<sp/>coefficients</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*<sp/>fcr<sp/>=<sp/>first<sp/>root<sp/>of<sp/>RS<sp/>code<sp/>generator<sp/>polynomial,<sp/>index<sp/>form</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*<sp/>prim<sp/>=<sp/>primitive<sp/>element<sp/>to<sp/>generate<sp/>polynomial<sp/>roots</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/>nroots<sp/>=<sp/>RS<sp/>code<sp/>generator<sp/>polynomial<sp/>degree<sp/>(number<sp/>of<sp/>roots)</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/>pad<sp/>=<sp/>padding<sp/>bytes<sp/>at<sp/>front<sp/>of<sp/>shortened<sp/>block</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct___r_s" kindref="compound">RS</ref><sp/>*init_rs_char(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>symsize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gfpoly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fcr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prim,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nroots,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pad)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="struct___r_s" kindref="compound">RS</ref><sp/>*rs;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Common<sp/>code<sp/>for<sp/>intializing<sp/>a<sp/>Reed-Solomon<sp/>control<sp/>block<sp/>(char<sp/>or<sp/>int<sp/>symbols)</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2004<sp/>Phil<sp/>Karn,<sp/>KA9Q</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/>May<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>(LGPL)</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//#undef<sp/>NULL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>NULL<sp/>((void<sp/>*)0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j,<sp/>sr,root,iprim;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>rs<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Check<sp/>parameter<sp/>ranges<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(symsize<sp/>&lt;<sp/>0<sp/>||<sp/>symsize<sp/>&gt;<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)(8*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t))){</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>done;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fcr<sp/>&lt;<sp/>0<sp/>||<sp/>fcr<sp/>&gt;=<sp/>(1&lt;&lt;symsize))</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>done;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(prim<sp/>&lt;=<sp/>0<sp/>||<sp/>prim<sp/>&gt;=<sp/>(1&lt;&lt;symsize))</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>done;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(nroots<sp/>&lt;<sp/>0<sp/>||<sp/>nroots<sp/>&gt;=<sp/>(1&lt;&lt;symsize))</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>done;<sp/></highlight><highlight class="comment">/*<sp/>Can&apos;t<sp/>have<sp/>more<sp/>roots<sp/>than<sp/>symbol<sp/>values!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pad<sp/>&lt;<sp/>0<sp/>||<sp/>pad<sp/>&gt;=<sp/>((1&lt;&lt;symsize)<sp/>-1<sp/>-<sp/>nroots))</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>done;<sp/></highlight><highlight class="comment">/*<sp/>Too<sp/>much<sp/>padding<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>rs<sp/>=<sp/>(<ref refid="struct___r_s" kindref="compound">RS</ref><sp/>*)calloc(1,</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct___r_s" kindref="compound">RS</ref>));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>done;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>rs-&gt;mm<sp/>=<sp/>symsize;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>rs-&gt;nn<sp/>=<sp/>(1&lt;&lt;symsize)-1;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>rs-&gt;pad<sp/>=<sp/>pad;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>rs-&gt;alpha_to<sp/>=<sp/>(data_t<sp/>*)malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t)*(rs-&gt;nn+1));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs-&gt;alpha_to<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>rs<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>done;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>rs-&gt;index_of<sp/>=<sp/>(data_t<sp/>*)malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t)*(rs-&gt;nn+1));</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs-&gt;index_of<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs-&gt;alpha_to);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>rs<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>done;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Generate<sp/>Galois<sp/>field<sp/>lookup<sp/>tables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>rs-&gt;index_of[0]<sp/>=<sp/>A0;<sp/></highlight><highlight class="comment">/*<sp/>log(zero)<sp/>=<sp/>-inf<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>rs-&gt;alpha_to[A0]<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">/*<sp/>alpha**-inf<sp/>=<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>sr<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;rs-&gt;nn;i++){</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>rs-&gt;index_of[sr]<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>rs-&gt;alpha_to[i]<sp/>=<sp/>sr;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>sr<sp/>&lt;&lt;=<sp/>1;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sr<sp/>&amp;<sp/>(1&lt;&lt;symsize))</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sr<sp/>^=<sp/>gfpoly;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>sr<sp/>&amp;=<sp/>rs-&gt;nn;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sr<sp/>!=<sp/>1){</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>field<sp/>generator<sp/>polynomial<sp/>is<sp/>not<sp/>primitive!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs-&gt;alpha_to);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs-&gt;index_of);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>rs<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>done;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Form<sp/>RS<sp/>code<sp/>generator<sp/>polynomial<sp/>from<sp/>its<sp/>roots<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>rs-&gt;genpoly<sp/>=<sp/>(data_t<sp/>*)malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t)*(nroots+1));</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs-&gt;genpoly<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs-&gt;alpha_to);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs-&gt;index_of);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>rs<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>done;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>rs-&gt;fcr<sp/>=<sp/>fcr;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>rs-&gt;prim<sp/>=<sp/>prim;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>rs-&gt;nroots<sp/>=<sp/>nroots;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>rs-&gt;gfpoly<sp/>=<sp/>gfpoly;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Find<sp/>prim-th<sp/>root<sp/>of<sp/>1,<sp/>used<sp/>in<sp/>decoding<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(iprim=1;(iprim<sp/>%<sp/>prim)<sp/>!=<sp/>0;iprim<sp/>+=<sp/>rs-&gt;nn)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>rs-&gt;iprim<sp/>=<sp/>iprim<sp/>/<sp/>prim;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>rs-&gt;genpoly[0]<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0,root=fcr*prim;<sp/>i<sp/>&lt;<sp/>nroots;<sp/>i++,root<sp/>+=<sp/>prim)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>rs-&gt;genpoly[i+1]<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Multiply<sp/>rs-&gt;genpoly[]<sp/>by<sp/><sp/>@**(root<sp/>+<sp/>x)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(j<sp/>=<sp/>i;<sp/>j<sp/>&gt;<sp/>0;<sp/>j--){</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rs-&gt;genpoly[j]<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>rs-&gt;genpoly[j]<sp/>=<sp/>rs-&gt;genpoly[j-1]<sp/>^<sp/>rs-&gt;alpha_to[modnn(rs,rs-&gt;index_of[rs-&gt;genpoly[j]]<sp/>+<sp/>root)];</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>rs-&gt;genpoly[j]<sp/>=<sp/>rs-&gt;genpoly[j-1];</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>rs-&gt;genpoly[0]<sp/>can<sp/>never<sp/>be<sp/>zero<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>rs-&gt;genpoly[0]<sp/>=<sp/>rs-&gt;alpha_to[modnn(rs,rs-&gt;index_of[rs-&gt;genpoly[0]]<sp/>+<sp/>root)];</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>convert<sp/>rs-&gt;genpoly[]<sp/>to<sp/>index<sp/>form<sp/>for<sp/>quicker<sp/>encoding<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;=<sp/>nroots;<sp/>i++)</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>rs-&gt;genpoly[i]<sp/>=<sp/>rs-&gt;index_of[rs-&gt;genpoly[i]];</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/>done:;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rs;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><ref refid="struct___r_s" kindref="compound">RS</ref><sp/>*init_rs(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>symsize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gfpoly,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fcr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prim,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nroots,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pad)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___r_s" kindref="compound">RS</ref><sp/>*rs;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(rs<sp/>=<sp/>rslist;<sp/>rs<sp/>!=<sp/>NULL;<sp/>rs<sp/>=<sp/>rs-&gt;next)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs-&gt;pad<sp/>!=<sp/>pad)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs-&gt;nroots<sp/>!=<sp/>nroots)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs-&gt;mm<sp/>!=<sp/>symsize)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs-&gt;gfpoly<sp/>!=<sp/>gfpoly)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs-&gt;fcr<sp/>!=<sp/>fcr)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs-&gt;prim<sp/>!=<sp/>prim)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>DONE;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>rs<sp/>=<sp/>init_rs_char(symsize,<sp/>gfpoly,<sp/>fcr,<sp/>prim,<sp/>nroots,<sp/>pad);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rs<sp/>==<sp/>NULL)<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>DONE;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>rs-&gt;next<sp/>=<sp/>rslist;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>rslist<sp/>=<sp/>rs;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal">DONE:</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rs;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_rs_char(<ref refid="struct___r_s" kindref="compound">RS</ref><sp/>*rs)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs-&gt;alpha_to);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs-&gt;index_of);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs-&gt;genpoly);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>free(rs);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_rs_cache(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___r_s" kindref="compound">RS</ref><sp/>*rs,<sp/>*next;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>rs<sp/>=<sp/>rslist;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(rs<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>next<sp/>=<sp/>rs-&gt;next;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free_rs_char(rs);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rs<sp/>=<sp/>next;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>guts<sp/>of<sp/>the<sp/>Reed-Solomon<sp/>encoder,<sp/>meant<sp/>to<sp/>be<sp/>#included</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/>*<sp/>into<sp/>a<sp/>function<sp/>body<sp/>with<sp/>the<sp/>following<sp/>typedefs,<sp/>macros<sp/>and<sp/>variables<sp/>supplied</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/>*<sp/>according<sp/>to<sp/>the<sp/>code<sp/>parameters:</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"></highlight></codeline>
+<codeline lineno="251"><highlight class="comment"><sp/>*<sp/>data_t<sp/>-<sp/>a<sp/>typedef<sp/>for<sp/>the<sp/>data<sp/>symbol</highlight></codeline>
+<codeline lineno="252"><highlight class="comment"><sp/>*<sp/>data_t<sp/>data[]<sp/>-<sp/>array<sp/>of<sp/>NN-NROOTS-PAD<sp/>and<sp/>type<sp/>data_t<sp/>to<sp/>be<sp/>encoded</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/>*<sp/>data_t<sp/>parity[]<sp/>-<sp/>an<sp/>array<sp/>of<sp/>NROOTS<sp/>and<sp/>type<sp/>data_t<sp/>to<sp/>be<sp/>written<sp/>with<sp/>parity<sp/>symbols</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>*<sp/>NROOTS<sp/>-<sp/>the<sp/>number<sp/>of<sp/>roots<sp/>in<sp/>the<sp/>RS<sp/>code<sp/>generator<sp/>polynomial,</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>which<sp/>is<sp/>the<sp/>same<sp/>as<sp/>the<sp/>number<sp/>of<sp/>parity<sp/>symbols<sp/>in<sp/>a<sp/>block.</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Integer<sp/>variable<sp/>or<sp/>literal.</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="258"><highlight class="comment"><sp/>*<sp/>NN<sp/>-<sp/>the<sp/>total<sp/>number<sp/>of<sp/>symbols<sp/>in<sp/>a<sp/>RS<sp/>block.<sp/>Integer<sp/>variable<sp/>or<sp/>literal.</highlight></codeline>
+<codeline lineno="259"><highlight class="comment"><sp/>*<sp/>PAD<sp/>-<sp/>the<sp/>number<sp/>of<sp/>pad<sp/>symbols<sp/>in<sp/>a<sp/>block.<sp/>Integer<sp/>variable<sp/>or<sp/>literal.</highlight></codeline>
+<codeline lineno="260"><highlight class="comment"><sp/>*<sp/>ALPHA_TO<sp/>-<sp/>The<sp/>address<sp/>of<sp/>an<sp/>array<sp/>of<sp/>NN<sp/>elements<sp/>to<sp/>convert<sp/>Galois<sp/>field</highlight></codeline>
+<codeline lineno="261"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elements<sp/>in<sp/>index<sp/>(log)<sp/>form<sp/>to<sp/>polynomial<sp/>form.<sp/>Read<sp/>only.</highlight></codeline>
+<codeline lineno="262"><highlight class="comment"><sp/>*<sp/>INDEX_OF<sp/>-<sp/>The<sp/>address<sp/>of<sp/>an<sp/>array<sp/>of<sp/>NN<sp/>elements<sp/>to<sp/>convert<sp/>Galois<sp/>field</highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elements<sp/>in<sp/>polynomial<sp/>form<sp/>to<sp/>index<sp/>(log)<sp/>form.<sp/>Read<sp/>only.</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*<sp/>MODNN<sp/>-<sp/>a<sp/>function<sp/>to<sp/>reduce<sp/>its<sp/>argument<sp/>modulo<sp/>NN.<sp/>May<sp/>be<sp/>inline<sp/>or<sp/>a<sp/>macro.</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>*<sp/>GENPOLY<sp/>-<sp/>an<sp/>array<sp/>of<sp/>NROOTS+1<sp/>elements<sp/>containing<sp/>the<sp/>generator<sp/>polynomial<sp/>in<sp/>index<sp/>form</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"></highlight></codeline>
+<codeline lineno="267"><highlight class="comment"><sp/>*<sp/>The<sp/>memset()<sp/>and<sp/>memmove()<sp/>functions<sp/>are<sp/>used.<sp/>The<sp/>appropriate<sp/>header</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>*<sp/>file<sp/>declaring<sp/>these<sp/>functions<sp/>(usually<sp/>&lt;string.h&gt;)<sp/>must<sp/>be<sp/>included<sp/>by<sp/>the<sp/>calling</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/>*<sp/>program.</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"></highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>2004,<sp/>Phil<sp/>Karn,<sp/>KA9Q</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>*<sp/>May<sp/>be<sp/>used<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>(LGPL)</highlight></codeline>
+<codeline lineno="273"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>A0</highlight></codeline>
+<codeline lineno="276"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>A0<sp/>(NN)<sp/></highlight><highlight class="comment">/*<sp/>Special<sp/>reserved<sp/>value<sp/>encoding<sp/>zero<sp/>in<sp/>index<sp/>form<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="277"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>encode_rs_char(<ref refid="struct___r_s" kindref="compound">RS</ref><sp/>*rs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data_t<sp/>*data,<sp/>data_t<sp/>*parity)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/>data_t<sp/>feedback;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/>memset(parity,0,NROOTS*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t));</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;i&lt;NN-NROOTS-PAD;i++){</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>feedback<sp/>=<sp/>INDEX_OF[data[i]<sp/>^<sp/>parity[0]];</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(feedback<sp/>!=<sp/>A0){<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>feedback<sp/>term<sp/>is<sp/>non-zero<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>UNNORMALIZED</highlight></codeline>
+<codeline lineno="289"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>line<sp/>is<sp/>unnecessary<sp/>when<sp/>GENPOLY[NROOTS]<sp/>is<sp/>unity,<sp/>as<sp/>it<sp/>must</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>always<sp/>be<sp/>for<sp/>the<sp/>polynomials<sp/>constructed<sp/>by<sp/>init_rs()</highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>feedback<sp/>=<sp/>MODNN(NN<sp/>-<sp/>GENPOLY[NROOTS]<sp/>+<sp/>feedback);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="294"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(j=1;j&lt;NROOTS;j++)</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>parity[j]<sp/>^=<sp/>ALPHA_TO[MODNN(feedback<sp/>+<sp/>GENPOLY[NROOTS-j])];</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Shift<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>memmove(&amp;parity[0],&amp;parity[1],</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(data_t)*(NROOTS-1));</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(feedback<sp/>!=<sp/>A0)</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>parity[NROOTS-1]<sp/>=<sp/>ALPHA_TO[MODNN(feedback<sp/>+<sp/>GENPOLY[0])];</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>parity[NROOTS-1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c"/>
+  </compounddef>
+</doxygen>

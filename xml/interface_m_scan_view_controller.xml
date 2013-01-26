@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_m_scan_view_controller" kind="class" prot="public">
+    <compoundname>MScanViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;ZBarReaderViewDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;ZBarReaderDelegate&gt;</basecompoundref>
+    <basecompoundref refid="protocol_m_b_progress_h_u_d_delegate-p" prot="public" virt="non-virtual">&lt;MBProgressHUDDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITextFieldDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSURLConnectionDataDelegate&gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_m_scan_view_controller_1aa60e8676ae754a8700fd37bac4fa81ea" prot="protected" static="no" mutable="no">
+        <type>NSURLConnection *</type>
+        <definition>NSURLConnection* MScanViewController::coonection</definition>
+        <argsstring></argsstring>
+        <name>coonection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" line="16" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_m_scan_view_controller_1a6a79216881dcec458a4168b00ed8b225" prot="protected" static="no" mutable="no">
+        <type>NSMutableData *</type>
+        <definition>NSMutableData* MScanViewController::mutableData</definition>
+        <argsstring></argsstring>
+        <name>mutableData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" line="17" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_m_scan_view_controller_1a30eb0f7e359e9f0c6936c8594d9032f8" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITextField *</type>
+        <definition>UITextField* MScanViewController::messageTextField</definition>
+        <argsstring></argsstring>
+        <name>messageTextField</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>对名片进行标注 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" line="20" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_m_scan_view_controller_1a594c0296e470ac8c970f15e65b6d0588" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>IBOutlet ZBarReaderView *</type>
+        <definition>IBOutlet ZBarReaderView* MScanViewController::readerView</definition>
+        <argsstring></argsstring>
+        <name>readerView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>二维码视图 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" line="23" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITextView *</type>
+        <definition>UITextView* MScanViewController::resultText</definition>
+        <argsstring></argsstring>
+        <name>resultText</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>显示二维码信息的TextView </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" line="26" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_m_scan_view_controller_1a38b9beb676b39bd670a620c9fcb3c140" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* MScanViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" line="28" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="267">
+        <label>&lt;ZBarReaderViewDelegate&gt;</label>
+      </node>
+      <node id="269">
+        <label>&lt;MBProgressHUDDelegate&gt;</label>
+        <link refid="protocol_m_b_progress_h_u_d_delegate-p"/>
+        <childnode refid="270" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>MScanViewController</label>
+        <link refid="interface_m_scan_view_controller"/>
+        <childnode refid="266" relation="public-inheritance">
+        </childnode>
+        <childnode refid="267" relation="public-inheritance">
+        </childnode>
+        <childnode refid="268" relation="public-inheritance">
+        </childnode>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+        <childnode refid="271" relation="public-inheritance">
+        </childnode>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="268">
+        <label>&lt;ZBarReaderDelegate&gt;</label>
+      </node>
+      <node id="271">
+        <label>&lt;UITextFieldDelegate&gt;</label>
+      </node>
+      <node id="266">
+        <label>UIViewController</label>
+      </node>
+      <node id="270">
+        <label>&lt;UIViewNSObject&gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="275">
+        <label>&lt;ZBarReaderViewDelegate&gt;</label>
+      </node>
+      <node id="281">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="277">
+        <label>&lt;MBProgressHUDDelegate&gt;</label>
+        <link refid="protocol_m_b_progress_h_u_d_delegate-p"/>
+        <childnode refid="278" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>MScanViewController</label>
+        <link refid="interface_m_scan_view_controller"/>
+        <childnode refid="274" relation="public-inheritance">
+        </childnode>
+        <childnode refid="275" relation="public-inheritance">
+        </childnode>
+        <childnode refid="276" relation="public-inheritance">
+        </childnode>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+        <childnode refid="279" relation="public-inheritance">
+        </childnode>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+        <childnode refid="281" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+      </node>
+      <node id="280">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="276">
+        <label>&lt;ZBarReaderDelegate&gt;</label>
+      </node>
+      <node id="279">
+        <label>&lt;UITextFieldDelegate&gt;</label>
+      </node>
+      <node id="274">
+        <label>UIViewController</label>
+      </node>
+      <node id="278">
+        <label>&lt;UIViewNSObject&gt;</label>
+      </node>
+      <node id="282">
+        <label>UIView</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" line="15" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.h" bodystart="13" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_m_scan_view_controller_1aa60e8676ae754a8700fd37bac4fa81ea" prot="protected" virt="non-virtual"><scope>MScanViewController</scope><name>coonection</name></member>
+      <member refid="protocol_m_b_progress_h_u_d_delegate-p_1a0b2a08b1d9cf3758cca8d52a61bed1cc" prot="public" virt="virtual"><scope>MScanViewController</scope><name>hudWasHidden:</name></member>
+      <member refid="interface_m_scan_view_controller_1a30eb0f7e359e9f0c6936c8594d9032f8" prot="public" virt="non-virtual"><scope>MScanViewController</scope><name>messageTextField</name></member>
+      <member refid="interface_m_scan_view_controller_1a6a79216881dcec458a4168b00ed8b225" prot="protected" virt="non-virtual"><scope>MScanViewController</scope><name>mutableData</name></member>
+      <member refid="interface_m_scan_view_controller_1a594c0296e470ac8c970f15e65b6d0588" prot="public" virt="non-virtual"><scope>MScanViewController</scope><name>readerView</name></member>
+      <member refid="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" prot="public" virt="non-virtual"><scope>MScanViewController</scope><name>resultText</name></member>
+      <member refid="interface_m_scan_view_controller_1a38b9beb676b39bd670a620c9fcb3c140" prot="public" virt="non-virtual"><scope>MScanViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

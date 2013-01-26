@@ -29,6 +29,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         _mainDic = [[NSDictionary alloc] init];
+       
+        _selectImageArray = [[NSMutableArray alloc] initWithCapacity:0];
     }
     return self;
 }
@@ -61,19 +63,32 @@
     [self.view addSubview:_topBar.navLabel];
     
     _carousel = [[iCarousel alloc] init];
-    _carousel.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    _carousel.frame = CGRectMake(0, 0, WIDTH, HEIGHT);
     _carousel.delegate = self;
     _carousel.dataSource = self;
     _carousel.type = iCarouselTypeCoverFlow;
     [self.view addSubview:_carousel];
     
     _label = [[UILabel alloc] init];
-    _label.frame = CGRectMake(0, 44, 320, 60);
+    _label.frame = CGRectMake(0, 44, 320, 50);
     _label.textAlignment = NSTextAlignmentCenter;
-    _label.text = @"特许加盟展会";
-    _label.font = [UIFont systemFontOfSize:20];
+    _label.text = @"西西木特许加盟展会";
+    _label.font = [UIFont systemFontOfSize:22];
     [self.view addSubview:_label];
     
+    _detailLabel = [[UILabel alloc] init];
+    if (iPhone5) {
+        _detailLabel.frame = CGRectMake(0, HEIGHT - 130, 320, 60);
+    }
+    else{
+        _detailLabel.frame = CGRectMake(0, HEIGHT - 100, 320, 40);
+
+    }
+
+    _detailLabel.textAlignment = NSTextAlignmentCenter;
+    _detailLabel.font = [UIFont systemFontOfSize:18];
+    _detailLabel.textAlignment =NSTextAlignmentCenter;
+    [self.view addSubview:_detailLabel];
     ///注册一个通知，为了检测单前用户的网络连接状态
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     hostReach = [[Reachability reachabilityWithHostname:@"http://baidu.com"] retain];
@@ -84,7 +99,6 @@
     _downLoad.delegate = self;
     
 }
-
 
 #pragma mark - 
 #pragma mark - ReachabilityNotification Methods
@@ -139,34 +153,39 @@
  * @prama  index 是指的通过索引区别
  * @return UIView 这表明该函数返回的是一个View
  */
--(UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index
-{
-    UIView *view = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"huan%d.jpg",index+1]]] autorelease];
-    _detailLabel = [[UILabel alloc] init];
 
+-(UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index 
+{
+    UIView *view = _imageView;
+    
+    if (self.selectImageArray.count > 0) {
+        NSURL *url = [NSURL URLWithString:[[self.selectImageArray objectAtIndex:index] objectForKey:@"src"]];
+        [_imageView setImageWithURL:url refreshCache:YES placeholderImage:[UIImage imageNamed:@"place.png"]];
+    }
+    
+    _imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"place.png"]];
+    
     if (iPhone5) {
-        view.frame = CGRectMake(20, 20, 260, HEIGHT - 100);
-    _detailLabel.frame = CGRectMake(0, HEIGHT - 66, 320, 30);
+        view.frame = CGRectMake(20, 40, 260, HEIGHT - 180);
     }
     else{
-        view.frame = CGRectMake(20, 20, 260, HEIGHT - 200);
-        _detailLabel.frame = CGRectMake(0, HEIGHT - 124, 320, 30);
+        view.frame = CGRectMake(20, 20, 260, HEIGHT - 150);
+        
     }
-    
-    _detailLabel.textAlignment = NSTextAlignmentCenter;
-    _detailLabel.font = [UIFont systemFontOfSize:20];
-    
-    [self.view addSubview:_detailLabel];
-    
     return view;
 }
 
-///根据滑动到哪个图片，下面会有文字变化
+/////根据滑动到哪个图片，下面会有文字变化
 -(void)carouselDidScroll:(iCarousel *)carousel
 {
-    NSArray *array = [[NSArray alloc] initWithObjects:@"2008",@"2009",@"2010",@"2011",@"2012",@"2013", nil];
-    _detailLabel.text = [array objectAtIndex:carousel.currentItemIndex];
-    [array release];
+    if (self.selectImageArray.count >0) {
+        _detailLabel.text = [[[[self.selectImageArray objectAtIndex:carousel.currentItemIndex] objectForKey:@"text"] componentsSeparatedByString:@","] objectAtIndex:0];
+        
+    }
+    else{
+        _detailLabel.text = @"";
+    }
+    
 }
 
 - (CATransform3D)carousel:(iCarousel *)carousel transformForItemView:(UIView *)view withOffset:(CGFloat)offset
@@ -192,12 +211,6 @@
     return ITEM_SPACING;
 }
 
-///** 是否支持循环查看图片 */
-//-(BOOL)carouselShouldWrap:(iCarousel *)carousel
-//{
-//    return wrap;
-//}
-
 /** 该方法是点击之后会进入DetailViewController界面，显示点击的图片，并且附带图片的介绍
  *case0： case1：case2：case3：case4：case5：分别进入第一、二、三、四、五、六张图及其介绍
  *
@@ -207,40 +220,10 @@
 -(void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index
 {
     _detailController = [[DetailViewController alloc] init];
-    NSString *str = [NSString stringWithFormat:@"%@",@"石青峰表示，中国海监飞机在东海巡航是由中国海监固定飞机执行的，主要承担中国东海南部、东海东部海域的国家海洋监测和维权巡航监视等任务，兼顾浙江省岛屿保护巡查、赤潮检测。航线覆盖舟山群岛、春晓油气田的南部海域等地，最南到达北纬27°，距钓鱼岛150公里。　中新网北京12月27日电 (董冠洋)针对近日日本战机干扰中国海监飞机在东海春晓油气田没有争议的中国海域巡航一事，中国国家海洋局办公室主任石青峰27日回应称，日方使用军机对中国公务机在没有争议的中国空域正常巡航进行干扰，是有意识升级事态的无理行为，后果由日方承担。"];
+    
     self.delegate = (id)_detailController;
-    switch (index) {
-        case 0:{
-            
-            [delegate transferImage:[UIImage imageNamed:@"huan1.jpg"] andString:str];
-            break;
-        }
-        case 1:{
-            
-            [delegate transferImage:[UIImage imageNamed:@"huan2.jpg"] andString:str];
-            break;
-        }
-        case 2:{
-            
-            [delegate transferImage:[UIImage imageNamed:@"huan3.jpg"] andString:str];
-            break;
-        }
-        case 3:{
-            
-            [delegate transferImage:[UIImage imageNamed:@"huan4.jpg"] andString:str];
-            break;
-        }
-        case 4:{
-            
-            [delegate transferImage:[UIImage imageNamed:@"huan5.jpg"] andString:str];
-            break;
-        }
-        case 5:{
-            
-            [delegate transferImage:[UIImage imageNamed:@"huan6.jpg"] andString:str];
-            break;
-        }
-    }
+    
+    [delegate transferImageUrl:[[self.selectImageArray objectAtIndex:index] objectForKey:@"src"] andString:[[self.selectImageArray objectAtIndex:index] objectForKey:@"text"]];
     [self.navigationController pushViewController:_detailController animated:YES];
 }
 
@@ -249,7 +232,8 @@
 -(void)downLoadFinished:(NSDictionary *)info
 {
     _mainDic = info;
-    NSLog(@"mainDic:%@ ",_mainDic);
+    self.selectImageArray = [[[_mainDic objectForKey:@"posts"] objectAtIndex:0] objectForKey:@"content"];
+    [self.carousel reloadData];
 }
 
 @end

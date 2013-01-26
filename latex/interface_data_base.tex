@@ -1,0 +1,50 @@
+\hypertarget{interface_data_base}{\section{Data\-Base类 参考}
+\label{interface_data_base}\index{Data\-Base@{Data\-Base}}
+}
+类 Data\-Base 继承关系图\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_data_base}
+\end{center}
+\end{figure}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(sqlite3 $\ast$) + \hyperlink{interface_data_base_adbac330ad5b1337e6a040cdfc0f5712c}{open\-D\-B}
+\begin{DoxyCompactList}\small\item\em 打开数据库方法 \end{DoxyCompactList}\item 
+(void) + \hyperlink{interface_data_base_adb17c56e22c3fe77bbd682bee8811a56}{close\-D\-B}
+\begin{DoxyCompactList}\small\item\em 关闭数据库方法 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_data_base_adb17c56e22c3fe77bbd682bee8811a56}{\index{Data\-Base@{Data\-Base}!close\-D\-B@{close\-D\-B}}
+\index{close\-D\-B@{close\-D\-B}!DataBase@{Data\-Base}}
+\subsubsection[{close\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) close\-D\-B 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_data_base_adb17c56e22c3fe77bbd682bee8811a56}
+
+
+关闭数据库方法 
+
+关闭数据库 \hypertarget{interface_data_base_adbac330ad5b1337e6a040cdfc0f5712c}{\index{Data\-Base@{Data\-Base}!open\-D\-B@{open\-D\-B}}
+\index{open\-D\-B@{open\-D\-B}!DataBase@{Data\-Base}}
+\subsubsection[{open\-D\-B}]{\setlength{\rightskip}{0pt plus 5cm}+ (sqlite3 $\ast$) open\-D\-B 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_data_base_adbac330ad5b1337e6a040cdfc0f5712c}
+
+
+打开数据库方法 
+
+判断数据库是否打开，若打开了就返回该指针,否则从文件夹中打开 \begin{DoxyReturn}{返回}
+返回一个数据库指针 
+\end{DoxyReturn}
+从沙盒中取得sql文件 
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Data\-Base.\-h\item 
+Data\-Base.\-m\end{DoxyCompactItemize}

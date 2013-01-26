@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_q_rcode_data" kind="class" prot="public">
+    <compoundname>QRcodeData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_q_rcode_data_1a45e953e5811f2b718b95974236b49778" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>NSUInteger</type>
+        <definition>NSUInteger QRcodeData::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" line="13" bodyfile="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_q_rcode_data_1adde716bced6a5773f427ec6e6558bca2" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* QRcodeData::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" line="15" bodyfile="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_q_rcode_data_1a834dbb30cca4e5491523699fe33daf57" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* QRcodeData::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" line="17" bodyfile="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_q_rcode_data_1a7aaa940342a39b5b500e81bb26827773" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id QRcodeData::initWithID:andName:andMessage:</definition>
+        <argsstring>(int theID,[andName] NSString *theName,[andMessage] NSString *theMessage)</argsstring>
+        <name>initWithID:andName:andMessage:</name>
+        <param>
+          <type>int</type>
+          <declname>theID</declname>
+        </param>
+        <param>
+          <attributes>[andName]</attributes>
+          <type>NSString *</type>
+          <declname>theName</declname>
+        </param>
+        <param>
+          <attributes>[andMessage]</attributes>
+          <type>NSString *</type>
+          <declname>theMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>初始化方法 *theID 是唯一标示这个信息 *theName 是名片的介绍 *thePlace 是名片信息 <simplesect kind="return"><para>返回一个任意的实例对象 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" line="27" bodyfile="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.m" bodystart="14" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_q_rcode_data_1a5c2d5e8fcccffe6205e22ce53092e270" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray * QRcodeData::findAllMessage</definition>
+        <argsstring>()</argsstring>
+        <name>findAllMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>在数据库中查找所有的数据 <simplesect kind="return"><para>返回一个可变的数组 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" line="32" bodyfile="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.m" bodystart="47" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_q_rcode_data_1afea0ce0931f83205b1bbc08ab5567211" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int QRcodeData::addMessageWithName:andMessage:</definition>
+        <argsstring>(NSString *theName,[andMessage] NSString *theMessage)</argsstring>
+        <name>addMessageWithName:andMessage:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>theName</declname>
+        </param>
+        <param>
+          <attributes>[andMessage]</attributes>
+          <type>NSString *</type>
+          <declname>theMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>添加数据到数据库中 *theID 是唯一标示这个信息 *theName 是活动的名称 *theDate 是活动的时间 *thePlace 是活动地点 <simplesect kind="return"><para>返回一个int值 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" line="42" bodyfile="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.m" bodystart="24" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_q_rcode_data_1a101429370b309e693326ea08f9a99ef3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int QRcodeData::deleteMessageID:</definition>
+        <argsstring>(NSInteger theID)</argsstring>
+        <name>deleteMessageID:</name>
+        <param>
+          <type>NSInteger</type>
+          <declname>theID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>从数据库中删除数据 *theID 是唯一标示这个信息 *theName 是活动的名称 *theDate 是活动的时间 *thePlace 是活动地点 <simplesect kind="return"><para>返回一个任意的实例对象 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" line="51" bodyfile="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.m" bodystart="80" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="305">
+        <label>QRcodeData</label>
+        <link refid="interface_q_rcode_data"/>
+        <childnode refid="306" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="306">
+        <label>NSObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="307">
+        <label>QRcodeData</label>
+        <link refid="interface_q_rcode_data"/>
+        <childnode refid="308" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" line="12" bodyfile="/Users/dengkawakou/Desktop/AppJoin/QRcodeData.h" bodystart="11" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_q_rcode_data_1afea0ce0931f83205b1bbc08ab5567211" prot="public" virt="virtual"><scope>QRcodeData</scope><name>addMessageWithName:andMessage:</name></member>
+      <member refid="interface_q_rcode_data_1a101429370b309e693326ea08f9a99ef3" prot="public" virt="virtual"><scope>QRcodeData</scope><name>deleteMessageID:</name></member>
+      <member refid="interface_q_rcode_data_1a5c2d5e8fcccffe6205e22ce53092e270" prot="public" virt="virtual"><scope>QRcodeData</scope><name>findAllMessage</name></member>
+      <member refid="interface_q_rcode_data_1a45e953e5811f2b718b95974236b49778" prot="public" virt="non-virtual"><scope>QRcodeData</scope><name>ID</name></member>
+      <member refid="interface_q_rcode_data_1a7aaa940342a39b5b500e81bb26827773" prot="public" virt="virtual"><scope>QRcodeData</scope><name>initWithID:andName:andMessage:</name></member>
+      <member refid="interface_q_rcode_data_1a834dbb30cca4e5491523699fe33daf57" prot="public" virt="non-virtual"><scope>QRcodeData</scope><name>message</name></member>
+      <member refid="interface_q_rcode_data_1adde716bced6a5773f427ec6e6558bca2" prot="public" virt="non-virtual"><scope>QRcodeData</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

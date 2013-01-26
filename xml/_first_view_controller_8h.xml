@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_first_view_controller_8h" kind="file">
+    <compoundname>FirstViewController.h</compoundname>
+    <includes local="no">UIKit/UIKit.h</includes>
+    <includes refid="_top_bar_view_8h" local="yes">TopBarView.h</includes>
+    <includedby refid="_date_view_controller_8h" local="yes">DateViewController.h</includedby>
+    <includedby refid="_first_view_controller_8m" local="yes">FirstViewController.m</includedby>
+    <includedby refid="_message_view_controller_8h" local="yes">MessageViewController.h</includedby>
+    <incdepgraph>
+      <node id="141">
+        <label>TopBarView.h</label>
+        <link refid="_top_bar_view_8h_source"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>UIKit/UIKit.h</label>
+      </node>
+      <node id="139">
+        <label>FirstViewController.h</label>
+        <link refid="FirstViewController.h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="142">
+        <label>FirstViewController.h</label>
+        <link refid="FirstViewController.h"/>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>MessageViewController.h</label>
+        <link refid="_message_view_controller_8h_source"/>
+      </node>
+      <node id="143">
+        <label>DateViewController.h</label>
+        <link refid="_date_view_controller_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="protocol_message_view_controller_delegate-p" prot="public">MessageViewControllerDelegate-p</innerclass>
+    <innerclass refid="interface_first_view_controller" prot="public">FirstViewController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>FirstViewController.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AppJoin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Mars<sp/>on<sp/>12-12-29.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2012年<sp/>Mars.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;UIKit/UIKit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;TopBarView.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_message_view_controller" kindref="compound">MessageViewController</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="protocol_message_view_controller_delegate-p" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@protocol<sp/></highlight><highlight class="normal"><ref refid="protocol_message_view_controller_delegate-p" kindref="compound">MessageViewControllerDelegate</ref><sp/>&lt;NSObject&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">-(void)passMessageToMessageViewController:(NSString<sp/>*)string<sp/>andNavigationTitle:(NSString<sp/>*)titleString;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="interface_first_view_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_first_view_controller" kindref="compound">FirstViewController</ref><sp/>:<sp/>UIViewController</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="interface_first_view_controller_1a65a02e3ccdea1bdad12876753128d70c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain,<sp/>nonatomic)<sp/>UIImageView<sp/>*<ref refid="interface_first_view_controller_1a65a02e3ccdea1bdad12876753128d70c" kindref="member" tooltip="背景图片">backImage</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="interface_first_view_controller_1a62b6bc49cb1220b3a9c7e2db4eb2e7f0" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_message_view_controller" kindref="compound">MessageViewController</ref><sp/>*<ref refid="interface_first_view_controller_1a62b6bc49cb1220b3a9c7e2db4eb2e7f0" kindref="member" tooltip="详细信息类属性">messageController</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="interface_first_view_controller_1a9a1f1917619813af29912f67c6a6eea9" refkind="member"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>id&lt;MessageViewControllerDelegate&gt;<ref refid="interface_first_view_controller_1a9a1f1917619813af29912f67c6a6eea9" kindref="member" tooltip="代理属性">delegate</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref><sp/>*topBar;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h"/>
+  </compounddef>
+</doxygen>

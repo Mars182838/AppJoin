@@ -1,0 +1,56 @@
+\hypertarget{interface_info_view_controller}{\section{Info\-View\-Controller类 参考}
+\label{interface_info_view_controller}\index{Info\-View\-Controller@{Info\-View\-Controller}}
+}
+类 Info\-View\-Controller 继承关系图\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_info_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+long long \hyperlink{interface_info_view_controller_a46035a05e80e8252c07e1f2f88e034da}{expected\-Length}
+\item 
+long long \hyperlink{interface_info_view_controller_a5cda7e7567608b413aa8f2a82b05cf50}{current\-Length}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_m_b_progress_h_u_d}{M\-B\-Progress\-H\-U\-D} $\ast$ \hyperlink{interface_info_view_controller_a1a2a712f0824f338296c51f09088d50a}{hud}
+\item 
+U\-I\-Web\-View $\ast$ \hyperlink{interface_info_view_controller_a34d0ec0083fd66336b41a8393e51f91d}{info\-Web\-View}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_info_view_controller_affc65776e53e867683a286f3c86384e9}{url\-String}
+\item 
+\hyperlink{interface_top_bar_view}{Top\-Bar\-View} $\ast$ \hyperlink{interface_info_view_controller_a047156b12d76ef4fbf44a13eb499a887}{top\-Bar}
+\end{DoxyCompactItemize}
+
+
+\subsection{类成员变量说明}
+\hypertarget{interface_info_view_controller_a5cda7e7567608b413aa8f2a82b05cf50}{\index{Info\-View\-Controller@{Info\-View\-Controller}!current\-Length@{current\-Length}}
+\index{current\-Length@{current\-Length}!InfoViewController@{Info\-View\-Controller}}
+\subsubsection[{current\-Length}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (long long) current\-Length\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_info_view_controller_a5cda7e7567608b413aa8f2a82b05cf50}
+当前数据的下载长度 \hypertarget{interface_info_view_controller_a46035a05e80e8252c07e1f2f88e034da}{\index{Info\-View\-Controller@{Info\-View\-Controller}!expected\-Length@{expected\-Length}}
+\index{expected\-Length@{expected\-Length}!InfoViewController@{Info\-View\-Controller}}
+\subsubsection[{expected\-Length}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (long long) expected\-Length\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_info_view_controller_a46035a05e80e8252c07e1f2f88e034da}
+下载数据的总长度 
+
+\subsection{属性说明}
+\hypertarget{interface_info_view_controller_a1a2a712f0824f338296c51f09088d50a}{\index{Info\-View\-Controller@{Info\-View\-Controller}!hud@{hud}}
+\index{hud@{hud}!InfoViewController@{Info\-View\-Controller}}
+\subsubsection[{hud}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf M\-B\-Progress\-H\-U\-D}$\ast$) hud\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}}\label{interface_info_view_controller_a1a2a712f0824f338296c51f09088d50a}
+hud 是第三方库 用于提醒用户正在请求网络下载数据 \hypertarget{interface_info_view_controller_a34d0ec0083fd66336b41a8393e51f91d}{\index{Info\-View\-Controller@{Info\-View\-Controller}!info\-Web\-View@{info\-Web\-View}}
+\index{info\-Web\-View@{info\-Web\-View}!InfoViewController@{Info\-View\-Controller}}
+\subsubsection[{info\-Web\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (U\-I\-Web\-View$\ast$) info\-Web\-View\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}}\label{interface_info_view_controller_a34d0ec0083fd66336b41a8393e51f91d}
+info\-Web\-View 用于显示展会资讯的详细信息 \hypertarget{interface_info_view_controller_a047156b12d76ef4fbf44a13eb499a887}{\index{Info\-View\-Controller@{Info\-View\-Controller}!top\-Bar@{top\-Bar}}
+\index{top\-Bar@{top\-Bar}!InfoViewController@{Info\-View\-Controller}}
+\subsubsection[{top\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Top\-Bar\-View}$\ast$) top\-Bar\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [retain]}}}\label{interface_info_view_controller_a047156b12d76ef4fbf44a13eb499a887}
+top\-Bar 用于实现导航栏的自定义定制 \hypertarget{interface_info_view_controller_affc65776e53e867683a286f3c86384e9}{\index{Info\-View\-Controller@{Info\-View\-Controller}!url\-String@{url\-String}}
+\index{url\-String@{url\-String}!InfoViewController@{Info\-View\-Controller}}
+\subsubsection[{url\-String}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) url\-String\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [nonatomic]}, {\ttfamily [copy]}}}\label{interface_info_view_controller_affc65776e53e867683a286f3c86384e9}
+url\-String 用于接收从\-Second\-View\-Controller传过来的网址 
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Info\-View\-Controller.\-h\end{DoxyCompactItemize}

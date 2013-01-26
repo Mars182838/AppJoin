@@ -8,13 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "FirstViewController.h"
+#import "TopBarView.h"
 
 @interface MessageViewController : UIViewController<MessageViewControllerDelegate>
 
-/** label显示文字信息 */
+/// label显示文字信息
 @property (nonatomic, retain) UITextView *label;
 
-/** 接收从FirstViewController类传递过来的数据 */
+/// 接收从FirstViewController类传递过来的数据
 @property (nonatomic, copy) NSString *infoString;
 
 @property (nonatomic, retain) TopBarView *topBar;

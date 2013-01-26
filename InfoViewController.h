@@ -32,7 +32,6 @@
 /** topBar 用于实现导航栏的自定义定制 */
 @property (nonatomic, retain) TopBarView *topBar;
 
-/** navTitle 导航栏上面的文字 */
-@property (nonatomic, copy) NSString *navTitle;
+
 
 @end

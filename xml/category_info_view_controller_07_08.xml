@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="category_info_view_controller_07_08" kind="category" prot="public">
+    <compoundname>InfoViewController()</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/InfoViewController.m" line="12" bodyfile="/Users/dengkawakou/Desktop/AppJoin/InfoViewController.m" bodystart="12" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

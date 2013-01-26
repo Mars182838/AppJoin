@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="protocol_detail_view_delegate-p" kind="protocol" prot="public" abstract="yes">
+    <compoundname>DetailViewDelegate-p</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSObject&gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocol_detail_view_delegate-p_1a86e4a02156a54b46ed8ba8c89306679b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DetailViewDelegate-p::transferImageUrl:andString:</definition>
+        <argsstring>(NSString *urlString,[andString] NSString *message)</argsstring>
+        <name>transferImageUrl:andString:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>urlString</declname>
+        </param>
+        <param>
+          <attributes>[andString]</attributes>
+          <type>NSString *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MainViewController.h" line="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="102">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="101">
+        <label>&lt;DetailViewDelegate&gt;</label>
+        <link refid="protocol_detail_view_delegate-p"/>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="104">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="103">
+        <label>&lt;DetailViewDelegate&gt;</label>
+        <link refid="protocol_detail_view_delegate-p"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/MainViewController.h" line="18" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MainViewController.h" bodystart="18" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_detail_view_delegate-p_1a86e4a02156a54b46ed8ba8c89306679b" prot="public" virt="virtual"><scope>DetailViewDelegate-p</scope><name>transferImageUrl:andString:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

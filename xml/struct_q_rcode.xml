@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="struct_q_rcode" kind="struct" prot="public">
+    <compoundname>QRcode</compoundname>
+    <includes refid="qrencode_8h" local="no">qrencode.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_q_rcode_1aa84ee8368a0cb437726e4eb4497784c0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRcode::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+<para>version of the symbol </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="311" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_rcode_1a70faea92be5450849d2252f286fc4cb2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRcode::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+<para>width of the symbol </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="312" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_rcode_1ae6f826314cfb99f4926c4c5734997c35" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* QRcode::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>symbol data </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="313" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="struct_q_rcode" kindref="compound">QRcode</ref> class. Symbol data is represented as an array contains width*width uchars. Each uchar represents a module (dot). If the less significant bit of the uchar is 1, the corresponding module is black. The other bits are meaningless for usual applications, but here its specification is described.</para><para><preformatted>
+MSB 76543210 LSB
+    |||||||<computeroutput>- 1=black/0=white
+    ||||||</computeroutput><ndash/> data and ecc code area
+    |||||<computeroutput>--- format information
+    ||||</computeroutput>-<mdash/> version information
+    |||<computeroutput>----- timing pattern
+    ||</computeroutput>---<mdash/> alignment pattern
+    |<computeroutput>------- finder pattern and separator
+</computeroutput>-----<mdash/> non-data modules (format, timing, etc.)
+</preformatted> </para>    </detaileddescription>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="310" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="310" bodyend="314"/>
+    <listofallmembers>
+      <member refid="struct_q_rcode_1ae6f826314cfb99f4926c4c5734997c35" prot="public" virt="non-virtual"><scope>QRcode</scope><name>data</name></member>
+      <member refid="struct_q_rcode_1aa84ee8368a0cb437726e4eb4497784c0" prot="public" virt="non-virtual"><scope>QRcode</scope><name>version</name></member>
+      <member refid="struct_q_rcode_1a70faea92be5450849d2252f286fc4cb2" prot="public" virt="non-virtual"><scope>QRcode</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

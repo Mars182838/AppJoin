@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TopBarView.h"
 @class MessageViewController;
-#import "DownLoadString.h"
 
 @protocol MessageViewControllerDelegate <NSObject>
 
@@ -20,7 +20,7 @@
 
 @end
 
-@interface FirstViewController : UIViewController<downLoadStringProtocal>
+@interface FirstViewController : UIViewController
 
 ///背景图片
 @property (retain, nonatomic) UIImageView *backImage;
@@ -32,8 +32,5 @@
 @property (nonatomic, assign) id<MessageViewControllerDelegate>delegate;
 
 @property (nonatomic, retain) TopBarView *topBar;
-
-
-@property (nonatomic, retain) DownLoadString *downLoad;
 
 @end

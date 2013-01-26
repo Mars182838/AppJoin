@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="struct___q_rinput___list" kind="struct" prot="public">
+    <compoundname>_QRinput_List</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___q_rinput___list_1a970bb9bf1b6fecea98c8cce84ad50743" prot="public" static="no" mutable="no">
+        <type>QRencodeMode</type>
+        <definition>QRencodeMode _QRinput_List::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="34" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___q_rinput___list_1a0e95d1f205d72e7f8ed60d0f3c612b7d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _QRinput_List::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Size of data chunk (byte). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="35" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___q_rinput___list_1ab1b2193ef5cbbc3ebac66c403c1e0d86" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* _QRinput_List::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Data chunk. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="36" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___q_rinput___list_1ac5218ca09695bf13a42f7f18e9bf1d33" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_bit_stream" kindref="compound">BitStream</ref> *</type>
+        <definition>BitStream* _QRinput_List::bstream</definition>
+        <argsstring></argsstring>
+        <name>bstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="37" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___q_rinput___list_1a1f23d7348d94cb4107c57cd351e4a00c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct___q_rinput___list" kindref="compound">QRinput_List</ref> *</type>
+        <definition>QRinput_List* _QRinput_List::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="38" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="14">
+        <label>BitStream</label>
+        <link refid="struct_bit_stream"/>
+      </node>
+      <node id="13">
+        <label>_QRinput_List</label>
+        <link refid="struct___q_rinput___list"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>bstream</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="33" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="33" bodyend="39"/>
+    <listofallmembers>
+      <member refid="struct___q_rinput___list_1ac5218ca09695bf13a42f7f18e9bf1d33" prot="public" virt="non-virtual"><scope>_QRinput_List</scope><name>bstream</name></member>
+      <member refid="struct___q_rinput___list_1ab1b2193ef5cbbc3ebac66c403c1e0d86" prot="public" virt="non-virtual"><scope>_QRinput_List</scope><name>data</name></member>
+      <member refid="struct___q_rinput___list_1a970bb9bf1b6fecea98c8cce84ad50743" prot="public" virt="non-virtual"><scope>_QRinput_List</scope><name>mode</name></member>
+      <member refid="struct___q_rinput___list_1a1f23d7348d94cb4107c57cd351e4a00c" prot="public" virt="non-virtual"><scope>_QRinput_List</scope><name>next</name></member>
+      <member refid="struct___q_rinput___list_1a0e95d1f205d72e7f8ed60d0f3c612b7d" prot="public" virt="non-virtual"><scope>_QRinput_List</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

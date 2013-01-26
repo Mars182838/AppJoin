@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="struct_bit_stream" kind="struct" prot="public">
+    <compoundname>BitStream</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_bit_stream_1a9d7bbee2d63720a8ee8e0f427ae8afe2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BitStream::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/bitstream.h" line="26" bodyfile="/Users/dengkawakou/Desktop/AppJoin/bitstream.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_bit_stream_1ad56e6ae32cf87078cbca2eed5536ba2d" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* BitStream::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/bitstream.h" line="27" bodyfile="/Users/dengkawakou/Desktop/AppJoin/bitstream.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/bitstream.h" line="25" bodyfile="/Users/dengkawakou/Desktop/AppJoin/bitstream.h" bodystart="25" bodyend="28"/>
+    <listofallmembers>
+      <member refid="struct_bit_stream_1ad56e6ae32cf87078cbca2eed5536ba2d" prot="public" virt="non-virtual"><scope>BitStream</scope><name>data</name></member>
+      <member refid="struct_bit_stream_1a9d7bbee2d63720a8ee8e0f427ae8afe2" prot="public" virt="non-virtual"><scope>BitStream</scope><name>length</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1001 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.2">
+  <compound refid="struct___q_rcode___list" kind="struct"><name>_QRcode_List</name>
+    <member refid="struct___q_rcode___list_1a3a611fa842869b6e21c1b66d1d61daab" kind="variable"><name>code</name></member>
+    <member refid="struct___q_rcode___list_1a58e12820cb046dc47b93402c24290348" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="struct___q_rinput" kind="struct"><name>_QRinput</name>
+    <member refid="struct___q_rinput_1a4f6567d11fd6301d4efd0daa27481676" kind="variable"><name>version</name></member>
+    <member refid="struct___q_rinput_1a7fe3d6d3b406da8f59726fbc2349ba35" kind="variable"><name>level</name></member>
+    <member refid="struct___q_rinput_1a481ad94ce05c3a74804f1633f8a09cf8" kind="variable"><name>head</name></member>
+    <member refid="struct___q_rinput_1a9809b55019593773843ffafdba75f6f0" kind="variable"><name>tail</name></member>
+  </compound>
+  <compound refid="struct___q_rinput___input_list" kind="struct"><name>_QRinput_InputList</name>
+    <member refid="struct___q_rinput___input_list_1ae8c7eebe23d1033e193195f6dea36d97" kind="variable"><name>input</name></member>
+    <member refid="struct___q_rinput___input_list_1a46c3a7b29f71a09746191d8afb8e20fd" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="struct___q_rinput___list" kind="struct"><name>_QRinput_List</name>
+    <member refid="struct___q_rinput___list_1a970bb9bf1b6fecea98c8cce84ad50743" kind="variable"><name>mode</name></member>
+    <member refid="struct___q_rinput___list_1a0e95d1f205d72e7f8ed60d0f3c612b7d" kind="variable"><name>size</name></member>
+    <member refid="struct___q_rinput___list_1ab1b2193ef5cbbc3ebac66c403c1e0d86" kind="variable"><name>data</name></member>
+    <member refid="struct___q_rinput___list_1ac5218ca09695bf13a42f7f18e9bf1d33" kind="variable"><name>bstream</name></member>
+    <member refid="struct___q_rinput___list_1a1f23d7348d94cb4107c57cd351e4a00c" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="struct___q_rinput___struct" kind="struct"><name>_QRinput_Struct</name>
+    <member refid="struct___q_rinput___struct_1ae1b68ea889ffbcf415ed531f54bd189e" kind="variable"><name>size</name></member>
+    <member refid="struct___q_rinput___struct_1a5877234dae241a78499e164b33fb4fcb" kind="variable"><name>parity</name></member>
+    <member refid="struct___q_rinput___struct_1a14a237b726b7aad7dcaaccff2a864b5f" kind="variable"><name>head</name></member>
+    <member refid="struct___q_rinput___struct_1a38368e551a8aa90156aceae525c512bb" kind="variable"><name>tail</name></member>
+  </compound>
+  <compound refid="struct___r_s" kind="struct"><name>_RS</name>
+    <member refid="struct___r_s_1a046c7e4ece716d243101048247f6cde4" kind="variable"><name>mm</name></member>
+    <member refid="struct___r_s_1ab5663729b99e9ff8f7969e916fda2627" kind="variable"><name>nn</name></member>
+    <member refid="struct___r_s_1a998f0e035861187dd6fbef37ca5789ac" kind="variable"><name>alpha_to</name></member>
+    <member refid="struct___r_s_1af3406fa5684f5c96c2cd523522959c47" kind="variable"><name>index_of</name></member>
+    <member refid="struct___r_s_1aa6785d02605d937bcb035e62936cc245" kind="variable"><name>genpoly</name></member>
+    <member refid="struct___r_s_1a97be3a013ef02a581029d8219993ec2e" kind="variable"><name>nroots</name></member>
+    <member refid="struct___r_s_1ab9c03761dfc23661efaeba22fb60fc96" kind="variable"><name>fcr</name></member>
+    <member refid="struct___r_s_1a3e5a578b2322c98c7fc5bab914917b24" kind="variable"><name>prim</name></member>
+    <member refid="struct___r_s_1af0655eabb9315ddd69493cf9e476bcb8" kind="variable"><name>iprim</name></member>
+    <member refid="struct___r_s_1a10c7fe66a2d97af43c41881c5c24ce92" kind="variable"><name>pad</name></member>
+    <member refid="struct___r_s_1ac8de531510e63159386f598575425c54" kind="variable"><name>gfpoly</name></member>
+    <member refid="struct___r_s_1a8399f3b5c7fdcad97fab3f699c9e676b" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="struct_bit_stream" kind="struct"><name>BitStream</name>
+    <member refid="struct_bit_stream_1a9d7bbee2d63720a8ee8e0f427ae8afe2" kind="variable"><name>length</name></member>
+    <member refid="struct_bit_stream_1ad56e6ae32cf87078cbca2eed5536ba2d" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="interface_card_view_controller" kind="class"><name>CardViewController</name>
+    <member refid="interface_card_view_controller_1a76e1ba3eb19518e13d416ce0714e7759" kind="variable"><name>phoneNumber</name></member>
+    <member refid="interface_card_view_controller_1af44eabe7b7c82a5a2b17ca65f3483a0c" kind="variable"><name>number</name></member>
+    <member refid="interface_card_view_controller_1a85acd70cfad1ea3a5d70b5ce63bc017a" kind="variable"><name>coonection</name></member>
+    <member refid="interface_card_view_controller_1a475588d8d26a77900f0bd3eda00488fe" kind="variable"><name>mutableData</name></member>
+    <member refid="interface_card_view_controller_1a28c04404c102ca3070f01843b682c66a" kind="property"><name>cardTableView</name></member>
+    <member refid="interface_card_view_controller_1a8d38af0727f6342827a44c8cc279468c" kind="property"><name>cardArray</name></member>
+    <member refid="interface_card_view_controller_1a1984282f1134d68c03edfd889f41ee46" kind="property"><name>qrView</name></member>
+    <member refid="interface_card_view_controller_1aa0cad1539bfab47dc163b4b528437ae1" kind="property"><name>qrImage</name></member>
+    <member refid="interface_card_view_controller_1ad1f20231d1a58429435849832a916f90" kind="property"><name>cardArr</name></member>
+    <member refid="interface_card_view_controller_1ab1c90ae754040fa90d1f7ad719aafcd4" kind="property"><name>topBar</name></member>
+    <member refid="interface_card_view_controller_1aac253889610bf91cc6d69aa9473f703c" kind="property"><name>rightBtn</name></member>
+    <member refid="interface_card_view_controller_1a61e36edcbbe84a6c381437a948a23796" kind="property"><name>textField</name></member>
+    <member refid="interface_card_view_controller_1acd7402f25949d6d7f697df45f8cd1787" kind="property"><name>editerBtn</name></member>
+  </compound>
+  <compound refid="category_card_view_controller_07_08" kind="category"><name>CardViewController()</name>
+  </compound>
+  <compound refid="interface_coupons_view_controller" kind="class"><name>CouponsViewController</name>
+    <member refid="interface_coupons_view_controller_1ae9bdd9bbac6cfdd5a892bc5baf99070c" kind="property"><name>imageView</name></member>
+    <member refid="interface_coupons_view_controller_1acf56e6381638ed2faf61531be93508ea" kind="property"><name>topBar</name></member>
+    <member refid="interface_coupons_view_controller_1a00a649bc860adf51f6a3765ad81f2a0a" kind="property"><name>label</name></member>
+  </compound>
+  <compound refid="category_coupons_view_controller_07_08" kind="category"><name>CouponsViewController()</name>
+  </compound>
+  <compound refid="interface_custom_cell" kind="class"><name>CustomCell</name>
+    <member refid="interface_custom_cell_1ae2248aa203b96fb217f19d6025616baa" kind="property"><name>nameLabel</name></member>
+    <member refid="interface_custom_cell_1a99a4e25f14b99e2b0f2d6349f37f94b7" kind="property"><name>detailLabel</name></member>
+  </compound>
+  <compound refid="interface_data_base" kind="class"><name>DataBase</name>
+    <member refid="interface_data_base_1adbac330ad5b1337e6a040cdfc0f5712c" kind="function"><name>openDB</name></member>
+    <member refid="interface_data_base_1adb17c56e22c3fe77bbd682bee8811a56" kind="function"><name>closeDB</name></member>
+  </compound>
+  <compound refid="interface_date_detail_view_controller" kind="class"><name>DateDetailViewController</name>
+    <member refid="interface_date_detail_view_controller_1a811cfa9af8a8baec0d401a465158a70b" kind="property"><name>topBar</name></member>
+    <member refid="interface_date_detail_view_controller_1aeb25dd9abcc01c3ad5f4725d4b5ee04f" kind="property"><name>dateDetailString</name></member>
+  </compound>
+  <compound refid="category_date_detail_view_controller_07_08" kind="category"><name>DateDetailViewController()</name>
+  </compound>
+  <compound refid="interface_date_plan" kind="class"><name>DatePlan</name>
+    <member refid="interface_date_plan_1a0291ad0465f0f1dba52f2f26c8d6dff2" kind="property"><name>ID</name></member>
+    <member refid="interface_date_plan_1a34b2cac092692065aa0800021e7bee47" kind="property"><name>name</name></member>
+    <member refid="interface_date_plan_1ac8fd6ed08d404dce74880a98683047e4" kind="property"><name>date</name></member>
+    <member refid="interface_date_plan_1a24821592b28f72a55f0d05ffcb627886" kind="property"><name>place</name></member>
+    <member refid="interface_date_plan_1a44ceee79778f8ce6f91903beba84d6f1" kind="function"><name>initWithID:andName:andDate:andPlace:</name></member>
+    <member refid="interface_date_plan_1a1626f9373dd50829d4b36597963962b3" kind="function"><name>findAllMessage</name></member>
+    <member refid="interface_date_plan_1a75da4a0db59e63008afeb52b09412578" kind="function"><name>addMessageWithName:andDate:andPlace:</name></member>
+    <member refid="interface_date_plan_1a7d17c19b22b1b9903cd77d4fc9555c79" kind="function"><name>deleteMessageID:</name></member>
+  </compound>
+  <compound refid="interface_date_view_controller" kind="class"><name>DateViewController</name>
+    <member refid="interface_date_view_controller_1aff4f3095196456defce55a638c87b1d8" kind="variable"><name>connect</name></member>
+    <member refid="interface_date_view_controller_1a5a2976ac7064733832735e5bd310bdfb" kind="variable"><name>messageData</name></member>
+    <member refid="interface_date_view_controller_1ac977fba71126dc96513743e8db033743" kind="variable"><name>expectedLength</name></member>
+    <member refid="interface_date_view_controller_1a10154a7a8d6c08b5e8149c2678264c7e" kind="variable"><name>currentLength</name></member>
+    <member refid="interface_date_view_controller_1a43e1f8941f6b66644d17937f4f7e80ec" kind="variable"><name>isEditer</name></member>
+    <member refid="interface_date_view_controller_1affc6bc47987609044725e6692653f811" kind="property"><name>dateTableView</name></member>
+    <member refid="interface_date_view_controller_1a0de9fdaa624e38578022994f50ade97a" kind="property"><name>dateArray</name></member>
+    <member refid="interface_date_view_controller_1a90af4c151aa03c5b7a3aca5fd075f63a" kind="property"><name>detailArray</name></member>
+    <member refid="interface_date_view_controller_1adb68a544ccdbac21ae0bd3ee08d868f3" kind="property"><name>hud</name></member>
+    <member refid="interface_date_view_controller_1a854035a2c42ee52b470e208fefac81aa" kind="property"><name>topBar</name></member>
+    <member refid="interface_date_view_controller_1ae5758cdfcd72e39f4123e52761addaf2" kind="property"><name>placeName</name></member>
+  </compound>
+  <compound refid="category_date_view_controller_07_08" kind="category"><name>DateViewController()</name>
+  </compound>
+  <compound refid="interface_detail_view_controller" kind="class"><name>DetailViewController</name>
+    <member refid="interface_detail_view_controller_1abbfe3bd7006a8d1bc65ab912baba010c" kind="property"><name>imageView</name></member>
+    <member refid="interface_detail_view_controller_1a3dc13cf075c44441185fc0f91e363607" kind="property"><name>messageString</name></member>
+    <member refid="interface_detail_view_controller_1afb801097cbef8f865adaffba99e24fc3" kind="property"><name>topBar</name></member>
+  </compound>
+  <compound refid="category_detail_view_controller_07_08" kind="category"><name>DetailViewController()</name>
+  </compound>
+  <compound refid="protocol_detail_view_delegate-p" kind="protocol"><name>DetailViewDelegate-p</name>
+    <member refid="protocol_detail_view_delegate-p_1a86e4a02156a54b46ed8ba8c89306679b" kind="function"><name>transferImageUrl:andString:</name></member>
+  </compound>
+  <compound refid="interface_down_load_string" kind="class"><name>DownLoadString</name>
+    <member refid="interface_down_load_string_1aa07deaf3096e63547098b66ad0d2e366" kind="variable"><name>connection</name></member>
+    <member refid="interface_down_load_string_1a614b5dfd4e05104a7cfda37751399efb" kind="variable"><name>mutableData</name></member>
+    <member refid="interface_down_load_string_1a0fbed2e90e2d2f1c6b734b81d91d0f52" kind="property"><name>delegate</name></member>
+    <member refid="interface_down_load_string_1a3d0c4ef30aebcc94712bc2b36057b459" kind="property"><name>shareTarget</name></member>
+    <member refid="interface_down_load_string_1ae12cc5c4571830fda3f931a45198d352" kind="property"><name>url</name></member>
+    <member refid="interface_down_load_string_1a6aa18ac8e65c63e85454ce11104efc17" kind="function"><name>shareInstanceWithNSStringWithUrl:</name></member>
+    <member refid="interface_down_load_string_1ada64a31dab7af544b5117f699affdb19" kind="function"><name>initWithShareTarget:</name></member>
+  </compound>
+  <compound refid="protocoldown_load_string_protocal-p" kind="protocol"><name>downLoadStringProtocal-p</name>
+    <member refid="protocoldown_load_string_protocal-p_1a4ce73ee56600cc02c8a245cc21286277" kind="function"><name>downLoadFinished:</name></member>
+  </compound>
+  <compound refid="protocol_e_g_o_refresh_table_header_delegate-p" kind="protocol"><name>EGORefreshTableHeaderDelegate-p</name>
+    <member refid="protocol_e_g_o_refresh_table_header_delegate-p_1a3a71311636e9d10813ffeabe19d6adb7" kind="function"><name>egoRefreshTableHeaderDidTriggerRefresh:</name></member>
+    <member refid="protocol_e_g_o_refresh_table_header_delegate-p_1a6e51969fde015d59e9314a4ec41c21b8" kind="function"><name>egoRefreshTableHeaderDataSourceIsLoading:</name></member>
+    <member refid="protocol_e_g_o_refresh_table_header_delegate-p_1aaa03c7c1a490ebb17fcff24f7f1c5d35" kind="function"><name>egoRefreshTableHeaderDataSourceLastUpdated:</name></member>
+  </compound>
+  <compound refid="interface_e_g_o_refresh_table_header_view" kind="class"><name>EGORefreshTableHeaderView</name>
+    <member refid="interface_e_g_o_refresh_table_header_view_1acb4d08ef643849d35f3608dc83bc77e6" kind="variable"><name>_delegate</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1a7e3364bb70f2ccceaabff9637849ae4d" kind="variable"><name>_state</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1ad2cad787cbd4f7e14e460f70140cc2e3" kind="variable"><name>_lastUpdatedLabel</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1a845f097294717d7ad7b4aa2042f33504" kind="variable"><name>_statusLabel</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1a3796bb4d359154e73b536bc64246a060" kind="variable"><name>_arrowImage</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1ab2c575e05450facb6ce9a60e825bb592" kind="variable"><name>_activityView</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1aff6b41496977b54fa89624f638ed0ab9" kind="property"><name>lastUpdatedLabel</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1aebd6c3498e21afd2c0df86a20a981298" kind="property"><name>statusLabel</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1a0793fad79d25582192f37fcf2e3aa925" kind="property"><name>arrowImage</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1aecc4d26af6e45bfc93927ddfd3242149" kind="property"><name>activityView</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1a0ac65ad5457e9999ecdd6d05a7806d49" kind="property"><name>delegate</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1a629409b8affc67385b5857ba9f3968ec" kind="function"><name>initWithFrame:arrowImageName:textColor:</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1a194cd65e46e4f0e1a87eed587ecbd5ce" kind="function"><name>refreshLastUpdatedDate</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1a8e555a74ee13195926251f84795e4e23" kind="function"><name>egoRefreshScrollViewDidScroll:</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1a0f4a7b4d3a63a9d15156ce37295f8865" kind="function"><name>egoRefreshScrollViewDidEndDragging:</name></member>
+    <member refid="interface_e_g_o_refresh_table_header_view_1a368b0e8d966a4b8613925ffce1b9eb8e" kind="function"><name>egoRefreshScrollViewDataSourceDidFinishedLoading:</name></member>
+  </compound>
+  <compound refid="category_e_g_o_refresh_table_header_view_07_private_08" kind="category"><name>EGORefreshTableHeaderView(Private)</name>
+    <member refid="category_e_g_o_refresh_table_header_view_07_private_08_1ad082392bbd824297918c74251a01e227" kind="function"><name>setState:</name></member>
+  </compound>
+  <compound refid="interface_first_view_controller" kind="class"><name>FirstViewController</name>
+    <member refid="interface_first_view_controller_1a65a02e3ccdea1bdad12876753128d70c" kind="property"><name>backImage</name></member>
+    <member refid="interface_first_view_controller_1a62b6bc49cb1220b3a9c7e2db4eb2e7f0" kind="property"><name>messageController</name></member>
+    <member refid="interface_first_view_controller_1a9a1f1917619813af29912f67c6a6eea9" kind="property"><name>delegate</name></member>
+    <member refid="interface_first_view_controller_1addd0b613f437a2af7380a1749b0ae6b3" kind="property"><name>topBar</name></member>
+  </compound>
+  <compound refid="category_first_view_controller_07_08" kind="category"><name>FirstViewController()</name>
+  </compound>
+  <compound refid="interface_four_view_controller" kind="class"><name>FourViewController</name>
+    <member refid="interface_four_view_controller_1ac56bce5794079b0858b28bd5588f6ab4" kind="property"><name>editerTableView</name></member>
+    <member refid="interface_four_view_controller_1a8b7e1f75b33531d876d8c02c407a3c19" kind="property"><name>messageArray</name></member>
+    <member refid="interface_four_view_controller_1ad6ef698b571fc0d7a3c8818439de75dc" kind="property"><name>topBar</name></member>
+    <member refid="interface_four_view_controller_1ac5e0dcdc5771d39c5f162711111c013d" kind="property"><name>aboutArray</name></member>
+    <member refid="interface_four_view_controller_1ad6d4e24ffabd33ee46a1a65ade7e4ab1" kind="property"><name>downLoad</name></member>
+  </compound>
+  <compound refid="category_four_view_controller_07_08" kind="category"><name>FourViewController()</name>
+  </compound>
+  <compound refid="struct_frame_filler" kind="struct"><name>FrameFiller</name>
+    <member refid="struct_frame_filler_1ae40fbdfcfd12acd318c0983bae112a41" kind="variable"><name>width</name></member>
+    <member refid="struct_frame_filler_1af62dd5268e5d105eb0b8c5eee478d84a" kind="variable"><name>frame</name></member>
+    <member refid="struct_frame_filler_1a1c88e4707a8f31367dc10917b423e88c" kind="variable"><name>x</name></member>
+    <member refid="struct_frame_filler_1a40b9439e9c0cd149785944dd9c695481" kind="variable"><name>y</name></member>
+    <member refid="struct_frame_filler_1ad497b0999a8574bfbff501d68c893534" kind="variable"><name>dir</name></member>
+    <member refid="struct_frame_filler_1abf2006539482b99bbf47cbba183bd0ff" kind="variable"><name>bit</name></member>
+  </compound>
+  <compound refid="interfacei_carousel" kind="class"><name>iCarousel</name>
+    <member refid="interfacei_carousel_1a01932ed8ad51ec7c851ec2c16d7dbf88" kind="property"><name>dataSource</name></member>
+    <member refid="interfacei_carousel_1ac92c2f2737dd0a4c113d198bb9e4120c" kind="property"><name>delegate</name></member>
+    <member refid="interfacei_carousel_1ad0a1baa683ced94711f696e393ba8ff5" kind="property"><name>type</name></member>
+    <member refid="interfacei_carousel_1a8d8abcfd2ddafba0637ff5ca9531e92e" kind="property"><name>perspective</name></member>
+    <member refid="interfacei_carousel_1ab00e8633c7b9b8bc69d36cbfaa67e590" kind="property"><name>decelerationRate</name></member>
+    <member refid="interfacei_carousel_1a990b3ebf8b1d389bd0ed42a7a9258e5f" kind="property"><name>scrollSpeed</name></member>
+    <member refid="interfacei_carousel_1abd605dc751d9653c8f809d17cecc7b67" kind="property"><name>bounceDistance</name></member>
+    <member refid="interfacei_carousel_1a97df41172333d67ef60bf700503c6578" kind="property"><name>scrollEnabled</name></member>
+    <member refid="interfacei_carousel_1a90a750b16e48dd04e1b5edf1fe8b6d79" kind="property"><name>bounces</name></member>
+    <member refid="interfacei_carousel_1a918aae33af04ca1c98e7542e6ab0faa4" kind="property"><name>scrollOffset</name></member>
+    <member refid="interfacei_carousel_1aaf6980aea3c75edde39b58c60328ba18" kind="property"><name>offsetMultiplier</name></member>
+    <member refid="interfacei_carousel_1aed10d4318ae4aa99437d608ff96e00f1" kind="property"><name>contentOffset</name></member>
+    <member refid="interfacei_carousel_1ad9baef9d291ca37b0cdaad7c3fd17f2a" kind="property"><name>viewpointOffset</name></member>
+    <member refid="interfacei_carousel_1aa8c944ddd47066517f4141d7e17dd05a" kind="property"><name>numberOfItems</name></member>
+    <member refid="interfacei_carousel_1a4c3e9ccf410bf5c6f5ce207eef0dea8b" kind="property"><name>numberOfPlaceholders</name></member>
+    <member refid="interfacei_carousel_1a5d02fffedc7d4c7feaf3f1c563eb59ee" kind="property"><name>currentItemIndex</name></member>
+    <member refid="interfacei_carousel_1ab76146200a524b70c049cca4f064bebe" kind="property"><name>currentItemView</name></member>
+    <member refid="interfacei_carousel_1a6df2060533a766470385dd68bb1866cd" kind="property"><name>indexesForVisibleItems</name></member>
+    <member refid="interfacei_carousel_1ae37c7c8ac4f466a968482d37fc26be78" kind="property"><name>numberOfVisibleItems</name></member>
+    <member refid="interfacei_carousel_1abc23e4479a36a9a4f44855add9a7bb98" kind="property"><name>__deprecated</name></member>
+    <member refid="interfacei_carousel_1a3ee29168fea90f140bf9e42e8f19116a" kind="property"><name>visibleItemViews</name></member>
+    <member refid="interfacei_carousel_1ae50617941b46e4151a634d7096f0e6e9" kind="property"><name>itemWidth</name></member>
+    <member refid="interfacei_carousel_1ad71bdf138b9ee8fad0fa44ac1f0470d8" kind="property"><name>contentView</name></member>
+    <member refid="interfacei_carousel_1a7ddbb5c814af239e1e93e1a9636593f5" kind="property"><name>toggle</name></member>
+    <member refid="interfacei_carousel_1ac73948a13f3fdf9f4412cec8460b8a33" kind="property"><name>stopAtItemBoundary</name></member>
+    <member refid="interfacei_carousel_1afc597b9e6b4bbfdca43c5febd82836fb" kind="property"><name>scrollToItemBoundary</name></member>
+    <member refid="interfacei_carousel_1a70d756ca9733de264576ad1609b0670c" kind="function"><name>scrollByNumberOfItems:duration:</name></member>
+    <member refid="interfacei_carousel_1a317c3bf4ceb4d0621ee6727dfdd611a1" kind="function"><name>scrollToItemAtIndex:duration:</name></member>
+    <member refid="interfacei_carousel_1abae537074eab49ea3ec5c4cc33b49c12" kind="function"><name>scrollToItemAtIndex:animated:</name></member>
+    <member refid="interfacei_carousel_1a7a5514e7ef0d9eb5ebb453a0a61b44de" kind="function"><name>removeItemAtIndex:animated:</name></member>
+    <member refid="interfacei_carousel_1a46a2e5d4ed6e043855252f2621c9d89b" kind="function"><name>insertItemAtIndex:animated:</name></member>
+    <member refid="interfacei_carousel_1a0677279abc3188c434f825970eea06eb" kind="function"><name>reloadItemAtIndex:animated:</name></member>
+    <member refid="interfacei_carousel_1a90df60ca7e6ff4ad1c654d54d7ef4f49" kind="function"><name>itemViewAtIndex:</name></member>
+    <member refid="interfacei_carousel_1aa2017ad3deb8cd0c5ad89b8f97a29bbb" kind="function"><name>indexOfItemView:</name></member>
+    <member refid="interfacei_carousel_1a876975b04d95417e794eda30876185ce" kind="function"><name>reloadData</name></member>
+  </compound>
+  <compound refid="categoryi_carousel_07_08" kind="category"><name>iCarousel()</name>
+    <member refid="categoryi_carousel_07_08_1ab46b704167a9abbb36b37be641f7cd7f" kind="property"><name>contentView</name></member>
+    <member refid="categoryi_carousel_07_08_1a6350bac140b18f6ea8a7e82ff7a50af2" kind="property"><name>itemViews</name></member>
+    <member refid="categoryi_carousel_07_08_1a8a46ffa69453a69dc19fe9d861d839ff" kind="property"><name>previousItemIndex</name></member>
+    <member refid="categoryi_carousel_07_08_1a1c1b950a899b89d0bbf822cbd261fda3" kind="property"><name>numberOfPlaceholdersToShow</name></member>
+    <member refid="categoryi_carousel_07_08_1a91521312e6633004b2942f97e23cc1d3" kind="property"><name>numberOfVisibleItems</name></member>
+    <member refid="categoryi_carousel_07_08_1ae669de77492811ac8ab4962b2a7ff667" kind="property"><name>itemWidth</name></member>
+    <member refid="categoryi_carousel_07_08_1ac228f51ef5e571a8fa028afb50fed845" kind="property"><name>scrollOffset</name></member>
+    <member refid="categoryi_carousel_07_08_1a73ed815ad898d127dff1b31ccd7b096e" kind="property"><name>offsetMultiplier</name></member>
+    <member refid="categoryi_carousel_07_08_1af7cb147daa728e5756e4f13395c8ce10" kind="property"><name>startOffset</name></member>
+    <member refid="categoryi_carousel_07_08_1ab11bb5c579c7b05800fbb1c46e571301" kind="property"><name>endOffset</name></member>
+    <member refid="categoryi_carousel_07_08_1ab728cf11651aae1e93a7218b4f860825" kind="property"><name>scrollDuration</name></member>
+    <member refid="categoryi_carousel_07_08_1ae8f86652b3393c1ee1b1e3c1fbfe5ae5" kind="property"><name>scrolling</name></member>
+    <member refid="categoryi_carousel_07_08_1a5dc3bccbfbc521027620b77bc44dfc1d" kind="property"><name>startTime</name></member>
+    <member refid="categoryi_carousel_07_08_1ae13115b154ccf4f8a6c1510489d90352" kind="property"><name>startVelocity</name></member>
+    <member refid="categoryi_carousel_07_08_1a116646737081ece23bbeeb66ba2b53f9" kind="property"><name>timer</name></member>
+    <member refid="categoryi_carousel_07_08_1ab58fa6900db48ed28573148840dab342" kind="property"><name>decelerating</name></member>
+    <member refid="categoryi_carousel_07_08_1a1b98f059269a6746094b07b3ce7dc106" kind="property"><name>previousTranslation</name></member>
+    <member refid="categoryi_carousel_07_08_1a0014eda137bacb53e64034ed5ecac7ea" kind="property"><name>shouldWrap</name></member>
+    <member refid="categoryi_carousel_07_08_1a7c7394ef6487646c37d6a233c2df3768" kind="property"><name>dragging</name></member>
+    <member refid="categoryi_carousel_07_08_1a496e922a224880e6807e12868c3ab4eb" kind="property"><name>didDrag</name></member>
+    <member refid="categoryi_carousel_07_08_1ac6ff9446072cd6f95d0b827ec9d5a8c7" kind="property"><name>toggleTime</name></member>
+    <member refid="categoryi_carousel_07_08_1a8760f79ad8ba3e0c6d70439349e73eb1" kind="function"><name>didMoveToSuperview</name></member>
+    <member refid="categoryi_carousel_07_08_1ae818ea8a9ca3fcdc4f06ef828e9ec8c7" kind="function"><name>layOutItemViews</name></member>
+    <member refid="categoryi_carousel_07_08_1acd9eaf8b39a482025491bf04ae42c072" kind="function"><name>loadViewAtIndex:</name></member>
+    <member refid="categoryi_carousel_07_08_1a8cb72d02f4563c2eb4050b8cf329a985" kind="function"><name>clampedIndex:</name></member>
+    <member refid="categoryi_carousel_07_08_1af187706aaa359c742638cacdfe692605" kind="function"><name>clampedOffset:</name></member>
+    <member refid="categoryi_carousel_07_08_1a10adc89ff70e1f4ea479803b91a4498d" kind="function"><name>transformItemView:atIndex:</name></member>
+    <member refid="categoryi_carousel_07_08_1ad9e53359f0c7767f2b8f6a6cdf952248" kind="function"><name>startAnimation</name></member>
+    <member refid="categoryi_carousel_07_08_1a84a10a5f0abd2de5ee2ea4acd15c6fab" kind="function"><name>stopAnimation</name></member>
+    <member refid="categoryi_carousel_07_08_1ae269992a6751754151c0dccc6063b80a" kind="function"><name>didScroll</name></member>
+  </compound>
+  <compound refid="protocoli_carousel_data_source-p" kind="protocol"><name>iCarouselDataSource-p</name>
+    <member refid="protocoli_carousel_data_source-p_1a2122722fbd3c539fc48607c66e21a1c7" kind="function"><name>numberOfItemsInCarousel:</name></member>
+    <member refid="protocoli_carousel_data_source-p_1a27d1dff4545a31eca95039fca4df4fd4" kind="function"><name>carousel:viewForItemAtIndex:</name></member>
+    <member refid="protocoli_carousel_data_source-p_1a88190ba29b4d6e7985a1f6feda1e38bf" kind="function"><name>numberOfPlaceholdersInCarousel:</name></member>
+    <member refid="protocoli_carousel_data_source-p_1ad619c9ca220d95c8597ee368c484edae" kind="function"><name>carousel:placeholderViewAtIndex:</name></member>
+    <member refid="protocoli_carousel_data_source-p_1a4aab1076fadd9ab711bf497e08dfc0f8" kind="function"><name>numberOfVisibleItemsInCarousel:</name></member>
+    <member refid="protocoli_carousel_data_source-p_1a6a949d0a49dcd57a6f383d1b8303178e" kind="function"><name>compareViewDepth</name></member>
+  </compound>
+  <compound refid="protocoli_carousel_delegate-p" kind="protocol"><name>iCarouselDelegate-p</name>
+    <member refid="protocoli_carousel_delegate-p_1a77482b064899576412c0b870e2837d61" kind="function"><name>carouselWillBeginScrollingAnimation:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1ae41a6b044f53f31204c903c563b22185" kind="function"><name>carouselDidEndScrollingAnimation:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1a1bc038b3a00ccf7d5d494ef9cbb1d1ba" kind="function"><name>carouselDidScroll:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1adef7ab53c4e60b1b85ee9df02298a4cd" kind="function"><name>carouselCurrentItemIndexUpdated:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1a03da7f39fdbf210078a15d4899f72d77" kind="function"><name>carouselWillBeginDragging:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1af67fdf56e690c20633212af86ed81870" kind="function"><name>carouselDidEndDragging:willDecelerate:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1ac6a99760afc29964ef016b78e1c69a19" kind="function"><name>carouselWillBeginDecelerating:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1a1d7214558cb16653a7d7fe9bebec0127" kind="function"><name>carouselDidEndDecelerating:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1a79d3df6f9aaaec128090055a8cf81b56" kind="function"><name>carouselItemWidth:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1a808fcd2a5f1f7d6c56142092fd7ff8f8" kind="function"><name>carouselOffsetMultiplier:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1a7dd0b45f7657fe6a77cf8a5825a3c11c" kind="function"><name>carouselShouldWrap:</name></member>
+    <member refid="protocoli_carousel_delegate-p_1a168ebbca3f018a91297c6eaf83d5c579" kind="function"><name>carousel:transformForItemView:withOffset:</name></member>
+  </compound>
+  <compound refid="interface_info_view_controller" kind="class"><name>InfoViewController</name>
+    <member refid="interface_info_view_controller_1a46035a05e80e8252c07e1f2f88e034da" kind="variable"><name>expectedLength</name></member>
+    <member refid="interface_info_view_controller_1a5cda7e7567608b413aa8f2a82b05cf50" kind="variable"><name>currentLength</name></member>
+    <member refid="interface_info_view_controller_1a1a2a712f0824f338296c51f09088d50a" kind="property"><name>hud</name></member>
+    <member refid="interface_info_view_controller_1a34d0ec0083fd66336b41a8393e51f91d" kind="property"><name>infoWebView</name></member>
+    <member refid="interface_info_view_controller_1affc65776e53e867683a286f3c86384e9" kind="property"><name>urlString</name></member>
+    <member refid="interface_info_view_controller_1a047156b12d76ef4fbf44a13eb499a887" kind="property"><name>topBar</name></member>
+  </compound>
+  <compound refid="category_info_view_controller_07_08" kind="category"><name>InfoViewController()</name>
+  </compound>
+  <compound refid="interface_main_view_controller" kind="class"><name>MainViewController</name>
+    <member refid="interface_main_view_controller_1a0eb5f29f5e5e9c7228313d5fcbd606ab" kind="variable"><name>wrap</name></member>
+    <member refid="interface_main_view_controller_1a4a50aa7a8400153e9ba52d0bf4cf7630" kind="variable"><name>hud</name></member>
+    <member refid="interface_main_view_controller_1a2fd296dcee1ae6fa7f3f346be140f6af" kind="variable"><name>hostReach</name></member>
+    <member refid="interface_main_view_controller_1aff97c901f4d7d451fa2cdca04a7bac95" kind="property"><name>carousel</name></member>
+    <member refid="interface_main_view_controller_1adcdd91fa1f396efe10cfaf47910af2a1" kind="property"><name>detailController</name></member>
+    <member refid="interface_main_view_controller_1a75888987a8cb0262169d2a4ef4e80d2a" kind="property"><name>delegate</name></member>
+    <member refid="interface_main_view_controller_1a2f291676842fc98f04dfa26344a09593" kind="property"><name>label</name></member>
+    <member refid="interface_main_view_controller_1a243da297ab8ff34a78b80d4677315e4e" kind="property"><name>detailLabel</name></member>
+    <member refid="interface_main_view_controller_1a7d6a8d4a24ac609e7545bf6c07d7786c" kind="property"><name>topBar</name></member>
+    <member refid="interface_main_view_controller_1a91dc5cbbb04b3e8c925f747f8fed3a6e" kind="property"><name>downLoad</name></member>
+    <member refid="interface_main_view_controller_1a39e05eee835ebf23c2375ff7565a2357" kind="property"><name>mainDic</name></member>
+    <member refid="interface_main_view_controller_1a4cc0ee50feca3b06b12297847035a1a1" kind="property"><name>imageView</name></member>
+    <member refid="interface_main_view_controller_1aa257e69a571d17651210b424e312550c" kind="property"><name>selectImageArray</name></member>
+  </compound>
+  <compound refid="category_main_view_controller_07_08" kind="category"><name>MainViewController()</name>
+  </compound>
+  <compound refid="interface_m_b_progress_h_u_d" kind="class"><name>MBProgressHUD</name>
+    <member refid="interface_m_b_progress_h_u_d_1ace77eaaf507e86fe56436f7ee7b6fdc9" kind="property"><name>mode</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a71d04bb9e2839df9377ad10d03b2e468" kind="property"><name>animationType</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a78f89e05d797a46bf9b41a5dfd1f5d4a" kind="property"><name>customView</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1ad6fee32939fa55fc1a341aba117aa28f" kind="property"><name>delegate</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a531706887f08881c7f13b4309521b299" kind="property"><name>labelText</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a8b7cbf551fc551c64159b7a3f648c6ac" kind="property"><name>detailsLabelText</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a24ab5e37917e3489d6add081324a49ff" kind="property"><name>opacity</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a1f4ab0f3ddc52af9353a4cf225ad1361" kind="property"><name>color</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a4e6ee114c04b90ced1a253a6d33ba785" kind="property"><name>xOffset</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1ad526ffcabab5131697eb0850c50ab1f4" kind="property"><name>yOffset</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a4126e72234f8afcb87905a9ed65c022c" kind="property"><name>margin</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1ab781ccd4428c8eff6907d2cdc90fc3ee" kind="property"><name>dimBackground</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a6f837c351a405d0bb6ec05856d7776dd" kind="property"><name>graceTime</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a9946e4b0b16d75f070ff0cbcc50226ef" kind="property"><name>minShowTime</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a6077ea42c37c18b3058ed63ac10ede8f" kind="property"><name>taskInProgress</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a36639aa18a70f2734942695c32ec5e91" kind="property"><name>removeFromSuperViewOnHide</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1ae61e736a34f341f4190b065f19010af8" kind="property"><name>labelFont</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1af070a363d323d8eb0285e38d398b51c2" kind="property"><name>detailsLabelFont</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a4c8328617d11efd1f5452032246ca97f" kind="property"><name>progress</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a69c6b2cad533d6fe7d90df02bf7f8b0c" kind="property"><name>minSize</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a4bf7271b213e304259aa7d97f7cb1849" kind="property"><name>square</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a5387f186ec82ed2877553b930071c377" kind="function"><name>showHUDAddedTo:animated:</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1ab7a06aebc0d49b4fc963815ad424013f" kind="function"><name>hideHUDForView:animated:</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a86053d76e84d0fdf033af091df5ea239" kind="function"><name>hideAllHUDsForView:animated:</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a180ab3e4a8c0399c1135534f1fc1a514" kind="function"><name>HUDForView:</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1aaa8882a53b5edfd617b4ba112c60811b" kind="function"><name>allHUDsForView:</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a8f3c01167d59153c85ae7efdca7717fc" kind="function"><name>initWithWindow:</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1ae42ee0d2d0ea58fac1ce8de6b5ea3b60" kind="function"><name>initWithView:</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a3ef075a3be624c2f94629d63bfeae25b" kind="function"><name>show:</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a500fd79859e56cf98fd2eebfd37b4204" kind="function"><name>hide:</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1aec6533c21bf8a9f3e552cb133ef6aeed" kind="function"><name>hide:afterDelay:</name></member>
+    <member refid="interface_m_b_progress_h_u_d_1a23cd23b9c46bd819f14314426ed9dcdb" kind="function"><name>showWhileExecuting:onTarget:withObject:animated:</name></member>
+  </compound>
+  <compound refid="category_m_b_progress_h_u_d_07_08" kind="category"><name>MBProgressHUD()</name>
+    <member refid="category_m_b_progress_h_u_d_07_08_1a88f0841ae8c0e93249afc68954859072" kind="property"><name>indicator</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1a856da5d6ea8f970c9f79cd43f8f4e3d7" kind="property"><name>graceTimer</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1ae0ef7ca861bf900eaed11b57ad49eddc" kind="property"><name>minShowTimer</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1a45366644943d7cd700062c755ceef991" kind="property"><name>showStarted</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1aa7e6a57f64a0347bf480dc63ca6d2d35" kind="property"><name>size</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1afdd98061febe4c70612ec90781072666" kind="function"><name>setupLabels</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1ab854d39884bfbab11016768cd963c149" kind="function"><name>registerForKVO</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1af2d221a723e70926a82f8f676d5fc14d" kind="function"><name>unregisterFromKVO</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1abc52ed122a077567f45667fb2e229d99" kind="function"><name>observableKeypaths</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1a69ef8d11e37509cd6153008561495748" kind="function"><name>registerForNotifications</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1a48798d7cd00acabbf68c3042359ee26d" kind="function"><name>unregisterFromNotifications</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1a1a10daf9c000912334350f6436793334" kind="function"><name>updateUIForKeypath:</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1aa3a0b42eeeb2df228793b32806af1883" kind="function"><name>hideUsingAnimation:</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1a1d81696b9e99cce3e4291c7a5e7ca13f" kind="function"><name>showUsingAnimation:</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1ac2a1bbca15d4c98346db20c155252e1f" kind="function"><name>done</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1a0c6fd8c9f5579d07ee037f1db6113152" kind="function"><name>updateIndicators</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1ac171139695b879a83d4b27c383dacf1a" kind="function"><name>handleGraceTimer:</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1ac821792e52ccf50a0f706e8d5df4e385" kind="function"><name>handleMinShowTimer:</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1afeb3056f684d58ef12ef0a62d05d6f56" kind="function"><name>setTransformForCurrentOrientation:</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1ad37178e8a931dd238e164cc1e13042fa" kind="function"><name>cleanUp</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1a101d93f06bd73aa0cb365842cfc8966d" kind="function"><name>launchExecution</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1a75105f00fb727353b35fa6d2cf320114" kind="function"><name>deviceOrientationDidChange:</name></member>
+    <member refid="category_m_b_progress_h_u_d_07_08_1afa9de8a535c05efd09ab379039557536" kind="function"><name>hideDelayed:</name></member>
+  </compound>
+  <compound refid="protocol_m_b_progress_h_u_d_delegate-p" kind="protocol"><name>MBProgressHUDDelegate-p</name>
+    <member refid="protocol_m_b_progress_h_u_d_delegate-p_1a0b2a08b1d9cf3758cca8d52a61bed1cc" kind="function"><name>hudWasHidden:</name></member>
+  </compound>
+  <compound refid="interface_m_b_round_progress_view" kind="class"><name>MBRoundProgressView</name>
+    <member refid="interface_m_b_round_progress_view_1af92eeb35944c81f406571bc353dc5d5a" kind="property"><name>progress</name></member>
+    <member refid="interface_m_b_round_progress_view_1ae5c8d76a85810a3f843f262bdfff1163" kind="property"><name>progressTintColor</name></member>
+    <member refid="interface_m_b_round_progress_view_1ab111d2fa027158e7c21ad411767d193a" kind="property"><name>backgroundTintColor</name></member>
+    <member refid="interface_m_b_round_progress_view_1abac11853dafb3f11426dab6d42834f9c" kind="property"><name>annular</name></member>
+  </compound>
+  <compound refid="interface_media_view_controller" kind="class"><name>MediaViewController</name>
+    <member refid="interface_media_view_controller_1a2e758f6b86de6e43947f728cfcc233d8" kind="property"><name>topBar</name></member>
+  </compound>
+  <compound refid="category_media_view_controller_07_08" kind="category"><name>MediaViewController()</name>
+  </compound>
+  <compound refid="interface_message_view_controller" kind="class"><name>MessageViewController</name>
+    <member refid="interface_message_view_controller_1a4348e7ec097b29026137b244024655a2" kind="property"><name>label</name></member>
+    <member refid="interface_message_view_controller_1a976b2fbc05ba04a5d19b5438f3d480f5" kind="property"><name>infoString</name></member>
+    <member refid="interface_message_view_controller_1a2f5a4fe2febd86068b55246e816e8dea" kind="property"><name>topBar</name></member>
+  </compound>
+  <compound refid="category_message_view_controller_07_08" kind="category"><name>MessageViewController()</name>
+  </compound>
+  <compound refid="protocol_message_view_controller_delegate-p" kind="protocol"><name>MessageViewControllerDelegate-p</name>
+    <member refid="protocol_message_view_controller_delegate-p_1a28bc2194b6c71cf6aab0a7989a1a3c7f" kind="function"><name>passMessageToMessageViewController:andNavigationTitle:</name></member>
+  </compound>
+  <compound refid="interface_m_scan_view_controller" kind="class"><name>MScanViewController</name>
+    <member refid="interface_m_scan_view_controller_1aa60e8676ae754a8700fd37bac4fa81ea" kind="variable"><name>coonection</name></member>
+    <member refid="interface_m_scan_view_controller_1a6a79216881dcec458a4168b00ed8b225" kind="variable"><name>mutableData</name></member>
+    <member refid="interface_m_scan_view_controller_1a30eb0f7e359e9f0c6936c8594d9032f8" kind="property"><name>messageTextField</name></member>
+    <member refid="interface_m_scan_view_controller_1a594c0296e470ac8c970f15e65b6d0588" kind="property"><name>readerView</name></member>
+    <member refid="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" kind="property"><name>resultText</name></member>
+    <member refid="interface_m_scan_view_controller_1a38b9beb676b39bd670a620c9fcb3c140" kind="property"><name>topBar</name></member>
+  </compound>
+  <compound refid="interface_opinions_view_controller" kind="class"><name>OpinionsViewController</name>
+    <member refid="interface_opinions_view_controller_1a326a4aff8da1f317a030dfd421b74cda" kind="variable"><name>coonection</name></member>
+    <member refid="interface_opinions_view_controller_1a4dc464c8b621c738abc7c7c09d675e95" kind="variable"><name>mutableData</name></member>
+    <member refid="interface_opinions_view_controller_1a4bcebb6115f963c0e469fca9b438ee7b" kind="property"><name>opinionBackImage</name></member>
+    <member refid="interface_opinions_view_controller_1a84c76f22c30a5776ac625ea7cd737aaf" kind="property"><name>opinionTextView</name></member>
+    <member refid="interface_opinions_view_controller_1a894f5cea593018dfb32ebd371d938c6a" kind="property"><name>emailTextField</name></member>
+    <member refid="interface_opinions_view_controller_1a47800b4c0b7dd773c2866a369b2bf873" kind="property"><name>phoneTextField</name></member>
+    <member refid="interface_opinions_view_controller_1add082cf6b064ec7c0b26fb1c89a86af9" kind="property"><name>numberLabel</name></member>
+    <member refid="interface_opinions_view_controller_1a16f05df059e1a23bd623fa19b8c66a7b" kind="property"><name>topBar</name></member>
+    <member refid="interface_opinions_view_controller_1a1637be3d7112e3e645fdbc7a55ffe1d4" kind="property"><name>rightBtn</name></member>
+  </compound>
+  <compound refid="category_opinions_view_controller_07_08" kind="category"><name>OpinionsViewController()</name>
+  </compound>
+  <compound refid="interface_place" kind="class"><name>Place</name>
+    <member refid="interface_place_1ae37301519536c14b6978f7c4f0fcfe20" kind="property"><name>title</name></member>
+    <member refid="interface_place_1a619141a378f1e88297b8af065900ec13" kind="property"><name>subTitle</name></member>
+    <member refid="interface_place_1ab21765444aeec9e9505e330b6179961a" kind="property"><name>coordinate</name></member>
+    <member refid="interface_place_1a27ee6f79099b7fc960986da11f3ee493" kind="function"><name>initWithCoordinates:</name></member>
+  </compound>
+  <compound refid="struct_q_rcode" kind="struct"><name>QRcode</name>
+    <member refid="struct_q_rcode_1aa84ee8368a0cb437726e4eb4497784c0" kind="variable"><name>version</name></member>
+    <member refid="struct_q_rcode_1a70faea92be5450849d2252f286fc4cb2" kind="variable"><name>width</name></member>
+    <member refid="struct_q_rcode_1ae6f826314cfb99f4926c4c5734997c35" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="interface_q_rcode_data" kind="class"><name>QRcodeData</name>
+    <member refid="interface_q_rcode_data_1a45e953e5811f2b718b95974236b49778" kind="property"><name>ID</name></member>
+    <member refid="interface_q_rcode_data_1adde716bced6a5773f427ec6e6558bca2" kind="property"><name>name</name></member>
+    <member refid="interface_q_rcode_data_1a834dbb30cca4e5491523699fe33daf57" kind="property"><name>message</name></member>
+    <member refid="interface_q_rcode_data_1a7aaa940342a39b5b500e81bb26827773" kind="function"><name>initWithID:andName:andMessage:</name></member>
+    <member refid="interface_q_rcode_data_1a5c2d5e8fcccffe6205e22ce53092e270" kind="function"><name>findAllMessage</name></member>
+    <member refid="interface_q_rcode_data_1afea0ce0931f83205b1bbc08ab5567211" kind="function"><name>addMessageWithName:andMessage:</name></member>
+    <member refid="interface_q_rcode_data_1a101429370b309e693326ea08f9a99ef3" kind="function"><name>deleteMessageID:</name></member>
+  </compound>
+  <compound refid="interface_q_r_code_generator" kind="class"><name>QRCodeGenerator</name>
+    <member refid="interface_q_r_code_generator_1ae879aaa95e0c29807ef8f1266f6f138b" kind="function"><name>qrImageForString:imageSize:</name></member>
+  </compound>
+  <compound refid="struct_q_r_raw_code" kind="struct"><name>QRRawCode</name>
+    <member refid="struct_q_r_raw_code_1af941c8114b377a9058569aa9c2ba5a27" kind="variable"><name>version</name></member>
+    <member refid="struct_q_r_raw_code_1aecb865806841f74084d6afdb1f2d78e4" kind="variable"><name>datacode</name></member>
+    <member refid="struct_q_r_raw_code_1aca6770298baa383c45f72adafcfcd2a6" kind="variable"><name>ecccode</name></member>
+    <member refid="struct_q_r_raw_code_1acc46d472ecc1cc9236ed1397b57ba3ab" kind="variable"><name>blocks</name></member>
+    <member refid="struct_q_r_raw_code_1a7768f4e79e65cd5f0ae3c4346508285c" kind="variable"><name>rsblock</name></member>
+    <member refid="struct_q_r_raw_code_1af745fb65c519dd55404d9f8df1b8db99" kind="variable"><name>count</name></member>
+    <member refid="struct_q_r_raw_code_1a974ee31e3402e24f179578adf2abb29c" kind="variable"><name>dataLength</name></member>
+    <member refid="struct_q_r_raw_code_1ae0e17d8f436e7bcb3fac935fa8787895" kind="variable"><name>eccLength</name></member>
+    <member refid="struct_q_r_raw_code_1a3ffd48c9f259e9dc84bdf05ae4fc495e" kind="variable"><name>b1</name></member>
+  </compound>
+  <compound refid="struct_q_rspec___capacity" kind="struct"><name>QRspec_Capacity</name>
+    <member refid="struct_q_rspec___capacity_1af8a2a90900cef176ab483f664f2f7824" kind="variable"><name>width</name></member>
+    <member refid="struct_q_rspec___capacity_1a6dd21331c64ef65310427ca28bf29777" kind="variable"><name>words</name></member>
+    <member refid="struct_q_rspec___capacity_1af7d1ce2bdce5518b2a3e3f67cdba68c7" kind="variable"><name>remainder</name></member>
+    <member refid="struct_q_rspec___capacity_1a379849c2096a48444813b7878ada4624" kind="variable"><name>ec</name></member>
+  </compound>
+  <compound refid="interface_reachability" kind="class"><name>Reachability</name>
+    <member refid="interface_reachability_1ac0ef2a5c4b1470394ab5c1942100fd82" kind="property"><name>reachableBlock</name></member>
+    <member refid="interface_reachability_1a094a49485d02681b0df97bc413714c79" kind="property"><name>unreachableBlock</name></member>
+    <member refid="interface_reachability_1aa6c9eada73d41380aa056539fd005b21" kind="property"><name>reachableOnWWAN</name></member>
+    <member refid="interface_reachability_1a2f1b1e51498d1458918ac7399330b3e5" kind="function"><name>reachabilityWithHostname:</name></member>
+    <member refid="interface_reachability_1ad2962f5292dee6a56f43175d344c3da1" kind="function"><name>reachabilityForInternetConnection</name></member>
+    <member refid="interface_reachability_1add9b3533dfed13fc2215cc27bca74ace" kind="function"><name>reachabilityWithAddress:</name></member>
+    <member refid="interface_reachability_1afef931b75654390d24d9c897835929f5" kind="function"><name>reachabilityForLocalWiFi</name></member>
+    <member refid="interface_reachability_1af8dbb23cc7f9ac59b0269dfaf83979fc" kind="function"><name>initWithReachabilityRef:</name></member>
+    <member refid="interface_reachability_1ae20732960a222681fcc7caeb191158bc" kind="function"><name>startNotifier</name></member>
+    <member refid="interface_reachability_1ab7907e9c8de0e4e15774e82c089e0b39" kind="function"><name>stopNotifier</name></member>
+    <member refid="interface_reachability_1ae0b18fcacc97f538502cf671aa583dbd" kind="function"><name>isReachable</name></member>
+    <member refid="interface_reachability_1a20011128b407d36659bc78a64cd583f5" kind="function"><name>isReachableViaWWAN</name></member>
+    <member refid="interface_reachability_1a994f39db8e47480480ffd7ee81159ecb" kind="function"><name>isReachableViaWiFi</name></member>
+    <member refid="interface_reachability_1a294f9407cd32a05f26a480871df70901" kind="function"><name>isConnectionRequired</name></member>
+    <member refid="interface_reachability_1a731496d70dd8bfbd1b364df13cac2b4c" kind="function"><name>connectionRequired</name></member>
+    <member refid="interface_reachability_1af5bea7c2cfd6439a4ff5f0ab0b92e37b" kind="function"><name>isConnectionOnDemand</name></member>
+    <member refid="interface_reachability_1ad44af2ebf5ffd986dacad06e63362550" kind="function"><name>isInterventionRequired</name></member>
+    <member refid="interface_reachability_1a8396438436e7ff3770039fb527cd1d34" kind="function"><name>currentReachabilityStatus</name></member>
+    <member refid="interface_reachability_1ac9080e40006cd8c82431a668ec8bfe18" kind="function"><name>reachabilityFlags</name></member>
+    <member refid="interface_reachability_1af07f0954cd2c09505d5fdccb25941351" kind="function"><name>currentReachabilityString</name></member>
+    <member refid="interface_reachability_1a3191086f18ebe51a0ed8d525c3175f38" kind="function"><name>currentReachabilityFlags</name></member>
+  </compound>
+  <compound refid="category_reachability_07_08" kind="category"><name>Reachability()</name>
+    <member refid="category_reachability_07_08_1a08bbb93c5fdd4d94ef8e3cbcb5507ebf" kind="property"><name>reachabilityRef</name></member>
+    <member refid="category_reachability_07_08_1a045af669a71d6c23195389b34ffe5d04" kind="property"><name>reachabilitySerialQueue</name></member>
+    <member refid="category_reachability_07_08_1a354f7836a96e6789a11171200f13e179" kind="property"><name>reachabilityObject</name></member>
+    <member refid="category_reachability_07_08_1acd93f54edff50c3a80c741486be86a50" kind="function"><name>reachabilityChanged:</name></member>
+    <member refid="category_reachability_07_08_1a2cbef2425a180599dcab4d7ac92a0714" kind="function"><name>isReachableWithFlags:</name></member>
+  </compound>
+  <compound refid="struct_r_sblock" kind="struct"><name>RSblock</name>
+    <member refid="struct_r_sblock_1aa92b088de49cdee698c049387d6fef89" kind="variable"><name>dataLength</name></member>
+    <member refid="struct_r_sblock_1a3d42ae9bcad0ffc7656d81ce24f51964" kind="variable"><name>data</name></member>
+    <member refid="struct_r_sblock_1aaf8a24ab61caca65ac8ab603b350d21f" kind="variable"><name>eccLength</name></member>
+    <member refid="struct_r_sblock_1ae715d7789367a8ca7a632a5584bce8c6" kind="variable"><name>ecc</name></member>
+  </compound>
+  <compound refid="interface_second_view_controller" kind="class"><name>SecondViewController</name>
+    <member refid="interface_second_view_controller_1a0e7a868f901538fd366c8492bdbc1542" kind="variable"><name>connect</name></member>
+    <member refid="interface_second_view_controller_1a879106d38ca66508fba5e5fe1b003aa0" kind="variable"><name>mutableData</name></member>
+    <member refid="interface_second_view_controller_1af8ad1b44c796a199ab2fd06992a9c461" kind="variable"><name>_refreshHeaderView</name></member>
+    <member refid="interface_second_view_controller_1ad5e1aad7f8a7015f997435ff115aceb9" kind="variable"><name>_reloading</name></member>
+    <member refid="interface_second_view_controller_1a4c51889ba60022a7e70280749e537614" kind="property"><name>infoTableView</name></member>
+    <member refid="interface_second_view_controller_1aaaeee06f2e27a9862fe8cd8b4baec9f3" kind="property"><name>messageArray</name></member>
+    <member refid="interface_second_view_controller_1a97d1a2f53dae600be38c7910811e72da" kind="property"><name>topBar</name></member>
+    <member refid="interface_second_view_controller_1aa1379f16650312a6e80315959ebec22a" kind="property"><name>downLoad</name></member>
+    <member refid="interface_second_view_controller_1a7c5a17ea9b727325d7ec6b24dfa0c655" kind="function"><name>reloadTableViewDataSource</name></member>
+    <member refid="interface_second_view_controller_1a16d7a7efe31a5f0a3109b2b3bbf9a398" kind="function"><name>doneLoadingTableViewData</name></member>
+  </compound>
+  <compound refid="category_second_view_controller_07_08" kind="category"><name>SecondViewController()</name>
+  </compound>
+  <compound refid="interface_third_view_controller" kind="class"><name>ThirdViewController</name>
+    <member refid="interface_third_view_controller_1a07b1ad7f982c6ff1fde210551a322e25" kind="variable"><name>place</name></member>
+    <member refid="interface_third_view_controller_1a2cc2e4087a178600c4dc2bfd2170b3d4" kind="variable"><name>isEditer</name></member>
+    <member refid="interface_third_view_controller_1a08e18d607bbc0cd9239a557f940b2784" kind="variable"><name>_refreshHeaderView</name></member>
+    <member refid="interface_third_view_controller_1a55e896c20fdbba3723bf0b89e66d366c" kind="variable"><name>_reloading</name></member>
+    <member refid="interface_third_view_controller_1accc75979633ac923b79bfd904970545e" kind="property"><name>label</name></member>
+    <member refid="interface_third_view_controller_1a47fc40aa5fe0c94a700df0c369d980cb" kind="property"><name>myMapView</name></member>
+    <member refid="interface_third_view_controller_1a8d32e1defe1b863e1665cbdfc7cc183b" kind="property"><name>location</name></member>
+    <member refid="interface_third_view_controller_1a035cc582faa9fd494eb6685abc8253ac" kind="property"><name>myDateArray</name></member>
+    <member refid="interface_third_view_controller_1acb3d719781c1a8152d2d288fdf75e2ad" kind="property"><name>dateTableView</name></member>
+    <member refid="interface_third_view_controller_1ad8291a0e3ff00b6e7a806086c4076030" kind="property"><name>qrTableView</name></member>
+    <member refid="interface_third_view_controller_1aa0b92a67003d6d8d7e6760a79470d7ef" kind="property"><name>qrArray</name></member>
+    <member refid="interface_third_view_controller_1aebb42a65b7995a2ea03fbf8e3e948e2e" kind="property"><name>rightBtn</name></member>
+    <member refid="interface_third_view_controller_1a33f49c284d72176cdab3d655ad97b611" kind="property"><name>topBar</name></member>
+    <member refid="interface_third_view_controller_1a4b6940f055ef4eb1b37115d77358106a" kind="property"><name>downLoad</name></member>
+    <member refid="interface_third_view_controller_1a6a6f71aaa12135c0a17a257869782f7c" kind="function"><name>segmentActive:</name></member>
+    <member refid="interface_third_view_controller_1a981c86d06f15523843abc1591da5f6b6" kind="function"><name>reloadTableViewDataSource</name></member>
+    <member refid="interface_third_view_controller_1a1bb13b98f0a3c114e2c53131c4c53d55" kind="function"><name>doneLoadingTableViewData</name></member>
+  </compound>
+  <compound refid="category_third_view_controller_07_08" kind="category"><name>ThirdViewController()</name>
+  </compound>
+  <compound refid="interface_top_bar_view" kind="class"><name>TopBarView</name>
+    <member refid="interface_top_bar_view_1ab3afddca39563afaa00478a3d8736b7c" kind="property"><name>navImage</name></member>
+    <member refid="interface_top_bar_view_1a97c5a62e2380ce2a44674149aeafc9e4" kind="property"><name>navLabel</name></member>
+    <member refid="interface_top_bar_view_1a082f6b7cb92d805f874187dbf8175b5d" kind="property"><name>backBtn</name></member>
+    <member refid="interface_top_bar_view_1a019b7bc20208794affcc681f89e63149" kind="property"><name>saveBtn</name></member>
+  </compound>
+  <compound refid="interface_u_r_l_encode" kind="class"><name>URLEncode</name>
+    <member refid="interface_u_r_l_encode_1a4e765190617a605922c590e13568db6a" kind="function"><name>URLencode:stringEncoding:</name></member>
+    <member refid="interface_u_r_l_encode_1a914b0d0d070a8967bcaa8af19a14df90" kind="function"><name>encodeUrlStr:</name></member>
+  </compound>
+  <compound refid="bitstream_8c" kind="file"><name>bitstream.c</name>
+    <member refid="bitstream_8c_1ad485284fa1d00d9376d75e39fe477fad" kind="function"><name>BitStream_new</name></member>
+    <member refid="bitstream_8c_1acd3bb059458b0bc0ded3ada0721fbd6a" kind="function"><name>BitStream_allocate</name></member>
+    <member refid="bitstream_8c_1a059e29d03ec3e9e8a634442a96e9a7c4" kind="function"><name>BitStream_newFromNum</name></member>
+    <member refid="bitstream_8c_1aef7152e25cfe02da8b620d4a4cf6daf3" kind="function"><name>BitStream_newFromBytes</name></member>
+    <member refid="bitstream_8c_1ac0dbef6587cda9c4b8a22c0e09438711" kind="function"><name>BitStream_append</name></member>
+    <member refid="bitstream_8c_1a7429de7f252d789a41eba00de757a1a0" kind="function"><name>BitStream_appendNum</name></member>
+    <member refid="bitstream_8c_1ad551466d27ed6de7b75ff0b0250c7be7" kind="function"><name>BitStream_appendBytes</name></member>
+    <member refid="bitstream_8c_1afb945acb0eb23cec5a73845cefd9bb15" kind="function"><name>BitStream_toByte</name></member>
+    <member refid="bitstream_8c_1a31912316aa3e80a99b43652415beab71" kind="function"><name>BitStream_free</name></member>
+  </compound>
+  <compound refid="bitstream_8h" kind="file"><name>bitstream.h</name>
+    <member refid="bitstream_8h_1afabb4006039d4bb6e35edbcc7bfc4f2a" kind="define"><name>BitStream_size</name></member>
+    <member refid="bitstream_8h_1ad485284fa1d00d9376d75e39fe477fad" kind="function"><name>BitStream_new</name></member>
+    <member refid="bitstream_8h_1ac0dbef6587cda9c4b8a22c0e09438711" kind="function"><name>BitStream_append</name></member>
+    <member refid="bitstream_8h_1a7429de7f252d789a41eba00de757a1a0" kind="function"><name>BitStream_appendNum</name></member>
+    <member refid="bitstream_8h_1ad551466d27ed6de7b75ff0b0250c7be7" kind="function"><name>BitStream_appendBytes</name></member>
+    <member refid="bitstream_8h_1afb945acb0eb23cec5a73845cefd9bb15" kind="function"><name>BitStream_toByte</name></member>
+    <member refid="bitstream_8h_1a31912316aa3e80a99b43652415beab71" kind="function"><name>BitStream_free</name></member>
+  </compound>
+  <compound refid="_card_view_controller_8h" kind="file"><name>CardViewController.h</name>
+  </compound>
+  <compound refid="_card_view_controller_8m" kind="file"><name>CardViewController.m</name>
+    <member refid="_card_view_controller_8m_1aa57f5ec7ad5a8c067131fa3fec28505e" kind="define"><name>CardNumber</name></member>
+  </compound>
+  <compound refid="_const_8h" kind="file"><name>Const.h</name>
+    <member refid="_const_8h_1a241aeeb764887ae5e3de58b98f04b16d" kind="define"><name>WIDTH</name></member>
+    <member refid="_const_8h_1aed89bd71aee8be823e8a20ec4e093c1e" kind="define"><name>HEIGHT</name></member>
+    <member refid="_const_8h_1afa5e534437001f7bcac22ef134bd5314" kind="define"><name>iPhone5</name></member>
+  </compound>
+  <compound refid="_coupons_view_controller_8h" kind="file"><name>CouponsViewController.h</name>
+  </compound>
+  <compound refid="_coupons_view_controller_8m" kind="file"><name>CouponsViewController.m</name>
+  </compound>
+  <compound refid="_custom_cell_8h" kind="file"><name>CustomCell.h</name>
+  </compound>
+  <compound refid="_custom_cell_8m" kind="file"><name>CustomCell.m</name>
+  </compound>
+  <compound refid="_data_base_8h" kind="file"><name>DataBase.h</name>
+    <member refid="_data_base_8h_1a4d9e9bcc022460899d4dec0705c3330c" kind="define"><name>KDBPATH</name></member>
+  </compound>
+  <compound refid="_data_base_8m" kind="file"><name>DataBase.m</name>
+    <member refid="_data_base_8m_1a8a4d03e106af27dba82e81a9e19edd7b" kind="variable"><name>dbPointer</name></member>
+  </compound>
+  <compound refid="_date_detail_view_controller_8h" kind="file"><name>DateDetailViewController.h</name>
+  </compound>
+  <compound refid="_date_detail_view_controller_8m" kind="file"><name>DateDetailViewController.m</name>
+  </compound>
+  <compound refid="_date_plan_8h" kind="file"><name>DatePlan.h</name>
+  </compound>
+  <compound refid="_date_plan_8m" kind="file"><name>DatePlan.m</name>
+  </compound>
+  <compound refid="_date_view_controller_8h" kind="file"><name>DateViewController.h</name>
+    <member refid="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68" kind="enum"><name>Place</name></member>
+    <member refid="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68a0d3a2acbccb30b7c089363e026bb19b3" kind="enumvalue"><name>BeiJing1</name></member>
+    <member refid="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68a39ce11b29fcc2863296966437bd91d01" kind="enumvalue"><name>ZhengZhou</name></member>
+    <member refid="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68af3a46399b8523595b51ec96f7bf5da34" kind="enumvalue"><name>XiAn</name></member>
+    <member refid="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68ae88c789a13c350844cc230d8de6b0931" kind="enumvalue"><name>WenZhou</name></member>
+    <member refid="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68adaf26a61d9796e57dd927dce527646b6" kind="enumvalue"><name>BeiJing2</name></member>
+  </compound>
+  <compound refid="_date_view_controller_8m" kind="file"><name>DateViewController.m</name>
+  </compound>
+  <compound refid="_detail_view_controller_8h" kind="file"><name>DetailViewController.h</name>
+  </compound>
+  <compound refid="_detail_view_controller_8m" kind="file"><name>DetailViewController.m</name>
+  </compound>
+  <compound refid="_down_load_string_8h" kind="file"><name>DownLoadString.h</name>
+    <member refid="_down_load_string_8h_1a1bf110f0580dceb5af2dfb3ce7c0bbbc" kind="define"><name>KRURLWithStringMain</name></member>
+    <member refid="_down_load_string_8h_1a873233573d43d2216fa5d08a3022f13c" kind="define"><name>KRURLWithStringFirst</name></member>
+    <member refid="_down_load_string_8h_1ae0d8556107bd561a2302ae9eb61f0f71" kind="define"><name>KRURLWithStringSecond</name></member>
+    <member refid="_down_load_string_8h_1ad49c49b82a281b935c9cc1ab6950e404" kind="define"><name>KRURLWithStringThird</name></member>
+    <member refid="_down_load_string_8h_1a32a0dcec070fd5af05ee2ad737118331" kind="function"><name>NS_ENUM</name></member>
+  </compound>
+  <compound refid="_down_load_string_8m" kind="file"><name>DownLoadString.m</name>
+    <member refid="_down_load_string_8m_1a9f587868e2beb6e5ca4b6fd8e675a8c8" kind="variable"><name>instance</name></member>
+  </compound>
+  <compound refid="_e_g_o_refresh_table_header_view_8h" kind="file"><name>EGORefreshTableHeaderView.h</name>
+    <member refid="_e_g_o_refresh_table_header_view_8h_1a15d8a0b1eadb8a0f175daa99f5127bb1" kind="enum"><name>EGOPullRefreshState</name></member>
+    <member refid="_e_g_o_refresh_table_header_view_8h_1a15d8a0b1eadb8a0f175daa99f5127bb1aab2d69e108c1ba21e62e44b73d8d8dac" kind="enumvalue"><name>EGOOPullRefreshPulling</name></member>
+    <member refid="_e_g_o_refresh_table_header_view_8h_1a15d8a0b1eadb8a0f175daa99f5127bb1ad8ca21ba81a3c44e39cbfeb1d3be279c" kind="enumvalue"><name>EGOOPullRefreshNormal</name></member>
+    <member refid="_e_g_o_refresh_table_header_view_8h_1a15d8a0b1eadb8a0f175daa99f5127bb1a967a6d5700c81dc1183b07bc8ad12410" kind="enumvalue"><name>EGOOPullRefreshLoading</name></member>
+  </compound>
+  <compound refid="_e_g_o_refresh_table_header_view_8m" kind="file"><name>EGORefreshTableHeaderView.m</name>
+    <member refid="_e_g_o_refresh_table_header_view_8m_1a21d8d1acc9bd2ed93b1960661f09cbf6" kind="define"><name>TEXT_COLOR</name></member>
+    <member refid="_e_g_o_refresh_table_header_view_8m_1a8a5b1bfad125e844c62a5b02c6188a4b" kind="define"><name>FLIP_ANIMATION_DURATION</name></member>
+  </compound>
+  <compound refid="_first_view_controller_8h" kind="file"><name>FirstViewController.h</name>
+  </compound>
+  <compound refid="_first_view_controller_8m" kind="file"><name>FirstViewController.m</name>
+  </compound>
+  <compound refid="_four_view_controller_8h" kind="file"><name>FourViewController.h</name>
+  </compound>
+  <compound refid="_four_view_controller_8m" kind="file"><name>FourViewController.m</name>
+  </compound>
+  <compound refid="i_carousel_8h" kind="file"><name>iCarousel.h</name>
+    <member refid="i_carousel_8h_1a2dcd83708ba3f62e0b06fc09b5bb78e1" kind="enum"><name>iCarouselType</name></member>
+    <member refid="i_carousel_8h_1a2dcd83708ba3f62e0b06fc09b5bb78e1a419f4379ac8fa4967dd0c08119815b71" kind="enumvalue"><name>iCarouselTypeLinear</name></member>
+    <member refid="i_carousel_8h_1a2dcd83708ba3f62e0b06fc09b5bb78e1a08222038b6d5f8ab6f12c6da5dd90abb" kind="enumvalue"><name>iCarouselTypeRotary</name></member>
+    <member refid="i_carousel_8h_1a2dcd83708ba3f62e0b06fc09b5bb78e1ab807beee5349c913c2aa4effc0c110df" kind="enumvalue"><name>iCarouselTypeInvertedRotary</name></member>
+    <member refid="i_carousel_8h_1a2dcd83708ba3f62e0b06fc09b5bb78e1ad359976a76f643da5a028d6dbff43125" kind="enumvalue"><name>iCarouselTypeCylinder</name></member>
+    <member refid="i_carousel_8h_1a2dcd83708ba3f62e0b06fc09b5bb78e1a4f95d7cd49d6c077242b281f720e4482" kind="enumvalue"><name>iCarouselTypeInvertedCylinder</name></member>
+    <member refid="i_carousel_8h_1a2dcd83708ba3f62e0b06fc09b5bb78e1a41fc7a526cbfba1701daa8b5f95b7a21" kind="enumvalue"><name>iCarouselTypeCoverFlow</name></member>
+    <member refid="i_carousel_8h_1a2dcd83708ba3f62e0b06fc09b5bb78e1a0ded797d007d008798d902b0a52dd73a" kind="enumvalue"><name>iCarouselTypeCoverFlow2</name></member>
+    <member refid="i_carousel_8h_1a2dcd83708ba3f62e0b06fc09b5bb78e1a3784839b97095bad187240ff7be3a31a" kind="enumvalue"><name>iCarouselTypeCustom</name></member>
+    <member refid="i_carousel_8h_1a22548557666281ee5bd0485d59269c94" kind="typedef"><name>UIView</name></member>
+  </compound>
+  <compound refid="i_carousel_8m" kind="file"><name>iCarousel.m</name>
+    <member refid="i_carousel_8m_1ac6f0a9b44eb7a12fe4dee2592596fb01" kind="define"><name>MIN_TOGGLE_DURATION</name></member>
+    <member refid="i_carousel_8m_1a6703c668d7369a39e074add2054e601a" kind="define"><name>MAX_TOGGLE_DURATION</name></member>
+    <member refid="i_carousel_8m_1a41a2fd9adbae339b5d551e7d2b3132a2" kind="define"><name>SCROLL_DURATION</name></member>
+    <member refid="i_carousel_8m_1a9f6299a11c103dc17ff692d7d9fbfa3a" kind="define"><name>INSERT_DURATION</name></member>
+    <member refid="i_carousel_8m_1a6e24a02f81b5740dd64e30eac2ad97b8" kind="define"><name>DECELERATE_THRESHOLD</name></member>
+    <member refid="i_carousel_8m_1a21a4ae857c78f40ae0392a765a0b45bd" kind="define"><name>SCROLL_SPEED_THRESHOLD</name></member>
+    <member refid="i_carousel_8m_1a106346b588e9f0f0e2b34e154dbed2df" kind="define"><name>SCROLL_DISTANCE_THRESHOLD</name></member>
+    <member refid="i_carousel_8m_1a1ab611e0d175c3cabb6a42ff3de2ea8f" kind="define"><name>DECELERATION_MULTIPLIER</name></member>
+  </compound>
+  <compound refid="_info_view_controller_8h" kind="file"><name>InfoViewController.h</name>
+  </compound>
+  <compound refid="_info_view_controller_8m" kind="file"><name>InfoViewController.m</name>
+  </compound>
+  <compound refid="_main_view_controller_8h" kind="file"><name>MainViewController.h</name>
+  </compound>
+  <compound refid="_main_view_controller_8m" kind="file"><name>MainViewController.m</name>
+    <member refid="_main_view_controller_8m_1a1949da78c014ebab2a6be9b36e74e2fc" kind="define"><name>ITEM_SPACING</name></member>
+  </compound>
+  <compound refid="mask_8c" kind="file"><name>mask.c</name>
+    <member refid="mask_8c_1abd7b39be02bc15d79b73e5cf2b531299" kind="define"><name>N1</name></member>
+    <member refid="mask_8c_1acd864640121c7df2c19f61f7baa507e4" kind="define"><name>N2</name></member>
+    <member refid="mask_8c_1ad66109fbdc4d3adc9c3d6ff917038aef" kind="define"><name>N3</name></member>
+    <member refid="mask_8c_1a866f55e5470bf0c2c18aa6ce5da2c394" kind="define"><name>N4</name></member>
+    <member refid="mask_8c_1a1b7231bec112efd7484e1d94fe1a7321" kind="define"><name>MASKMAKER</name></member>
+    <member refid="mask_8c_1a5b9736d7bcb8f9f8402a1fe88af642c8" kind="typedef"><name>MaskMaker</name></member>
+    <member refid="mask_8c_1a2c6cdb0b9f37c89ed8e0a741d5de17b1" kind="variable"><name>maskMakers</name></member>
+    <member refid="mask_8c_1adb226a33f40c29a933ec591452a7477b" kind="variable"><name>runLength</name></member>
+    <member refid="mask_8c_1a263be724c4972e627165da46aa889af1" kind="function"><name>Mask_writeFormatInformation</name></member>
+    <member refid="mask_8c_1a02a69e181e1ea16d03a9872856815df0" kind="function"><name>Mask_mask0</name></member>
+    <member refid="mask_8c_1a860d5bd30062232a7885058b234bd384" kind="function"><name>Mask_mask1</name></member>
+    <member refid="mask_8c_1a0b7b57f1ab2bce62b73b764f2ae75d95" kind="function"><name>Mask_mask2</name></member>
+    <member refid="mask_8c_1a0526a1ffc6647ffa592e7f5f3e6b59e1" kind="function"><name>Mask_mask3</name></member>
+    <member refid="mask_8c_1a83ab0ec40b7f78b92833dee82540fc96" kind="function"><name>Mask_mask4</name></member>
+    <member refid="mask_8c_1a38cbf53775c294425c1e68cf81ea8b74" kind="function"><name>Mask_mask5</name></member>
+    <member refid="mask_8c_1a5955f90761d0d33105776087d98a0299" kind="function"><name>Mask_mask6</name></member>
+    <member refid="mask_8c_1a07f7164c2198eec37efa9551fc939d18" kind="function"><name>Mask_mask7</name></member>
+    <member refid="mask_8c_1a689d9ac1fda286bc6830726507687665" kind="function"><name>Mask_makeMask</name></member>
+    <member refid="mask_8c_1abdc01ef5932efa92fcec54c1f70703e8" kind="function"><name>Mask_calcN1N3</name></member>
+    <member refid="mask_8c_1a2079d5c10879f70dd574cf2a2dcac848" kind="function"><name>Mask_evaluateSymbol</name></member>
+    <member refid="mask_8c_1a845bb508281c7de437b3e54bcfe7f0e0" kind="function"><name>Mask_mask</name></member>
+  </compound>
+  <compound refid="mask_8h" kind="file"><name>mask.h</name>
+    <member refid="mask_8h_1a689d9ac1fda286bc6830726507687665" kind="function"><name>Mask_makeMask</name></member>
+    <member refid="mask_8h_1a845bb508281c7de437b3e54bcfe7f0e0" kind="function"><name>Mask_mask</name></member>
+  </compound>
+  <compound refid="_m_b_progress_h_u_d_8h" kind="file"><name>MBProgressHUD.h</name>
+    <member refid="_m_b_progress_h_u_d_8h_1a0aa3ddcad65d17ece28a6e562f031794" kind="define"><name>MB_STRONG</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1ae418fa5342876317377e77f6492ee4e4" kind="define"><name>MB_WEAK</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a6170ca9e856c74ad7817ac1ac63bcef0" kind="define"><name>MBLabelAlignmentCenter</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a553b6bab1602fa03257edde8491bb621" kind="enum"><name>MBProgressHUDMode</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a553b6bab1602fa03257edde8491bb621a7d546c063ab8c0a2a5b590f8c2ca9ae1" kind="enumvalue"><name>MBProgressHUDModeIndeterminate</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a553b6bab1602fa03257edde8491bb621a87273ab59b043c87bdbf23eb7c6c0a29" kind="enumvalue"><name>MBProgressHUDModeDeterminate</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a553b6bab1602fa03257edde8491bb621a6812f646af244b722c1b06e23bb596a4" kind="enumvalue"><name>MBProgressHUDModeAnnularDeterminate</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a553b6bab1602fa03257edde8491bb621a1068fa433ab70ff3bfdc9b24063943d8" kind="enumvalue"><name>MBProgressHUDModeCustomView</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a553b6bab1602fa03257edde8491bb621aa288954107f046996e0ef5d4588df3a0" kind="enumvalue"><name>MBProgressHUDModeText</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a892ebf586d23b21a74bc54138ca25990" kind="enum"><name>MBProgressHUDAnimation</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a892ebf586d23b21a74bc54138ca25990aabab0a23495b4a58b97dd9a29ce533d5" kind="enumvalue"><name>MBProgressHUDAnimationFade</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a892ebf586d23b21a74bc54138ca25990a57845b41854be930ae8213265dddb00f" kind="enumvalue"><name>MBProgressHUDAnimationZoom</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a892ebf586d23b21a74bc54138ca25990a2f5a4788aad7e24be66b6060e3652119" kind="enumvalue"><name>MBProgressHUDAnimationZoomOut</name></member>
+    <member refid="_m_b_progress_h_u_d_8h_1a892ebf586d23b21a74bc54138ca25990a0867bb706a7cf398eeec50d053f6c597" kind="enumvalue"><name>MBProgressHUDAnimationZoomIn</name></member>
+  </compound>
+  <compound refid="_m_b_progress_h_u_d_8m" kind="file"><name>MBProgressHUD.m</name>
+    <member refid="_m_b_progress_h_u_d_8m_1af25a10631b1ec935a4c12da3b022fd73" kind="define"><name>MB_AUTORELEASE</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1abb0e3258d042c04d3b78634cd6787407" kind="define"><name>MB_RELEASE</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1a57936e1cb5b0895defc7751f26834578" kind="define"><name>MB_RETAIN</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1a96ac2bd89f3a034bfb0d1e70d1c5dbb5" kind="variable"><name>kPadding</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1ac681970a4a53d357057847adec2150c0" kind="variable"><name>kLabelFontSize</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1a106e899458c2237d0eb67cd74f866238" kind="variable"><name>kDetailsLabelFontSize</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1ae28780a2d6fe7834cc029fbbdf206b62" kind="variable"><name>methodForExecution</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1ac38a276e24f577d9c261e271f57a33c4" kind="variable"><name>targetForExecution</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1a8a5775046c2febf1bffd946f6febce85" kind="variable"><name>objectForExecution</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1a077d2090d973b1d47c6e3d6e0c47e8af" kind="variable"><name>label</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1a077099bddd69564b35222123f4c42f33" kind="variable"><name>detailsLabel</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1a2f9955018d8c22980f27a7f93876e39a" kind="variable"><name>isFinished</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1adc611101946978c2d856725aee5f3268" kind="variable"><name>rotationTransform</name></member>
+    <member refid="_m_b_progress_h_u_d_8m_1ab88418da519564c9c1f5819b259430a3" kind="variable"><name>_annular</name></member>
+  </compound>
+  <compound refid="_media_view_controller_8h" kind="file"><name>MediaViewController.h</name>
+  </compound>
+  <compound refid="_media_view_controller_8m" kind="file"><name>MediaViewController.m</name>
+  </compound>
+  <compound refid="_message_view_controller_8h" kind="file"><name>MessageViewController.h</name>
+  </compound>
+  <compound refid="_message_view_controller_8m" kind="file"><name>MessageViewController.m</name>
+  </compound>
+  <compound refid="_m_scan_view_controller_8h" kind="file"><name>MScanViewController.h</name>
+  </compound>
+  <compound refid="_m_scan_view_controller_8m" kind="file"><name>MScanViewController.m</name>
+  </compound>
+  <compound refid="_opinions_view_controller_8h" kind="file"><name>OpinionsViewController.h</name>
+  </compound>
+  <compound refid="_opinions_view_controller_8m" kind="file"><name>OpinionsViewController.m</name>
+  </compound>
+  <compound refid="_place_8h" kind="file"><name>Place.h</name>
+  </compound>
+  <compound refid="_place_8m" kind="file"><name>Place.m</name>
+  </compound>
+  <compound refid="_q_rcode_data_8h" kind="file"><name>QRcodeData.h</name>
+  </compound>
+  <compound refid="_q_rcode_data_8m" kind="file"><name>QRcodeData.m</name>
+  </compound>
+  <compound refid="_q_r_code_generator_8h" kind="file"><name>QRCodeGenerator.h</name>
+  </compound>
+  <compound refid="_q_r_code_generator_8m" kind="file"><name>QRCodeGenerator.m</name>
+    <member refid="_q_r_code_generator_8m_1a06fc87d81c62e9abb8790b6e5713c55b" kind="enum"><name>@0</name></member>
+    <member refid="_q_r_code_generator_8m_1a06fc87d81c62e9abb8790b6e5713c55bab9ba5efda7e2d9cd1f93b4aa4ed1da54" kind="enumvalue"><name>qr_margin</name></member>
+  </compound>
+  <compound refid="qrencode_8c" kind="file"><name>qrencode.c</name>
+    <member refid="qrencode_8c_1a26092a614843ba19ece6e902264a6e79" kind="function"><name>RSblock_initBlock</name></member>
+    <member refid="qrencode_8c_1ad94b264f8ff2118e2e932e908ccdf17c" kind="function"><name>RSblock_init</name></member>
+    <member refid="qrencode_8c_1ae1d18be40cea109ff39285222d885790" kind="function"><name>QRraw_free</name></member>
+    <member refid="qrencode_8c_1a702ea2bcd7fafc8553642d38115f5e67" kind="function"><name>QRraw_new</name></member>
+    <member refid="qrencode_8c_1a479fdae03e8e08e82259e4543b6f6950" kind="function"><name>QRraw_getCode</name></member>
+    <member refid="qrencode_8c_1a623abdd2ad78a6a0e87a4006e63f7ef0" kind="function"><name>FrameFiller_new</name></member>
+    <member refid="qrencode_8c_1a7949f94ef4f0cf38a06489e74af0826d" kind="function"><name>FrameFiller_next</name></member>
+    <member refid="qrencode_8c_1ac811b4c310e3e4d76618c99683283156" kind="function"><name>QRcode_new</name></member>
+    <member refid="qrencode_8c_1af724395da2e575b3d9c1f616df534d65" kind="function"><name>QRcode_free</name></member>
+    <member refid="qrencode_8c_1a6e74e2a88fa32b16d8e6334d5b06c215" kind="function"><name>QRcode_encodeMask</name></member>
+    <member refid="qrencode_8c_1a7e3d85c72fed82f0fc08aff3bcda9053" kind="function"><name>QRcode_encodeInput</name></member>
+    <member refid="qrencode_8c_1a85dc467ee77d8524b508aea064699a82" kind="function"><name>QRcode_encodeString8bit</name></member>
+    <member refid="qrencode_8c_1a4cebc3c670efe1b8866b14c42737fc8f" kind="function"><name>QRcode_encodeString</name></member>
+    <member refid="qrencode_8c_1a9ca11e968ea478f92b40ffb863a46492" kind="function"><name>QRcode_List_newEntry</name></member>
+    <member refid="qrencode_8c_1a4a719a302915b4f4502f516c001b6835" kind="function"><name>QRcode_List_freeEntry</name></member>
+    <member refid="qrencode_8c_1a14d58ac55f4d8c9e63667c6ef3a27af2" kind="function"><name>QRcode_List_free</name></member>
+    <member refid="qrencode_8c_1afc435991bbd7392c390624b084af514e" kind="function"><name>QRcode_List_size</name></member>
+    <member refid="qrencode_8c_1a2f8a7dac1451170721a14e00952d3fa8" kind="function"><name>QRcode_encodeInputStructured</name></member>
+    <member refid="qrencode_8c_1a04b3b843b20f1c66346f688b1274dbc1" kind="function"><name>QRcode_encodeInputToStructured</name></member>
+    <member refid="qrencode_8c_1a62438c11e91a3e43928d4ceaf5803f33" kind="function"><name>QRcode_encodeString8bitStructured</name></member>
+    <member refid="qrencode_8c_1a61b52b2057480cd1f0a58e8d294c68a9" kind="function"><name>QRcode_encodeStringStructured</name></member>
+  </compound>
+  <compound refid="qrencode_8h" kind="file"><name>qrencode.h</name>
+    <member refid="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55db" kind="enum"><name>QRencodeMode</name></member>
+    <member refid="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dbad442f5c4a903268048cc1db855c8b172" kind="enumvalue"><name>QR_MODE_NUL</name></member>
+    <member refid="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dbafddb4ee544b4f25b48a057644aa8ab33" kind="enumvalue"><name>QR_MODE_NUM</name></member>
+    <member refid="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dbab3edce4288e06c11609faa541e98031a" kind="enumvalue"><name>QR_MODE_AN</name></member>
+    <member refid="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dbaba5e662298585e60c652ca66148544ee" kind="enumvalue"><name>QR_MODE_8</name></member>
+    <member refid="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dba3f9798e93fa2f727b5296120ad9dda0f" kind="enumvalue"><name>QR_MODE_KANJI</name></member>
+    <member refid="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dba43d08a5e6ca772cf62b325b2f9014d84" kind="enumvalue"><name>QR_MODE_STRUCTURE</name></member>
+    <member refid="qrencode_8h_1a35d70229ba985c61bbdab27b0f65740e" kind="enum"><name>QRecLevel</name></member>
+    <member refid="qrencode_8h_1a35d70229ba985c61bbdab27b0f65740eab121be4d707624ee65e83b716a36e874" kind="enumvalue"><name>QR_ECLEVEL_L</name></member>
+    <member refid="qrencode_8h_1a35d70229ba985c61bbdab27b0f65740ea532918e050ecd31af29ea4b28c8da0cf" kind="enumvalue"><name>QR_ECLEVEL_M</name></member>
+    <member refid="qrencode_8h_1a35d70229ba985c61bbdab27b0f65740ea15eb4ec163410ed3cb043a3a45b7280d" kind="enumvalue"><name>QR_ECLEVEL_Q</name></member>
+    <member refid="qrencode_8h_1a35d70229ba985c61bbdab27b0f65740eaa1de39c2d4d36f713710b23c21990b0f" kind="enumvalue"><name>QR_ECLEVEL_H</name></member>
+    <member refid="qrencode_8h_1aa38b3b77c71bad313e427df5b53536fb" kind="typedef"><name>QRinput</name></member>
+    <member refid="qrencode_8h_1af6d15281e7867626cabd67dc6b89411c" kind="typedef"><name>QRinput_Struct</name></member>
+    <member refid="qrencode_8h_1a292119ec03496da65463d3e3a1d672f8" kind="typedef"><name>QRcode_List</name></member>
+    <member refid="qrencode_8h_1ab774facc2deb2ae0746d6da45577682c" kind="function"><name>QRinput_new</name></member>
+    <member refid="qrencode_8h_1afa4345b633ec19c2fbf8ec6a4358682b" kind="function"><name>QRinput_new2</name></member>
+    <member refid="qrencode_8h_1a62f745c8ad2d489ca9d17f12b0c28663" kind="function"><name>QRinput_append</name></member>
+    <member refid="qrencode_8h_1a35050445687bd7e9c74dd2bb18146e51" kind="function"><name>QRinput_getVersion</name></member>
+    <member refid="qrencode_8h_1a477e6a738c27d5610b6a44368efd2a7e" kind="function"><name>QRinput_setVersion</name></member>
+    <member refid="qrencode_8h_1a237c5e057be55fa3eb7ab605760131c0" kind="function"><name>QRinput_getErrorCorrectionLevel</name></member>
+    <member refid="qrencode_8h_1af7dc14905a33c5bc41af445d05b4d7ea" kind="function"><name>QRinput_setErrorCorrectionLevel</name></member>
+    <member refid="qrencode_8h_1a49404b1ca0e1d58a2d8ae18544606252" kind="function"><name>QRinput_free</name></member>
+    <member refid="qrencode_8h_1a5b852c04d7473def993cfa2a85dc9155" kind="function"><name>QRinput_check</name></member>
+    <member refid="qrencode_8h_1a80d3a56ef46e66b580ef67d77cefa85c" kind="function"><name>QRinput_Struct_new</name></member>
+    <member refid="qrencode_8h_1a4dc1398316f9a790ab7b556b06f8c1f0" kind="function"><name>QRinput_Struct_setParity</name></member>
+    <member refid="qrencode_8h_1a482cfafbe7fb23618af525c7ab80deed" kind="function"><name>QRinput_Struct_appendInput</name></member>
+    <member refid="qrencode_8h_1ae0b2b92a9987bec0e3f6204684857bb7" kind="function"><name>QRinput_Struct_free</name></member>
+    <member refid="qrencode_8h_1af086adb0e9cbb76a61eba71572288c3e" kind="function"><name>QRinput_splitQRinputToStruct</name></member>
+    <member refid="qrencode_8h_1a9912785be23a4cf3503707e87e909e8c" kind="function"><name>QRinput_Struct_insertStructuredAppendHeaders</name></member>
+    <member refid="qrencode_8h_1a7e3d85c72fed82f0fc08aff3bcda9053" kind="function"><name>QRcode_encodeInput</name></member>
+    <member refid="qrencode_8h_1a4cebc3c670efe1b8866b14c42737fc8f" kind="function"><name>QRcode_encodeString</name></member>
+    <member refid="qrencode_8h_1a85dc467ee77d8524b508aea064699a82" kind="function"><name>QRcode_encodeString8bit</name></member>
+    <member refid="qrencode_8h_1af724395da2e575b3d9c1f616df534d65" kind="function"><name>QRcode_free</name></member>
+    <member refid="qrencode_8h_1a2f8a7dac1451170721a14e00952d3fa8" kind="function"><name>QRcode_encodeInputStructured</name></member>
+    <member refid="qrencode_8h_1a61b52b2057480cd1f0a58e8d294c68a9" kind="function"><name>QRcode_encodeStringStructured</name></member>
+    <member refid="qrencode_8h_1a62438c11e91a3e43928d4ceaf5803f33" kind="function"><name>QRcode_encodeString8bitStructured</name></member>
+    <member refid="qrencode_8h_1afc435991bbd7392c390624b084af514e" kind="function"><name>QRcode_List_size</name></member>
+    <member refid="qrencode_8h_1a14d58ac55f4d8c9e63667c6ef3a27af2" kind="function"><name>QRcode_List_free</name></member>
+  </compound>
+  <compound refid="qrinput_8c" kind="file"><name>qrinput.c</name>
+    <member refid="qrinput_8c_1a33b49f1bb7e5407f2e3379816dfd1f9d" kind="variable"><name>QRinput_anTable</name></member>
+    <member refid="qrinput_8c_1add9b9c7925f8abbf632c8e259b6c38b1" kind="function"><name>QRinput_List_newEntry</name></member>
+    <member refid="qrinput_8c_1aa8d7538f2d18df91c1dc3aad0f8e9245" kind="function"><name>QRinput_List_freeEntry</name></member>
+    <member refid="qrinput_8c_1abd99da58643c272f8ec2d0cdfd297eb7" kind="function"><name>QRinput_List_dup</name></member>
+    <member refid="qrinput_8c_1ab774facc2deb2ae0746d6da45577682c" kind="function"><name>QRinput_new</name></member>
+    <member refid="qrinput_8c_1afa4345b633ec19c2fbf8ec6a4358682b" kind="function"><name>QRinput_new2</name></member>
+    <member refid="qrinput_8c_1a35050445687bd7e9c74dd2bb18146e51" kind="function"><name>QRinput_getVersion</name></member>
+    <member refid="qrinput_8c_1a477e6a738c27d5610b6a44368efd2a7e" kind="function"><name>QRinput_setVersion</name></member>
+    <member refid="qrinput_8c_1a237c5e057be55fa3eb7ab605760131c0" kind="function"><name>QRinput_getErrorCorrectionLevel</name></member>
+    <member refid="qrinput_8c_1af7dc14905a33c5bc41af445d05b4d7ea" kind="function"><name>QRinput_setErrorCorrectionLevel</name></member>
+    <member refid="qrinput_8c_1a6193b49ebfeba2147b67f570328bf7d7" kind="function"><name>QRinput_appendEntry</name></member>
+    <member refid="qrinput_8c_1a62f745c8ad2d489ca9d17f12b0c28663" kind="function"><name>QRinput_append</name></member>
+    <member refid="qrinput_8c_1ab15a677bfcf02650be2aedb4ff09b058" kind="function"><name>QRinput_insertStructuredAppendHeader</name></member>
+    <member refid="qrinput_8c_1a49404b1ca0e1d58a2d8ae18544606252" kind="function"><name>QRinput_free</name></member>
+    <member refid="qrinput_8c_1a9f56e54a1395bc76d7e3c924ab84cfec" kind="function"><name>QRinput_calcParity</name></member>
+    <member refid="qrinput_8c_1a56e3451b2bcd3a08157f4532979fe19e" kind="function"><name>QRinput_dup</name></member>
+    <member refid="qrinput_8c_1a96d92e05f872500cb1dc242440eb691b" kind="function"><name>QRinput_checkModeNum</name></member>
+    <member refid="qrinput_8c_1a0376efa1c1148a60c7e40ac7c47655a1" kind="function"><name>QRinput_estimateBitsModeNum</name></member>
+    <member refid="qrinput_8c_1a87f6985ab739990bed3c841c57432f3e" kind="function"><name>QRinput_encodeModeNum</name></member>
+    <member refid="qrinput_8c_1aa8d496cdc1702b271dea3a1abefbad9d" kind="function"><name>QRinput_checkModeAn</name></member>
+    <member refid="qrinput_8c_1acc5691d3dcadd396201ada466d3c8407" kind="function"><name>QRinput_estimateBitsModeAn</name></member>
+    <member refid="qrinput_8c_1ae369f2ef66e69608136da03b942d6386" kind="function"><name>QRinput_encodeModeAn</name></member>
+    <member refid="qrinput_8c_1ac84491797827e336704017988ea52bbd" kind="function"><name>QRinput_estimateBitsMode8</name></member>
+    <member refid="qrinput_8c_1a0c46fa5758c2781e43c09a8aa6e5cb45" kind="function"><name>QRinput_encodeMode8</name></member>
+    <member refid="qrinput_8c_1a22f22cf8a89dc6109ffa94669bfe1329" kind="function"><name>QRinput_estimateBitsModeKanji</name></member>
+    <member refid="qrinput_8c_1afc4720257ddefa470ca95d84199ad2b3" kind="function"><name>QRinput_checkModeKanji</name></member>
+    <member refid="qrinput_8c_1a34df4b0bdace6594204f5f9266cc6210" kind="function"><name>QRinput_encodeModeKanji</name></member>
+    <member refid="qrinput_8c_1a8b9a09a597a163c1f026958217059b6a" kind="function"><name>QRinput_encodeModeStructure</name></member>
+    <member refid="qrinput_8c_1a5b852c04d7473def993cfa2a85dc9155" kind="function"><name>QRinput_check</name></member>
+    <member refid="qrinput_8c_1a6f9f56d13314fda2015edd2e43b59184" kind="function"><name>QRinput_estimateBitStreamSizeOfEntry</name></member>
+    <member refid="qrinput_8c_1a5c9815dc992ec28931debad99dc585bd" kind="function"><name>QRinput_estimateBitStreamSize</name></member>
+    <member refid="qrinput_8c_1a18e2dbc04b18e734855e93a69479b3f8" kind="function"><name>QRinput_estimateVersion</name></member>
+    <member refid="qrinput_8c_1a81f65848cc33a588e40b17b2cffb1f87" kind="function"><name>QRinput_lengthOfCode</name></member>
+    <member refid="qrinput_8c_1a7213e692d95f8d626ce0c43012388c15" kind="function"><name>QRinput_encodeBitStream</name></member>
+    <member refid="qrinput_8c_1a14ba6fcf6fd1358f6db01669b31e909f" kind="function"><name>QRinput_createBitStream</name></member>
+    <member refid="qrinput_8c_1a55c1f5905f244198e96dfddd0e115279" kind="function"><name>QRinput_convertData</name></member>
+    <member refid="qrinput_8c_1a68d020483a1bf8a4437204bb88b8c1ed" kind="function"><name>QRinput_appendPaddingBit</name></member>
+    <member refid="qrinput_8c_1a29f3b8b2e4c855ebb4073a3995af59db" kind="function"><name>QRinput_mergeBitStream</name></member>
+    <member refid="qrinput_8c_1af58a120757ec6ff66bb4a43ab8785951" kind="function"><name>QRinput_getBitStream</name></member>
+    <member refid="qrinput_8c_1a575ced3650564b461c7eb0eee5c5e313" kind="function"><name>QRinput_getByteStream</name></member>
+    <member refid="qrinput_8c_1ad4df66ee1dad6b5e88b9d22415004eff" kind="function"><name>QRinput_InputList_newEntry</name></member>
+    <member refid="qrinput_8c_1ab9537cd64c5b0b647082a40d2c551950" kind="function"><name>QRinput_InputList_freeEntry</name></member>
+    <member refid="qrinput_8c_1a80d3a56ef46e66b580ef67d77cefa85c" kind="function"><name>QRinput_Struct_new</name></member>
+    <member refid="qrinput_8c_1a4dc1398316f9a790ab7b556b06f8c1f0" kind="function"><name>QRinput_Struct_setParity</name></member>
+    <member refid="qrinput_8c_1a482cfafbe7fb23618af525c7ab80deed" kind="function"><name>QRinput_Struct_appendInput</name></member>
+    <member refid="qrinput_8c_1ae0b2b92a9987bec0e3f6204684857bb7" kind="function"><name>QRinput_Struct_free</name></member>
+    <member refid="qrinput_8c_1ad6b7fccc8a3c7f1232409fa149ca4534" kind="function"><name>QRinput_Struct_calcParity</name></member>
+    <member refid="qrinput_8c_1aa98e55dcfc95412c76923c8c3d4935cf" kind="function"><name>QRinput_List_shrinkEntry</name></member>
+    <member refid="qrinput_8c_1a5adb71b5bef91e7af5cf1bf54cfae7e6" kind="function"><name>QRinput_splitEntry</name></member>
+    <member refid="qrinput_8c_1af086adb0e9cbb76a61eba71572288c3e" kind="function"><name>QRinput_splitQRinputToStruct</name></member>
+    <member refid="qrinput_8c_1a9912785be23a4cf3503707e87e909e8c" kind="function"><name>QRinput_Struct_insertStructuredAppendHeaders</name></member>
+  </compound>
+  <compound refid="qrinput_8h" kind="file"><name>qrinput.h</name>
+    <member refid="qrinput_8h_1a9e2d936e288098a4a764623bf7abc7fd" kind="define"><name>QRinput_lookAnTable</name></member>
+    <member refid="qrinput_8h_1ad07886d1a7e10ca87ab0ab85fada6401" kind="define"><name>STRUCTURE_HEADER_BITS</name></member>
+    <member refid="qrinput_8h_1a2f2ca0fd50e5eec29b9c5324cc055548" kind="define"><name>MAX_STRUCTURED_SYMBOLS</name></member>
+    <member refid="qrinput_8h_1abc9c94c601f4a3d57fd858bcb123de96" kind="typedef"><name>QRinput_List</name></member>
+    <member refid="qrinput_8h_1a39d76f4ec8a2d6ceaeeb88c08dce6cb9" kind="typedef"><name>QRinput_InputList</name></member>
+    <member refid="qrinput_8h_1a33b49f1bb7e5407f2e3379816dfd1f9d" kind="variable"><name>QRinput_anTable</name></member>
+    <member refid="qrinput_8h_1a575ced3650564b461c7eb0eee5c5e313" kind="function"><name>QRinput_getByteStream</name></member>
+    <member refid="qrinput_8h_1a0376efa1c1148a60c7e40ac7c47655a1" kind="function"><name>QRinput_estimateBitsModeNum</name></member>
+    <member refid="qrinput_8h_1acc5691d3dcadd396201ada466d3c8407" kind="function"><name>QRinput_estimateBitsModeAn</name></member>
+    <member refid="qrinput_8h_1ac84491797827e336704017988ea52bbd" kind="function"><name>QRinput_estimateBitsMode8</name></member>
+    <member refid="qrinput_8h_1a22f22cf8a89dc6109ffa94669bfe1329" kind="function"><name>QRinput_estimateBitsModeKanji</name></member>
+    <member refid="qrinput_8h_1a56e3451b2bcd3a08157f4532979fe19e" kind="function"><name>QRinput_dup</name></member>
+  </compound>
+  <compound refid="qrspec_8c" kind="file"><name>qrspec.c</name>
+    <member refid="qrspec_8c_1a04cd3771e8e0bf65f199865b1a9ddeb6" kind="variable"><name>qrspecCapacity</name></member>
+    <member refid="qrspec_8c_1aa4ee1df2c6d479b3477ce03accf6829f" kind="variable"><name>lengthTableBits</name></member>
+    <member refid="qrspec_8c_1a051683aa848e4e0417e030c687ea6798" kind="variable"><name>eccTable</name></member>
+    <member refid="qrspec_8c_1a87d58e9b67f3f87633b7e298014aa254" kind="variable"><name>alignmentPattern</name></member>
+    <member refid="qrspec_8c_1a541f15b357fb5e4932d43f02c90bc5d3" kind="variable"><name>versionPattern</name></member>
+    <member refid="qrspec_8c_1aa33835fc3104751dad98af984b8b4580" kind="variable"><name>formatInfo</name></member>
+    <member refid="qrspec_8c_1ac5832f09b8f6c167cb7e8c354cd7c1f6" kind="variable"><name>frames</name></member>
+    <member refid="qrspec_8c_1af591c0a0eef6b615e084f23106472118" kind="function"><name>QRspec_getDataLength</name></member>
+    <member refid="qrspec_8c_1a7569f948136d3be340191cf41d0c0640" kind="function"><name>QRspec_getECCLength</name></member>
+    <member refid="qrspec_8c_1a30fb68f39b78d55fe5c8f9e16c06b6c5" kind="function"><name>QRspec_getMinimumVersion</name></member>
+    <member refid="qrspec_8c_1a34995420f33a328ae65579ddfd07d63e" kind="function"><name>QRspec_getWidth</name></member>
+    <member refid="qrspec_8c_1a1f03ef681978616cdc0fefb6fb4fab04" kind="function"><name>QRspec_getRemainder</name></member>
+    <member refid="qrspec_8c_1aa9611cbe6556be98a4c0674af4712656" kind="function"><name>QRspec_lengthIndicator</name></member>
+    <member refid="qrspec_8c_1a9f31bf16e8dd70a4bd2396171e3c14de" kind="function"><name>QRspec_maximumWords</name></member>
+    <member refid="qrspec_8c_1ae58cce00fac7d6a6299da3b8e6bca005" kind="function"><name>QRspec_getEccSpec</name></member>
+    <member refid="qrspec_8c_1a0e193709e07e7e13eba0115dc24723e7" kind="function"><name>QRspec_putAlignmentMarker</name></member>
+    <member refid="qrspec_8c_1a6fd87cd1edd0d0ac2bfa4d63811a62f3" kind="function"><name>QRspec_putAlignmentPattern</name></member>
+    <member refid="qrspec_8c_1a44bd81da11fa7eca298855d09c353248" kind="function"><name>QRspec_getVersionPattern</name></member>
+    <member refid="qrspec_8c_1aa6f506a291c45903fa015dc7249eac7d" kind="function"><name>QRspec_getFormatInfo</name></member>
+    <member refid="qrspec_8c_1a98c4f0fec1195e10909d8ce2bf714608" kind="function"><name>putFinderPattern</name></member>
+    <member refid="qrspec_8c_1a4a657bfe853a77d138189bb88d70c435" kind="function"><name>QRspec_createFrame</name></member>
+    <member refid="qrspec_8c_1a826fd999c8628c9a91ad2101887eab63" kind="function"><name>QRspec_newFrame</name></member>
+    <member refid="qrspec_8c_1a7263ad69c5703a939b8af99ded16d6ae" kind="function"><name>QRspec_clearCache</name></member>
+  </compound>
+  <compound refid="qrspec_8h" kind="file"><name>qrspec.h</name>
+    <member refid="qrspec_8h_1ad9e0fe046aaa6dc0ef84e7982dc3693d" kind="define"><name>QRSPEC_VERSION_MAX</name></member>
+    <member refid="qrspec_8h_1a22b685022f752e359b59b801b70de9f8" kind="define"><name>QRSPEC_WIDTH_MAX</name></member>
+    <member refid="qrspec_8h_1a8c05e8133654b44bbee597109dbdb280" kind="define"><name>QRspec_rsBlockNum</name></member>
+    <member refid="qrspec_8h_1a1974ecfdbcb1057138827d6fdf7b5242" kind="define"><name>QRspec_rsBlockNum1</name></member>
+    <member refid="qrspec_8h_1a0dd55defbc72a96ac1cfb356c22d0bc9" kind="define"><name>QRspec_rsDataCodes1</name></member>
+    <member refid="qrspec_8h_1a99b7aa2bf51d4fdd60512facd38efe11" kind="define"><name>QRspec_rsEccCodes1</name></member>
+    <member refid="qrspec_8h_1a445638186e12229cc2049179d018785d" kind="define"><name>QRspec_rsBlockNum2</name></member>
+    <member refid="qrspec_8h_1a1784583c879d628bd70eee0630fe3883" kind="define"><name>QRspec_rsDataCodes2</name></member>
+    <member refid="qrspec_8h_1aaf7c159aa13afd2d978b5cf037e66387" kind="define"><name>QRspec_rsEccCodes2</name></member>
+    <member refid="qrspec_8h_1af9994be3b13374e437f7f4ffba0dbfb3" kind="define"><name>QRspec_rsDataLength</name></member>
+    <member refid="qrspec_8h_1aac54eb12ba77239c5c8bebc5a94c3150" kind="define"><name>QRspec_rsEccLength</name></member>
+    <member refid="qrspec_8h_1af591c0a0eef6b615e084f23106472118" kind="function"><name>QRspec_getDataLength</name></member>
+    <member refid="qrspec_8h_1a7569f948136d3be340191cf41d0c0640" kind="function"><name>QRspec_getECCLength</name></member>
+    <member refid="qrspec_8h_1a30fb68f39b78d55fe5c8f9e16c06b6c5" kind="function"><name>QRspec_getMinimumVersion</name></member>
+    <member refid="qrspec_8h_1a34995420f33a328ae65579ddfd07d63e" kind="function"><name>QRspec_getWidth</name></member>
+    <member refid="qrspec_8h_1a1f03ef681978616cdc0fefb6fb4fab04" kind="function"><name>QRspec_getRemainder</name></member>
+    <member refid="qrspec_8h_1aa9611cbe6556be98a4c0674af4712656" kind="function"><name>QRspec_lengthIndicator</name></member>
+    <member refid="qrspec_8h_1a9f31bf16e8dd70a4bd2396171e3c14de" kind="function"><name>QRspec_maximumWords</name></member>
+    <member refid="qrspec_8h_1ae58cce00fac7d6a6299da3b8e6bca005" kind="function"><name>QRspec_getEccSpec</name></member>
+    <member refid="qrspec_8h_1a44bd81da11fa7eca298855d09c353248" kind="function"><name>QRspec_getVersionPattern</name></member>
+    <member refid="qrspec_8h_1aa6f506a291c45903fa015dc7249eac7d" kind="function"><name>QRspec_getFormatInfo</name></member>
+    <member refid="qrspec_8h_1a826fd999c8628c9a91ad2101887eab63" kind="function"><name>QRspec_newFrame</name></member>
+    <member refid="qrspec_8h_1a7263ad69c5703a939b8af99ded16d6ae" kind="function"><name>QRspec_clearCache</name></member>
+  </compound>
+  <compound refid="_reachability_8h" kind="file"><name>Reachability.h</name>
+    <member refid="_reachability_8h_1a6cd102e4d3d1fb7e2d727a4be2e59144" kind="define"><name>NEEDS_DISPATCH_RETAIN_RELEASE</name></member>
+    <member refid="_reachability_8h_1afbfc456845719ac215946bb2b05eb2df" kind="enum"><name>NetworkStatus</name></member>
+    <member refid="_reachability_8h_1afbfc456845719ac215946bb2b05eb2dfacb5e26d6f64b080d28d024fc7c33f00d" kind="enumvalue"><name>NotReachable</name></member>
+    <member refid="_reachability_8h_1afbfc456845719ac215946bb2b05eb2dfa446f39577c3cd7ae500660da89a92895" kind="enumvalue"><name>ReachableViaWiFi</name></member>
+    <member refid="_reachability_8h_1afbfc456845719ac215946bb2b05eb2dfae89da9591fa7842f93953c830b33e131" kind="enumvalue"><name>ReachableViaWWAN</name></member>
+    <member refid="_reachability_8h_1a12c5dea6c64b3b26c693c0d7c90b0d2e" kind="typedef"><name>NetworkReachable</name></member>
+    <member refid="_reachability_8h_1adbfeb677808b62bc6f58fe8c9aa401e5" kind="typedef"><name>NetworkUnreachable</name></member>
+    <member refid="_reachability_8h_1a9b443de01c5b11109986be8fb1eeb52a" kind="variable"><name>kReachabilityChangedNotification</name></member>
+  </compound>
+  <compound refid="_reachability_8m" kind="file"><name>Reachability.m</name>
+    <member refid="_reachability_8m_1ad6b6af2157c5f3fc044e28a704548c72" kind="define"><name>testcase</name></member>
+    <member refid="_reachability_8m_1a9b443de01c5b11109986be8fb1eeb52a" kind="variable"><name>kReachabilityChangedNotification</name></member>
+    <member refid="_reachability_8m_1a31d18e0b1e8a4ac40820328a4679d6db" kind="function"><name>reachabilityFlags</name></member>
+    <member refid="_reachability_8m_1af04a6426630c1659817f8213c7c637f2" kind="function"><name>TMReachabilityCallback</name></member>
+  </compound>
+  <compound refid="rscode_8c" kind="file"><name>rscode.c</name>
+    <member refid="rscode_8c_1a3ed9b2483e4d6616a203769ad381c97c" kind="define"><name>MODNN</name></member>
+    <member refid="rscode_8c_1afdc383f8992f4a960bb22998f57b6d37" kind="define"><name>MM</name></member>
+    <member refid="rscode_8c_1a170755e30c36be4904106b7bb279b1ec" kind="define"><name>NN</name></member>
+    <member refid="rscode_8c_1afae14aea58e6520b2057147833c699de" kind="define"><name>ALPHA_TO</name></member>
+    <member refid="rscode_8c_1a690b4c8564b1cb507383e7a78f4cd6dc" kind="define"><name>INDEX_OF</name></member>
+    <member refid="rscode_8c_1a90fbc87e4b99a54543c8f37087cb4f03" kind="define"><name>GENPOLY</name></member>
+    <member refid="rscode_8c_1a5f5b4d84f10e6a71bef7c65548a8e317" kind="define"><name>NROOTS</name></member>
+    <member refid="rscode_8c_1a264b36b13386e3f62fe69e04711bc006" kind="define"><name>FCR</name></member>
+    <member refid="rscode_8c_1a6dd0302d2b9ced6e396b9182a6287b9e" kind="define"><name>PRIM</name></member>
+    <member refid="rscode_8c_1a8487c20a46e1e08f7aeabec7cef80945" kind="define"><name>IPRIM</name></member>
+    <member refid="rscode_8c_1a323d60150d94a9f5f599bb97726ac384" kind="define"><name>PAD</name></member>
+    <member refid="rscode_8c_1a0d158f1e3af2ab523eb8423db3e5bd6e" kind="define"><name>A0</name></member>
+    <member refid="rscode_8c_1a0d158f1e3af2ab523eb8423db3e5bd6e" kind="define"><name>A0</name></member>
+    <member refid="rscode_8c_1ae91c9d70e1e2c8b657e51de1fff60ada" kind="typedef"><name>data_t</name></member>
+    <member refid="rscode_8c_1ac8d9be2062392ec20cfa780b2cc90e2d" kind="variable"><name>rslist</name></member>
+    <member refid="rscode_8c_1a940e8c928469742f9f3574c72d8a4754" kind="function"><name>modnn</name></member>
+    <member refid="rscode_8c_1ab46bcabad74e2419539d64659328bf38" kind="function"><name>init_rs_char</name></member>
+    <member refid="rscode_8c_1a30b2083fc85bcf1d600d701ec30db161" kind="function"><name>init_rs</name></member>
+    <member refid="rscode_8c_1aaf057e5186c6e64286c81ccb50245954" kind="function"><name>free_rs_char</name></member>
+    <member refid="rscode_8c_1a77bd8e628e81d37df803a8ddbd2e1c23" kind="function"><name>free_rs_cache</name></member>
+    <member refid="rscode_8c_1aa3c4c7ec9c867587450e6e6a15deaf95" kind="function"><name>encode_rs_char</name></member>
+  </compound>
+  <compound refid="rscode_8h" kind="file"><name>rscode.h</name>
+    <member refid="rscode_8h_1a34bf5d18f77bedc67c562794efa7531b" kind="typedef"><name>RS</name></member>
+    <member refid="rscode_8h_1a30b2083fc85bcf1d600d701ec30db161" kind="function"><name>init_rs</name></member>
+    <member refid="rscode_8h_1ad5722e6c5e75233d345533a2603a5e93" kind="function"><name>encode_rs_char</name></member>
+    <member refid="rscode_8h_1aaf057e5186c6e64286c81ccb50245954" kind="function"><name>free_rs_char</name></member>
+    <member refid="rscode_8h_1a77bd8e628e81d37df803a8ddbd2e1c23" kind="function"><name>free_rs_cache</name></member>
+  </compound>
+  <compound refid="_second_view_controller_8h" kind="file"><name>SecondViewController.h</name>
+  </compound>
+  <compound refid="_second_view_controller_8m" kind="file"><name>SecondViewController.m</name>
+  </compound>
+  <compound refid="split_8c" kind="file"><name>split.c</name>
+    <member refid="split_8c_1ab17680d3ee3ee75119cd2d150562568e" kind="define"><name>isdigit</name></member>
+    <member refid="split_8c_1ab3bf11759c5262c8b6d30e447bff76e2" kind="define"><name>isalnum</name></member>
+    <member refid="split_8c_1a84004ad51e10dd0e8471267ff215408d" kind="function"><name>Split_identifyMode</name></member>
+    <member refid="split_8c_1a5e5614d35f9343f1fb4ed03fba89cbd2" kind="function"><name>Split_eatNum</name></member>
+    <member refid="split_8c_1ae8a53e87cb728a289c2895b332ec94e9" kind="function"><name>Split_eatAn</name></member>
+    <member refid="split_8c_1a1de7c01e75329648e00a5e8f93c65dfb" kind="function"><name>Split_eat8</name></member>
+    <member refid="split_8c_1a16cc6d2bb5fb482fe7fb2c1544bfaa9a" kind="function"><name>Split_eatKanji</name></member>
+    <member refid="split_8c_1a0129b2ee08b63c0e03c7f8ee29314412" kind="function"><name>Split_splitString</name></member>
+    <member refid="split_8c_1a4f2e8d88f8fa2ecbaa2f01f3bca9df06" kind="function"><name>dupAndToUpper</name></member>
+    <member refid="split_8c_1aac4e5af5e1e7eee878c758b5da2bef47" kind="function"><name>Split_splitStringToQRinput</name></member>
+  </compound>
+  <compound refid="split_8h" kind="file"><name>split.h</name>
+    <member refid="split_8h_1aac4e5af5e1e7eee878c758b5da2bef47" kind="function"><name>Split_splitStringToQRinput</name></member>
+  </compound>
+  <compound refid="_third_view_controller_8h" kind="file"><name>ThirdViewController.h</name>
+  </compound>
+  <compound refid="_third_view_controller_8m" kind="file"><name>ThirdViewController.m</name>
+  </compound>
+  <compound refid="_top_bar_view_8h" kind="file"><name>TopBarView.h</name>
+  </compound>
+  <compound refid="_top_bar_view_8m" kind="file"><name>TopBarView.m</name>
+  </compound>
+  <compound refid="_u_r_l_encode_8h" kind="file"><name>URLEncode.h</name>
+  </compound>
+  <compound refid="_u_r_l_encode_8m" kind="file"><name>URLEncode.m</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

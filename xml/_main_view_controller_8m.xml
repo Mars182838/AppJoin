@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_main_view_controller_8m" kind="file">
+    <compoundname>MainViewController.m</compoundname>
+    <includes refid="_main_view_controller_8h" local="yes">MainViewController.h</includes>
+    <includes refid="_detail_view_controller_8h" local="yes">DetailViewController.h</includes>
+    <includes refid="_m_b_progress_h_u_d_8h" local="yes">MBProgressHUD.h</includes>
+    <includes refid="_reachability_8h" local="yes">Reachability.h</includes>
+    <includes refid="_top_bar_view_8h" local="yes">TopBarView.h</includes>
+    <includes refid="_down_load_string_8h" local="yes">DownLoadString.h</includes>
+    <incdepgraph>
+      <node id="230">
+        <label>netinet/in.h</label>
+      </node>
+      <node id="232">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="225">
+        <label>DetailViewController.h</label>
+        <link refid="_detail_view_controller_8h_source"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+      <node id="224">
+        <label>SDImageView+SDWebCache.h</label>
+      </node>
+      <node id="216">
+        <label>iCarousel.h</label>
+        <link refid="i_carousel_8h_source"/>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>TopBarView.h</label>
+        <link refid="_top_bar_view_8h_source"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>UIKit/UIKit.h</label>
+      </node>
+      <node id="234">
+        <label>netdb.h</label>
+      </node>
+      <node id="233">
+        <label>ifaddrs.h</label>
+      </node>
+      <node id="228">
+        <label>SystemConfiguration/SystemConfiguration.h</label>
+      </node>
+      <node id="227">
+        <label>Reachability.h</label>
+        <link refid="_reachability_8h_source"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>MainViewController.h</label>
+        <link refid="_main_view_controller_8h_source"/>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+      </node>
+      <node id="214">
+        <label>MainViewController.m</label>
+        <link refid="MainViewController.m"/>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>CoreGraphics/CoreGraphics.h</label>
+      </node>
+      <node id="231">
+        <label>netinet6/in6.h</label>
+      </node>
+      <node id="220">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="229">
+        <label>sys/socket.h</label>
+      </node>
+      <node id="223">
+        <label>DownLoadString.h</label>
+        <link refid="_down_load_string_8h_source"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>QuartzCore/QuartzCore.h</label>
+      </node>
+      <node id="219">
+        <label>MBProgressHUD.h</label>
+        <link refid="_m_b_progress_h_u_d_8h_source"/>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="category_main_view_controller_07_08" prot="public">MainViewController()</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_main_view_controller_8m_1a1949da78c014ebab2a6be9b36e74e2fc" prot="public" static="no">
+        <name>ITEM_SPACING</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MainViewController.m" line="16" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MainViewController.m" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>MainViewController.m</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AppJoin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Mars<sp/>on<sp/>12-12-29.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2012年<sp/>Mars.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;MainViewController.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;DetailViewController.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;MBProgressHUD.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;Reachability.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;TopBarView.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;DownLoadString.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ITEM_SPACING<sp/>200</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="category_main_view_controller_07_08" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_main_view_controller" kindref="compound">MainViewController</ref><sp/>()</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">@implementation<sp/></highlight><highlight class="normal"><ref refid="interface_main_view_controller" kindref="compound">MainViewController</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">@synthesize</highlight><highlight class="normal"><sp/><ref refid="interface_main_view_controller_1aff97c901f4d7d451fa2cdca04a7bac95" kindref="member">carousel</ref><sp/>=<sp/>_carousel;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">@synthesize</highlight><highlight class="normal"><sp/><ref refid="interface_main_view_controller_1adcdd91fa1f396efe10cfaf47910af2a1" kindref="member" tooltip="detailController 显示点击图片之后显示详细的介绍">detailController</ref><sp/>=<sp/>_detailController;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">@synthesize</highlight><highlight class="normal"><sp/><ref refid="interface_main_view_controller_1a75888987a8cb0262169d2a4ef4e80d2a" kindref="member">delegate</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">-<sp/>(id)initWithNibName:(NSString<sp/>*)nibNameOrNil<sp/>bundle:(NSBundle<sp/>*)nibBundleOrNil</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal"><sp/>=<sp/>[</highlight><highlight class="keyword">super</highlight><highlight class="normal"><sp/>initWithNibName:nibNameOrNil<sp/>bundle:nibBundleOrNil];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">self</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_mainDic<sp/>=<sp/>[[NSDictionary<sp/>alloc]<sp/>init];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_selectImageArray<sp/>=<sp/>[[NSMutableArray<sp/>alloc]<sp/>initWithCapacity:0];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">-(void)dealloc</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//注销网络连接状态的通知</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>[[NSNotificationCenter<sp/>defaultCenter]<sp/>removeObserver:self<sp/>name:kReachabilityChangedNotification<sp/>object:nil];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">.carousel<sp/>=<sp/>nil;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>[_carousel<sp/>release];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>[_topBar<sp/><sp/><sp/>release];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>[_label<sp/><sp/><sp/><sp/>release];</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>[_downLoad<sp/>release];</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>[_mainDic<sp/><sp/>release];</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">super</highlight><highlight class="normal"><sp/>dealloc];</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/>Life<sp/>Cycle</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">-<sp/>(void)viewDidLoad</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">super</highlight><highlight class="normal"><sp/>viewDidLoad];</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>_topBar<sp/>=<sp/>[[<ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref><sp/>alloc]<sp/>initWithFrame:CGRectMake(0,<sp/>0,<sp/>WIDTH,<sp/>HEIGHT)];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>_topBar.navLabel.text<sp/>=<sp/></highlight><highlight class="stringliteral">@&quot;主页&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.view<sp/>addSubview:_topBar.navImage];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.view<sp/>addSubview:_topBar.navLabel];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>_carousel<sp/>=<sp/>[[<ref refid="interfacei_carousel" kindref="compound">iCarousel</ref><sp/>alloc]<sp/>init];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>_carousel.frame<sp/>=<sp/>CGRectMake(0,<sp/>0,<sp/>WIDTH,<sp/>HEIGHT);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>_carousel.delegate<sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>_carousel.dataSource<sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>_carousel.type<sp/>=<sp/>iCarouselTypeCoverFlow;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.view<sp/>addSubview:_carousel];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>_label<sp/>=<sp/>[[UILabel<sp/>alloc]<sp/>init];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>_label.frame<sp/>=<sp/>CGRectMake(0,<sp/>44,<sp/>320,<sp/>50);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>_label.textAlignment<sp/>=<sp/>NSTextAlignmentCenter;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>_label.text<sp/>=<sp/></highlight><highlight class="stringliteral">@&quot;西西木特许加盟展会&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>_label.font<sp/>=<sp/>[UIFont<sp/>systemFontOfSize:22];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.view<sp/>addSubview:_label];</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>_detailLabel<sp/>=<sp/>[[UILabel<sp/>alloc]<sp/>init];</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iPhone5)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_detailLabel.frame<sp/>=<sp/>CGRectMake(0,<sp/>HEIGHT<sp/>-<sp/>130,<sp/>320,<sp/>60);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_detailLabel.frame<sp/>=<sp/>CGRectMake(0,<sp/>HEIGHT<sp/>-<sp/>100,<sp/>320,<sp/>40);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>_detailLabel.textAlignment<sp/>=<sp/>NSTextAlignmentCenter;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>_detailLabel.font<sp/>=<sp/>[UIFont<sp/>systemFontOfSize:18];</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>_detailLabel.textAlignment<sp/>=NSTextAlignmentCenter;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.view<sp/>addSubview:_detailLabel];</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>[[NSNotificationCenter<sp/>defaultCenter]<sp/>addObserver:self<sp/>selector:@selector(reachabilityChanged:)<sp/>name:kReachabilityChangedNotification<sp/>object:nil];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_main_view_controller_1a2fd296dcee1ae6fa7f3f346be140f6af" kindref="member" tooltip="检测是否联网">hostReach</ref><sp/>=<sp/>[[<ref refid="interface_reachability" kindref="compound">Reachability</ref><sp/>reachabilityWithHostname:@&quot;http://baidu.com&quot;]<sp/>retain];</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>[hostReach<sp/>startNotifier];</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>_downLoad<sp/>=<sp/>[[<ref refid="interface_down_load_string" kindref="compound">DownLoadString</ref><sp/>alloc]<sp/>initWithShareTarget:NSStringWithUrlMain];</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>_downLoad.delegate<sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/>ReachabilityNotification<sp/>Methods</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">-(void)reachabilityChanged:(NSNotification<sp/>*)notification</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_reachability" kindref="compound">Reachability</ref><sp/>*curReach<sp/>=<sp/>[notification<sp/>object];</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>NSParameterAssert([curReach<sp/>isKindOfClass:[<ref refid="interface_reachability" kindref="compound">Reachability</ref><sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">]]);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>NetworkStatus<sp/>curStatus<sp/>=<sp/>[curReach<sp/>currentReachabilityStatus];</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>NSString<sp/>*strMessage;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(curStatus<sp/>==<sp/>NotReachable)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strMessage<sp/>=<sp/></highlight><highlight class="stringliteral">@&quot;没有检测可用网络,请检查下网络&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hud<sp/>=<sp/>[<ref refid="interface_m_b_progress_h_u_d" kindref="compound">MBProgressHUD</ref><sp/><ref refid="interface_m_b_progress_h_u_d_1a5387f186ec82ed2877553b930071c377" kindref="member">showHUDAddedTo</ref>:self.navigationController.view<sp/><ref refid="interface_m_b_progress_h_u_d_1a5387f186ec82ed2877553b930071c377" kindref="member">animated</ref>:YES];</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Configure<sp/>for<sp/>text<sp/>only<sp/>and<sp/>offset<sp/>down</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hud.<ref refid="interface_m_b_progress_h_u_d_1ace77eaaf507e86fe56436f7ee7b6fdc9" kindref="member">mode</ref><sp/>=<sp/>MBProgressHUDModeText;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hud.<ref refid="interface_m_b_progress_h_u_d_1ad6fee32939fa55fc1a341aba117aa28f" kindref="member">delegate</ref><sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hud.<ref refid="interface_m_b_progress_h_u_d_1a531706887f08881c7f13b4309521b299" kindref="member">labelText</ref><sp/>=<sp/>strMessage;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hud.<ref refid="interface_m_b_progress_h_u_d_1a4126e72234f8afcb87905a9ed65c022c" kindref="member">margin</ref><sp/>=<sp/>10.f;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hud.<ref refid="interface_m_b_progress_h_u_d_1ad526ffcabab5131697eb0850c50ab1f4" kindref="member">yOffset</ref><sp/>=<sp/>150.f;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hud.<ref refid="interface_m_b_progress_h_u_d_1a36639aa18a70f2734942695c32ec5e91" kindref="member">removeFromSuperViewOnHide</ref><sp/>=<sp/>YES;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[hud<sp/>hide:YES<sp/>afterDelay:2.0f];</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/></highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/>MBProgressHUD<sp/>delegate<sp/>Methods</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">-<sp/>(void)hudWasHidden:(<ref refid="interface_m_b_progress_h_u_d" kindref="compound">MBProgressHUD</ref><sp/>*)HUD<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Remove<sp/>HUD<sp/>from<sp/>screen<sp/>when<sp/>the<sp/>HUD<sp/>was<sp/>hidded</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>[hud<sp/>removeFromSuperview];</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>hud<sp/>=<sp/>nil;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal">-<sp/>(void)didReceiveMemoryWarning</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">super</highlight><highlight class="normal"><sp/>didReceiveMemoryWarning];</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/>iCarousel.h<sp/>delegate<sp/>and<sp/>dateSource</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">-<sp/>(NSUInteger)numberOfItemsInCarousel:(<ref refid="interfacei_carousel" kindref="compound">iCarousel</ref><sp/>*)carousel</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>6;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">-(UIView<sp/>*)carousel:(<ref refid="interfacei_carousel" kindref="compound">iCarousel</ref><sp/>*)carousel<sp/>viewForItemAtIndex:(NSUInteger)index<sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>UIView<sp/>*view<sp/>=<sp/>_imageView;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">self</highlight><highlight class="normal">.<ref refid="interface_main_view_controller_1aa257e69a571d17651210b424e312550c" kindref="member" tooltip="选择图片数组">selectImageArray</ref>.count<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NSURL<sp/>*url<sp/>=<sp/>[NSURL<sp/>URLWithString:[[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.selectImageArray<sp/>objectAtIndex:index]<sp/>objectForKey:@&quot;src&quot;]];</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[_imageView<sp/>setImageWithURL:url<sp/>refreshCache:YES<sp/>placeholderImage:[UIImage<sp/>imageNamed:@&quot;place.png&quot;]];</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>_imageView<sp/>=<sp/>[[UIImageView<sp/>alloc]<sp/>initWithImage:[UIImage<sp/>imageNamed:@&quot;place.png&quot;]];</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iPhone5)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>view.frame<sp/>=<sp/>CGRectMake(20,<sp/>40,<sp/>260,<sp/>HEIGHT<sp/>-<sp/>180);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>view.frame<sp/>=<sp/>CGRectMake(20,<sp/>20,<sp/>260,<sp/>HEIGHT<sp/>-<sp/>150);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>view;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">-(void)carouselDidScroll:(<ref refid="interfacei_carousel" kindref="compound">iCarousel</ref><sp/>*)carousel</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">self</highlight><highlight class="normal">.<ref refid="interface_main_view_controller_1aa257e69a571d17651210b424e312550c" kindref="member" tooltip="选择图片数组">selectImageArray</ref>.count<sp/>&gt;0)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_detailLabel.text<sp/>=<sp/>[[[[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.selectImageArray<sp/>objectAtIndex:carousel.currentItemIndex]<sp/>objectForKey:@&quot;text&quot;]<sp/>componentsSeparatedByString:@&quot;,&quot;]<sp/>objectAtIndex:0];</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_detailLabel.text<sp/>=<sp/></highlight><highlight class="stringliteral">@&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="189"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">-<sp/>(CATransform3D)carousel:(<ref refid="interfacei_carousel" kindref="compound">iCarousel</ref><sp/>*)carousel<sp/>transformForItemView:(UIView<sp/>*)view<sp/>withOffset:(CGFloat)offset</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//implement<sp/>&apos;flip3D&apos;<sp/>style<sp/>carousel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>view.alpha<sp/>=<sp/>1.0<sp/>-<sp/>fminf(fmaxf(offset,<sp/>0.0),<sp/>1.0);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>CATransform3D<sp/>transform<sp/>=<sp/>CATransform3DIdentity;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>transform.m34<sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">.carousel.perspective;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>transform<sp/>=<sp/>CATransform3DRotate(transform,<sp/>M_PI<sp/>/<sp/>8.0,<sp/>0,<sp/>1.0,<sp/>0);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CATransform3DTranslate(transform,<sp/>100.0,<sp/>200.0,<sp/>offset<sp/>*_carousel.itemWidth);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">-(NSUInteger)numberOfVisibleItemsInCarousel:(<ref refid="interfacei_carousel" kindref="compound">iCarousel</ref><sp/>*)carousel</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>6;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal">-<sp/>(CGFloat)carouselItemWidth:(<ref refid="interfacei_carousel" kindref="compound">iCarousel</ref><sp/>*)carousel</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//usually<sp/>this<sp/>should<sp/>be<sp/>slightly<sp/>wider<sp/>than<sp/>the<sp/>item<sp/>views</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ITEM_SPACING;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal">-(void)carousel:(<ref refid="interfacei_carousel" kindref="compound">iCarousel</ref><sp/>*)carousel<sp/>didSelectItemAtIndex:(NSInteger)index</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>_detailController<sp/>=<sp/>[[<ref refid="interface_detail_view_controller" kindref="compound">DetailViewController</ref><sp/>alloc]<sp/>init];</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">.delegate<sp/>=<sp/>(id)_detailController;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>[delegate<sp/>transferImageUrl:[[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.selectImageArray<sp/>objectAtIndex:index]<sp/>objectForKey:@&quot;src&quot;]<sp/>andString:[[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.selectImageArray<sp/>objectAtIndex:index]<sp/>objectForKey:@&quot;text&quot;]];</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.navigationController<sp/>pushViewController:_detailController<sp/>animated:YES];</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/>DownLoadDelegate<sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal">-(void)downLoadFinished:(NSDictionary<sp/>*)info</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>_mainDic<sp/>=<sp/>info;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">.selectImageArray<sp/>=<sp/>[[[_mainDic<sp/>objectForKey:@&quot;posts&quot;]<sp/>objectAtIndex:0]<sp/>objectForKey:@&quot;content&quot;];</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.carousel<sp/>reloadData];</highlight></codeline>
+<codeline lineno="237"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/MainViewController.m"/>
+  </compounddef>
+</doxygen>

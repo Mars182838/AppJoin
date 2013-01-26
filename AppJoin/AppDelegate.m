@@ -38,7 +38,7 @@
     _mainController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navMain = [[UINavigationController alloc] initWithRootViewController:_mainController];
     navMain.tabBarItem.title   = @"首页";
-    navMain.tabBarItem.image   = [UIImage imageNamed:@"主页.png"];
+    navMain.tabBarItem.image   = [UIImage imageNamed:@"首页.png"];
     navMain.navigationBarHidden = YES;
     
     _firstContrller = [[FirstViewController alloc] initWithNibName:nil bundle:nil];
@@ -55,14 +55,14 @@
 
     _thirdContrller = [[ThirdViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navThird = [[UINavigationController alloc] initWithRootViewController:_thirdContrller];
-    navThird.tabBarItem.title  = @"收藏";
-    navThird.tabBarItem.image  = [UIImage imageNamed:@"收藏.png"];
+    navThird.tabBarItem.title  = @"服务";
+    navThird.tabBarItem.image  = [UIImage imageNamed:@"服务.png"];
     navThird.navigationBarHidden = YES;
     
     _fourController = [[FourViewController alloc] initWithNibName:nil bundle:nil];
     UINavigationController *navFour = [[UINavigationController alloc] initWithRootViewController:_fourController];
     navFour.tabBarItem.title   = @"更多";
-    navFour.tabBarItem.image   =  [UIImage imageNamed:@"更多.png"];
+    navFour.tabBarItem.image   =  [UIImage imageNamed:@"store.png"];
     navFour.navigationBarHidden = YES;
     
     /** UITabBarController 控制视图的切换，将5个需要切换的视图控制器
@@ -73,9 +73,9 @@
     tabBar.viewControllers = viewController;
     
     [viewController release];
-//    _isFirstRun = [[[NSUserDefaults standardUserDefaults] valueForKey:IS_FIRST_RUN] boolValue];
-//    if (!IS_FIRST_RUN) {
-//       [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:IS_FIRST_RUN];
+    _isFirstRun = [[[NSUserDefaults standardUserDefaults] valueForKey:IS_FIRST_RUN] boolValue];
+    if (!IS_FIRST_RUN) {
+       [[NSUserDefaults standardUserDefaults] setValue:[NSNumber numberWithBool:YES] forKey:IS_FIRST_RUN];
         sqlite3 *db;
         db = [DataBase openDB];
         char *errorMsg;
@@ -96,7 +96,7 @@
     
         ///关闭数据库
         [DataBase closeDB];
-//    }
+    }
     
     [ZBarReaderView class];
     self.window.rootViewController = tabBar;

@@ -1,0 +1,650 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="qrspec_8h" kind="file">
+    <compoundname>qrspec.h</compoundname>
+    <includes refid="qrencode_8h" local="yes">qrencode.h</includes>
+    <includedby refid="mask_8c" local="yes">mask.c</includedby>
+    <includedby refid="qrencode_8c" local="yes">qrencode.c</includedby>
+    <includedby refid="qrinput_8c" local="yes">qrinput.c</includedby>
+    <includedby refid="qrspec_8c" local="yes">qrspec.c</includedby>
+    <includedby refid="split_8c" local="yes">split.c</includedby>
+    <incdepgraph>
+      <node id="384">
+        <label>qrspec.h</label>
+        <link refid="qrspec.h"/>
+        <childnode refid="385" relation="include">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>qrencode.h</label>
+        <link refid="qrencode_8h_source"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="qrspec_8h_1ad9e0fe046aaa6dc0ef84e7982dc3693d" prot="public" static="no">
+        <name>QRSPEC_VERSION_MAX</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum version (size) of QR-code symbol. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="34" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrspec_8h_1a22b685022f752e359b59b801b70de9f8" prot="public" static="no">
+        <name>QRSPEC_WIDTH_MAX</name>
+        <initializer>177</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum width of a symbol </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="39" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrspec_8h_1a8c05e8133654b44bbee597109dbdb280" prot="public" static="no">
+        <name>QRspec_rsBlockNum</name>
+        <param><defname>__spec__</defname></param>
+        <initializer>(__spec__[0] + __spec__[3])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="113" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrspec_8h_1a1974ecfdbcb1057138827d6fdf7b5242" prot="public" static="no">
+        <name>QRspec_rsBlockNum1</name>
+        <param><defname>__spec__</defname></param>
+        <initializer>(__spec__[0])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="114" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrspec_8h_1a0dd55defbc72a96ac1cfb356c22d0bc9" prot="public" static="no">
+        <name>QRspec_rsDataCodes1</name>
+        <param><defname>__spec__</defname></param>
+        <initializer>(__spec__[1])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="115" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrspec_8h_1a99b7aa2bf51d4fdd60512facd38efe11" prot="public" static="no">
+        <name>QRspec_rsEccCodes1</name>
+        <param><defname>__spec__</defname></param>
+        <initializer>(__spec__[2])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="116" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrspec_8h_1a445638186e12229cc2049179d018785d" prot="public" static="no">
+        <name>QRspec_rsBlockNum2</name>
+        <param><defname>__spec__</defname></param>
+        <initializer>(__spec__[3])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="117" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrspec_8h_1a1784583c879d628bd70eee0630fe3883" prot="public" static="no">
+        <name>QRspec_rsDataCodes2</name>
+        <param><defname>__spec__</defname></param>
+        <initializer>(__spec__[4])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="118" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrspec_8h_1aaf7c159aa13afd2d978b5cf037e66387" prot="public" static="no">
+        <name>QRspec_rsEccCodes2</name>
+        <param><defname>__spec__</defname></param>
+        <initializer>(__spec__[2])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="119" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrspec_8h_1af9994be3b13374e437f7f4ffba0dbfb3" prot="public" static="no">
+        <name>QRspec_rsDataLength</name>
+        <param><defname>__spec__</defname></param>
+        <initializer>((QRspec_rsBlockNum1(__spec__) * QRspec_rsDataCodes1(__spec__)) + \
+	 (QRspec_rsBlockNum2(__spec__) * QRspec_rsDataCodes2(__spec__)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="123" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrspec_8h_1aac54eb12ba77239c5c8bebc5a94c3150" prot="public" static="no">
+        <name>QRspec_rsEccLength</name>
+        <param><defname>__spec__</defname></param>
+        <initializer>(QRspec_rsBlockNum(__spec__) * QRspec_rsEccCodes1(__spec__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="125" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="qrspec_8h_1af591c0a0eef6b615e084f23106472118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRspec_getDataLength</definition>
+        <argsstring>(int version, QRecLevel level)</argsstring>
+        <name>QRspec_getDataLength</name>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return maximum data code length (bytes) for the version. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>maximum size (bytes) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="47" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1a7569f948136d3be340191cf41d0c0640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRspec_getECCLength</definition>
+        <argsstring>(int version, QRecLevel level)</argsstring>
+        <name>QRspec_getECCLength</name>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return maximum error correction code length (bytes) for the version. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ECC size (bytes) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="55" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1a30fb68f39b78d55fe5c8f9e16c06b6c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRspec_getMinimumVersion</definition>
+        <argsstring>(int size, QRecLevel level)</argsstring>
+        <name>QRspec_getMinimumVersion</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a version number that satisfies the input code length. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input code length (byte) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>version number </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="63" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="105" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1a34995420f33a328ae65579ddfd07d63e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRspec_getWidth</definition>
+        <argsstring>(int version)</argsstring>
+        <name>QRspec_getWidth</name>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the width of the symbol for the version. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>width </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="70" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1a1f03ef681978616cdc0fefb6fb4fab04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRspec_getRemainder</definition>
+        <argsstring>(int version)</argsstring>
+        <name>QRspec_getRemainder</name>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the numer of remainder bits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of remainder bits </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="77" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1aa9611cbe6556be98a4c0674af4712656" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRspec_lengthIndicator</definition>
+        <argsstring>(QRencodeMode mode, int version)</argsstring>
+        <name>QRspec_lengthIndicator</name>
+        <param>
+          <type>QRencodeMode</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the size of lenght indicator for the mode and version. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the size of the appropriate length indicator (bits). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="89" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="139" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1a9f31bf16e8dd70a4bd2396171e3c14de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRspec_maximumWords</definition>
+        <argsstring>(QRencodeMode mode, int version)</argsstring>
+        <name>QRspec_maximumWords</name>
+        <param>
+          <type>QRencodeMode</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the maximum length for the mode and version. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the maximum length (bytes) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="97" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="155" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1ae58cce00fac7d6a6299da3b8e6bca005" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QRspec_getEccSpec</definition>
+        <argsstring>(int version, QRecLevel level, int spec[5])</argsstring>
+        <name>QRspec_getEccSpec</name>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>spec</declname>
+          <array>[5]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return an array of ECC specification. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an array of ECC specification contains as following: {# of type1 blocks, # of data code, # of ecc code, <heading level="1">of type2 blocks, # of data code}</heading>
+</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="111" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="231" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1a44bd81da11fa7eca298855d09c353248" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int QRspec_getVersionPattern</definition>
+        <argsstring>(int version)</argsstring>
+        <name>QRspec_getVersionPattern</name>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return BCH encoded version information pattern that is used for the symbol of version 7 or greater. Use lower 18 bits. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BCH encoded version information pattern </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="137" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="362" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1aa6f506a291c45903fa015dc7249eac7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int QRspec_getFormatInfo</definition>
+        <argsstring>(int mask, QRecLevel level)</argsstring>
+        <name>QRspec_getFormatInfo</name>
+        <param>
+          <type>int</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return BCH encoded format information pattern. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>BCH encoded format information pattern </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="149" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="381" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1a826fd999c8628c9a91ad2101887eab63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char* QRspec_newFrame</definition>
+        <argsstring>(int version)</argsstring>
+        <name>QRspec_newFrame</name>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a copy of initialized frame. When the same version is requested twice or more, a copy of cached frame is returned. WARNING: Thread unsafe!!! <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Array of unsigned char. You can free it by free(). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="163" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="514" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="qrspec_8h_1a7263ad69c5703a939b8af99ded16d6ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QRspec_clearCache</definition>
+        <argsstring>(void)</argsstring>
+        <name>QRspec_clearCache</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear the frame cache. Typically for debug. WARNING: Thread unsafe!!! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h" line="169" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="534" bodyend="541"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>qrencode<sp/>-<sp/>QR<sp/>Code<sp/>encoder</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>QR<sp/>Code<sp/>specification<sp/>in<sp/>convenient<sp/>format.<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2006,<sp/>2007,<sp/>2008,<sp/>2009<sp/>Kentaro<sp/>Fukuchi<sp/>&lt;fukuchi@megaui.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__QRSPEC_H__</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__QRSPEC_H__</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;qrencode.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>Version<sp/>and<sp/>capacity</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#define<sp/>QRSPEC_VERSION_MAX<sp/>40</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor">#define<sp/>QRSPEC_WIDTH_MAX<sp/>177</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="47"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRspec_getDataLength(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version,<sp/>QRecLevel<sp/>level);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRspec_getECCLength(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version,<sp/>QRecLevel<sp/>level);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRspec_getMinimumVersion(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/>QRecLevel<sp/>level);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRspec_getWidth(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRspec_getRemainder(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>Length<sp/>indicator</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRspec_lengthIndicator(QRencodeMode<sp/>mode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRspec_maximumWords(QRencodeMode<sp/>mode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/>Error<sp/>correction<sp/>code</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QRspec_getEccSpec(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version,<sp/>QRecLevel<sp/>level,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spec[5]);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QRspec_rsBlockNum(__spec__)<sp/>(__spec__[0]<sp/>+<sp/>__spec__[3])</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>QRspec_rsBlockNum1(__spec__)<sp/>(__spec__[0])</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>QRspec_rsDataCodes1(__spec__)<sp/>(__spec__[1])</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>QRspec_rsEccCodes1(__spec__)<sp/>(__spec__[2])</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>QRspec_rsBlockNum2(__spec__)<sp/>(__spec__[3])</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>QRspec_rsDataCodes2(__spec__)<sp/>(__spec__[4])</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>QRspec_rsEccCodes2(__spec__)<sp/>(__spec__[2])</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QRspec_rsDataLength(__spec__)<sp/>\</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((QRspec_rsBlockNum1(__spec__)<sp/>*<sp/>QRspec_rsDataCodes1(__spec__))<sp/>+<sp/>\</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>(QRspec_rsBlockNum2(__spec__)<sp/>*<sp/>QRspec_rsDataCodes2(__spec__)))</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>QRspec_rsEccLength(__spec__)<sp/>\</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>(QRspec_rsBlockNum(__spec__)<sp/>*<sp/>QRspec_rsEccCodes1(__spec__))</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*<sp/>Version<sp/>information<sp/>pattern</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRspec_getVersionPattern(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*<sp/>Format<sp/>information</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRspec_getFormatInfo(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mask,<sp/>QRecLevel<sp/>level);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/>*<sp/>Frame</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*QRspec_newFrame(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QRspec_clearCache(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__QRSPEC_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_u_r_l_encode" kind="class" prot="public">
+    <compoundname>URLEncode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_u_r_l_encode_1a4e765190617a605922c590e13568db6a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * URLEncode::URLencode:stringEncoding:</definition>
+        <argsstring>(NSString *originalString,[stringEncoding] NSStringEncoding stringEncoding)</argsstring>
+        <name>URLencode:stringEncoding:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>originalString</declname>
+        </param>
+        <param>
+          <attributes>[stringEncoding]</attributes>
+          <type>NSStringEncoding</type>
+          <declname>stringEncoding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>@ $ &amp; ( ) = + ~ ` ; &apos; : , / ? </para>        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/URLEncode.h" line="9" bodyfile="/Users/dengkawakou/Desktop/AppJoin/URLEncode.m" bodystart="6" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_u_r_l_encode_1a914b0d0d070a8967bcaa8af19a14df90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * URLEncode::encodeUrlStr:</definition>
+        <argsstring>(NSString *sourceString)</argsstring>
+        <name>encodeUrlStr:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>sourceString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/URLEncode.h" line="11" bodyfile="/Users/dengkawakou/Desktop/AppJoin/URLEncode.m" bodystart="41" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="381">
+        <label>URLEncode</label>
+        <link refid="interface_u_r_l_encode"/>
+        <childnode refid="382" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>NSObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="383">
+        <label>URLEncode</label>
+        <link refid="interface_u_r_l_encode"/>
+        <childnode refid="384" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/URLEncode.h" line="6" bodyfile="/Users/dengkawakou/Desktop/AppJoin/URLEncode.h" bodystart="6" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_u_r_l_encode_1a914b0d0d070a8967bcaa8af19a14df90" prot="public" virt="virtual"><scope>URLEncode</scope><name>encodeUrlStr:</name></member>
+      <member refid="interface_u_r_l_encode_1a4e765190617a605922c590e13568db6a" prot="public" virt="virtual"><scope>URLEncode</scope><name>URLencode:stringEncoding:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

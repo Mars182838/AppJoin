@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_info_view_controller_8h" kind="file">
+    <compoundname>InfoViewController.h</compoundname>
+    <includes local="no">UIKit/UIKit.h</includes>
+    <includes refid="_m_b_progress_h_u_d_8h" local="yes">MBProgressHUD.h</includes>
+    <includedby refid="_four_view_controller_8m" local="yes">FourViewController.m</includedby>
+    <includedby refid="_info_view_controller_8m" local="yes">InfoViewController.m</includedby>
+    <includedby refid="_second_view_controller_8m" local="yes">SecondViewController.m</includedby>
+    <includedby refid="_third_view_controller_8m" local="yes">ThirdViewController.m</includedby>
+    <incdepgraph>
+      <node id="190">
+        <label>UIKit/UIKit.h</label>
+      </node>
+      <node id="193">
+        <label>CoreGraphics/CoreGraphics.h</label>
+      </node>
+      <node id="189">
+        <label>InfoViewController.h</label>
+        <link refid="InfoViewController.h"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="191">
+        <label>MBProgressHUD.h</label>
+        <link refid="_m_b_progress_h_u_d_8h_source"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_info_view_controller" prot="public">InfoViewController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>InfoViewController.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AppJoin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Mars<sp/>on<sp/>12-12-29.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2012年<sp/>Mars.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;UIKit/UIKit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;MBProgressHUD.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="interface_info_view_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_info_view_controller" kindref="compound">InfoViewController</ref><sp/>:<sp/>UIViewController&lt;UIWebViewDelegate&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="interface_info_view_controller_1a46035a05e80e8252c07e1f2f88e034da" kindref="member">expectedLength</ref>;</highlight></codeline>
+<codeline lineno="17" refid="interface_info_view_controller_1a46035a05e80e8252c07e1f2f88e034da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="interface_info_view_controller_1a5cda7e7567608b413aa8f2a82b05cf50" kindref="member">currentLength</ref>;</highlight></codeline>
+<codeline lineno="20" refid="interface_info_view_controller_1a5cda7e7567608b413aa8f2a82b05cf50" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_m_b_progress_h_u_d" kindref="compound">MBProgressHUD</ref><sp/>*hud;</highlight></codeline>
+<codeline lineno="25" refid="interface_info_view_controller_1a1a2a712f0824f338296c51f09088d50a" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>UIWebView<sp/>*infoWebView;</highlight></codeline>
+<codeline lineno="28" refid="interface_info_view_controller_1a34d0ec0083fd66336b41a8393e51f91d" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>copy)<sp/>NSString<sp/>*urlString;</highlight></codeline>
+<codeline lineno="31" refid="interface_info_view_controller_1affc65776e53e867683a286f3c86384e9" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref><sp/>*topBar;</highlight></codeline>
+<codeline lineno="34" refid="interface_info_view_controller_1a047156b12d76ef4fbf44a13eb499a887" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/InfoViewController.h"/>
+  </compounddef>
+</doxygen>

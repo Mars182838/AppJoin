@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_opinions_view_controller" kind="class" prot="public">
+    <compoundname>OpinionsViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITextFieldDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITextViewDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSURLConnectionDataDelegate&gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_opinions_view_controller_1a326a4aff8da1f317a030dfd421b74cda" prot="protected" static="no" mutable="no">
+        <type>NSURLConnection *</type>
+        <definition>NSURLConnection* OpinionsViewController::coonection</definition>
+        <argsstring></argsstring>
+        <name>coonection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" line="15" bodyfile="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_opinions_view_controller_1a4dc464c8b621c738abc7c7c09d675e95" prot="protected" static="no" mutable="no">
+        <type>NSMutableData *</type>
+        <definition>NSMutableData* OpinionsViewController::mutableData</definition>
+        <argsstring></argsstring>
+        <name>mutableData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" line="16" bodyfile="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_opinions_view_controller_1a4bcebb6115f963c0e469fca9b438ee7b" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIImageView *</type>
+        <definition>UIImageView* OpinionsViewController::opinionBackImage</definition>
+        <argsstring></argsstring>
+        <name>opinionBackImage</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>意见框的背景图片 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" line="20" bodyfile="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_opinions_view_controller_1a84c76f22c30a5776ac625ea7cd737aaf" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITextView *</type>
+        <definition>UITextView* OpinionsViewController::opinionTextView</definition>
+        <argsstring></argsstring>
+        <name>opinionTextView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>意见输入框 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" line="23" bodyfile="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_opinions_view_controller_1a894f5cea593018dfb32ebd371d938c6a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITextField *</type>
+        <definition>UITextField* OpinionsViewController::emailTextField</definition>
+        <argsstring></argsstring>
+        <name>emailTextField</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>邮箱输入框 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" line="26" bodyfile="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_opinions_view_controller_1a47800b4c0b7dd773c2866a369b2bf873" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITextField *</type>
+        <definition>UITextField* OpinionsViewController::phoneTextField</definition>
+        <argsstring></argsstring>
+        <name>phoneTextField</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>电话输入框 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" line="29" bodyfile="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_opinions_view_controller_1add082cf6b064ec7c0b26fb1c89a86af9" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UILabel *</type>
+        <definition>UILabel* OpinionsViewController::numberLabel</definition>
+        <argsstring></argsstring>
+        <name>numberLabel</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>显示数字个数 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" line="32" bodyfile="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_opinions_view_controller_1a16f05df059e1a23bd623fa19b8c66a7b" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* OpinionsViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>定制导航栏的图片 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" line="35" bodyfile="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_opinions_view_controller_1a1637be3d7112e3e645fdbc7a55ffe1d4" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIButton *</type>
+        <definition>UIButton* OpinionsViewController::rightBtn</definition>
+        <argsstring></argsstring>
+        <name>rightBtn</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>导航栏上面右边按钮 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" line="38" bodyfile="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="287">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="286">
+        <label>&lt;UITextViewDelegate&gt;</label>
+      </node>
+      <node id="285">
+        <label>&lt;UITextFieldDelegate&gt;</label>
+      </node>
+      <node id="284">
+        <label>UIViewController</label>
+      </node>
+      <node id="283">
+        <label>OpinionsViewController</label>
+        <link refid="interface_opinions_view_controller"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+        <childnode refid="285" relation="public-inheritance">
+        </childnode>
+        <childnode refid="286" relation="public-inheritance">
+        </childnode>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="293">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="294" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="291">
+        <label>&lt;UITextViewDelegate&gt;</label>
+      </node>
+      <node id="290">
+        <label>&lt;UITextFieldDelegate&gt;</label>
+      </node>
+      <node id="289">
+        <label>UIViewController</label>
+      </node>
+      <node id="288">
+        <label>OpinionsViewController</label>
+        <link refid="interface_opinions_view_controller"/>
+        <childnode refid="289" relation="public-inheritance">
+        </childnode>
+        <childnode refid="290" relation="public-inheritance">
+        </childnode>
+        <childnode refid="291" relation="public-inheritance">
+        </childnode>
+        <childnode refid="292" relation="public-inheritance">
+        </childnode>
+        <childnode refid="293" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+      </node>
+      <node id="294">
+        <label>UIView</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" line="14" bodyfile="/Users/dengkawakou/Desktop/AppJoin/OpinionsViewController.h" bodystart="12" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_opinions_view_controller_1a326a4aff8da1f317a030dfd421b74cda" prot="protected" virt="non-virtual"><scope>OpinionsViewController</scope><name>coonection</name></member>
+      <member refid="interface_opinions_view_controller_1a894f5cea593018dfb32ebd371d938c6a" prot="public" virt="non-virtual"><scope>OpinionsViewController</scope><name>emailTextField</name></member>
+      <member refid="interface_opinions_view_controller_1a4dc464c8b621c738abc7c7c09d675e95" prot="protected" virt="non-virtual"><scope>OpinionsViewController</scope><name>mutableData</name></member>
+      <member refid="interface_opinions_view_controller_1add082cf6b064ec7c0b26fb1c89a86af9" prot="public" virt="non-virtual"><scope>OpinionsViewController</scope><name>numberLabel</name></member>
+      <member refid="interface_opinions_view_controller_1a4bcebb6115f963c0e469fca9b438ee7b" prot="public" virt="non-virtual"><scope>OpinionsViewController</scope><name>opinionBackImage</name></member>
+      <member refid="interface_opinions_view_controller_1a84c76f22c30a5776ac625ea7cd737aaf" prot="public" virt="non-virtual"><scope>OpinionsViewController</scope><name>opinionTextView</name></member>
+      <member refid="interface_opinions_view_controller_1a47800b4c0b7dd773c2866a369b2bf873" prot="public" virt="non-virtual"><scope>OpinionsViewController</scope><name>phoneTextField</name></member>
+      <member refid="interface_opinions_view_controller_1a1637be3d7112e3e645fdbc7a55ffe1d4" prot="public" virt="non-virtual"><scope>OpinionsViewController</scope><name>rightBtn</name></member>
+      <member refid="interface_opinions_view_controller_1a16f05df059e1a23bd623fa19b8c66a7b" prot="public" virt="non-virtual"><scope>OpinionsViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

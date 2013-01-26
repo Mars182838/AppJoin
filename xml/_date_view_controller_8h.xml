@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_date_view_controller_8h" kind="file">
+    <compoundname>DateViewController.h</compoundname>
+    <includes local="no">UIKit/UIKit.h</includes>
+    <includes refid="_m_b_progress_h_u_d_8h" local="yes">MBProgressHUD.h</includes>
+    <includes refid="_const_8h" local="yes">Const.h</includes>
+    <includes refid="_first_view_controller_8h" local="yes">FirstViewController.h</includes>
+    <includedby refid="_date_view_controller_8m" local="yes">DateViewController.m</includedby>
+    <includedby refid="_first_view_controller_8m" local="yes">FirstViewController.m</includedby>
+    <incdepgraph>
+      <node id="90">
+        <label>Const.h</label>
+        <link refid="_const_8h_source"/>
+      </node>
+      <node id="92">
+        <label>TopBarView.h</label>
+        <link refid="_top_bar_view_8h_source"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>UIKit/UIKit.h</label>
+      </node>
+      <node id="91">
+        <label>FirstViewController.h</label>
+        <link refid="_first_view_controller_8h_source"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>CoreGraphics/CoreGraphics.h</label>
+      </node>
+      <node id="88">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="85">
+        <label>DateViewController.h</label>
+        <link refid="DateViewController.h"/>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>MBProgressHUD.h</label>
+        <link refid="_m_b_progress_h_u_d_8h_source"/>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_date_view_controller" prot="public">DateViewController</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68" prot="public" static="no">
+        <name>Place</name>
+        <enumvalue id="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68a0d3a2acbccb30b7c089363e026bb19b3" prot="public">
+          <name>BeiJing1</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68a39ce11b29fcc2863296966437bd91d01" prot="public">
+          <name>ZhengZhou</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68af3a46399b8523595b51ec96f7bf5da34" prot="public">
+          <name>XiAn</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68ae88c789a13c350844cc230d8de6b0931" prot="public">
+          <name>WenZhou</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_date_view_controller_8h_1a6ea26687fc6b796b4e410106d5b8bc68adaf26a61d9796e57dd927dce527646b6" prot="public">
+          <name>BeiJing2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="14" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="14" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>DateViewController.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AppJoin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Mars<sp/>on<sp/>13-1-11.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2013年<sp/>Mars.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;UIKit/UIKit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;MBProgressHUD.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;Const.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;FirstViewController.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>BeiJing1<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>ZhengZhou,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>XiAn,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>WenZhou,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>BeiJing2</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<ref refid="interface_place" kindref="compound">Place</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="interface_date_view_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_date_view_controller" kindref="compound">DateViewController</ref><sp/>:<sp/>UIViewController&lt;UITableViewDataSource,UITableViewDelegate,NSURLConnectionDataDelegate&gt;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>NSURLConnection<sp/>*connect;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>NSMutableData<sp/>*messageData;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="interface_date_view_controller_1ac977fba71126dc96513743e8db033743" kindref="member">expectedLength</ref>;</highlight></codeline>
+<codeline lineno="29" refid="interface_date_view_controller_1ac977fba71126dc96513743e8db033743" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="interface_date_view_controller_1a10154a7a8d6c08b5e8149c2678264c7e" kindref="member">currentLength</ref>;</highlight></codeline>
+<codeline lineno="32" refid="interface_date_view_controller_1a10154a7a8d6c08b5e8149c2678264c7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>isEditer;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>UITableView<sp/>*dateTableView;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSMutableArray<sp/>*dateArray;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSMutableArray<sp/>*detailArray;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_m_b_progress_h_u_d" kindref="compound">MBProgressHUD</ref><sp/>*hud;</highlight></codeline>
+<codeline lineno="44" refid="interface_date_view_controller_1adb68a544ccdbac21ae0bd3ee08d868f3" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref><sp/>*topBar;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/><sp/><ref refid="interface_place" kindref="compound">Place</ref><sp/>placeName;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h"/>
+  </compounddef>
+</doxygen>

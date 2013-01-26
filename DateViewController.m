@@ -7,7 +7,8 @@
 //
 
 #import "DateViewController.h"
-#import "DatePlan.h"
+#import "DateDetailViewController.h"
+#import "CustomCell.h"
 
 @interface DateViewController ()
 
@@ -19,9 +20,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.dateArray = [[NSMutableArray alloc] initWithObjects:@"北京",@"杭州",@"上海",@"深圳", nil];
-        self.detailArray = [[NSMutableArray alloc] initWithObjects:@"2013年 4月5-6日",@"2013年 6月7-8日",@"2013年 9月7-8日",@"2013年 10月7-8日",nil];
-
+        _dateArray = [[NSMutableArray alloc] initWithObjects:@"北京站                                      时间：2013年 4月5-6日                                         地点：北京·全国农业展览馆",@"郑州站                                            时间：2013年5月25-26日                                        地点：郑州·中原博览中心",@"西安站                                                         时间：2013年9月份中旬                                   地点：西安·曲江国际会展中心",@"温州站                                         时间：2013年10月份                                                    地点：温州·温州市科技馆",@"北京站                                                         时间：2013年11月份上旬                                          地点：北京·全国农业展览馆", nil];
+        _detailArray = [[NSMutableArray alloc] initWithObjects:@"2013年4月4日 上午08:30—下午17:00  参展商报到、布展                                                                            2013年4月5日 上午09:00—下午16:30  专业观众观展，中午不闭                       2013年4月6日 上午09:00—下午15:30  专业观众观展，中午不闭                                    2013年4月6日 下午15:30—下午17:30  展商撤展时间",@"暂时没有详细时间安排，请关注后续更新",@"暂时没有详细时间安排，请关注后续更新",@"暂时没有详细时间安排，请关注后续更新",@"暂时没有详细时间安排，请关注后续更新", nil];
     }
     return self;
 }
@@ -44,23 +44,6 @@
     _dateTableView.delegate   = self;
     _dateTableView.dataSource = self;
     [self.view addSubview:_dateTableView];
-    
-    
-    _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _rightBtn.frame = CGRectMake(265, 6, 50, 30);
-    [_rightBtn setImage:[UIImage imageNamed:@"editer.png"] forState:UIControlStateNormal];
-    [_rightBtn addTarget:self action:@selector(deleteMethods:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:_rightBtn];
-    
-    
-    NSURL *url = [NSURL URLWithString:@"http://baidu.com"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    connect = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    if (connect) {
-        messageData = [[NSMutableData alloc] initWithCapacity:0];
-    }
-    
 }
 
 #pragma mark - UITableView Delegate And DataSource
@@ -73,76 +56,40 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *indentifier = @"cellIndentifer";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
+    
+    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indentifier] autorelease];
+        cell = [[[CustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier] autorelease];
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
-        
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
-
-    cell.textLabel.text = [_dateArray objectAtIndex:indexPath.row];
-    cell.detailTextLabel.text = [_detailArray objectAtIndex:indexPath.row];
-
-    return cell;
-}
-
-
-#pragma mark - NSURLConnection Delegate
-
--(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
-{
-    _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    _hud.labelText = @"下载中，请稍后";
-    expectedLength = [response expectedContentLength];
-    currentLength = 0;
     
-    [messageData setLength:0];
-}
-
--(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-    currentLength += [data length];
-    _hud.progress = currentLength/(float)expectedLength;
+    cell.nameLabel.text = [NSString stringWithFormat:@"第%d届连锁加盟展会 %@",indexPath.row +19,[_dateArray objectAtIndex:indexPath.row]];
     
-    [messageData appendData:data];
+   return cell;
 }
 
--(void)connectionDidFinishLoading:(NSURLConnection *)connection
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [_hud hide:YES afterDelay:1.0f];
+    DateDetailViewController *dateDetail = [[DateDetailViewController alloc] initWithNibName:nil bundle:nil];
+    dateDetail.dateDetailString = [self.detailArray objectAtIndex:indexPath.row];
     
-//    /** NSJSONSerialization利用解析Json数据 */
-//    NSError *error = nil;
-//    NSDictionary *serial = [NSJSONSerialization JSONObjectWithData:messageData options:NSJSONReadingMutableLeaves error:&error];
+    [self.navigationController pushViewController:dateDetail animated:YES];
+    [dateDetail release];
 }
 
--(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeText;
-    hud.labelText = @"下载失败，请查看网络连接状态";
-    [hud hide:YES afterDelay:1.0f];
+    UIFont *font = [UIFont systemFontOfSize:15.0f];
+    CGSize size = [ [self.dateArray objectAtIndex:indexPath.row]  sizeWithFont:font constrainedToSize:CGSizeMake(100, 1000) lineBreakMode:NSLineBreakByCharWrapping];
+    return size.height;
 }
+
 #pragma mark - BackBtn 
 
 -(void)backPress:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
-}
-
--(void)deleteMethods:(id)sender
-{
-    if (isEditer) {
-        
-        [self.dateTableView setEditing:YES animated:YES];
-        [_rightBtn setImage:[UIImage imageNamed:@"finish.png"] forState:UIControlStateNormal];
-        isEditer = NO;
-    }
-    else{
-        [self.dateTableView setEditing:NO animated:YES];
-        [_rightBtn setImage:[UIImage imageNamed:@"editer.png"] forState:UIControlStateNormal];
-        isEditer = YES;
-    }
 }
 
 -(void)dealloc
@@ -157,6 +104,22 @@
 {
     [super didReceiveMemoryWarning];
     
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

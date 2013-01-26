@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_main_view_controller_8h" kind="file">
+    <compoundname>MainViewController.h</compoundname>
+    <includes refid="i_carousel_8h" local="yes">iCarousel.h</includes>
+    <includes refid="_m_b_progress_h_u_d_8h" local="yes">MBProgressHUD.h</includes>
+    <includes refid="_down_load_string_8h" local="yes">DownLoadString.h</includes>
+    <includes local="yes">SDImageView+SDWebCache.h</includes>
+    <includedby refid="_main_view_controller_8m" local="yes">MainViewController.m</includedby>
+    <incdepgraph>
+      <node id="206">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+      <node id="212">
+        <label>SDImageView+SDWebCache.h</label>
+      </node>
+      <node id="204">
+        <label>iCarousel.h</label>
+        <link refid="i_carousel_8h_source"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+      </node>
+      <node id="209">
+        <label>UIKit/UIKit.h</label>
+      </node>
+      <node id="203">
+        <label>MainViewController.h</label>
+        <link refid="MainViewController.h"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
+        </childnode>
+      </node>
+      <node id="210">
+        <label>CoreGraphics/CoreGraphics.h</label>
+      </node>
+      <node id="208">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="211">
+        <label>DownLoadString.h</label>
+        <link refid="_down_load_string_8h_source"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+      </node>
+      <node id="205">
+        <label>QuartzCore/QuartzCore.h</label>
+      </node>
+      <node id="207">
+        <label>MBProgressHUD.h</label>
+        <link refid="_m_b_progress_h_u_d_8h_source"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="protocol_detail_view_delegate-p" prot="public">DetailViewDelegate-p</innerclass>
+    <innerclass refid="interface_main_view_controller" prot="public">MainViewController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>MainViewController.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AppJoin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Mars<sp/>on<sp/>12-12-29.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2012年<sp/>Mars.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;iCarousel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;MBProgressHUD.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;DownLoadString.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;SDImageView+SDWebCache.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_detail_view_controller" kindref="compound">DetailViewController</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_reachability" kindref="compound">Reachability</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="protocol_detail_view_delegate-p" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@protocol<sp/></highlight><highlight class="normal"><ref refid="protocol_detail_view_delegate-p" kindref="compound">DetailViewDelegate</ref><sp/>&lt;NSObject&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">-(void)transferImageUrl:(NSString<sp/>*)urlString<sp/>andString:(NSString<sp/>*)message;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="interface_main_view_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_main_view_controller" kindref="compound">MainViewController</ref><sp/>:<sp/>UIViewController&lt;UIWebViewDelegate,<ref refid="protocoli_carousel_data_source-p" kindref="compound">iCarouselDataSource</ref>,<ref refid="protocoli_carousel_delegate-p" kindref="compound">iCarouselDelegate</ref>,<ref refid="protocol_m_b_progress_h_u_d_delegate-p" kindref="compound">MBProgressHUDDelegate</ref>,NSURLConnectionDataDelegate,<ref refid="protocoldown_load_string_protocal-p" kindref="compound">downLoadStringProtocal</ref>&gt;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>id<sp/>&lt;DetailViewDelegate&gt;<sp/><ref refid="interface_main_view_controller_1a75888987a8cb0262169d2a4ef4e80d2a" kindref="member">delegate</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/><ref refid="interface_main_view_controller_1a0eb5f29f5e5e9c7228313d5fcbd606ab" kindref="member">wrap</ref>;</highlight></codeline>
+<codeline lineno="32" refid="interface_main_view_controller_1a0eb5f29f5e5e9c7228313d5fcbd606ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_m_b_progress_h_u_d" kindref="compound">MBProgressHUD</ref><sp/>*hud;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_reachability" kindref="compound">Reachability</ref><sp/>*<ref refid="interface_main_view_controller_1a2fd296dcee1ae6fa7f3f346be140f6af" kindref="member" tooltip="检测是否联网">hostReach</ref>;</highlight></codeline>
+<codeline lineno="35" refid="interface_main_view_controller_1a2fd296dcee1ae6fa7f3f346be140f6af" refkind="member"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref><sp/>*carousel;</highlight></codeline>
+<codeline lineno="41" refid="interface_main_view_controller_1aff97c901f4d7d451fa2cdca04a7bac95" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_detail_view_controller" kindref="compound">DetailViewController</ref><sp/>*detailController;</highlight></codeline>
+<codeline lineno="44" refid="interface_main_view_controller_1adcdd91fa1f396efe10cfaf47910af2a1" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>id<sp/>&lt;DetailViewDelegate&gt;<sp/>delegate;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>UILabel<sp/>*label;</highlight></codeline>
+<codeline lineno="52" refid="interface_main_view_controller_1a2f291676842fc98f04dfa26344a09593" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>UILabel<sp/>*detailLabel;</highlight></codeline>
+<codeline lineno="55" refid="interface_main_view_controller_1a243da297ab8ff34a78b80d4677315e4e" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref><sp/>*topBar;</highlight></codeline>
+<codeline lineno="58" refid="interface_main_view_controller_1a7d6a8d4a24ac609e7545bf6c07d7786c" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/><ref refid="interface_down_load_string" kindref="compound">DownLoadString</ref><sp/>*downLoad;</highlight></codeline>
+<codeline lineno="61" refid="interface_main_view_controller_1a91dc5cbbb04b3e8c925f747f8fed3a6e" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSDictionary<sp/>*mainDic;</highlight></codeline>
+<codeline lineno="64" refid="interface_main_view_controller_1a39e05eee835ebf23c2375ff7565a2357" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>UIImageView<sp/>*imageView;</highlight></codeline>
+<codeline lineno="67" refid="interface_main_view_controller_1a4cc0ee50feca3b06b12297847035a1a1" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSMutableArray<sp/>*selectImageArray;</highlight></codeline>
+<codeline lineno="70" refid="interface_main_view_controller_1aa257e69a571d17651210b424e312550c" refkind="member"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/MainViewController.h"/>
+  </compounddef>
+</doxygen>

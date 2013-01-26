@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_card_view_controller" kind="class" prot="public">
+    <compoundname>CardViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITableViewDataSource&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITableViewDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITextFieldDelegate&gt;</basecompoundref>
+    <basecompoundref refid="protocol_m_b_progress_h_u_d_delegate-p" prot="public" virt="non-virtual">&lt;MBProgressHUDDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;ZBarReaderDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSURLConnectionDataDelegate&gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_card_view_controller_1a76e1ba3eb19518e13d416ce0714e7759" prot="protected" static="no" mutable="no">
+        <type>NSUInteger</type>
+        <definition>NSUInteger CardViewController::phoneNumber</definition>
+        <argsstring></argsstring>
+        <name>phoneNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="19" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_card_view_controller_1af44eabe7b7c82a5a2b17ca65f3483a0c" prot="protected" static="no" mutable="no">
+        <type>NSUInteger</type>
+        <definition>NSUInteger CardViewController::number</definition>
+        <argsstring></argsstring>
+        <name>number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="20" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_card_view_controller_1a85acd70cfad1ea3a5d70b5ce63bc017a" prot="protected" static="no" mutable="no">
+        <type>NSURLConnection *</type>
+        <definition>NSURLConnection* CardViewController::coonection</definition>
+        <argsstring></argsstring>
+        <name>coonection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="22" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_card_view_controller_1a475588d8d26a77900f0bd3eda00488fe" prot="protected" static="no" mutable="no">
+        <type>NSMutableData *</type>
+        <definition>NSMutableData* CardViewController::mutableData</definition>
+        <argsstring></argsstring>
+        <name>mutableData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="23" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_card_view_controller_1a28c04404c102ca3070f01843b682c66a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITableView *</type>
+        <definition>UITableView* CardViewController::cardTableView</definition>
+        <argsstring></argsstring>
+        <name>cardTableView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>名片展示tableView </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="27" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_card_view_controller_1a8d38af0727f6342827a44c8cc279468c" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSArray *</type>
+        <definition>NSArray* CardViewController::cardArray</definition>
+        <argsstring></argsstring>
+        <name>cardArray</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>存放名片元素的数组 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="30" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_card_view_controller_1a1984282f1134d68c03edfd889f41ee46" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIView *</type>
+        <definition>UIView* CardViewController::qrView</definition>
+        <argsstring></argsstring>
+        <name>qrView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>qrView 自定义的UIView，用于显示生成的二维码 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="33" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_card_view_controller_1aa0cad1539bfab47dc163b4b528437ae1" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIImageView *</type>
+        <definition>UIImageView* CardViewController::qrImage</definition>
+        <argsstring></argsstring>
+        <name>qrImage</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>qrImage 显示二维码图片 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="36" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_card_view_controller_1ad1f20231d1a58429435849832a916f90" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray* CardViewController::cardArr</definition>
+        <argsstring></argsstring>
+        <name>cardArr</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>用于存储UITextView中的信息 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="39" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_card_view_controller_1ab1c90ae754040fa90d1f7ad719aafcd4" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* CardViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="41" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_card_view_controller_1aac253889610bf91cc6d69aa9473f703c" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIButton *</type>
+        <definition>UIButton* CardViewController::rightBtn</definition>
+        <argsstring></argsstring>
+        <name>rightBtn</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="43" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_card_view_controller_1a61e36edcbbe84a6c381437a948a23796" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITextField *</type>
+        <definition>UITextField* CardViewController::textField</definition>
+        <argsstring></argsstring>
+        <name>textField</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="45" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_card_view_controller_1acd7402f25949d6d7f697df45f8cd1787" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIButton *</type>
+        <definition>UIButton* CardViewController::editerBtn</definition>
+        <argsstring></argsstring>
+        <name>editerBtn</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="47" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>&lt;UITableViewDataSource&gt;</label>
+      </node>
+      <node id="30">
+        <label>&lt;MBProgressHUDDelegate&gt;</label>
+        <link refid="protocol_m_b_progress_h_u_d_delegate-p"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>&lt;UITableViewDelegate&gt;</label>
+      </node>
+      <node id="33">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="32">
+        <label>&lt;ZBarReaderDelegate&gt;</label>
+      </node>
+      <node id="29">
+        <label>&lt;UITextFieldDelegate&gt;</label>
+      </node>
+      <node id="26">
+        <label>UIViewController</label>
+      </node>
+      <node id="31">
+        <label>&lt;UIViewNSObject&gt;</label>
+      </node>
+      <node id="25">
+        <label>CardViewController</label>
+        <link refid="interface_card_view_controller"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>&lt;UITableViewDataSource&gt;</label>
+      </node>
+      <node id="39">
+        <label>&lt;MBProgressHUDDelegate&gt;</label>
+        <link refid="protocol_m_b_progress_h_u_d_delegate-p"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>&lt;UITableViewDelegate&gt;</label>
+      </node>
+      <node id="42">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="41">
+        <label>&lt;ZBarReaderDelegate&gt;</label>
+      </node>
+      <node id="38">
+        <label>&lt;UITextFieldDelegate&gt;</label>
+      </node>
+      <node id="35">
+        <label>UIViewController</label>
+      </node>
+      <node id="40">
+        <label>&lt;UIViewNSObject&gt;</label>
+      </node>
+      <node id="34">
+        <label>CardViewController</label>
+        <link refid="interface_card_view_controller"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>UIView</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" line="18" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CardViewController.h" bodystart="14" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_card_view_controller_1ad1f20231d1a58429435849832a916f90" prot="public" virt="non-virtual"><scope>CardViewController</scope><name>cardArr</name></member>
+      <member refid="interface_card_view_controller_1a8d38af0727f6342827a44c8cc279468c" prot="public" virt="non-virtual"><scope>CardViewController</scope><name>cardArray</name></member>
+      <member refid="interface_card_view_controller_1a28c04404c102ca3070f01843b682c66a" prot="public" virt="non-virtual"><scope>CardViewController</scope><name>cardTableView</name></member>
+      <member refid="interface_card_view_controller_1a85acd70cfad1ea3a5d70b5ce63bc017a" prot="protected" virt="non-virtual"><scope>CardViewController</scope><name>coonection</name></member>
+      <member refid="interface_card_view_controller_1acd7402f25949d6d7f697df45f8cd1787" prot="public" virt="non-virtual"><scope>CardViewController</scope><name>editerBtn</name></member>
+      <member refid="protocol_m_b_progress_h_u_d_delegate-p_1a0b2a08b1d9cf3758cca8d52a61bed1cc" prot="public" virt="virtual"><scope>CardViewController</scope><name>hudWasHidden:</name></member>
+      <member refid="interface_card_view_controller_1a475588d8d26a77900f0bd3eda00488fe" prot="protected" virt="non-virtual"><scope>CardViewController</scope><name>mutableData</name></member>
+      <member refid="interface_card_view_controller_1af44eabe7b7c82a5a2b17ca65f3483a0c" prot="protected" virt="non-virtual"><scope>CardViewController</scope><name>number</name></member>
+      <member refid="interface_card_view_controller_1a76e1ba3eb19518e13d416ce0714e7759" prot="protected" virt="non-virtual"><scope>CardViewController</scope><name>phoneNumber</name></member>
+      <member refid="interface_card_view_controller_1aa0cad1539bfab47dc163b4b528437ae1" prot="public" virt="non-virtual"><scope>CardViewController</scope><name>qrImage</name></member>
+      <member refid="interface_card_view_controller_1a1984282f1134d68c03edfd889f41ee46" prot="public" virt="non-virtual"><scope>CardViewController</scope><name>qrView</name></member>
+      <member refid="interface_card_view_controller_1aac253889610bf91cc6d69aa9473f703c" prot="public" virt="non-virtual"><scope>CardViewController</scope><name>rightBtn</name></member>
+      <member refid="interface_card_view_controller_1a61e36edcbbe84a6c381437a948a23796" prot="public" virt="non-virtual"><scope>CardViewController</scope><name>textField</name></member>
+      <member refid="interface_card_view_controller_1ab1c90ae754040fa90d1f7ad719aafcd4" prot="public" virt="non-virtual"><scope>CardViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="struct_frame_filler" kind="struct" prot="public">
+    <compoundname>FrameFiller</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_frame_filler_1ae40fbdfcfd12acd318c0983bae112a41" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FrameFiller::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="202" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_frame_filler_1af62dd5268e5d105eb0b8c5eee478d84a" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* FrameFiller::frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="203" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_frame_filler_1a1c88e4707a8f31367dc10917b423e88c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FrameFiller::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="204" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_frame_filler_1a40b9439e9c0cd149785944dd9c695481" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FrameFiller::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="204" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_frame_filler_1ad497b0999a8574bfbff501d68c893534" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FrameFiller::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="205" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_frame_filler_1abf2006539482b99bbf47cbba183bd0ff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FrameFiller::bit</definition>
+        <argsstring></argsstring>
+        <name>bit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="206" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="201" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="201" bodyend="207"/>
+    <listofallmembers>
+      <member refid="struct_frame_filler_1abf2006539482b99bbf47cbba183bd0ff" prot="public" virt="non-virtual"><scope>FrameFiller</scope><name>bit</name></member>
+      <member refid="struct_frame_filler_1ad497b0999a8574bfbff501d68c893534" prot="public" virt="non-virtual"><scope>FrameFiller</scope><name>dir</name></member>
+      <member refid="struct_frame_filler_1af62dd5268e5d105eb0b8c5eee478d84a" prot="public" virt="non-virtual"><scope>FrameFiller</scope><name>frame</name></member>
+      <member refid="struct_frame_filler_1ae40fbdfcfd12acd318c0983bae112a41" prot="public" virt="non-virtual"><scope>FrameFiller</scope><name>width</name></member>
+      <member refid="struct_frame_filler_1a1c88e4707a8f31367dc10917b423e88c" prot="public" virt="non-virtual"><scope>FrameFiller</scope><name>x</name></member>
+      <member refid="struct_frame_filler_1a40b9439e9c0cd149785944dd9c695481" prot="public" virt="non-virtual"><scope>FrameFiller</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

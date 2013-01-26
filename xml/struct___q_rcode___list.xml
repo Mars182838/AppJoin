@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="struct___q_rcode___list" kind="struct" prot="public">
+    <compoundname>_QRcode_List</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___q_rcode___list_1a3a611fa842869b6e21c1b66d1d61daab" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_q_rcode" kindref="compound">QRcode</ref> *</type>
+        <definition>QRcode* _QRcode_List::code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="323" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___q_rcode___list_1a58e12820cb046dc47b93402c24290348" prot="public" static="no" mutable="no">
+        <type><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref> *</type>
+        <definition>QRcode_List* _QRcode_List::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="324" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_QRcode_List</label>
+        <link refid="struct___q_rcode___list"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>code</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QRcode</label>
+        <link refid="struct_q_rcode"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="322" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="322" bodyend="325"/>
+    <listofallmembers>
+      <member refid="struct___q_rcode___list_1a3a611fa842869b6e21c1b66d1d61daab" prot="public" virt="non-virtual"><scope>_QRcode_List</scope><name>code</name></member>
+      <member refid="struct___q_rcode___list_1a58e12820cb046dc47b93402c24290348" prot="public" virt="non-virtual"><scope>_QRcode_List</scope><name>next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

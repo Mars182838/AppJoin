@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_coupons_view_controller" kind="class" prot="public">
+    <compoundname>CouponsViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_coupons_view_controller_1ae9bdd9bbac6cfdd5a892bc5baf99070c" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIImageView *</type>
+        <definition>UIImageView* CouponsViewController::imageView</definition>
+        <argsstring></argsstring>
+        <name>imageView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CouponsViewController.h" line="14" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CouponsViewController.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_coupons_view_controller_1acf56e6381638ed2faf61531be93508ea" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* CouponsViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CouponsViewController.h" line="16" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CouponsViewController.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_coupons_view_controller_1a00a649bc860adf51f6a3765ad81f2a0a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UILabel *</type>
+        <definition>UILabel* CouponsViewController::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CouponsViewController.h" line="18" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CouponsViewController.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="47">
+        <label>CouponsViewController</label>
+        <link refid="interface_coupons_view_controller"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>UIViewController</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="51">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>CouponsViewController</label>
+        <link refid="interface_coupons_view_controller"/>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>UIViewController</label>
+      </node>
+      <node id="52">
+        <label>UIView</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/CouponsViewController.h" line="13" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CouponsViewController.h" bodystart="12" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_coupons_view_controller_1ae9bdd9bbac6cfdd5a892bc5baf99070c" prot="public" virt="non-virtual"><scope>CouponsViewController</scope><name>imageView</name></member>
+      <member refid="interface_coupons_view_controller_1a00a649bc860adf51f6a3765ad81f2a0a" prot="public" virt="non-virtual"><scope>CouponsViewController</scope><name>label</name></member>
+      <member refid="interface_coupons_view_controller_1acf56e6381638ed2faf61531be93508ea" prot="public" virt="non-virtual"><scope>CouponsViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

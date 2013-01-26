@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_message_view_controller" kind="class" prot="public">
+    <compoundname>MessageViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+    <basecompoundref refid="protocol_message_view_controller_delegate-p" prot="public" virt="non-virtual">&lt;MessageViewControllerDelegate&gt;</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_message_view_controller_1a4348e7ec097b29026137b244024655a2" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITextView *</type>
+        <definition>UITextView* MessageViewController::label</definition>
+        <argsstring></argsstring>
+        <name>label</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>label显示文字信息 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MessageViewController.h" line="16" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MessageViewController.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_message_view_controller_1a976b2fbc05ba04a5d19b5438f3d480f5" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* MessageViewController::infoString</definition>
+        <argsstring></argsstring>
+        <name>infoString</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>接收从FirstViewController类传递过来的数据 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MessageViewController.h" line="19" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MessageViewController.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_message_view_controller_1a2f5a4fe2febd86068b55246e816e8dea" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* MessageViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MessageViewController.h" line="21" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MessageViewController.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="250">
+        <label>&lt;MessageViewControllerDelegate&gt;</label>
+        <link refid="protocol_message_view_controller_delegate-p"/>
+        <childnode refid="251" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>MessageViewController</label>
+        <link refid="interface_message_view_controller"/>
+        <childnode refid="249" relation="public-inheritance">
+        </childnode>
+        <childnode refid="250" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>UIViewController</label>
+      </node>
+      <node id="251">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="256">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>&lt;MessageViewControllerDelegate&gt;</label>
+        <link refid="protocol_message_view_controller_delegate-p"/>
+        <childnode refid="255" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>MessageViewController</label>
+        <link refid="interface_message_view_controller"/>
+        <childnode refid="253" relation="public-inheritance">
+        </childnode>
+        <childnode refid="254" relation="public-inheritance">
+        </childnode>
+        <childnode refid="256" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+      </node>
+      <node id="253">
+        <label>UIViewController</label>
+      </node>
+      <node id="255">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="257">
+        <label>UIView</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/MessageViewController.h" line="13" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MessageViewController.h" bodystart="13" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_message_view_controller_1a976b2fbc05ba04a5d19b5438f3d480f5" prot="public" virt="non-virtual"><scope>MessageViewController</scope><name>infoString</name></member>
+      <member refid="interface_message_view_controller_1a4348e7ec097b29026137b244024655a2" prot="public" virt="non-virtual"><scope>MessageViewController</scope><name>label</name></member>
+      <member refid="protocol_message_view_controller_delegate-p_1a28bc2194b6c71cf6aab0a7989a1a3c7f" prot="public" virt="virtual"><scope>MessageViewController</scope><name>passMessageToMessageViewController:andNavigationTitle:</name></member>
+      <member refid="interface_message_view_controller_1a2f5a4fe2febd86068b55246e816e8dea" prot="public" virt="non-virtual"><scope>MessageViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

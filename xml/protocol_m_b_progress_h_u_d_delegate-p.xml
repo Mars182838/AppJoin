@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="protocol_m_b_progress_h_u_d_delegate-p" kind="protocol" prot="public" abstract="yes">
+    <compoundname>MBProgressHUDDelegate-p</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UIViewNSObject&gt;</basecompoundref>
+    <derivedcompoundref refid="interface_card_view_controller" prot="public" virt="non-virtual">CardViewController</derivedcompoundref>
+    <derivedcompoundref refid="interface_four_view_controller" prot="public" virt="non-virtual">FourViewController</derivedcompoundref>
+    <derivedcompoundref refid="interface_main_view_controller" prot="public" virt="non-virtual">MainViewController</derivedcompoundref>
+    <derivedcompoundref refid="interface_m_scan_view_controller" prot="public" virt="non-virtual">MScanViewController</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocol_m_b_progress_h_u_d_delegate-p_1a0b2a08b1d9cf3758cca8d52a61bed1cc" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>void</type>
+        <definition>void MBProgressHUDDelegate-p::hudWasHidden:</definition>
+        <argsstring>(MBProgressHUD *hud)</argsstring>
+        <name>hudWasHidden:</name>
+        <param>
+          <type><ref refid="interface_m_b_progress_h_u_d" kindref="compound">MBProgressHUD</ref> *</type>
+          <declname>hud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Called after the HUD was fully hidden from the screen. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/MBProgressHUD.h" line="419"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="228">
+        <label>&lt;MBProgressHUDDelegate&gt;</label>
+        <link refid="protocol_m_b_progress_h_u_d_delegate-p"/>
+        <childnode refid="229" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>FourViewController</label>
+        <link refid="interface_four_view_controller"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>MScanViewController</label>
+        <link refid="interface_m_scan_view_controller"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>&lt;UIViewNSObject&gt;</label>
+      </node>
+      <node id="230">
+        <label>CardViewController</label>
+        <link refid="interface_card_view_controller"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>MainViewController</label>
+        <link refid="interface_main_view_controller"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="234">
+        <label>&lt;MBProgressHUDDelegate&gt;</label>
+        <link refid="protocol_m_b_progress_h_u_d_delegate-p"/>
+        <childnode refid="235" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>&lt;UIViewNSObject&gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/MBProgressHUD.h" line="412" bodyfile="/Users/dengkawakou/Desktop/AppJoin/MBProgressHUD.h" bodystart="412" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_m_b_progress_h_u_d_delegate-p_1a0b2a08b1d9cf3758cca8d52a61bed1cc" prot="public" virt="virtual"><scope>MBProgressHUDDelegate-p</scope><name>hudWasHidden:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

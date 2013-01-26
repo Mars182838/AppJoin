@@ -41,16 +41,16 @@
     self.title = titleString;
     
     UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 44, 320, 460)];
-    
-    CGSize labelSize = [string sizeWithFont:[UIFont boldSystemFontOfSize:15] constrainedToSize:CGSizeMake(300, 2000) lineBreakMode:NSLineBreakByCharWrapping];
+    CGSize labelSize = [string sizeWithFont:[UIFont boldSystemFontOfSize:18] constrainedToSize:CGSizeMake(300, 2000) lineBreakMode:NSLineBreakByCharWrapping];
     ///ScrollView 要实现的方法
-    CGSize newSize = CGSizeMake(labelSize.width, labelSize.height + 44 + 20 + 49);
+    CGSize newSize = CGSizeMake(320, labelSize.height+44+20+49);
     [scroll setContentSize:newSize];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, labelSize.width, labelSize.height)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, labelSize.width, labelSize.height)];
+    label.backgroundColor = [UIColor blueColor];
     label.text = string;
     label.backgroundColor = [UIColor clearColor];
-    label.font = [UIFont boldSystemFontOfSize:15];
+    label.font = [UIFont boldSystemFontOfSize:17];
     label.numberOfLines = 0;
     label.lineBreakMode = NSLineBreakByCharWrapping;
     
@@ -61,6 +61,7 @@
     [scroll release];
 }
 
+/** 返回到上一层 */
 -(void)backPress:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
@@ -74,9 +75,11 @@
 
 -(void)dealloc
 {
-    [_topBar release];
+    [_label      release];
+    [_infoString release];
     [super dealloc];
 }
+
 
 
 @end

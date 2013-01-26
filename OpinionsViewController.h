@@ -36,4 +36,5 @@
 ///导航栏上面右边按钮
 @property (nonatomic, retain) UIButton *rightBtn;
 
+
 @end

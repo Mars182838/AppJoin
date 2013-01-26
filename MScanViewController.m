@@ -47,7 +47,7 @@
     _messageTextField.delegate = self;
     [self.view addSubview:_messageTextField];
     
-    resultText = [[UITextView alloc] initWithFrame:CGRectMake(30, HEIGHT-150, 260, 100)];
+    resultText = [[UITextView alloc] initWithFrame:CGRectMake(30,  HEIGHT- 100, 260, 100)];
     resultText.keyboardType = UIKeyboardTypeDefault;
     resultText.scrollEnabled = YES;
     resultText.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
@@ -69,17 +69,12 @@
     [super dealloc];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
 
 - (void)readerView:(ZBarReaderView*)view didReadSymbols:(ZBarSymbolSet*)syms  fromImage: (UIImage*) img
 {
     for(ZBarSymbol *sym in syms) {
         
         resultText.text = sym.data;
-        NSLog(@"%@",resultText.text);
         break;
     }
     
@@ -132,6 +127,7 @@
     [_messageTextField resignFirstResponder];
     [resultText resignFirstResponder];
 }
+
 
 
 @end

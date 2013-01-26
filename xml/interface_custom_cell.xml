@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_custom_cell" kind="class" prot="public">
+    <compoundname>CustomCell</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UITableViewCell</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_custom_cell_1ae2248aa203b96fb217f19d6025616baa" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UILabel *</type>
+        <definition>UILabel* CustomCell::nameLabel</definition>
+        <argsstring></argsstring>
+        <name>nameLabel</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CustomCell.h" line="13" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CustomCell.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_custom_cell_1a99a4e25f14b99e2b0f2d6349f37f94b7" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UILabel *</type>
+        <definition>UILabel* CustomCell::detailLabel</definition>
+        <argsstring></argsstring>
+        <name>detailLabel</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/CustomCell.h" line="15" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CustomCell.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="56">
+        <label>UITableViewCell</label>
+      </node>
+      <node id="55">
+        <label>CustomCell</label>
+        <link refid="interface_custom_cell"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="58">
+        <label>UITableViewCell</label>
+      </node>
+      <node id="57">
+        <label>CustomCell</label>
+        <link refid="interface_custom_cell"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/CustomCell.h" line="12" bodyfile="/Users/dengkawakou/Desktop/AppJoin/CustomCell.h" bodystart="11" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_custom_cell_1a99a4e25f14b99e2b0f2d6349f37f94b7" prot="public" virt="non-virtual"><scope>CustomCell</scope><name>detailLabel</name></member>
+      <member refid="interface_custom_cell_1ae2248aa203b96fb217f19d6025616baa" prot="public" virt="non-virtual"><scope>CustomCell</scope><name>nameLabel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

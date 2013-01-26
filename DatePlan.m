@@ -13,7 +13,7 @@
 
 -(id)initWithID:(int)theID andName:(NSString *)theName andDate:(NSString *)theDate andPlace:(NSString *)thePlace
 {
-    if (self == [super init]) {
+    if (self = [super init]) {
         self.ID = theID;
         self.name = theName;
         self.date = theDate;
@@ -44,6 +44,7 @@
     sqlite3_bind_text(stmt, 2, [theDate UTF8String], -1, nil);
     sqlite3_bind_text(stmt, 3, [thePlace UTF8String], -1, nil);
     int result = sqlite3_step(stmt);
+    [insert release];
     return result;
 }
 

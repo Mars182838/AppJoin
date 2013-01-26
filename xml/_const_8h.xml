@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_const_8h" kind="file">
+    <compoundname>Const.h</compoundname>
+    <includedby refid="_date_view_controller_8h" local="yes">DateViewController.h</includedby>
+    <invincdepgraph>
+      <node id="32">
+        <label>Const.h</label>
+        <link refid="Const.h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>DateViewController.h</label>
+        <link refid="_date_view_controller_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_const_8h_1a241aeeb764887ae5e3de58b98f04b16d" prot="public" static="no">
+        <name>WIDTH</name>
+        <initializer>self.view.frame.size.width</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>屏幕的宽度 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Const.h" line="10" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Const.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_const_8h_1aed89bd71aee8be823e8a20ec4e093c1e" prot="public" static="no">
+        <name>HEIGHT</name>
+        <initializer>self.view.frame.size.height</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>屏幕的高度 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Const.h" line="13" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Const.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_const_8h_1afa5e534437001f7bcac22ef134bd5314" prot="public" static="no">
+        <name>iPhone5</name>
+        <initializer>([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Const.h" line="15" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Const.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Const.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AppJoin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Mars<sp/>on<sp/>13-1-7.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2013年<sp/>Mars.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#define<sp/>WIDTH<sp/><sp/>self.view.frame.size.width</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#define<sp/>HEIGHT<sp/>self.view.frame.size.height</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>iPhone5<sp/>([UIScreen<sp/>instancesRespondToSelector:@selector(currentMode)]<sp/>?<sp/>CGSizeEqualToSize(CGSizeMake(640,<sp/>1136),<sp/>[[UIScreen<sp/>mainScreen]<sp/>currentMode].size)<sp/>:<sp/>NO)</highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/Const.h"/>
+  </compounddef>
+</doxygen>

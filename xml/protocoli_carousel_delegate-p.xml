@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="protocoli_carousel_delegate-p" kind="protocol" prot="public" abstract="yes">
+    <compoundname>iCarouselDelegate-p</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSObject&gt;</basecompoundref>
+    <derivedcompoundref refid="interface_main_view_controller" prot="public" virt="non-virtual">MainViewController</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1a77482b064899576412c0b870e2837d61" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>void</type>
+        <definition>void iCarouselDelegate-p::carouselWillBeginScrollingAnimation:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>carouselWillBeginScrollingAnimation:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="148"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1ae41a6b044f53f31204c903c563b22185" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>void</type>
+        <definition>void iCarouselDelegate-p::carouselDidEndScrollingAnimation:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>carouselDidEndScrollingAnimation:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1a1bc038b3a00ccf7d5d494ef9cbb1d1ba" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>void</type>
+        <definition>void iCarouselDelegate-p::carouselDidScroll:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>carouselDidScroll:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="150"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1adef7ab53c4e60b1b85ee9df02298a4cd" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>void</type>
+        <definition>void iCarouselDelegate-p::carouselCurrentItemIndexUpdated:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>carouselCurrentItemIndexUpdated:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1a03da7f39fdbf210078a15d4899f72d77" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>void</type>
+        <definition>void iCarouselDelegate-p::carouselWillBeginDragging:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>carouselWillBeginDragging:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="152"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1af67fdf56e690c20633212af86ed81870" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>void</type>
+        <definition>void iCarouselDelegate-p::carouselDidEndDragging:willDecelerate:</definition>
+        <argsstring>(iCarousel *carousel,[willDecelerate] BOOL decelerate)</argsstring>
+        <name>carouselDidEndDragging:willDecelerate:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <param>
+          <attributes>[willDecelerate]</attributes>
+          <type>BOOL</type>
+          <declname>decelerate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="153"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1ac6a99760afc29964ef016b78e1c69a19" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>void</type>
+        <definition>void iCarouselDelegate-p::carouselWillBeginDecelerating:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>carouselWillBeginDecelerating:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="154"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1a1d7214558cb16653a7d7fe9bebec0127" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>void</type>
+        <definition>void iCarouselDelegate-p::carouselDidEndDecelerating:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>carouselDidEndDecelerating:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="155"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1a79d3df6f9aaaec128090055a8cf81b56" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>CGFloat</type>
+        <definition>CGFloat iCarouselDelegate-p::carouselItemWidth:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>carouselItemWidth:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="156"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1a808fcd2a5f1f7d6c56142092fd7ff8f8" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>CGFloat</type>
+        <definition>CGFloat iCarouselDelegate-p::carouselOffsetMultiplier:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>carouselOffsetMultiplier:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="157"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1a7dd0b45f7657fe6a77cf8a5825a3c11c" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL iCarouselDelegate-p::carouselShouldWrap:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>carouselShouldWrap:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="158"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_delegate-p_1a168ebbca3f018a91297c6eaf83d5c579" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>CATransform3D</type>
+        <definition>CATransform3D iCarouselDelegate-p::carousel:transformForItemView:withOffset:</definition>
+        <argsstring>(iCarousel *carousel,[transformForItemView] UIView *view,[withOffset] CGFloat offset)</argsstring>
+        <name>carousel:transformForItemView:withOffset:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <param>
+          <attributes>[transformForItemView]</attributes>
+          <type>UIView *</type>
+          <declname>view</declname>
+        </param>
+        <param>
+          <attributes>[withOffset]</attributes>
+          <type>CGFloat</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="159"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="177">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="176">
+        <label>&lt;iCarouselDelegate&gt;</label>
+        <link refid="protocoli_carousel_delegate-p"/>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>MainViewController</label>
+        <link refid="interface_main_view_controller"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="180">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="179">
+        <label>&lt;iCarouselDelegate&gt;</label>
+        <link refid="protocoli_carousel_delegate-p"/>
+        <childnode refid="180" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="144" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="144" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocoli_carousel_delegate-p_1a168ebbca3f018a91297c6eaf83d5c579" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carousel:transformForItemView:withOffset:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1adef7ab53c4e60b1b85ee9df02298a4cd" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselCurrentItemIndexUpdated:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1a1d7214558cb16653a7d7fe9bebec0127" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselDidEndDecelerating:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1af67fdf56e690c20633212af86ed81870" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselDidEndDragging:willDecelerate:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1ae41a6b044f53f31204c903c563b22185" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselDidEndScrollingAnimation:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1a1bc038b3a00ccf7d5d494ef9cbb1d1ba" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselDidScroll:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1a79d3df6f9aaaec128090055a8cf81b56" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselItemWidth:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1a808fcd2a5f1f7d6c56142092fd7ff8f8" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselOffsetMultiplier:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1a7dd0b45f7657fe6a77cf8a5825a3c11c" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselShouldWrap:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1ac6a99760afc29964ef016b78e1c69a19" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselWillBeginDecelerating:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1a03da7f39fdbf210078a15d4899f72d77" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselWillBeginDragging:</name></member>
+      <member refid="protocoli_carousel_delegate-p_1a77482b064899576412c0b870e2837d61" prot="public" virt="virtual"><scope>iCarouselDelegate-p</scope><name>carouselWillBeginScrollingAnimation:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="struct_q_r_raw_code" kind="struct" prot="public">
+    <compoundname>QRRawCode</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_q_r_raw_code_1af941c8114b377a9058569aa9c2ba5a27" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRRawCode::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="47" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_r_raw_code_1aecb865806841f74084d6afdb1f2d78e4" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* QRRawCode::datacode</definition>
+        <argsstring></argsstring>
+        <name>datacode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="48" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_r_raw_code_1aca6770298baa383c45f72adafcfcd2a6" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* QRRawCode::ecccode</definition>
+        <argsstring></argsstring>
+        <name>ecccode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="49" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_r_raw_code_1acc46d472ecc1cc9236ed1397b57ba3ab" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRRawCode::blocks</definition>
+        <argsstring></argsstring>
+        <name>blocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="50" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_r_raw_code_1a7768f4e79e65cd5f0ae3c4346508285c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_r_sblock" kindref="compound">RSblock</ref> *</type>
+        <definition>RSblock* QRRawCode::rsblock</definition>
+        <argsstring></argsstring>
+        <name>rsblock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="51" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_r_raw_code_1af745fb65c519dd55404d9f8df1b8db99" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRRawCode::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="52" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_r_raw_code_1a974ee31e3402e24f179578adf2abb29c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRRawCode::dataLength</definition>
+        <argsstring></argsstring>
+        <name>dataLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="53" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_r_raw_code_1ae0e17d8f436e7bcb3fac935fa8787895" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRRawCode::eccLength</definition>
+        <argsstring></argsstring>
+        <name>eccLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="54" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_r_raw_code_1a3ffd48c9f259e9dc84bdf05ae4fc495e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRRawCode::b1</definition>
+        <argsstring></argsstring>
+        <name>b1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="55" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="315">
+        <label>RSblock</label>
+        <link refid="struct_r_sblock"/>
+      </node>
+      <node id="314">
+        <label>QRRawCode</label>
+        <link refid="struct_q_r_raw_code"/>
+        <childnode refid="315" relation="usage">
+          <edgelabel>rsblock</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" line="46" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="46" bodyend="56"/>
+    <listofallmembers>
+      <member refid="struct_q_r_raw_code_1a3ffd48c9f259e9dc84bdf05ae4fc495e" prot="public" virt="non-virtual"><scope>QRRawCode</scope><name>b1</name></member>
+      <member refid="struct_q_r_raw_code_1acc46d472ecc1cc9236ed1397b57ba3ab" prot="public" virt="non-virtual"><scope>QRRawCode</scope><name>blocks</name></member>
+      <member refid="struct_q_r_raw_code_1af745fb65c519dd55404d9f8df1b8db99" prot="public" virt="non-virtual"><scope>QRRawCode</scope><name>count</name></member>
+      <member refid="struct_q_r_raw_code_1aecb865806841f74084d6afdb1f2d78e4" prot="public" virt="non-virtual"><scope>QRRawCode</scope><name>datacode</name></member>
+      <member refid="struct_q_r_raw_code_1a974ee31e3402e24f179578adf2abb29c" prot="public" virt="non-virtual"><scope>QRRawCode</scope><name>dataLength</name></member>
+      <member refid="struct_q_r_raw_code_1aca6770298baa383c45f72adafcfcd2a6" prot="public" virt="non-virtual"><scope>QRRawCode</scope><name>ecccode</name></member>
+      <member refid="struct_q_r_raw_code_1ae0e17d8f436e7bcb3fac935fa8787895" prot="public" virt="non-virtual"><scope>QRRawCode</scope><name>eccLength</name></member>
+      <member refid="struct_q_r_raw_code_1a7768f4e79e65cd5f0ae3c4346508285c" prot="public" virt="non-virtual"><scope>QRRawCode</scope><name>rsblock</name></member>
+      <member refid="struct_q_r_raw_code_1af941c8114b377a9058569aa9c2ba5a27" prot="public" virt="non-virtual"><scope>QRRawCode</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

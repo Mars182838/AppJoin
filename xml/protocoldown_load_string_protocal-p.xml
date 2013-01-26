@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="protocoldown_load_string_protocal-p" kind="protocol" prot="public" abstract="yes">
+    <compoundname>downLoadStringProtocal-p</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSObject&gt;</basecompoundref>
+    <derivedcompoundref refid="interface_four_view_controller" prot="public" virt="non-virtual">FourViewController</derivedcompoundref>
+    <derivedcompoundref refid="interface_main_view_controller" prot="public" virt="non-virtual">MainViewController</derivedcompoundref>
+    <derivedcompoundref refid="interface_second_view_controller" prot="public" virt="non-virtual">SecondViewController</derivedcompoundref>
+    <derivedcompoundref refid="interface_third_view_controller" prot="public" virt="non-virtual">ThirdViewController</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocoldown_load_string_protocal-p_1a4ce73ee56600cc02c8a245cc21286277" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void downLoadStringProtocal-p::downLoadFinished:</definition>
+        <argsstring>(NSDictionary *info)</argsstring>
+        <name>downLoadFinished:</name>
+        <param>
+          <type>NSDictionary *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="111">
+        <label>&lt;downLoadStringProtocal&gt;</label>
+        <link refid="protocoldown_load_string_protocal-p"/>
+        <childnode refid="112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>SecondViewController</label>
+        <link refid="interface_second_view_controller"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>FourViewController</label>
+        <link refid="interface_four_view_controller"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>ThirdViewController</label>
+        <link refid="interface_third_view_controller"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="114">
+        <label>MainViewController</label>
+        <link refid="interface_main_view_controller"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="117">
+        <label>&lt;downLoadStringProtocal&gt;</label>
+        <link refid="protocoldown_load_string_protocal-p"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="31" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="31" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocoldown_load_string_protocal-p_1a4ce73ee56600cc02c8a245cc21286277" prot="public" virt="virtual"><scope>downLoadStringProtocal-p</scope><name>downLoadFinished:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

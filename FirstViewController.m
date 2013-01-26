@@ -9,7 +9,7 @@
 #import "FirstViewController.h"
 #import "MessageViewController.h"
 #import "DateViewController.h"
-#import "DownLoadString.h"
+#import "MediaViewController.h"
 
 @interface FirstViewController ()
 
@@ -21,7 +21,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-            self.title = @"看展会";
         
     }
     return self;
@@ -30,10 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    _downLoad = [[DownLoadString alloc] initWithShareTarget:NSStringWithUrlFirst];
-    _downLoad.delegate = self;
-    
+        
     ///通过封装导航栏的视图
     _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     _topBar.navLabel.text = @"看展会";
@@ -70,6 +66,9 @@
                UIButton *button  = [UIButton buttonWithType:UIButtonTypeCustom];
                 button.frame = CGRectMake(20 + 150*j, 65 + 120*count, 130, 80);
                  [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"btn%d.png",2*count+j+1]] forState:UIControlStateNormal];
+                button.showsTouchWhenHighlighted = YES;
+                button.selected = YES;
+                button.highlighted = YES;
                 button.tag = 2*count+j+1;
                 [button addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
                 [self.view addSubview:button];
@@ -79,21 +78,15 @@
 
 }
 
--(void)downLoadFinished:(NSDictionary *)info
-{
-    NSDictionary *down = info;
-    NSLog(@"info :%@",down);
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-
 }
 
 - (void)dealloc {
-    [_backImage release];
-    [_topBar release];
+    
+    [_backImage         release];
+    [_messageController release];
     [super dealloc];
 }
 
@@ -106,19 +99,18 @@
     switch (button.tag) {
         case 1:
         {
-            message = [NSString stringWithFormat:@"%@",@"我们都是好孩子"];
+            message = [NSString stringWithFormat:@"%@",@"      北京国际连锁加盟展会是北京西西木国际展览有限公司强力打造的一个国际性连锁加盟品牌展。郑州连锁展分会、西安连锁展、温州连锁展分会是西西木策划的二线城市特色连锁加盟展会，与北京连锁加盟展会共享广告宣传资源和行业媒体资源。西西木已成功举办18届连锁加盟展会，展会规模逐年扩大，好评越来越多，在连锁加盟行业赢得良好的口碑。通过这些年的积累，西西木展览公司服务了几千家客户，协助这些企业招商，客户满意度达到80%以上，老客户也能占到40%以上。西西木展览凭借多年的丰厚积淀，2013年以全新的面貌，继续与特许企业精诚合作，共同开创特许经营发展的新时代，组委会期待您的积极参与!                                              联系人：赵先生  15611916870                                                        电  话：010-85789818                                                                                              传  真：010-52096899                                                                                                                              地  址：北京市朝阳区朝阳路69号1号楼1-304                                                          邮  编：100123 "];
             title = @"会议概况";
             [_delegate passMessageToMessageViewController:message andNavigationTitle:title];
             [self.navigationController pushViewController:_messageController animated:YES];            break;
         }
         case 2:
         {
-            message = @"移动触屏的产生，同时也带来了各种手势的配搭。这些手势的应用，相比于键盘、鼠标，能更加快速做出响应，并且降低学习成本，更加直观地进行人机交流。但触摸相比鼠标，却无法达到高度的精准，也无法出现像网页中的鼠标hover、悬停等的效果。东西方人的指尖触碰面积略有不同，但通常，它们合适的点击区域是在44-44px的范围里屏幕的限制:但通常，它们合适的点击区域是在44-44px的范围里屏幕的限制：我们说移动平台的设计，其实就像是带着枷锁跳舞，这个枷锁不仅是来自各个平台系统的控件规范，还有最大的问题就是屏幕空间的有限，加之前面说过的44-44px的点击区域，更是需要我们的APP设计，在单个界面的展示，简洁再扼要，交互轻量再轻量，层级浅显再浅显。如何在有限的屏幕中展现更多的信息。有三个要素：a.巧妙地利用工具栏与toolbar的隐藏与浮出，最大程度地展示主题，同时快速的做出交互动b.合理放置控件布局：尽量把最重要的交互按钮和信息，放置在第一屏中，这点相信在PC端网页设计中也同样适用。c.有针对性的移植：现在有越来越多的客户端应用，都来自于成熟的网站产品的转移，但网页所能承载的信息与交互，远远大于客户端。于是我们应该高度解理产品的核心功能与精神理念，提取最重要的信息模块，进行客户端的转化移植。";
+            message = @"         第19届北京国际连锁加盟展览会                                                时间：2013年4月5-6日                                                  地点：北京 全国农业展览馆                               主办：北京西西木国际展览有限公司                            承办：北京西西木国际展览有限公司                            协办：中国经营报、报林、渠道网、现代营销、商界、全球加盟网";
             
             title = @"组织单位";
             [_delegate passMessageToMessageViewController:message andNavigationTitle:title];
             [self.navigationController pushViewController:_messageController animated:YES];
-
             break;
         }
         case 3:
@@ -126,20 +118,18 @@
             DateViewController *dateController = [[DateViewController alloc] init];
             [self.navigationController pushViewController:dateController animated:YES];
             [dateController release];
-            
             break;
         }
         case 4:
         {
-            message = @"好孩子";
-            title = @"合作媒体";
-            [_delegate passMessageToMessageViewController:message andNavigationTitle:title];
-            [self.navigationController pushViewController:_messageController animated:YES];
+            MediaViewController *media = [[MediaViewController alloc] init];
+            [self.navigationController pushViewController:media animated:YES];
+            [media release];
             break;
         }
         case 5:
         {
-            message = @"好孩子";
+            message = @"暂时没有相关信息";
             title = @"新闻发布会";
             [_delegate passMessageToMessageViewController:message andNavigationTitle:title];
             [self.navigationController pushViewController:_messageController animated:YES];
@@ -147,14 +137,29 @@
         }
         case 6:
         {
-            message = @"好孩子";
+            message = @"暂时没有相关信息";
             title = @"会议论坛";
             [_delegate passMessageToMessageViewController:message andNavigationTitle:title];
             [self.navigationController pushViewController:_messageController animated:YES];
             break;
         }
     }
-     
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

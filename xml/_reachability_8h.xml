@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_reachability_8h" kind="file">
+    <compoundname>Reachability.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includes local="no">SystemConfiguration/SystemConfiguration.h</includes>
+    <includes local="no">sys/socket.h</includes>
+    <includes local="no">netinet/in.h</includes>
+    <includes local="no">netinet6/in6.h</includes>
+    <includes local="no">arpa/inet.h</includes>
+    <includes local="no">ifaddrs.h</includes>
+    <includes local="no">netdb.h</includes>
+    <includedby refid="_main_view_controller_8m" local="yes">MainViewController.m</includedby>
+    <includedby refid="_reachability_8m" local="yes">Reachability.m</includedby>
+    <incdepgraph>
+      <node id="391">
+        <label>netinet/in.h</label>
+      </node>
+      <node id="393">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="395">
+        <label>netdb.h</label>
+      </node>
+      <node id="394">
+        <label>ifaddrs.h</label>
+      </node>
+      <node id="389">
+        <label>SystemConfiguration/SystemConfiguration.h</label>
+      </node>
+      <node id="387">
+        <label>Reachability.h</label>
+        <link refid="Reachability.h"/>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>netinet6/in6.h</label>
+      </node>
+      <node id="388">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="390">
+        <label>sys/socket.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="interface_reachability" prot="public">Reachability</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_reachability_8h_1a6cd102e4d3d1fb7e2d727a4be2e59144" prot="public" static="no">
+        <name>NEEDS_DISPATCH_RETAIN_RELEASE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Does ARC support support GCD objects? It does if the minimum deployment target is iOS 6+ or Mac OS X 8+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="59" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_reachability_8h_1afbfc456845719ac215946bb2b05eb2df" prot="public" static="no">
+        <name>NetworkStatus</name>
+        <enumvalue id="_reachability_8h_1afbfc456845719ac215946bb2b05eb2dfacb5e26d6f64b080d28d024fc7c33f00d" prot="public">
+          <name>NotReachable</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_reachability_8h_1afbfc456845719ac215946bb2b05eb2dfa446f39577c3cd7ae500660da89a92895" prot="public">
+          <name>ReachableViaWiFi</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_reachability_8h_1afbfc456845719ac215946bb2b05eb2dfae89da9591fa7842f93953c830b33e131" prot="public">
+          <name>ReachableViaWWAN</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="68" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" bodystart="67" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_reachability_8h_1a12c5dea6c64b3b26c693c0d7c90b0d2e" prot="public" static="no">
+        <type>void(^</type>
+        <definition>typedef void(^ NetworkReachable)(Reachability *reachability)</definition>
+        <argsstring>)(Reachability *reachability)</argsstring>
+        <name>NetworkReachable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="77" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_reachability_8h_1adbfeb677808b62bc6f58fe8c9aa401e5" prot="public" static="no">
+        <type>void(^</type>
+        <definition>typedef void(^ NetworkUnreachable)(Reachability *reachability)</definition>
+        <argsstring>)(Reachability *reachability)</argsstring>
+        <name>NetworkUnreachable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="78" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_reachability_8h_1a9b443de01c5b11109986be8fb1eeb52a" prot="public" static="no" mutable="no">
+        <type>NSString *const</type>
+        <definition>NSString* const kReachabilityChangedNotification</definition>
+        <argsstring></argsstring>
+        <name>kReachabilityChangedNotification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="65" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>Copyright<sp/>(c)<sp/>2011,<sp/>Tony<sp/>Million.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>&quot;AS<sp/>IS&quot;</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>ARE<sp/>DISCLAIMED.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>SUBSTITUTE<sp/>GOODS<sp/>OR<sp/>SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>INTERRUPTION)<sp/>HOWEVER<sp/>CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,<sp/>OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;SystemConfiguration/SystemConfiguration.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;sys/socket.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;netinet/in.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;netinet6/in6.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;arpa/inet.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;ifaddrs.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;netdb.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor">#if<sp/>TARGET_OS_IPHONE</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Compiling<sp/>for<sp/>iOS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__IPHONE_OS_VERSION_MIN_REQUIRED<sp/>&gt;=<sp/>60000<sp/>//<sp/>iOS<sp/>6.0<sp/>or<sp/>later</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NEEDS_DISPATCH_RETAIN_RELEASE<sp/>0</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>iOS<sp/>5.X<sp/>or<sp/>earlier</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NEEDS_DISPATCH_RETAIN_RELEASE<sp/>1</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Compiling<sp/>for<sp/>Mac<sp/>OS<sp/>X</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>MAC_OS_X_VERSION_MIN_REQUIRED<sp/>&gt;=<sp/>1080<sp/><sp/><sp/><sp/><sp/>//<sp/>Mac<sp/>OS<sp/>X<sp/>10.8<sp/>or<sp/>later</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NEEDS_DISPATCH_RETAIN_RELEASE<sp/>0</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NEEDS_DISPATCH_RETAIN_RELEASE<sp/>1<sp/><sp/><sp/><sp/><sp/>//<sp/>Mac<sp/>OS<sp/>X<sp/>10.7<sp/>or<sp/>earlier</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NSString<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kReachabilityChangedNotification;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Apple<sp/>NetworkStatus<sp/>Compatible<sp/>Names.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>NotReachable<sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>ReachableViaWiFi<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>ReachableViaWWAN<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/>NetworkStatus;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_reachability" kindref="compound">Reachability</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(^NetworkReachable)(<ref refid="interface_reachability" kindref="compound">Reachability</ref><sp/>*<sp/>reachability);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(^NetworkUnreachable)(<ref refid="interface_reachability" kindref="compound">Reachability</ref><sp/>*<sp/>reachability);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="interface_reachability" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_reachability" kindref="compound">Reachability</ref><sp/>:<sp/>NSObject</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>copy)<sp/>NetworkReachable<sp/><sp/><sp/><sp/>reachableBlock;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>copy)<sp/>NetworkUnreachable<sp/><sp/>unreachableBlock;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>BOOL<sp/>reachableOnWWAN;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">+(<ref refid="interface_reachability" kindref="compound">Reachability</ref>*)reachabilityWithHostname:(NSString*)hostname;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">+(<ref refid="interface_reachability" kindref="compound">Reachability</ref>*)reachabilityForInternetConnection;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">+(<ref refid="interface_reachability" kindref="compound">Reachability</ref>*)reachabilityWithAddress:(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>sockaddr_in*)hostAddress;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">+(<ref refid="interface_reachability" kindref="compound">Reachability</ref>*)reachabilityForLocalWiFi;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">-(<ref refid="interface_reachability" kindref="compound">Reachability</ref><sp/>*)initWithReachabilityRef:(SCNetworkReachabilityRef)ref;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">-(BOOL)startNotifier;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">-(void)stopNotifier;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">-(BOOL)isReachable;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">-(BOOL)isReachableViaWWAN;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">-(BOOL)isReachableViaWiFi;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>WWAN<sp/>may<sp/>be<sp/>available,<sp/>but<sp/>not<sp/>active<sp/>until<sp/>a<sp/>connection<sp/>has<sp/>been<sp/>established.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//<sp/>WiFi<sp/>may<sp/>require<sp/>a<sp/>connection<sp/>for<sp/>VPN<sp/>on<sp/>Demand.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">-(BOOL)isConnectionRequired;<sp/></highlight><highlight class="comment">//<sp/>Identical<sp/>DDG<sp/>variant.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">-(BOOL)connectionRequired;<sp/></highlight><highlight class="comment">//<sp/>Apple&apos;s<sp/>routine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Dynamic,<sp/>on<sp/>demand<sp/>connection?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">-(BOOL)isConnectionOnDemand;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Is<sp/>user<sp/>intervention<sp/>required?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">-(BOOL)isInterventionRequired;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">-(NetworkStatus)currentReachabilityStatus;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">-(SCNetworkReachabilityFlags)reachabilityFlags;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">-(NSString*)currentReachabilityString;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">-(NSString*)currentReachabilityFlags;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h"/>
+  </compounddef>
+</doxygen>

@@ -7,19 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MBProgressHUD.h"
+#import "TopBarView.h"
+#import "DownLoadString.h"
+#import "EGORefreshTableHeaderView.h"
+#import <QuartzCore/QuartzCore.h>
 
-@interface SecondViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,NSURLConnectionDataDelegate>
+@interface SecondViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,NSURLConnectionDataDelegate,downLoadStringProtocal,EGORefreshTableHeaderDelegate>
 {
     NSURLConnection *connect;
     NSMutableData   *mutableData;
     
-  
-    /**  下在数据的总长度     */
-    long long expectedLength;
+    EGORefreshTableHeaderView *_refreshHeaderView;
+    BOOL _reloading;
     
-    /**  当前数据的下载长度   */
-    long long currentLength;
 }
 
 /** infoTableView 用于显示从服务器中下载的数据 */
@@ -30,9 +30,14 @@
  */
 @property (nonatomic, retain) NSMutableArray *messageArray;
 
-/**  hud 是第三方库 用于提醒用户正在请求网络下载数据 */
-@property (nonatomic, retain) MBProgressHUD *hud;
-
+///自定义的导航栏
 @property (nonatomic, retain) TopBarView *topBar;
+
+///下载类
+@property (nonatomic, retain) DownLoadString *downLoad;
+
+
+- (void)reloadTableViewDataSource;
+- (void)doneLoadingTableViewData;
 
 @end

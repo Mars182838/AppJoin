@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_first_view_controller" kind="class" prot="public">
+    <compoundname>FirstViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_first_view_controller_1a65a02e3ccdea1bdad12876753128d70c" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIImageView *</type>
+        <definition>UIImageView* FirstViewController::backImage</definition>
+        <argsstring></argsstring>
+        <name>backImage</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>背景图片 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" line="26" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_first_view_controller_1a62b6bc49cb1220b3a9c7e2db4eb2e7f0" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_message_view_controller" kindref="compound">MessageViewController</ref> *</type>
+        <definition>MessageViewController* FirstViewController::messageController</definition>
+        <argsstring></argsstring>
+        <name>messageController</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>详细信息类属性 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" line="29" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_first_view_controller_1a9a1f1917619813af29912f67c6a6eea9" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>id&lt; <ref refid="protocol_message_view_controller_delegate-p" kindref="compound">MessageViewControllerDelegate</ref> &gt;</type>
+        <definition>id&lt;MessageViewControllerDelegate&gt; FirstViewController::delegate</definition>
+        <argsstring></argsstring>
+        <name>delegate</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>代理属性 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" line="32" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_first_view_controller_1addd0b613f437a2af7380a1749b0ae6b3" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* FirstViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" line="34" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="129">
+        <label>FirstViewController</label>
+        <link refid="interface_first_view_controller"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>UIViewController</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="136">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>FirstViewController</label>
+        <link refid="interface_first_view_controller"/>
+        <childnode refid="132" relation="public-inheritance">
+        </childnode>
+        <childnode refid="133" relation="usage">
+          <edgelabel>messageController</edgelabel>
+        </childnode>
+        <childnode refid="136" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+      </node>
+      <node id="134">
+        <label>&lt;MessageViewControllerDelegate&gt;</label>
+        <link refid="protocol_message_view_controller_delegate-p"/>
+        <childnode refid="135" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>MessageViewController</label>
+        <link refid="interface_message_view_controller"/>
+        <childnode refid="132" relation="public-inheritance">
+        </childnode>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+        <childnode refid="136" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+      </node>
+      <node id="132">
+        <label>UIViewController</label>
+      </node>
+      <node id="135">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="137">
+        <label>UIView</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" line="24" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" bodystart="23" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_first_view_controller_1a65a02e3ccdea1bdad12876753128d70c" prot="public" virt="non-virtual"><scope>FirstViewController</scope><name>backImage</name></member>
+      <member refid="interface_first_view_controller_1a9a1f1917619813af29912f67c6a6eea9" prot="public" virt="non-virtual"><scope>FirstViewController</scope><name>delegate</name></member>
+      <member refid="interface_first_view_controller_1a62b6bc49cb1220b3a9c7e2db4eb2e7f0" prot="public" virt="non-virtual"><scope>FirstViewController</scope><name>messageController</name></member>
+      <member refid="interface_first_view_controller_1addd0b613f437a2af7380a1749b0ae6b3" prot="public" virt="non-virtual"><scope>FirstViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

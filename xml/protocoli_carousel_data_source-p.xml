@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="protocoli_carousel_data_source-p" kind="protocol" prot="public" abstract="yes">
+    <compoundname>iCarouselDataSource-p</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UIViewNSObject&gt;</basecompoundref>
+    <derivedcompoundref refid="interface_main_view_controller" prot="public" virt="non-virtual">MainViewController</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocoli_carousel_data_source-p_1a2122722fbd3c539fc48607c66e21a1c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSUInteger</type>
+        <definition>NSUInteger iCarouselDataSource-p::numberOfItemsInCarousel:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>numberOfItemsInCarousel:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="130"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_data_source-p_1a27d1dff4545a31eca95039fca4df4fd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>UIView *</type>
+        <definition>UIView * iCarouselDataSource-p::carousel:viewForItemAtIndex:</definition>
+        <argsstring>(iCarousel *carousel,[viewForItemAtIndex] NSUInteger index)</argsstring>
+        <name>carousel:viewForItemAtIndex:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <param>
+          <attributes>[viewForItemAtIndex]</attributes>
+          <type>NSUInteger</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_data_source-p_1a88190ba29b4d6e7985a1f6feda1e38bf" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>NSUInteger</type>
+        <definition>NSUInteger iCarouselDataSource-p::numberOfPlaceholdersInCarousel:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>numberOfPlaceholdersInCarousel:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_data_source-p_1ad619c9ca220d95c8597ee368c484edae" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>UIView *</type>
+        <definition>UIView * iCarouselDataSource-p::carousel:placeholderViewAtIndex:</definition>
+        <argsstring>(iCarousel *carousel,[placeholderViewAtIndex] NSUInteger index)</argsstring>
+        <name>carousel:placeholderViewAtIndex:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <param>
+          <attributes>[placeholderViewAtIndex]</attributes>
+          <type>NSUInteger</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="136"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_data_source-p_1a4aab1076fadd9ab711bf497e08dfc0f8" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="virtual">
+        <type>NSUInteger</type>
+        <definition>NSUInteger iCarouselDataSource-p::numberOfVisibleItemsInCarousel:</definition>
+        <argsstring>(iCarousel *carousel)</argsstring>
+        <name>numberOfVisibleItemsInCarousel:</name>
+        <param>
+          <type><ref refid="interfacei_carousel" kindref="compound">iCarousel</ref> *</type>
+          <declname>carousel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="137"/>
+      </memberdef>
+      <memberdef kind="function" id="protocoli_carousel_data_source-p_1a6a949d0a49dcd57a6f383d1b8303178e" prot="public" static="no" const="no" explicit="no" inline="no" optional="yes" virt="non-virtual">
+        <type>NSInteger</type>
+        <definition>NSInteger iCarouselDataSource-p::compareViewDepth</definition>
+        <argsstring>(id obj1, id obj2, void *context)</argsstring>
+        <name>compareViewDepth</name>
+        <param>
+          <type>id</type>
+          <declname>obj1</declname>
+        </param>
+        <param>
+          <type>id</type>
+          <declname>obj2</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="171">
+        <label>&lt;iCarouselDataSource&gt;</label>
+        <link refid="protocoli_carousel_data_source-p"/>
+        <childnode refid="172" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>&lt;UIViewNSObject&gt;</label>
+      </node>
+      <node id="173">
+        <label>MainViewController</label>
+        <link refid="interface_main_view_controller"/>
+        <childnode refid="171" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="174">
+        <label>&lt;iCarouselDataSource&gt;</label>
+        <link refid="protocoli_carousel_data_source-p"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="175">
+        <label>&lt;UIViewNSObject&gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="128" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="128" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocoli_carousel_data_source-p_1ad619c9ca220d95c8597ee368c484edae" prot="public" virt="virtual"><scope>iCarouselDataSource-p</scope><name>carousel:placeholderViewAtIndex:</name></member>
+      <member refid="protocoli_carousel_data_source-p_1a27d1dff4545a31eca95039fca4df4fd4" prot="public" virt="virtual"><scope>iCarouselDataSource-p</scope><name>carousel:viewForItemAtIndex:</name></member>
+      <member refid="protocoli_carousel_data_source-p_1a6a949d0a49dcd57a6f383d1b8303178e" prot="public" virt="non-virtual"><scope>iCarouselDataSource-p</scope><name>compareViewDepth</name></member>
+      <member refid="protocoli_carousel_data_source-p_1a2122722fbd3c539fc48607c66e21a1c7" prot="public" virt="virtual"><scope>iCarouselDataSource-p</scope><name>numberOfItemsInCarousel:</name></member>
+      <member refid="protocoli_carousel_data_source-p_1a88190ba29b4d6e7985a1f6feda1e38bf" prot="public" virt="virtual"><scope>iCarouselDataSource-p</scope><name>numberOfPlaceholdersInCarousel:</name></member>
+      <member refid="protocoli_carousel_data_source-p_1a4aab1076fadd9ab711bf497e08dfc0f8" prot="public" virt="virtual"><scope>iCarouselDataSource-p</scope><name>numberOfVisibleItemsInCarousel:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

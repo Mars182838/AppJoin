@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_reachability" kind="class" prot="public">
+    <compoundname>Reachability</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_reachability_1ac0ef2a5c4b1470394ab5c1942100fd82" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NetworkReachable</type>
+        <definition>NetworkReachable Reachability::reachableBlock</definition>
+        <argsstring></argsstring>
+        <name>reachableBlock</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="82" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_reachability_1a094a49485d02681b0df97bc413714c79" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NetworkUnreachable</type>
+        <definition>NetworkUnreachable Reachability::unreachableBlock</definition>
+        <argsstring></argsstring>
+        <name>unreachableBlock</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="83" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_reachability_1aa6c9eada73d41380aa056539fd005b21" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>BOOL</type>
+        <definition>BOOL Reachability::reachableOnWWAN</definition>
+        <argsstring></argsstring>
+        <name>reachableOnWWAN</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="86" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_reachability_1a2f1b1e51498d1458918ac7399330b3e5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_reachability" kindref="compound">Reachability</ref> *</type>
+        <definition>Reachability * Reachability::reachabilityWithHostname:</definition>
+        <argsstring>(NSString *hostname)</argsstring>
+        <name>reachabilityWithHostname:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>hostname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="88" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="102" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1ad2962f5292dee6a56f43175d344c3da1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_reachability" kindref="compound">Reachability</ref> *</type>
+        <definition>Reachability * Reachability::reachabilityForInternetConnection</definition>
+        <argsstring>()</argsstring>
+        <name>reachabilityForInternetConnection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="89" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="137" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1add9b3533dfed13fc2215cc27bca74ace" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_reachability" kindref="compound">Reachability</ref> *</type>
+        <definition>Reachability * Reachability::reachabilityWithAddress:</definition>
+        <argsstring>(const struct sockaddr_in *hostAddress)</argsstring>
+        <name>reachabilityWithAddress:</name>
+        <param>
+          <type>const struct sockaddr_in *</type>
+          <declname>hostAddress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="90" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="120" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1afef931b75654390d24d9c897835929f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_reachability" kindref="compound">Reachability</ref> *</type>
+        <definition>Reachability * Reachability::reachabilityForLocalWiFi</definition>
+        <argsstring>()</argsstring>
+        <name>reachabilityForLocalWiFi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="91" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="147" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_reachability_1af8dbb23cc7f9ac59b0269dfaf83979fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_reachability" kindref="compound">Reachability</ref> *</type>
+        <definition>Reachability * Reachability::initWithReachabilityRef:</definition>
+        <argsstring>(SCNetworkReachabilityRef ref)</argsstring>
+        <name>initWithReachabilityRef:</name>
+        <param>
+          <type>SCNetworkReachabilityRef</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="93" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="162" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1ae20732960a222681fcc7caeb191158bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL Reachability::startNotifier</definition>
+        <argsstring>()</argsstring>
+        <name>startNotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="95" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="201" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1ab7907e9c8de0e4e15774e82c089e0b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Reachability::stopNotifier</definition>
+        <argsstring>()</argsstring>
+        <name>stopNotifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="96" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="274" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1ae0b18fcacc97f538502cf671aa583dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL Reachability::isReachable</definition>
+        <argsstring>()</argsstring>
+        <name>isReachable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="98" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="330" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1a20011128b407d36659bc78a64cd583f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL Reachability::isReachableViaWWAN</definition>
+        <argsstring>()</argsstring>
+        <name>isReachableViaWWAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="99" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="340" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1a994f39db8e47480480ffd7ee81159ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL Reachability::isReachableViaWiFi</definition>
+        <argsstring>()</argsstring>
+        <name>isReachableViaWiFi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="100" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="363" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1a294f9407cd32a05f26a480871df70901" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL Reachability::isConnectionRequired</definition>
+        <argsstring>()</argsstring>
+        <name>isConnectionRequired</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="104" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="389" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1a731496d70dd8bfbd1b364df13cac2b4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL Reachability::connectionRequired</definition>
+        <argsstring>()</argsstring>
+        <name>connectionRequired</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="105" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="394" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1af5bea7c2cfd6439a4ff5f0ab0b92e37b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL Reachability::isConnectionOnDemand</definition>
+        <argsstring>()</argsstring>
+        <name>isConnectionOnDemand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="107" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="407" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1ad44af2ebf5ffd986dacad06e63362550" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL Reachability::isInterventionRequired</definition>
+        <argsstring>()</argsstring>
+        <name>isInterventionRequired</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="109" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="421" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1a8396438436e7ff3770039fb527cd1d34" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NetworkStatus</type>
+        <definition>NetworkStatus Reachability::currentReachabilityStatus</definition>
+        <argsstring>()</argsstring>
+        <name>currentReachabilityStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="111" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="437" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1ac9080e40006cd8c82431a668ec8bfe18" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>SCNetworkReachabilityFlags</type>
+        <definition>SCNetworkReachabilityFlags Reachability::reachabilityFlags</definition>
+        <argsstring>()</argsstring>
+        <name>reachabilityFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="112" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="452" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1af07f0954cd2c09505d5fdccb25941351" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Reachability::currentReachabilityString</definition>
+        <argsstring>()</argsstring>
+        <name>currentReachabilityString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="113" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="464" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_reachability_1a3191086f18ebe51a0ed8d525c3175f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * Reachability::currentReachabilityFlags</definition>
+        <argsstring>()</argsstring>
+        <name>currentReachabilityFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="114" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="481" bodyend="484"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="318">
+        <label>Reachability</label>
+        <link refid="interface_reachability"/>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>NSObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="320">
+        <label>Reachability</label>
+        <link refid="interface_reachability"/>
+        <childnode refid="321" relation="public-inheritance">
+        </childnode>
+        <childnode refid="320" relation="usage">
+          <edgelabel>reachableBlock</edgelabel>
+          <edgelabel>unreachableBlock</edgelabel>
+        </childnode>
+      </node>
+      <node id="321">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" line="81" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.h" bodystart="80" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_reachability_1a731496d70dd8bfbd1b364df13cac2b4c" prot="public" virt="virtual"><scope>Reachability</scope><name>connectionRequired</name></member>
+      <member refid="interface_reachability_1a3191086f18ebe51a0ed8d525c3175f38" prot="public" virt="virtual"><scope>Reachability</scope><name>currentReachabilityFlags</name></member>
+      <member refid="interface_reachability_1a8396438436e7ff3770039fb527cd1d34" prot="public" virt="virtual"><scope>Reachability</scope><name>currentReachabilityStatus</name></member>
+      <member refid="interface_reachability_1af07f0954cd2c09505d5fdccb25941351" prot="public" virt="virtual"><scope>Reachability</scope><name>currentReachabilityString</name></member>
+      <member refid="interface_reachability_1af8dbb23cc7f9ac59b0269dfaf83979fc" prot="public" virt="virtual"><scope>Reachability</scope><name>initWithReachabilityRef:</name></member>
+      <member refid="interface_reachability_1af5bea7c2cfd6439a4ff5f0ab0b92e37b" prot="public" virt="virtual"><scope>Reachability</scope><name>isConnectionOnDemand</name></member>
+      <member refid="interface_reachability_1a294f9407cd32a05f26a480871df70901" prot="public" virt="virtual"><scope>Reachability</scope><name>isConnectionRequired</name></member>
+      <member refid="interface_reachability_1ad44af2ebf5ffd986dacad06e63362550" prot="public" virt="virtual"><scope>Reachability</scope><name>isInterventionRequired</name></member>
+      <member refid="interface_reachability_1ae0b18fcacc97f538502cf671aa583dbd" prot="public" virt="virtual"><scope>Reachability</scope><name>isReachable</name></member>
+      <member refid="interface_reachability_1a994f39db8e47480480ffd7ee81159ecb" prot="public" virt="virtual"><scope>Reachability</scope><name>isReachableViaWiFi</name></member>
+      <member refid="interface_reachability_1a20011128b407d36659bc78a64cd583f5" prot="public" virt="virtual"><scope>Reachability</scope><name>isReachableViaWWAN</name></member>
+      <member refid="interface_reachability_1ac9080e40006cd8c82431a668ec8bfe18" prot="public" virt="virtual"><scope>Reachability</scope><name>reachabilityFlags</name></member>
+      <member refid="interface_reachability_1ad2962f5292dee6a56f43175d344c3da1" prot="public" virt="virtual"><scope>Reachability</scope><name>reachabilityForInternetConnection</name></member>
+      <member refid="interface_reachability_1afef931b75654390d24d9c897835929f5" prot="public" virt="virtual"><scope>Reachability</scope><name>reachabilityForLocalWiFi</name></member>
+      <member refid="interface_reachability_1add9b3533dfed13fc2215cc27bca74ace" prot="public" virt="virtual"><scope>Reachability</scope><name>reachabilityWithAddress:</name></member>
+      <member refid="interface_reachability_1a2f1b1e51498d1458918ac7399330b3e5" prot="public" virt="virtual"><scope>Reachability</scope><name>reachabilityWithHostname:</name></member>
+      <member refid="interface_reachability_1ac0ef2a5c4b1470394ab5c1942100fd82" prot="public" virt="non-virtual"><scope>Reachability</scope><name>reachableBlock</name></member>
+      <member refid="interface_reachability_1aa6c9eada73d41380aa056539fd005b21" prot="public" virt="non-virtual"><scope>Reachability</scope><name>reachableOnWWAN</name></member>
+      <member refid="interface_reachability_1ae20732960a222681fcc7caeb191158bc" prot="public" virt="virtual"><scope>Reachability</scope><name>startNotifier</name></member>
+      <member refid="interface_reachability_1ab7907e9c8de0e4e15774e82c089e0b39" prot="public" virt="virtual"><scope>Reachability</scope><name>stopNotifier</name></member>
+      <member refid="interface_reachability_1a094a49485d02681b0df97bc413714c79" prot="public" virt="non-virtual"><scope>Reachability</scope><name>unreachableBlock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

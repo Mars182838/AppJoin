@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title></title>
+    <detaileddescription>
+<para>qrencode - QR Code encoder</para><para>Copyright (C) 2006, 2007, 2008, 2009 Kentaro Fukuchi <ulink url="mailto:fukuchi@megaui.net">fukuchi@megaui.net</ulink></para><para>This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or any later version.</para><para>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA Libqrencode is a library for encoding data in a QR Code symbol, a kind of 2D symbology.</para><sect1 id="index_1encoding">
+<title>Encoding</title>
+<para>There are two ways to encode data: <bold>encoding a string</bold> or <bold>encoding a structured data</bold>.</para><sect2 id="index_1encoding-string">
+<title>Encoding a string</title>
+<para>You can encode a string by calling QRcode_encodeString(). The given string is parsed automatically and encoded. If you want to encode data that can be represented as a C string style (NUL terminated), you can simply use this way.</para><para>If the input data contains Kanji (Shift-JIS) characters and you want to encode them as Kanji in QR Code, you should give QR_MODE_KANJI as a hint. Otherwise, all of non-alphanumeric characters are encoded as 8 bit data. If you want to encode a whole string in 8 bit mode, use QRcode_encodeString8bit() instead.</para><para>Please note that a C string can not contain NUL character. If your data contains NUL, you should chose the second way.</para></sect2>
+<sect2 id="index_1encoding-input">
+<title>Encoding a structured data</title>
+<para>You can construct a structured input data manually. If the structure of the input data is known, you can use this way. At first, create a ::QRinput object by QRinput_new(). Then add input data to the QRinput object by QRinput_append(). Finally call QRcode_encodeInput() to encode the QRinput data. You can reuse the QRinput data again to encode it in other symbols with different parameters.</para></sect2>
+</sect1>
+<sect1 id="index_1result">
+<title>Result</title>
+<para>The encoded symbol is resulted as a <ref refid="struct_q_rcode" kindref="compound">QRcode</ref> object. It will contain its version number, width of the symbol and an array represents the symbol. See <ref refid="struct_q_rcode" kindref="compound">QRcode</ref> for the details. You can free the object by QRcode_free().</para><para>Please note that the version of the result may be larger than specified. In such cases, the input data would be too large to be encoded in a symbol of the specified version.</para></sect1>
+<sect1 id="index_1structured">
+<title>Structured append</title>
+<para>Libqrencode can generate &quot;Structured-appended&quot; symbols that enables to split a large data set into mulitple QR codes. A QR code reader concatenates multiple QR code symbols into a string. Just like QRcode_encodeString(), you can use QRcode_encodeStringStructured() to generate structured-appended symbols. This functions returns an instance of ::QRcode_List. The returned list is a singly-linked list of <ref refid="struct_q_rcode" kindref="compound">QRcode</ref>: you can retrieve each QR code in this way:</para><para><programlisting><codeline><highlight class="normal"><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref><sp/>*qrcodes;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref><sp/>*entry;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="struct_q_rcode" kindref="compound">QRcode</ref><sp/>*qrcode;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">qrcodes<sp/>=<sp/>QRcode_encodeStringStructured(...);</highlight></codeline>
+<codeline><highlight class="normal">entry<sp/>=<sp/>qrcodes;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(entry<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>qrcode<sp/>=<sp/>entry-&gt;code;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>something</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>entry<sp/>=<sp/>entry-&gt;next;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">QRcode_List_free(entry);</highlight></codeline>
+</programlisting></para><para>Instead of using auto-parsing functions, you can construct your own structured input. At first, instantiate an object of ::QRinput_Struct by calling QRinput_Struct_new(). This object can hold multiple ::QRinput, and one QR code is generated for a ::QRinput. QRinput_Struct_appendInput() appends a ::QRinput to a ::QRinput_Struct object. In order to generate structured-appended symbols, it is required to embed headers to each symbol. You can use QRinput_Struct_insertStructuredAppendHeaders() to insert appropriate headers to each symbol. You should call this function just once before encoding symbols. </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

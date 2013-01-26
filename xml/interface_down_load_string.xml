@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_down_load_string" kind="class" prot="public">
+    <compoundname>DownLoadString</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSURLConnectionDataDelegate&gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_down_load_string_1aa07deaf3096e63547098b66ad0d2e366" prot="protected" static="no" mutable="no">
+        <type>NSURLConnection *</type>
+        <definition>NSURLConnection* DownLoadString::connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="40" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_down_load_string_1a614b5dfd4e05104a7cfda37751399efb" prot="protected" static="no" mutable="no">
+        <type>NSMutableData *</type>
+        <definition>NSMutableData* DownLoadString::mutableData</definition>
+        <argsstring></argsstring>
+        <name>mutableData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="41" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_down_load_string_1a0fbed2e90e2d2f1c6b734b81d91d0f52" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>id&lt; <ref refid="protocoldown_load_string_protocal-p" kindref="compound">downLoadStringProtocal</ref> &gt;</type>
+        <definition>id&lt;downLoadStringProtocal&gt; DownLoadString::delegate</definition>
+        <argsstring></argsstring>
+        <name>delegate</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="45" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_down_load_string_1a3d0c4ef30aebcc94712bc2b36057b459" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no">
+        <type>NSStringWithUrl</type>
+        <definition>NSStringWithUrl DownLoadString::shareTarget</definition>
+        <argsstring></argsstring>
+        <name>shareTarget</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="48" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_down_load_string_1ae12cc5c4571830fda3f931a45198d352" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSURL *</type>
+        <definition>NSURL* DownLoadString::url</definition>
+        <argsstring></argsstring>
+        <name>url</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="50" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_down_load_string_1a6aa18ac8e65c63e85454ce11104efc17" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_down_load_string" kindref="compound">DownLoadString</ref> *</type>
+        <definition>DownLoadString * DownLoadString::shareInstanceWithNSStringWithUrl:</definition>
+        <argsstring>(NSStringWithUrl target)</argsstring>
+        <name>shareInstanceWithNSStringWithUrl:</name>
+        <param>
+          <type>NSStringWithUrl</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="52" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.m" bodystart="16" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_down_load_string_1ada64a31dab7af544b5117f699affdb19" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id DownLoadString::initWithShareTarget:</definition>
+        <argsstring>(NSStringWithUrl target)</argsstring>
+        <name>initWithShareTarget:</name>
+        <param>
+          <type>NSStringWithUrl</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="54" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.m" bodystart="27" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="107">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="105">
+        <label>DownLoadString</label>
+        <link refid="interface_down_load_string"/>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>NSObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="110">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="108">
+        <label>DownLoadString</label>
+        <link refid="interface_down_load_string"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="39" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="37" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_down_load_string_1aa07deaf3096e63547098b66ad0d2e366" prot="protected" virt="non-virtual"><scope>DownLoadString</scope><name>connection</name></member>
+      <member refid="interface_down_load_string_1a0fbed2e90e2d2f1c6b734b81d91d0f52" prot="public" virt="non-virtual"><scope>DownLoadString</scope><name>delegate</name></member>
+      <member refid="interface_down_load_string_1ada64a31dab7af544b5117f699affdb19" prot="public" virt="virtual"><scope>DownLoadString</scope><name>initWithShareTarget:</name></member>
+      <member refid="interface_down_load_string_1a614b5dfd4e05104a7cfda37751399efb" prot="protected" virt="non-virtual"><scope>DownLoadString</scope><name>mutableData</name></member>
+      <member refid="interface_down_load_string_1a6aa18ac8e65c63e85454ce11104efc17" prot="public" virt="virtual"><scope>DownLoadString</scope><name>shareInstanceWithNSStringWithUrl:</name></member>
+      <member refid="interface_down_load_string_1a3d0c4ef30aebcc94712bc2b36057b459" prot="public" virt="non-virtual"><scope>DownLoadString</scope><name>shareTarget</name></member>
+      <member refid="interface_down_load_string_1ae12cc5c4571830fda3f931a45198d352" prot="public" virt="non-virtual"><scope>DownLoadString</scope><name>url</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

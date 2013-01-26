@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="struct___r_s" kind="struct" prot="public">
+    <compoundname>_RS</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct___r_s_1a046c7e4ece716d243101048247f6cde4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _RS::mm</definition>
+        <argsstring></argsstring>
+        <name>mm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="41" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1ab5663729b99e9ff8f7969e916fda2627" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _RS::nn</definition>
+        <argsstring></argsstring>
+        <name>nn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="42" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1a998f0e035861187dd6fbef37ca5789ac" prot="public" static="no" mutable="no">
+        <type>data_t *</type>
+        <definition>data_t* _RS::alpha_to</definition>
+        <argsstring></argsstring>
+        <name>alpha_to</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="43" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1af3406fa5684f5c96c2cd523522959c47" prot="public" static="no" mutable="no">
+        <type>data_t *</type>
+        <definition>data_t* _RS::index_of</definition>
+        <argsstring></argsstring>
+        <name>index_of</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="44" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1aa6785d02605d937bcb035e62936cc245" prot="public" static="no" mutable="no">
+        <type>data_t *</type>
+        <definition>data_t* _RS::genpoly</definition>
+        <argsstring></argsstring>
+        <name>genpoly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="45" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1a97be3a013ef02a581029d8219993ec2e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _RS::nroots</definition>
+        <argsstring></argsstring>
+        <name>nroots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="46" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1ab9c03761dfc23661efaeba22fb60fc96" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _RS::fcr</definition>
+        <argsstring></argsstring>
+        <name>fcr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="47" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1a3e5a578b2322c98c7fc5bab914917b24" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _RS::prim</definition>
+        <argsstring></argsstring>
+        <name>prim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="48" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1af0655eabb9315ddd69493cf9e476bcb8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _RS::iprim</definition>
+        <argsstring></argsstring>
+        <name>iprim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="49" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1a10c7fe66a2d97af43c41881c5c24ce92" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _RS::pad</definition>
+        <argsstring></argsstring>
+        <name>pad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="50" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1ac8de531510e63159386f598575425c54" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _RS::gfpoly</definition>
+        <argsstring></argsstring>
+        <name>gfpoly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="51" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct___r_s_1a8399f3b5c7fdcad97fab3f699c9e676b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct___r_s" kindref="compound">_RS</ref> *</type>
+        <definition>struct _RS* _RS::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="52" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Reed-Solomon codec control block </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="22">
+        <label>_RS</label>
+        <link refid="struct___r_s"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/rscode.c" line="40" bodyfile="/Users/dengkawakou/Desktop/AppJoin/rscode.c" bodystart="40" bodyend="53"/>
+    <listofallmembers>
+      <member refid="struct___r_s_1a998f0e035861187dd6fbef37ca5789ac" prot="public" virt="non-virtual"><scope>_RS</scope><name>alpha_to</name></member>
+      <member refid="struct___r_s_1ab9c03761dfc23661efaeba22fb60fc96" prot="public" virt="non-virtual"><scope>_RS</scope><name>fcr</name></member>
+      <member refid="struct___r_s_1aa6785d02605d937bcb035e62936cc245" prot="public" virt="non-virtual"><scope>_RS</scope><name>genpoly</name></member>
+      <member refid="struct___r_s_1ac8de531510e63159386f598575425c54" prot="public" virt="non-virtual"><scope>_RS</scope><name>gfpoly</name></member>
+      <member refid="struct___r_s_1af3406fa5684f5c96c2cd523522959c47" prot="public" virt="non-virtual"><scope>_RS</scope><name>index_of</name></member>
+      <member refid="struct___r_s_1af0655eabb9315ddd69493cf9e476bcb8" prot="public" virt="non-virtual"><scope>_RS</scope><name>iprim</name></member>
+      <member refid="struct___r_s_1a046c7e4ece716d243101048247f6cde4" prot="public" virt="non-virtual"><scope>_RS</scope><name>mm</name></member>
+      <member refid="struct___r_s_1a8399f3b5c7fdcad97fab3f699c9e676b" prot="public" virt="non-virtual"><scope>_RS</scope><name>next</name></member>
+      <member refid="struct___r_s_1ab5663729b99e9ff8f7969e916fda2627" prot="public" virt="non-virtual"><scope>_RS</scope><name>nn</name></member>
+      <member refid="struct___r_s_1a97be3a013ef02a581029d8219993ec2e" prot="public" virt="non-virtual"><scope>_RS</scope><name>nroots</name></member>
+      <member refid="struct___r_s_1a10c7fe66a2d97af43c41881c5c24ce92" prot="public" virt="non-virtual"><scope>_RS</scope><name>pad</name></member>
+      <member refid="struct___r_s_1a3e5a578b2322c98c7fc5bab914917b24" prot="public" virt="non-virtual"><scope>_RS</scope><name>prim</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

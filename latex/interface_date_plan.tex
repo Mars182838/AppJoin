@@ -1,0 +1,92 @@
+\hypertarget{interface_date_plan}{\section{Date\-Plan类 参考}
+\label{interface_date_plan}\index{Date\-Plan@{Date\-Plan}}
+}
+类 Date\-Plan 继承关系图\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_date_plan}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_date_plan_a44ceee79778f8ce6f91903beba84d6f1}{init\-With\-I\-D\-:and\-Name\-:and\-Date\-:and\-Place\-:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\-S\-Mutable\-Array $\ast$) + \hyperlink{interface_date_plan_a1626f9373dd50829d4b36597963962b3}{find\-All\-Message}
+\item 
+(int) + \hyperlink{interface_date_plan_a75da4a0db59e63008afeb52b09412578}{add\-Message\-With\-Name\-:and\-Date\-:and\-Place\-:}
+\item 
+(int) + \hyperlink{interface_date_plan_a7d17c19b22b1b9903cd77d4fc9555c79}{delete\-Message\-I\-D\-:}
+\end{DoxyCompactItemize}
+\subsection*{属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_date_plan_a0291ad0465f0f1dba52f2f26c8d6dff2}{N\-S\-Integer {\bfseries I\-D}}\label{interface_date_plan_a0291ad0465f0f1dba52f2f26c8d6dff2}
+
+\item 
+\hypertarget{interface_date_plan_a34b2cac092692065aa0800021e7bee47}{N\-S\-String $\ast$ \hyperlink{interface_date_plan_a34b2cac092692065aa0800021e7bee47}{name}}\label{interface_date_plan_a34b2cac092692065aa0800021e7bee47}
+
+\begin{DoxyCompactList}\small\item\em 活动名称 \end{DoxyCompactList}\item 
+\hypertarget{interface_date_plan_ac8fd6ed08d404dce74880a98683047e4}{N\-S\-String $\ast$ \hyperlink{interface_date_plan_ac8fd6ed08d404dce74880a98683047e4}{date}}\label{interface_date_plan_ac8fd6ed08d404dce74880a98683047e4}
+
+\begin{DoxyCompactList}\small\item\em 活动时间 \end{DoxyCompactList}\item 
+\hypertarget{interface_date_plan_a24821592b28f72a55f0d05ffcb627886}{N\-S\-String $\ast$ \hyperlink{interface_date_plan_a24821592b28f72a55f0d05ffcb627886}{place}}\label{interface_date_plan_a24821592b28f72a55f0d05ffcb627886}
+
+\begin{DoxyCompactList}\small\item\em 活动地点 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_date_plan_a75da4a0db59e63008afeb52b09412578}{\index{Date\-Plan@{Date\-Plan}!add\-Message\-With\-Name\-:and\-Date\-:and\-Place\-:@{add\-Message\-With\-Name\-:and\-Date\-:and\-Place\-:}}
+\index{add\-Message\-With\-Name\-:and\-Date\-:and\-Place\-:@{add\-Message\-With\-Name\-:and\-Date\-:and\-Place\-:}!DatePlan@{Date\-Plan}}
+\subsubsection[{add\-Message\-With\-Name\-:and\-Date\-:and\-Place\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) add\-Message\-With\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{the\-Name}
+\item[{andDate:(N\-S\-String $\ast$)}]{the\-Date}
+\item[{andPlace:(N\-S\-String $\ast$)}]{the\-Place}
+\end{DoxyParamCaption}
+}}\label{interface_date_plan_a75da4a0db59e63008afeb52b09412578}
+添加数据到数据库中 $\ast$the\-I\-D 是唯一标示这个信息 $\ast$the\-Name 是活动的名称 $\ast$the\-Date 是活动的时间 $\ast$the\-Place 是活动地点 \begin{DoxyReturn}{返回}
+返回一个int值 
+\end{DoxyReturn}
+\hypertarget{interface_date_plan_a7d17c19b22b1b9903cd77d4fc9555c79}{\index{Date\-Plan@{Date\-Plan}!delete\-Message\-I\-D\-:@{delete\-Message\-I\-D\-:}}
+\index{delete\-Message\-I\-D\-:@{delete\-Message\-I\-D\-:}!DatePlan@{Date\-Plan}}
+\subsubsection[{delete\-Message\-I\-D\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (int) delete\-Message\-I\-D\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Integer)}]{the\-I\-D}
+\end{DoxyParamCaption}
+}}\label{interface_date_plan_a7d17c19b22b1b9903cd77d4fc9555c79}
+从数据库中删除数据 $\ast$the\-I\-D 是唯一标示这个信息 $\ast$the\-Name 是活动的名称 $\ast$the\-Date 是活动的时间 $\ast$the\-Place 是活动地点 \begin{DoxyReturn}{返回}
+返回一个任意的实例对象 
+\end{DoxyReturn}
+\hypertarget{interface_date_plan_a1626f9373dd50829d4b36597963962b3}{\index{Date\-Plan@{Date\-Plan}!find\-All\-Message@{find\-All\-Message}}
+\index{find\-All\-Message@{find\-All\-Message}!DatePlan@{Date\-Plan}}
+\subsubsection[{find\-All\-Message}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\-S\-Mutable\-Array $\ast$) find\-All\-Message 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_date_plan_a1626f9373dd50829d4b36597963962b3}
+在数据库中查找所有的数据 \begin{DoxyReturn}{返回}
+返回一个可变的数组 
+\end{DoxyReturn}
+\hypertarget{interface_date_plan_a44ceee79778f8ce6f91903beba84d6f1}{\index{Date\-Plan@{Date\-Plan}!init\-With\-I\-D\-:and\-Name\-:and\-Date\-:and\-Place\-:@{init\-With\-I\-D\-:and\-Name\-:and\-Date\-:and\-Place\-:}}
+\index{init\-With\-I\-D\-:and\-Name\-:and\-Date\-:and\-Place\-:@{init\-With\-I\-D\-:and\-Name\-:and\-Date\-:and\-Place\-:}!DatePlan@{Date\-Plan}}
+\subsubsection[{init\-With\-I\-D\-:and\-Name\-:and\-Date\-:and\-Place\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-I\-D\-: 
+\begin{DoxyParamCaption}
+\item[{(int)}]{the\-I\-D}
+\item[{andName:(N\-S\-String $\ast$)}]{the\-Name}
+\item[{andDate:(N\-S\-String $\ast$)}]{the\-Date}
+\item[{andPlace:(N\-S\-String $\ast$)}]{the\-Place}
+\end{DoxyParamCaption}
+}}\label{interface_date_plan_a44ceee79778f8ce6f91903beba84d6f1}
+初始化方法 $\ast$the\-I\-D 是唯一标示这个信息 $\ast$the\-Name 是活动的名称 $\ast$the\-Date 是活动的时间 $\ast$the\-Place 是活动地点 \begin{DoxyReturn}{返回}
+返回一个任意的实例对象 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\-:\begin{DoxyCompactItemize}
+\item 
+Date\-Plan.\-h\item 
+Date\-Plan.\-m\end{DoxyCompactItemize}

@@ -10,8 +10,11 @@
 #import "ZBarSDK.h"
 #import "MBProgressHUD.h"
 
-@interface MScanViewController : UIViewController<ZBarReaderViewDelegate,ZBarReaderDelegate,MBProgressHUDDelegate,UITextFieldDelegate>
-
+@interface MScanViewController : UIViewController<ZBarReaderViewDelegate,ZBarReaderDelegate,MBProgressHUDDelegate,UITextFieldDelegate,NSURLConnectionDataDelegate>
+{
+    NSURLConnection *coonection;
+    NSMutableData *mutableData;
+}
 ///对名片进行标注
 @property (retain, nonatomic) UITextField *messageTextField;
 

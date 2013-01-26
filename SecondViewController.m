@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "InfoViewController.h"
+#import "DownLoadString.h"
 
 @interface SecondViewController ()
 
@@ -19,8 +20,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"资讯";
-        _messageArray = [[NSMutableArray alloc] initWithObjects:@"我们",@"呵呵呵",@"你好",@"你好啊", nil];
+        
+        _messageArray = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -42,16 +43,81 @@
     _infoTableView.dataSource = self;
     [self.view addSubview:_infoTableView];
     
-    NSURL *url = [NSURL URLWithString:@"http:www.baidu.com"];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
-    connect = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    if (connect) {
-        mutableData = [[NSMutableData alloc] initWithCapacity:0];
-    }
-    else
-    {
-        NSLog(@"网络请求失败");
-    }
+    if (_refreshHeaderView == nil) {
+		
+		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.infoTableView.bounds.size.height, self.view.frame.size.width, self.infoTableView.bounds.size.height)];
+		view.delegate = self;
+		[self.infoTableView addSubview:view];
+		_refreshHeaderView = view;
+		[view release];
+		
+	}
+	
+	//  update the last update date
+	[_refreshHeaderView refreshLastUpdatedDate];
+
+    _downLoad = [[DownLoadString alloc] initWithShareTarget:NSStringWithUrlFirst];
+    _downLoad.delegate = self;
+    
+}
+
+#pragma mark -
+#pragma mark Data Source Loading / Reloading Methods
+
+- (void)reloadTableViewDataSource{
+	
+	//  should be calling your tableviews data source model to reload
+	//  put here just for demo
+	_reloading = YES;
+    [self.infoTableView reloadData];
+	
+}
+
+- (void)doneLoadingTableViewData{
+	
+	//  model should call this when its done loading
+	_reloading = NO;
+	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.infoTableView];
+	
+}
+
+
+#pragma mark -
+#pragma mark UIScrollViewDelegate Methods
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+	
+	[_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
+    
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+	
+	[_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
+	
+}
+
+
+#pragma mark -
+#pragma mark EGORefreshTableHeaderDelegate Methods
+
+- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view{
+	
+	[self reloadTableViewDataSource];
+	[self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
+	
+}
+
+- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view{
+	
+	return _reloading; // should return if data source model is reloading
+	
+}
+
+- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view{
+	
+	return [NSDate date]; // should return date data source was last changed
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,10 +126,22 @@
 }
 
 - (void)dealloc {
+    
     [_infoTableView release];
-    [_topBar release];
+    [_messageArray  release];
+    [_downLoad      release];
     [super dealloc];
 }
+
+#pragma mark - DownLoad Delegate
+
+-(void)downLoadFinished:(NSDictionary *)info
+{
+    NSDictionary *dic = info;
+    self.messageArray = [dic objectForKey:@"posts"];
+    [self.infoTableView reloadData];
+}
+
 
 #pragma mark -
 #pragma mark - UITableViewDataSources and UITableViewDelegate
@@ -79,7 +157,12 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifier] ;
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:indentifier] autorelease];
-            cell.textLabel.text = [_messageArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = [[self.messageArray objectAtIndex:indexPath.row] objectForKey:@"title"];
+        cell.textLabel.font = [UIFont systemFontOfSize:16.0f];
+        
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"发布于：%@",[[self.messageArray objectAtIndex:indexPath.row] objectForKey:@"modified"]];
+        cell.detailTextLabel.font = [UIFont systemFontOfSize:13.0f];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     return cell;
 }
@@ -90,50 +173,10 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     InfoViewController *info = [[InfoViewController alloc] init];
-    NSString *string = [[NSString alloc] initWithFormat:@"%@",@"王俊"];
-    info.urlString = string;
+    info.title = @"资讯详细";
+    info.urlString = [[self.messageArray objectAtIndex:indexPath.row] objectForKey:@"url"];
     [self.navigationController pushViewController:info animated:YES];
     [info release];
-    [string release];
-}
-
-#pragma mark - 
-#pragma mark - NSURLConnectionDataDelegate Methods
-
--(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
-{
-    _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    _hud.labelText = @"下载中，请稍后";
-    expectedLength = [response expectedContentLength];
-    currentLength = 0;
-    
-    [mutableData setLength:0];
-}
-
--(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
-{
-    currentLength += [data length];
-    _hud.progress = currentLength/(float)expectedLength;
-    
-    [mutableData appendData:data];
-}
-
--(void)connectionDidFinishLoading:(NSURLConnection *)connection
-{
-    [_hud hide:YES afterDelay:1.0f];
-    
-    /** NSJSONSerialization利用解析Json数据 */
-    NSError *error = nil;
-    NSDictionary *serial = [NSJSONSerialization JSONObjectWithData:mutableData options:NSJSONReadingMutableLeaves error:&error];
-    NSLog(@"serial----%@",serial);
-}
-
--(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
-{
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeText;
-    hud.labelText = @"下载失败，请查看网络连接状态";
-    [hud hide:YES afterDelay:1.0f];
 }
 
 @end

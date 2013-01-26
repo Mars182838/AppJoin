@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_date_plan" kind="class" prot="public">
+    <compoundname>DatePlan</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_date_plan_1a0291ad0465f0f1dba52f2f26c8d6dff2" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>NSInteger</type>
+        <definition>NSInteger DatePlan::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" line="13" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_date_plan_1a34b2cac092692065aa0800021e7bee47" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* DatePlan::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>活动名称 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" line="16" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_date_plan_1ac8fd6ed08d404dce74880a98683047e4" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* DatePlan::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>活动时间 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" line="18" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_date_plan_1a24821592b28f72a55f0d05ffcb627886" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* DatePlan::place</definition>
+        <argsstring></argsstring>
+        <name>place</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>活动地点 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" line="20" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_date_plan_1a44ceee79778f8ce6f91903beba84d6f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id DatePlan::initWithID:andName:andDate:andPlace:</definition>
+        <argsstring>(int theID,[andName] NSString *theName,[andDate] NSString *theDate,[andPlace] NSString *thePlace)</argsstring>
+        <name>initWithID:andName:andDate:andPlace:</name>
+        <param>
+          <type>int</type>
+          <declname>theID</declname>
+        </param>
+        <param>
+          <attributes>[andName]</attributes>
+          <type>NSString *</type>
+          <declname>theName</declname>
+        </param>
+        <param>
+          <attributes>[andDate]</attributes>
+          <type>NSString *</type>
+          <declname>theDate</declname>
+        </param>
+        <param>
+          <attributes>[andPlace]</attributes>
+          <type>NSString *</type>
+          <declname>thePlace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>初始化方法 *theID 是唯一标示这个信息 *theName 是活动的名称 *theDate 是活动的时间 *thePlace 是活动地点 <simplesect kind="return"><para>返回一个任意的实例对象 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" line="32" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DatePlan.m" bodystart="14" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_date_plan_1a1626f9373dd50829d4b36597963962b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray * DatePlan::findAllMessage</definition>
+        <argsstring>()</argsstring>
+        <name>findAllMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>在数据库中查找所有的数据 <simplesect kind="return"><para>返回一个可变的数组 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" line="37" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DatePlan.m" bodystart="51" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_date_plan_1a75da4a0db59e63008afeb52b09412578" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int DatePlan::addMessageWithName:andDate:andPlace:</definition>
+        <argsstring>(NSString *theName,[andDate] NSString *theDate,[andPlace] NSString *thePlace)</argsstring>
+        <name>addMessageWithName:andDate:andPlace:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>theName</declname>
+        </param>
+        <param>
+          <attributes>[andDate]</attributes>
+          <type>NSString *</type>
+          <declname>theDate</declname>
+        </param>
+        <param>
+          <attributes>[andPlace]</attributes>
+          <type>NSString *</type>
+          <declname>thePlace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>添加数据到数据库中 *theID 是唯一标示这个信息 *theName 是活动的名称 *theDate 是活动的时间 *thePlace 是活动地点 <simplesect kind="return"><para>返回一个int值 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" line="48" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DatePlan.m" bodystart="25" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_date_plan_1a7d17c19b22b1b9903cd77d4fc9555c79" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int DatePlan::deleteMessageID:</definition>
+        <argsstring>(NSInteger theID)</argsstring>
+        <name>deleteMessageID:</name>
+        <param>
+          <type>NSInteger</type>
+          <declname>theID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>从数据库中删除数据 *theID 是唯一标示这个信息 *theName 是活动的名称 *theDate 是活动的时间 *thePlace 是活动地点 <simplesect kind="return"><para>返回一个任意的实例对象 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" line="57" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DatePlan.m" bodystart="84" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="71">
+        <label>DatePlan</label>
+        <link refid="interface_date_plan"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>NSObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="73">
+        <label>DatePlan</label>
+        <link refid="interface_date_plan"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" line="12" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DatePlan.h" bodystart="11" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_date_plan_1a75da4a0db59e63008afeb52b09412578" prot="public" virt="virtual"><scope>DatePlan</scope><name>addMessageWithName:andDate:andPlace:</name></member>
+      <member refid="interface_date_plan_1ac8fd6ed08d404dce74880a98683047e4" prot="public" virt="non-virtual"><scope>DatePlan</scope><name>date</name></member>
+      <member refid="interface_date_plan_1a7d17c19b22b1b9903cd77d4fc9555c79" prot="public" virt="virtual"><scope>DatePlan</scope><name>deleteMessageID:</name></member>
+      <member refid="interface_date_plan_1a1626f9373dd50829d4b36597963962b3" prot="public" virt="virtual"><scope>DatePlan</scope><name>findAllMessage</name></member>
+      <member refid="interface_date_plan_1a0291ad0465f0f1dba52f2f26c8d6dff2" prot="public" virt="non-virtual"><scope>DatePlan</scope><name>ID</name></member>
+      <member refid="interface_date_plan_1a44ceee79778f8ce6f91903beba84d6f1" prot="public" virt="virtual"><scope>DatePlan</scope><name>initWithID:andName:andDate:andPlace:</name></member>
+      <member refid="interface_date_plan_1a34b2cac092692065aa0800021e7bee47" prot="public" virt="non-virtual"><scope>DatePlan</scope><name>name</name></member>
+      <member refid="interface_date_plan_1a24821592b28f72a55f0d05ffcb627886" prot="public" virt="non-virtual"><scope>DatePlan</scope><name>place</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

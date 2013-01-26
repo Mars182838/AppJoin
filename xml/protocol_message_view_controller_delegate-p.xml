@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="protocol_message_view_controller_delegate-p" kind="protocol" prot="public" abstract="yes">
+    <compoundname>MessageViewControllerDelegate-p</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSObject&gt;</basecompoundref>
+    <derivedcompoundref refid="interface_message_view_controller" prot="public" virt="non-virtual">MessageViewController</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocol_message_view_controller_delegate-p_1a28bc2194b6c71cf6aab0a7989a1a3c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MessageViewControllerDelegate-p::passMessageToMessageViewController:andNavigationTitle:</definition>
+        <argsstring>(NSString *string,[andNavigationTitle] NSString *titleString)</argsstring>
+        <name>passMessageToMessageViewController:andNavigationTitle:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <attributes>[andNavigationTitle]</attributes>
+          <type>NSString *</type>
+          <declname>titleString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>这是代理方法，传递两个值到MessageViewController类中 *string 是指的文字信息 *titleString 是指的导航栏上面的文字 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" line="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="260">
+        <label>&lt;MessageViewControllerDelegate&gt;</label>
+        <link refid="protocol_message_view_controller_delegate-p"/>
+        <childnode refid="261" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>MessageViewController</label>
+        <link refid="interface_message_view_controller"/>
+        <childnode refid="260" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="263">
+        <label>&lt;MessageViewControllerDelegate&gt;</label>
+        <link refid="protocol_message_view_controller_delegate-p"/>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" line="13" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FirstViewController.h" bodystart="13" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_message_view_controller_delegate-p_1a28bc2194b6c71cf6aab0a7989a1a3c7f" prot="public" virt="virtual"><scope>MessageViewControllerDelegate-p</scope><name>passMessageToMessageViewController:andNavigationTitle:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

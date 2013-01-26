@@ -22,11 +22,11 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
     
-        ///初始化日程数组
-        _myDateArray = [[NSMutableArray alloc] initWithObjects:@"10即消息上下的空间，可自由调整 ",@" 确定单元格高度。最关键的长度不一的消息所需的高度已经确定，下面只要加上上所需固定空间即可以确定单元格高度，完整代码 ",@"size即返回的完全显示消息实际需要的空间 ",@"size即返回的完全显示消息实际需要的空间 ",@"size即返回的完全",@"首先要确定一条消息所占的宽度，这个一般都是固定的，然后根据这个宽度来计算一段文字在这个宽度，某个字体下需要多少高度", nil];
+        ///初始化展商数组
+        _myDateArray = [[NSMutableArray alloc] init];
         
         ///初始化名片数组
-        self.qrArray = [[NSMutableArray alloc] initWithCapacity:0];
+        _qrArray = [[NSMutableArray alloc] initWithCapacity:0];
         
     }
     return self;
@@ -40,7 +40,7 @@
     
     ///通过封装导航栏的视图
     _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
-    _topBar.navLabel.text = @"收藏";
+    _topBar.navLabel.text = @"服务";
     [self.view addSubview:_topBar.navImage];
     [self.view addSubview:_topBar.navLabel];
     
@@ -54,6 +54,28 @@
     _dateTableView.delegate   = self;
     _dateTableView.dataSource = self;
     
+    _downLoad = [[DownLoadString alloc] initWithShareTarget:NSStringWithUrlSecond];
+    _downLoad.delegate = self;
+    
+    if (_refreshHeaderView == nil) {
+		
+		EGORefreshTableHeaderView *view = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.dateTableView.bounds.size.height, self.view.frame.size.width, self.dateTableView.bounds.size.height)];
+		view.delegate = self;
+		[self.dateTableView addSubview:view];
+		_refreshHeaderView = view;
+		[view release];
+		
+	}
+	
+	//  update the last update date
+	[_refreshHeaderView refreshLastUpdatedDate];
+}
+
+-(void)downLoadFinished:(NSDictionary *)info
+{
+    NSDictionary *dic = info;
+    self.myDateArray = [dic objectForKey:@"posts"];
+    [self.dateTableView reloadData];
 }
 
 //当前位置信息
@@ -88,7 +110,14 @@
 - (void)dealloc {
     
     [_dateTableView release];
-    [_topBar release];
+    [_topBar        release];
+    [_downLoad      release];
+    [_rightBtn      release];
+    [_qrArray       release];
+    [_qrTableView   release];
+    [_myDateArray   release];
+    [_myMapView     release];
+    [_label         release];
     [super dealloc];
 }
 
@@ -115,12 +144,12 @@
         case 1:{
         
             _rightBtn.alpha = 0.0;
-            _label = [[UILabel alloc] initWithFrame:CGRectMake(10, 84, WIDTH, HEIGHT)];
-            _label.text =[[NSString alloc]
-                          initWithFormat:@"%@",@"where are you? where are you? where are you? where are you? where are you? where are you? where are you? where are you? where are you? where are you?"];             
+            
+            _label = [[UILabel alloc] initWithFrame:CGRectMake(5, 84, WIDTH - 10, HEIGHT- 100)];
+            _label.text = @"               全国农业展览馆交通位置                                                                                                                    农展馆地址：北京市朝阳区东三环北路16号                                    全国农业展览馆周边公交线路如下:                  运通107（广顺南大街北口 — 马家堡路北口）：农展馆                                                                   113路（民族园路 — 大北窑）：长虹桥西            115路（康家沟 — 东黄城根北口）：长虹桥西  117路（红庙 — 五路居）：长虹桥西                 夜班207路（慧中里 — 四惠站）：农展馆             300路（十里河桥北—十里河桥南）：亮马桥     300快（大钟寺—大钟寺）：亮马桥                              302路（巴沟村 — 辛庄）：亮马桥                             350路（东大桥 — 曹各庄）：长虹桥南              402路（四惠站 — 南皋）：农展馆                405路（四惠站 — 孙河东站）：农展馆            416路（来广营 — 来广营）：亮马桥            ";
             _label.lineBreakMode = NSLineBreakByWordWrapping;
             _label.numberOfLines = 0;
-            _label.font = [UIFont systemFontOfSize:13];
+            _label.font = [UIFont systemFontOfSize:15];
             
             [self.view addSubview:_label];
 
@@ -206,11 +235,23 @@
         cell.detailTextLabel.lineBreakMode = NSLineBreakByWordWrapping;
     }
     else{
-        cell.textLabel.text = [_myDateArray objectAtIndex:indexPath.row];
-        cell.detailTextLabel.text = [_myDateArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = [[_myDateArray objectAtIndex:indexPath.row] objectForKey:@"title"];
+
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (tableView == _dateTableView) {
+       
+        InfoViewController *info = [[InfoViewController alloc] init];
+        info.title = @"展商详情";
+        info.urlString = [[self.myDateArray objectAtIndex:indexPath.row] objectForKey:@"url"];
+        [self.navigationController pushViewController:info animated:YES];
+        [info release];
+    }
 }
 
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -260,16 +301,6 @@
         customPinView.canShowCallout = YES;
         customPinView.animatesDrop = YES;
         
-        //右按钮 推出下一个页面
-        UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        rightBtn.frame = CGRectMake(0, 0, 40, 30);
-        rightBtn.tag = 1;
-        
-        UIImage *image = [UIImage imageNamed:@"Arrow-Icon.png"];
-        [rightBtn setBackgroundImage:image forState:UIControlStateNormal];
-        [rightBtn addTarget:self action:@selector(buttonPress:) forControlEvents:UIControlEventTouchUpInside];
-        customPinView.rightCalloutAccessoryView = rightBtn;
-        
         return customPinView;
     }
     else {
@@ -293,6 +324,70 @@
          [_rightBtn setImage:[UIImage imageNamed:@"editer.png"] forState:UIControlStateNormal];
         isEditer = YES;
     }
+}
+
+#pragma mark -
+#pragma mark Data Source Loading / Reloading Methods
+
+- (void)reloadTableViewDataSource{
+	
+	//  should be calling your tableviews data source model to reload
+	//  put here just for demo
+	_reloading = YES;
+    [self.dateTableView reloadData];
+	
+}
+
+- (void)doneLoadingTableViewData{
+	
+	//  model should call this when its done loading
+	_reloading = NO;
+	[_refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.dateTableView];
+	
+}
+
+
+#pragma mark -
+#pragma mark UIScrollViewDelegate Methods
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+	
+	[_refreshHeaderView egoRefreshScrollViewDidScroll:scrollView];
+    
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+	
+	[_refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
+	
+}
+
+
+#pragma mark -
+#pragma mark EGORefreshTableHeaderDelegate Methods
+
+- (void)egoRefreshTableHeaderDidTriggerRefresh:(EGORefreshTableHeaderView*)view{
+	
+	[self reloadTableViewDataSource];
+	[self performSelector:@selector(doneLoadingTableViewData) withObject:nil afterDelay:3.0];
+	
+}
+
+/**
+ *当数据在加载的时候，返回_reloading
+ */
+- (BOOL)egoRefreshTableHeaderDataSourceIsLoading:(EGORefreshTableHeaderView*)view{
+	
+	return _reloading; // should return if data source model is reloading
+}
+
+/**返回更新的时间，以及日期
+ *@prama NSDate 实例
+ */
+- (NSDate*)egoRefreshTableHeaderDataSourceLastUpdated:(EGORefreshTableHeaderView*)view{
+	
+	return [NSDate date]; // should return date data source was last changed
+	
 }
 
 @end

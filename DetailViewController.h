@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SDImageView+SDWebCache.h"
+#import "TopBarView.h"
 
 @interface DetailViewController : UIViewController
 

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="category_reachability_07_08" kind="category" prot="public">
+    <compoundname>Reachability()</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="category_reachability_07_08_1a08bbb93c5fdd4d94ef8e3cbcb5507ebf" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>SCNetworkReachabilityRef</type>
+        <definition>SCNetworkReachabilityRef Reachability()::reachabilityRef</definition>
+        <argsstring></argsstring>
+        <name>reachabilityRef</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" line="35" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="category_reachability_07_08_1a045af669a71d6c23195389b34ffe5d04" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>dispatch_queue_t</type>
+        <definition>dispatch_queue_t Reachability()::reachabilitySerialQueue</definition>
+        <argsstring></argsstring>
+        <name>reachabilitySerialQueue</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" line="39" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="category_reachability_07_08_1a354f7836a96e6789a11171200f13e179" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="strong">
+        <type>id</type>
+        <definition>id Reachability()::reachabilityObject</definition>
+        <argsstring></argsstring>
+        <name>reachabilityObject</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" line="45" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="category_reachability_07_08_1acd93f54edff50c3a80c741486be86a50" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Reachability()::reachabilityChanged:</definition>
+        <argsstring>(SCNetworkReachabilityFlags flags)</argsstring>
+        <name>reachabilityChanged:</name>
+        <param>
+          <type>SCNetworkReachabilityFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" line="47"/>
+      </memberdef>
+      <memberdef kind="function" id="category_reachability_07_08_1a2cbef2425a180599dcab4d7ac92a0714" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL Reachability()::isReachableWithFlags:</definition>
+        <argsstring>(SCNetworkReachabilityFlags flags)</argsstring>
+        <name>isReachableWithFlags:</name>
+        <param>
+          <type>SCNetworkReachabilityFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" line="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" line="33" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Reachability.m" bodystart="33" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="category_reachability_07_08_1a2cbef2425a180599dcab4d7ac92a0714" prot="public" virt="virtual"><scope>Reachability()</scope><name>isReachableWithFlags:</name></member>
+      <member refid="category_reachability_07_08_1acd93f54edff50c3a80c741486be86a50" prot="public" virt="virtual"><scope>Reachability()</scope><name>reachabilityChanged:</name></member>
+      <member refid="category_reachability_07_08_1a354f7836a96e6789a11171200f13e179" prot="public" virt="non-virtual"><scope>Reachability()</scope><name>reachabilityObject</name></member>
+      <member refid="category_reachability_07_08_1a08bbb93c5fdd4d94ef8e3cbcb5507ebf" prot="public" virt="non-virtual"><scope>Reachability()</scope><name>reachabilityRef</name></member>
+      <member refid="category_reachability_07_08_1a045af669a71d6c23195389b34ffe5d04" prot="public" virt="non-virtual"><scope>Reachability()</scope><name>reachabilitySerialQueue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

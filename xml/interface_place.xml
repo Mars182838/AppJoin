@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_place" kind="class" prot="public">
+    <compoundname>Place</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;MKAnnotation&gt;</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_place_1ae37301519536c14b6978f7c4f0fcfe20" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString * Place::title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Place.h" line="18" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Place.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_place_1a619141a378f1e88297b8af065900ec13" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* Place::subTitle</definition>
+        <argsstring></argsstring>
+        <name>subTitle</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Place.h" line="19" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Place.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_place_1ab21765444aeec9e9505e330b6179961a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>CLLocationCoordinate2D</type>
+        <definition>CLLocationCoordinate2D Place::coordinate</definition>
+        <argsstring></argsstring>
+        <name>coordinate</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Place.h" line="15" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Place.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_place_1a27ee6f79099b7fc960986da11f3ee493" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id Place::initWithCoordinates:</definition>
+        <argsstring>(CLLocationCoordinate2D coords)</argsstring>
+        <name>initWithCoordinates:</name>
+        <param>
+          <type>CLLocationCoordinate2D</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/Place.h" line="22" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Place.m" bodystart="17" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="299">
+        <label>&lt;MKAnnotation&gt;</label>
+      </node>
+      <node id="297">
+        <label>Place</label>
+        <link refid="interface_place"/>
+        <childnode refid="298" relation="public-inheritance">
+        </childnode>
+        <childnode refid="299" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>NSObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="302">
+        <label>&lt;MKAnnotation&gt;</label>
+      </node>
+      <node id="300">
+        <label>Place</label>
+        <link refid="interface_place"/>
+        <childnode refid="301" relation="public-inheritance">
+        </childnode>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/Place.h" line="14" bodyfile="/Users/dengkawakou/Desktop/AppJoin/Place.h" bodystart="12" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_place_1ab21765444aeec9e9505e330b6179961a" prot="protected" virt="non-virtual"><scope>Place</scope><name>coordinate</name></member>
+      <member refid="interface_place_1ab21765444aeec9e9505e330b6179961a" prot="public" virt="non-virtual"><scope>Place</scope><name>coordinate</name></member>
+      <member refid="interface_place_1a27ee6f79099b7fc960986da11f3ee493" prot="public" virt="virtual"><scope>Place</scope><name>initWithCoordinates:</name></member>
+      <member refid="interface_place_1a619141a378f1e88297b8af065900ec13" prot="public" virt="non-virtual"><scope>Place</scope><name>subTitle</name></member>
+      <member refid="interface_place_1ae37301519536c14b6978f7c4f0fcfe20" prot="public" virt="non-virtual"><scope>Place</scope><name>title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

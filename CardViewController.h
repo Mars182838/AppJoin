@@ -11,8 +11,15 @@
 #import "ZBarSDK.h"
 #import "TopBarView.h"
 
+@interface CardViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate,MBProgressHUDDelegate,ZBarReaderDelegate,NSURLConnectionDataDelegate>
 
-@interface CardViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate,MBProgressHUDDelegate,ZBarReaderDelegate>
+{
+    NSUInteger phoneNumber;
+    NSUInteger number;
+    
+    NSURLConnection *coonection;
+    NSMutableData *mutableData;
+}
 
 ///名片展示tableView
 @property (nonatomic, retain) UITableView *cardTableView;
@@ -32,5 +39,9 @@
 @property (nonatomic, retain) TopBarView *topBar;
 
 @property (nonatomic, retain) UIButton *rightBtn;
+
+@property (nonatomic, retain) UITextField *textField;
+
+@property (nonatomic, retain) UIButton *editerBtn;
 
 @end

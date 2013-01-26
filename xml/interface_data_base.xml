@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_data_base" kind="class" prot="public">
+    <compoundname>DataBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_data_base_1adbac330ad5b1337e6a040cdfc0f5712c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>sqlite3 *</type>
+        <definition>sqlite3 * DataBase::openDB</definition>
+        <argsstring>()</argsstring>
+        <name>openDB</name>
+        <briefdescription>
+<para>打开数据库方法 </para>        </briefdescription>
+        <detaileddescription>
+<para>判断数据库是否打开，若打开了就返回该指针,否则从文件夹中打开 <simplesect kind="return"><para>返回一个数据库指针 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>从沙盒中取得sql文件 </para>        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DataBase.h" line="18" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DataBase.m" bodystart="20" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_data_base_1adb17c56e22c3fe77bbd682bee8811a56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void DataBase::closeDB</definition>
+        <argsstring>()</argsstring>
+        <name>closeDB</name>
+        <briefdescription>
+<para>关闭数据库方法 </para>        </briefdescription>
+        <detaileddescription>
+<para>关闭数据库 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DataBase.h" line="21" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DataBase.m" bodystart="34" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="59">
+        <label>DataBase</label>
+        <link refid="interface_data_base"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>NSObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="61">
+        <label>DataBase</label>
+        <link refid="interface_data_base"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/DataBase.h" line="16" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DataBase.h" bodystart="15" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_data_base_1adb17c56e22c3fe77bbd682bee8811a56" prot="public" virt="virtual"><scope>DataBase</scope><name>closeDB</name></member>
+      <member refid="interface_data_base_1adbac330ad5b1337e6a040cdfc0f5712c" prot="public" virt="virtual"><scope>DataBase</scope><name>openDB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

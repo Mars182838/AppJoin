@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project: 首页</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>属性</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">My Project 文档</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>qrencode - QR Code encoder</p>
+<p>Copyright (C) 2006, 2007, 2008, 2009 Kentaro Fukuchi <a href="#" onclick="location.href='mai'+'lto:'+'fuk'+'uc'+'hi@'+'me'+'gau'+'i.'+'net'; return false;">fukuc<span style="display: none;">.nosp@m.</span>hi@m<span style="display: none;">.nosp@m.</span>egaui<span style="display: none;">.nosp@m.</span>.net</a></p>
+<p>This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or any later version.</p>
+<p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
+<p>You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA Libqrencode is a library for encoding data in a QR Code symbol, a kind of 2D symbology.</p>
+<h1><a class="anchor" id="encoding"></a>
+Encoding</h1>
+<p>There are two ways to encode data: <b>encoding a string</b> or <b>encoding a structured data</b>.</p>
+<h2><a class="anchor" id="encoding-string"></a>
+Encoding a string</h2>
+<p>You can encode a string by calling QRcode_encodeString(). The given string is parsed automatically and encoded. If you want to encode data that can be represented as a C string style (NUL terminated), you can simply use this way.</p>
+<p>If the input data contains Kanji (Shift-JIS) characters and you want to encode them as Kanji in QR Code, you should give QR_MODE_KANJI as a hint. Otherwise, all of non-alphanumeric characters are encoded as 8 bit data. If you want to encode a whole string in 8 bit mode, use QRcode_encodeString8bit() instead.</p>
+<p>Please note that a C string can not contain NUL character. If your data contains NUL, you should chose the second way.</p>
+<h2><a class="anchor" id="encoding-input"></a>
+Encoding a structured data</h2>
+<p>You can construct a structured input data manually. If the structure of the input data is known, you can use this way. At first, create a ::QRinput object by QRinput_new(). Then add input data to the QRinput object by QRinput_append(). Finally call QRcode_encodeInput() to encode the QRinput data. You can reuse the QRinput data again to encode it in other symbols with different parameters.</p>
+<h1><a class="anchor" id="result"></a>
+Result</h1>
+<p>The encoded symbol is resulted as a <a class="el" href="struct_q_rcode.html">QRcode</a> object. It will contain its version number, width of the symbol and an array represents the symbol. See <a class="el" href="struct_q_rcode.html">QRcode</a> for the details. You can free the object by QRcode_free().</p>
+<p>Please note that the version of the result may be larger than specified. In such cases, the input data would be too large to be encoded in a symbol of the specified version.</p>
+<h1><a class="anchor" id="structured"></a>
+Structured append</h1>
+<p>Libqrencode can generate "Structured-appended" symbols that enables to split a large data set into mulitple QR codes. A QR code reader concatenates multiple QR code symbols into a string. Just like QRcode_encodeString(), you can use QRcode_encodeStringStructured() to generate structured-appended symbols. This functions returns an instance of ::QRcode_List. The returned list is a singly-linked list of <a class="el" href="struct_q_rcode.html">QRcode</a>: you can retrieve each QR code in this way:</p>
+<div class="fragment"><div class="line"><a class="code" href="struct___q_rcode___list.html">QRcode_List</a> *qrcodes;</div>
+<div class="line"><a class="code" href="struct___q_rcode___list.html">QRcode_List</a> *entry;</div>
+<div class="line"><a class="code" href="struct_q_rcode.html">QRcode</a> *qrcode;</div>
+<div class="line"></div>
+<div class="line">qrcodes = QRcode_encodeStringStructured(...);</div>
+<div class="line">entry = qrcodes;</div>
+<div class="line"><span class="keywordflow">while</span>(entry != NULL) {</div>
+<div class="line">    qrcode = entry-&gt;code;</div>
+<div class="line">    <span class="comment">// do something</span></div>
+<div class="line">    entry = entry-&gt;next;</div>
+<div class="line">}</div>
+<div class="line">QRcode_List_free(entry);</div>
+</div><!-- fragment --><p>Instead of using auto-parsing functions, you can construct your own structured input. At first, instantiate an object of ::QRinput_Struct by calling QRinput_Struct_new(). This object can hold multiple ::QRinput, and one QR code is generated for a ::QRinput. QRinput_Struct_appendInput() appends a ::QRinput to a ::QRinput_Struct object. In order to generate structured-appended symbols, it is required to embed headers to each symbol. You can use QRinput_Struct_insertStructuredAppendHeaders() to insert appropriate headers to each symbol. You should call this function just once before encoding symbols. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 一月 26日 星期六 00:06:40 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

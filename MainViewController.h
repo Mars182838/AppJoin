@@ -9,13 +9,15 @@
 #import "iCarousel.h"
 #import "MBProgressHUD.h"
 #import "DownLoadString.h"
+#import "SDImageView+SDWebCache.h"
+
 @class DetailViewController;
 @class Reachability;
 @class TopBarView;
 
 @protocol DetailViewDelegate <NSObject>
 
--(void)transferImage:(UIImage *)image andString:(NSString *)message;
+-(void)transferImageUrl:(NSString *)urlString andString:(NSString *)message;
 
 @end
 
@@ -59,5 +61,11 @@
 
 ///接收下载完的数据
 @property (nonatomic, retain) NSDictionary *mainDic;
+
+///显示图片
+@property (nonatomic, retain) UIImageView *imageView;
+
+///选择图片数组
+@property (nonatomic, retain) NSMutableArray *selectImageArray;
 
 @end

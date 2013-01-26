@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_four_view_controller" kind="class" prot="public">
+    <compoundname>FourViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITableViewDataSource&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITableViewDelegate&gt;</basecompoundref>
+    <basecompoundref refid="protocoldown_load_string_protocal-p" prot="public" virt="non-virtual">&lt;downLoadStringProtocal&gt;</basecompoundref>
+    <basecompoundref refid="protocol_m_b_progress_h_u_d_delegate-p" prot="public" virt="non-virtual">&lt;MBProgressHUDDelegate&gt;</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_four_view_controller_1ac56bce5794079b0858b28bd5588f6ab4" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITableView *</type>
+        <definition>UITableView* FourViewController::editerTableView</definition>
+        <argsstring></argsstring>
+        <name>editerTableView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" line="16" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_four_view_controller_1a8b7e1f75b33531d876d8c02c407a3c19" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSArray *</type>
+        <definition>NSArray* FourViewController::messageArray</definition>
+        <argsstring></argsstring>
+        <name>messageArray</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>存放相关数据，例如:关于、大会微博、意见反馈等 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" line="19" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_four_view_controller_1ad6ef698b571fc0d7a3c8818439de75dc" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* FourViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>topBar 实现导航栏的自定义的定制 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" line="22" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_four_view_controller_1ac5e0dcdc5771d39c5f162711111c013d" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSArray *</type>
+        <definition>NSArray* FourViewController::aboutArray</definition>
+        <argsstring></argsstring>
+        <name>aboutArray</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>关于模块数组 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" line="25" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_four_view_controller_1ad6d4e24ffabd33ee46a1a65ade7e4ab1" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_down_load_string" kindref="compound">DownLoadString</ref> *</type>
+        <definition>DownLoadString* FourViewController::downLoad</definition>
+        <argsstring></argsstring>
+        <name>downLoad</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" line="27" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="142">
+        <label>&lt;UITableViewDataSource&gt;</label>
+      </node>
+      <node id="144">
+        <label>&lt;downLoadStringProtocal&gt;</label>
+        <link refid="protocoldown_load_string_protocal-p"/>
+        <childnode refid="145" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>&lt;MBProgressHUDDelegate&gt;</label>
+        <link refid="protocol_m_b_progress_h_u_d_delegate-p"/>
+        <childnode refid="147" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>FourViewController</label>
+        <link refid="interface_four_view_controller"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+        <childnode refid="143" relation="public-inheritance">
+        </childnode>
+        <childnode refid="144" relation="public-inheritance">
+        </childnode>
+        <childnode refid="146" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>&lt;UITableViewDelegate&gt;</label>
+      </node>
+      <node id="141">
+        <label>UIViewController</label>
+      </node>
+      <node id="147">
+        <label>&lt;UIViewNSObject&gt;</label>
+      </node>
+      <node id="145">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="156">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="157" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>&lt;UITableViewDataSource&gt;</label>
+      </node>
+      <node id="152">
+        <label>&lt;downLoadStringProtocal&gt;</label>
+        <link refid="protocoldown_load_string_protocal-p"/>
+        <childnode refid="153" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>&lt;MBProgressHUDDelegate&gt;</label>
+        <link refid="protocol_m_b_progress_h_u_d_delegate-p"/>
+        <childnode refid="155" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>FourViewController</label>
+        <link refid="interface_four_view_controller"/>
+        <childnode refid="149" relation="public-inheritance">
+        </childnode>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+        <childnode refid="152" relation="public-inheritance">
+        </childnode>
+        <childnode refid="154" relation="public-inheritance">
+        </childnode>
+        <childnode refid="156" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+        <childnode refid="158" relation="usage">
+          <edgelabel>downLoad</edgelabel>
+        </childnode>
+      </node>
+      <node id="151">
+        <label>&lt;UITableViewDelegate&gt;</label>
+      </node>
+      <node id="160">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="158">
+        <label>DownLoadString</label>
+        <link refid="interface_down_load_string"/>
+        <childnode refid="159" relation="public-inheritance">
+        </childnode>
+        <childnode refid="160" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>UIViewController</label>
+      </node>
+      <node id="155">
+        <label>&lt;UIViewNSObject&gt;</label>
+      </node>
+      <node id="153">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="157">
+        <label>UIView</label>
+      </node>
+      <node id="159">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" line="14" bodyfile="/Users/dengkawakou/Desktop/AppJoin/FourViewController.h" bodystart="14" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_four_view_controller_1ac5e0dcdc5771d39c5f162711111c013d" prot="public" virt="non-virtual"><scope>FourViewController</scope><name>aboutArray</name></member>
+      <member refid="interface_four_view_controller_1ad6d4e24ffabd33ee46a1a65ade7e4ab1" prot="public" virt="non-virtual"><scope>FourViewController</scope><name>downLoad</name></member>
+      <member refid="protocoldown_load_string_protocal-p_1a4ce73ee56600cc02c8a245cc21286277" prot="public" virt="virtual"><scope>FourViewController</scope><name>downLoadFinished:</name></member>
+      <member refid="interface_four_view_controller_1ac56bce5794079b0858b28bd5588f6ab4" prot="public" virt="non-virtual"><scope>FourViewController</scope><name>editerTableView</name></member>
+      <member refid="protocol_m_b_progress_h_u_d_delegate-p_1a0b2a08b1d9cf3758cca8d52a61bed1cc" prot="public" virt="virtual"><scope>FourViewController</scope><name>hudWasHidden:</name></member>
+      <member refid="interface_four_view_controller_1a8b7e1f75b33531d876d8c02c407a3c19" prot="public" virt="non-virtual"><scope>FourViewController</scope><name>messageArray</name></member>
+      <member refid="interface_four_view_controller_1ad6ef698b571fc0d7a3c8818439de75dc" prot="public" virt="non-virtual"><scope>FourViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

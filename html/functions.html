@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>My Project: 类成员</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li class="current"><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="functions.html"><span>全部</span></a></li>
+      <li><a href="functions_func.html"><span>函数</span></a></li>
+      <li><a href="functions_vars.html"><span>变量</span></a></li>
+      <li><a href="functions_prop.html"><span>属性</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index__"><span>_</span></a></li>
+      <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
+      <li><a href="#index_c"><span>c</span></a></li>
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_e"><span>e</span></a></li>
+      <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
+      <li><a href="#index_w"><span>w</span></a></li>
+      <li><a href="#index_x"><span>x</span></a></li>
+      <li><a href="#index_y"><span>y</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>属性</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">这里列出了所有文档化的类成员，并附带类所属的文件:</div>
+
+<h3><a class="anchor" id="index__"></a>- _ -</h3><ul>
+<li>_refreshHeaderView
+: <a class="el" href="interface_third_view_controller.html#a08e18d607bbc0cd9239a557f940b2784">ThirdViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>aboutArray
+: <a class="el" href="interface_four_view_controller.html#ac5e0dcdc5771d39c5f162711111c013d">FourViewController</a>
+</li>
+<li>addMessageWithName:andDate:andPlace:
+: <a class="el" href="interface_date_plan.html#a75da4a0db59e63008afeb52b09412578">DatePlan</a>
+</li>
+<li>addMessageWithName:andMessage:
+: <a class="el" href="interface_q_rcode_data.html#afea0ce0931f83205b1bbc08ab5567211">QRcodeData</a>
+</li>
+<li>allHUDsForView:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#aaa8882a53b5edfd617b4ba112c60811b">MBProgressHUD</a>
+</li>
+<li>animationType
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a71d04bb9e2839df9377ad10d03b2e468">MBProgressHUD</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>backBtn
+: <a class="el" href="interface_top_bar_view.html#a082f6b7cb92d805f874187dbf8175b5d">TopBarView</a>
+</li>
+<li>backgroundTintColor
+: <a class="el" href="interface_m_b_round_progress_view.html#ab111d2fa027158e7c21ad411767d193a">MBRoundProgressView</a>
+</li>
+<li>backImage
+: <a class="el" href="interface_first_view_controller.html#a65a02e3ccdea1bdad12876753128d70c">FirstViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>cardArr
+: <a class="el" href="interface_card_view_controller.html#ad1f20231d1a58429435849832a916f90">CardViewController</a>
+</li>
+<li>cardArray
+: <a class="el" href="interface_card_view_controller.html#a8d38af0727f6342827a44c8cc279468c">CardViewController</a>
+</li>
+<li>cardTableView
+: <a class="el" href="interface_card_view_controller.html#a28c04404c102ca3070f01843b682c66a">CardViewController</a>
+</li>
+<li>carousel
+: <a class="el" href="interface_main_view_controller.html#aff97c901f4d7d451fa2cdca04a7bac95">MainViewController</a>
+</li>
+<li>closeDB
+: <a class="el" href="interface_data_base.html#adb17c56e22c3fe77bbd682bee8811a56">DataBase</a>
+</li>
+<li>color
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a1f4ab0f3ddc52af9353a4cf225ad1361">MBProgressHUD</a>
+</li>
+<li>currentLength
+: <a class="el" href="interface_info_view_controller.html#a5cda7e7567608b413aa8f2a82b05cf50">InfoViewController</a>
+, <a class="el" href="interface_date_view_controller.html#a10154a7a8d6c08b5e8149c2678264c7e">DateViewController</a>
+</li>
+<li>customView
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a78f89e05d797a46bf9b41a5dfd1f5d4a">MBProgressHUD</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
+<li>data
+: <a class="el" href="struct_q_rcode.html#ae6f826314cfb99f4926c4c5734997c35">QRcode</a>
+, <a class="el" href="struct___q_rinput___list.html#ab1b2193ef5cbbc3ebac66c403c1e0d86">_QRinput_List</a>
+</li>
+<li>date
+: <a class="el" href="interface_date_plan.html#ac8fd6ed08d404dce74880a98683047e4">DatePlan</a>
+</li>
+<li>dateTableView
+: <a class="el" href="interface_third_view_controller.html#acb3d719781c1a8152d2d288fdf75e2ad">ThirdViewController</a>
+</li>
+<li>delegate
+: <a class="el" href="interface_first_view_controller.html#a9a1f1917619813af29912f67c6a6eea9">FirstViewController</a>
+, <a class="el" href="interface_main_view_controller.html#a75888987a8cb0262169d2a4ef4e80d2a">MainViewController</a>
+, <a class="el" href="interface_m_b_progress_h_u_d.html#ad6fee32939fa55fc1a341aba117aa28f">MBProgressHUD</a>
+</li>
+<li>deleteMessageID:
+: <a class="el" href="interface_date_plan.html#a7d17c19b22b1b9903cd77d4fc9555c79">DatePlan</a>
+, <a class="el" href="interface_q_rcode_data.html#a101429370b309e693326ea08f9a99ef3">QRcodeData</a>
+</li>
+<li>detailController
+: <a class="el" href="interface_main_view_controller.html#adcdd91fa1f396efe10cfaf47910af2a1">MainViewController</a>
+</li>
+<li>detailLabel
+: <a class="el" href="interface_main_view_controller.html#a243da297ab8ff34a78b80d4677315e4e">MainViewController</a>
+</li>
+<li>detailsLabelFont
+: <a class="el" href="interface_m_b_progress_h_u_d.html#af070a363d323d8eb0285e38d398b51c2">MBProgressHUD</a>
+</li>
+<li>detailsLabelText
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a8b7cbf551fc551c64159b7a3f648c6ac">MBProgressHUD</a>
+</li>
+<li>dimBackground
+: <a class="el" href="interface_m_b_progress_h_u_d.html#ab781ccd4428c8eff6907d2cdc90fc3ee">MBProgressHUD</a>
+</li>
+<li>downLoad
+: <a class="el" href="interface_third_view_controller.html#a4b6940f055ef4eb1b37115d77358106a">ThirdViewController</a>
+, <a class="el" href="interface_second_view_controller.html#aa1379f16650312a6e80315959ebec22a">SecondViewController</a>
+, <a class="el" href="interface_main_view_controller.html#a91dc5cbbb04b3e8c925f747f8fed3a6e">MainViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
+<li>emailTextField
+: <a class="el" href="interface_opinions_view_controller.html#a894f5cea593018dfb32ebd371d938c6a">OpinionsViewController</a>
+</li>
+<li>expectedLength
+: <a class="el" href="interface_info_view_controller.html#a46035a05e80e8252c07e1f2f88e034da">InfoViewController</a>
+, <a class="el" href="interface_date_view_controller.html#ac977fba71126dc96513743e8db033743">DateViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>findAllMessage
+: <a class="el" href="interface_date_plan.html#a1626f9373dd50829d4b36597963962b3">DatePlan</a>
+, <a class="el" href="interface_q_rcode_data.html#a5c2d5e8fcccffe6205e22ce53092e270">QRcodeData</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>hide:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a500fd79859e56cf98fd2eebfd37b4204">MBProgressHUD</a>
+</li>
+<li>hide:afterDelay:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#aec6533c21bf8a9f3e552cb133ef6aeed">MBProgressHUD</a>
+</li>
+<li>hideAllHUDsForView:animated:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a86053d76e84d0fdf033af091df5ea239">MBProgressHUD</a>
+</li>
+<li>hideHUDForView:animated:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#ab7a06aebc0d49b4fc963815ad424013f">MBProgressHUD</a>
+</li>
+<li>hostReach
+: <a class="el" href="interface_main_view_controller.html#a2fd296dcee1ae6fa7f3f346be140f6af">MainViewController</a>
+</li>
+<li>hud
+: <a class="el" href="interface_info_view_controller.html#a1a2a712f0824f338296c51f09088d50a">InfoViewController</a>
+, <a class="el" href="interface_date_view_controller.html#adb68a544ccdbac21ae0bd3ee08d868f3">DateViewController</a>
+</li>
+<li>HUDForView:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a180ab3e4a8c0399c1135534f1fc1a514">MBProgressHUD</a>
+</li>
+<li>hudWasHidden:
+: <a class="el" href="protocol_m_b_progress_h_u_d_delegate-p.html#a0b2a08b1d9cf3758cca8d52a61bed1cc">&lt;MBProgressHUDDelegate&gt;</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>imageView
+: <a class="el" href="interface_detail_view_controller.html#abbfe3bd7006a8d1bc65ab912baba010c">DetailViewController</a>
+, <a class="el" href="interface_main_view_controller.html#a4cc0ee50feca3b06b12297847035a1a1">MainViewController</a>
+</li>
+<li>infoString
+: <a class="el" href="interface_message_view_controller.html#a976b2fbc05ba04a5d19b5438f3d480f5">MessageViewController</a>
+</li>
+<li>infoTableView
+: <a class="el" href="interface_second_view_controller.html#a4c51889ba60022a7e70280749e537614">SecondViewController</a>
+</li>
+<li>infoWebView
+: <a class="el" href="interface_info_view_controller.html#a34d0ec0083fd66336b41a8393e51f91d">InfoViewController</a>
+</li>
+<li>initWithID:andName:andDate:andPlace:
+: <a class="el" href="interface_date_plan.html#a44ceee79778f8ce6f91903beba84d6f1">DatePlan</a>
+</li>
+<li>initWithID:andName:andMessage:
+: <a class="el" href="interface_q_rcode_data.html#a7aaa940342a39b5b500e81bb26827773">QRcodeData</a>
+</li>
+<li>initWithView:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#ae42ee0d2d0ea58fac1ce8de6b5ea3b60">MBProgressHUD</a>
+</li>
+<li>initWithWindow:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a8f3c01167d59153c85ae7efdca7717fc">MBProgressHUD</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
+<li>label
+: <a class="el" href="interface_main_view_controller.html#a2f291676842fc98f04dfa26344a09593">MainViewController</a>
+, <a class="el" href="interface_message_view_controller.html#a4348e7ec097b29026137b244024655a2">MessageViewController</a>
+, <a class="el" href="interface_third_view_controller.html#accc75979633ac923b79bfd904970545e">ThirdViewController</a>
+</li>
+<li>labelFont
+: <a class="el" href="interface_m_b_progress_h_u_d.html#ae61e736a34f341f4190b065f19010af8">MBProgressHUD</a>
+</li>
+<li>labelText
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a531706887f08881c7f13b4309521b299">MBProgressHUD</a>
+</li>
+<li>location
+: <a class="el" href="interface_third_view_controller.html#a8d32e1defe1b863e1665cbdfc7cc183b">ThirdViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>mainDic
+: <a class="el" href="interface_main_view_controller.html#a39e05eee835ebf23c2375ff7565a2357">MainViewController</a>
+</li>
+<li>margin
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a4126e72234f8afcb87905a9ed65c022c">MBProgressHUD</a>
+</li>
+<li>messageArray
+: <a class="el" href="interface_second_view_controller.html#aaaeee06f2e27a9862fe8cd8b4baec9f3">SecondViewController</a>
+, <a class="el" href="interface_four_view_controller.html#a8b7e1f75b33531d876d8c02c407a3c19">FourViewController</a>
+</li>
+<li>messageController
+: <a class="el" href="interface_first_view_controller.html#a62b6bc49cb1220b3a9c7e2db4eb2e7f0">FirstViewController</a>
+</li>
+<li>messageString
+: <a class="el" href="interface_detail_view_controller.html#a3dc13cf075c44441185fc0f91e363607">DetailViewController</a>
+</li>
+<li>messageTextField
+: <a class="el" href="interface_m_scan_view_controller.html#a30eb0f7e359e9f0c6936c8594d9032f8">MScanViewController</a>
+</li>
+<li>minShowTime
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a9946e4b0b16d75f070ff0cbcc50226ef">MBProgressHUD</a>
+</li>
+<li>minSize
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a69c6b2cad533d6fe7d90df02bf7f8b0c">MBProgressHUD</a>
+</li>
+<li>mode
+: <a class="el" href="interface_m_b_progress_h_u_d.html#ace77eaaf507e86fe56436f7ee7b6fdc9">MBProgressHUD</a>
+</li>
+<li>myDateArray
+: <a class="el" href="interface_third_view_controller.html#a035cc582faa9fd494eb6685abc8253ac">ThirdViewController</a>
+</li>
+<li>myMapView
+: <a class="el" href="interface_third_view_controller.html#a47fc40aa5fe0c94a700df0c369d980cb">ThirdViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>name
+: <a class="el" href="interface_date_plan.html#a34b2cac092692065aa0800021e7bee47">DatePlan</a>
+</li>
+<li>navImage
+: <a class="el" href="interface_top_bar_view.html#ab3afddca39563afaa00478a3d8736b7c">TopBarView</a>
+</li>
+<li>navLabel
+: <a class="el" href="interface_top_bar_view.html#a97c5a62e2380ce2a44674149aeafc9e4">TopBarView</a>
+</li>
+<li>numberLabel
+: <a class="el" href="interface_opinions_view_controller.html#add082cf6b064ec7c0b26fb1c89a86af9">OpinionsViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>opacity
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a24ab5e37917e3489d6add081324a49ff">MBProgressHUD</a>
+</li>
+<li>openDB
+: <a class="el" href="interface_data_base.html#adbac330ad5b1337e6a040cdfc0f5712c">DataBase</a>
+</li>
+<li>opinionBackImage
+: <a class="el" href="interface_opinions_view_controller.html#a4bcebb6115f963c0e469fca9b438ee7b">OpinionsViewController</a>
+</li>
+<li>opinionTextView
+: <a class="el" href="interface_opinions_view_controller.html#a84c76f22c30a5776ac625ea7cd737aaf">OpinionsViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>passMessageToMessageViewController:andNavigationTitle:
+: <a class="el" href="protocol_message_view_controller_delegate-p.html#a28bc2194b6c71cf6aab0a7989a1a3c7f">&lt;MessageViewControllerDelegate&gt;</a>
+</li>
+<li>phoneTextField
+: <a class="el" href="interface_opinions_view_controller.html#a47800b4c0b7dd773c2866a369b2bf873">OpinionsViewController</a>
+</li>
+<li>place
+: <a class="el" href="interface_third_view_controller.html#a07b1ad7f982c6ff1fde210551a322e25">ThirdViewController</a>
+, <a class="el" href="interface_date_plan.html#a24821592b28f72a55f0d05ffcb627886">DatePlan</a>
+</li>
+<li>progress
+: <a class="el" href="interface_m_b_round_progress_view.html#af92eeb35944c81f406571bc353dc5d5a">MBRoundProgressView</a>
+, <a class="el" href="interface_m_b_progress_h_u_d.html#a4c8328617d11efd1f5452032246ca97f">MBProgressHUD</a>
+</li>
+<li>progressTintColor
+: <a class="el" href="interface_m_b_round_progress_view.html#ae5c8d76a85810a3f843f262bdfff1163">MBRoundProgressView</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
+<li>qrArray
+: <a class="el" href="interface_third_view_controller.html#aa0b92a67003d6d8d7e6760a79470d7ef">ThirdViewController</a>
+</li>
+<li>qrImage
+: <a class="el" href="interface_card_view_controller.html#aa0cad1539bfab47dc163b4b528437ae1">CardViewController</a>
+</li>
+<li>qrTableView
+: <a class="el" href="interface_third_view_controller.html#ad8291a0e3ff00b6e7a806086c4076030">ThirdViewController</a>
+</li>
+<li>qrView
+: <a class="el" href="interface_card_view_controller.html#a1984282f1134d68c03edfd889f41ee46">CardViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>readerView
+: <a class="el" href="interface_m_scan_view_controller.html#a594c0296e470ac8c970f15e65b6d0588">MScanViewController</a>
+</li>
+<li>removeFromSuperViewOnHide
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a36639aa18a70f2734942695c32ec5e91">MBProgressHUD</a>
+</li>
+<li>resultText
+: <a class="el" href="interface_m_scan_view_controller.html#a03e3b368cea92a3b44c1d2185b8bf588">MScanViewController</a>
+</li>
+<li>rightBtn
+: <a class="el" href="interface_opinions_view_controller.html#a1637be3d7112e3e645fdbc7a55ffe1d4">OpinionsViewController</a>
+, <a class="el" href="interface_third_view_controller.html#aebb42a65b7995a2ea03fbf8e3e948e2e">ThirdViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>saveBtn
+: <a class="el" href="interface_top_bar_view.html#a019b7bc20208794affcc681f89e63149">TopBarView</a>
+</li>
+<li>segmentActive:
+: <a class="el" href="interface_third_view_controller.html#a6a6f71aaa12135c0a17a257869782f7c">ThirdViewController</a>
+</li>
+<li>selectImageArray
+: <a class="el" href="interface_main_view_controller.html#aa257e69a571d17651210b424e312550c">MainViewController</a>
+</li>
+<li>show:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a3ef075a3be624c2f94629d63bfeae25b">MBProgressHUD</a>
+</li>
+<li>showHUDAddedTo:animated:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a5387f186ec82ed2877553b930071c377">MBProgressHUD</a>
+</li>
+<li>showWhileExecuting:onTarget:withObject:animated:
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a23cd23b9c46bd819f14314426ed9dcdb">MBProgressHUD</a>
+</li>
+<li>size
+: <a class="el" href="struct___q_rinput___struct.html#ae1b68ea889ffbcf415ed531f54bd189e">_QRinput_Struct</a>
+, <a class="el" href="struct___q_rinput___list.html#a0e95d1f205d72e7f8ed60d0f3c612b7d">_QRinput_List</a>
+</li>
+<li>square
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a4bf7271b213e304259aa7d97f7cb1849">MBProgressHUD</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
+<li>taskInProgress
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a6077ea42c37c18b3058ed63ac10ede8f">MBProgressHUD</a>
+</li>
+<li>topBar
+: <a class="el" href="interface_third_view_controller.html#a33f49c284d72176cdab3d655ad97b611">ThirdViewController</a>
+, <a class="el" href="interface_second_view_controller.html#a97d1a2f53dae600be38c7910811e72da">SecondViewController</a>
+, <a class="el" href="interface_opinions_view_controller.html#a16f05df059e1a23bd623fa19b8c66a7b">OpinionsViewController</a>
+, <a class="el" href="interface_main_view_controller.html#a7d6a8d4a24ac609e7545bf6c07d7786c">MainViewController</a>
+, <a class="el" href="interface_info_view_controller.html#a047156b12d76ef4fbf44a13eb499a887">InfoViewController</a>
+, <a class="el" href="interface_four_view_controller.html#ad6ef698b571fc0d7a3c8818439de75dc">FourViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>URLencode:stringEncoding:
+: <a class="el" href="interface_u_r_l_encode.html#a4e765190617a605922c590e13568db6a">URLEncode</a>
+</li>
+<li>urlString
+: <a class="el" href="interface_info_view_controller.html#affc65776e53e867683a286f3c86384e9">InfoViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>version
+: <a class="el" href="struct_q_rcode.html#aa84ee8368a0cb437726e4eb4497784c0">QRcode</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>width
+: <a class="el" href="struct_q_rcode.html#a70faea92be5450849d2252f286fc4cb2">QRcode</a>
+</li>
+<li>wrap
+: <a class="el" href="interface_main_view_controller.html#a0eb5f29f5e5e9c7228313d5fcbd606ab">MainViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_x"></a>- x -</h3><ul>
+<li>xOffset
+: <a class="el" href="interface_m_b_progress_h_u_d.html#a4e6ee114c04b90ced1a253a6d33ba785">MBProgressHUD</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_y"></a>- y -</h3><ul>
+<li>yOffset
+: <a class="el" href="interface_m_b_progress_h_u_d.html#ad526ffcabab5131697eb0850c50ab1f4">MBProgressHUD</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2013年 一月 26日 星期六 00:06:40 , 为 My Project使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

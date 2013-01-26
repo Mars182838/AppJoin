@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interfacei_carousel" kind="class" prot="public">
+    <compoundname>iCarousel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIView</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interfacei_carousel_1a01932ed8ad51ec7c851ec2c16d7dbf88" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>IBOutlet id&lt; <ref refid="protocoli_carousel_data_source-p" kindref="compound">iCarouselDataSource</ref> &gt;</type>
+        <definition>IBOutlet id&lt;iCarouselDataSource&gt; iCarousel::dataSource</definition>
+        <argsstring></argsstring>
+        <name>dataSource</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="82" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1ac92c2f2737dd0a4c113d198bb9e4120c" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>IBOutlet id&lt; <ref refid="protocoli_carousel_delegate-p" kindref="compound">iCarouselDelegate</ref> &gt;</type>
+        <definition>IBOutlet id&lt;iCarouselDelegate&gt; iCarousel::delegate</definition>
+        <argsstring></argsstring>
+        <name>delegate</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="83" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1ad0a1baa683ced94711f696e393ba8ff5" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>iCarouselType</type>
+        <definition>iCarouselType iCarousel::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="84" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1a8d8abcfd2ddafba0637ff5ca9531e92e" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>CGFloat</type>
+        <definition>CGFloat iCarousel::perspective</definition>
+        <argsstring></argsstring>
+        <name>perspective</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="85" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1ab00e8633c7b9b8bc69d36cbfaa67e590" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>CGFloat</type>
+        <definition>CGFloat iCarousel::decelerationRate</definition>
+        <argsstring></argsstring>
+        <name>decelerationRate</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="86" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1a990b3ebf8b1d389bd0ed42a7a9258e5f" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>CGFloat</type>
+        <definition>CGFloat iCarousel::scrollSpeed</definition>
+        <argsstring></argsstring>
+        <name>scrollSpeed</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="87" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1abd605dc751d9653c8f809d17cecc7b67" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>CGFloat</type>
+        <definition>CGFloat iCarousel::bounceDistance</definition>
+        <argsstring></argsstring>
+        <name>bounceDistance</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="88" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1a97df41172333d67ef60bf700503c6578" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>BOOL</type>
+        <definition>BOOL iCarousel::scrollEnabled</definition>
+        <argsstring></argsstring>
+        <name>scrollEnabled</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="89" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1a90a750b16e48dd04e1b5edf1fe8b6d79" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>BOOL</type>
+        <definition>BOOL iCarousel::bounces</definition>
+        <argsstring></argsstring>
+        <name>bounces</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="90" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1a918aae33af04ca1c98e7542e6ab0faa4" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>CGFloat</type>
+        <definition>CGFloat iCarousel::scrollOffset</definition>
+        <argsstring></argsstring>
+        <name>scrollOffset</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="91" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1aaf6980aea3c75edde39b58c60328ba18" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>CGFloat</type>
+        <definition>CGFloat iCarousel::offsetMultiplier</definition>
+        <argsstring></argsstring>
+        <name>offsetMultiplier</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="92" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1aed10d4318ae4aa99437d608ff96e00f1" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>CGSize</type>
+        <definition>CGSize iCarousel::contentOffset</definition>
+        <argsstring></argsstring>
+        <name>contentOffset</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="93" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1ad9baef9d291ca37b0cdaad7c3fd17f2a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>CGSize</type>
+        <definition>CGSize iCarousel::viewpointOffset</definition>
+        <argsstring></argsstring>
+        <name>viewpointOffset</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="94" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1aa8c944ddd47066517f4141d7e17dd05a" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>NSInteger</type>
+        <definition>NSInteger iCarousel::numberOfItems</definition>
+        <argsstring></argsstring>
+        <name>numberOfItems</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="95" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1a4c3e9ccf410bf5c6f5ce207eef0dea8b" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>NSInteger</type>
+        <definition>NSInteger iCarousel::numberOfPlaceholders</definition>
+        <argsstring></argsstring>
+        <name>numberOfPlaceholders</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="96" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1a5d02fffedc7d4c7feaf3f1c563eb59ee" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>NSInteger</type>
+        <definition>NSInteger iCarousel::currentItemIndex</definition>
+        <argsstring></argsstring>
+        <name>currentItemIndex</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="97" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1ab76146200a524b70c049cca4f064bebe" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="retain">
+        <type>UIView *</type>
+        <definition>UIView * iCarousel::currentItemView</definition>
+        <argsstring></argsstring>
+        <name>currentItemView</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="98" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1a6df2060533a766470385dd68bb1866cd" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="retain">
+        <type>NSArray *</type>
+        <definition>NSArray * iCarousel::indexesForVisibleItems</definition>
+        <argsstring></argsstring>
+        <name>indexesForVisibleItems</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="99" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1ae37c7c8ac4f466a968482d37fc26be78" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>NSInteger</type>
+        <definition>NSInteger iCarousel::numberOfVisibleItems</definition>
+        <argsstring></argsstring>
+        <name>numberOfVisibleItems</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="100" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1abc23e4479a36a9a4f44855add9a7bb98" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="retain">
+        <type>NSSet *visibleViews</type>
+        <definition>NSSet* visibleViews iCarousel::__deprecated</definition>
+        <argsstring></argsstring>
+        <name>__deprecated</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="101" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1a3ee29168fea90f140bf9e42e8f19116a" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="retain">
+        <type>NSArray *</type>
+        <definition>NSArray * iCarousel::visibleItemViews</definition>
+        <argsstring></argsstring>
+        <name>visibleItemViews</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="102" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1ae50617941b46e4151a634d7096f0e6e9" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>CGFloat</type>
+        <definition>CGFloat iCarousel::itemWidth</definition>
+        <argsstring></argsstring>
+        <name>itemWidth</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="103" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1ad71bdf138b9ee8fad0fa44ac1f0470d8" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="retain">
+        <type>UIView *</type>
+        <definition>UIView* iCarousel::contentView</definition>
+        <argsstring></argsstring>
+        <name>contentView</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="104" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1a7ddbb5c814af239e1e93e1a9636593f5" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>CGFloat</type>
+        <definition>CGFloat iCarousel::toggle</definition>
+        <argsstring></argsstring>
+        <name>toggle</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="105" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1ac73948a13f3fdf9f4412cec8460b8a33" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>BOOL</type>
+        <definition>BOOL iCarousel::stopAtItemBoundary</definition>
+        <argsstring></argsstring>
+        <name>stopAtItemBoundary</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="106" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interfacei_carousel_1afc597b9e6b4bbfdca43c5febd82836fb" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>BOOL</type>
+        <definition>BOOL iCarousel::scrollToItemBoundary</definition>
+        <argsstring></argsstring>
+        <name>scrollToItemBoundary</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="107" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacei_carousel_1a70d756ca9733de264576ad1609b0670c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void iCarousel::scrollByNumberOfItems:duration:</definition>
+        <argsstring>(NSInteger itemCount,[duration] NSTimeInterval duration)</argsstring>
+        <name>scrollByNumberOfItems:duration:</name>
+        <param>
+          <type>NSInteger</type>
+          <declname>itemCount</declname>
+        </param>
+        <param>
+          <attributes>[duration]</attributes>
+          <type>NSTimeInterval</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="109" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.m" bodystart="873" bodyend="912"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacei_carousel_1a317c3bf4ceb4d0621ee6727dfdd611a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void iCarousel::scrollToItemAtIndex:duration:</definition>
+        <argsstring>(NSInteger index,[duration] NSTimeInterval duration)</argsstring>
+        <name>scrollToItemAtIndex:duration:</name>
+        <param>
+          <type>NSInteger</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <attributes>[duration]</attributes>
+          <type>NSTimeInterval</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="110" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.m" bodystart="914" bodyend="917"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacei_carousel_1abae537074eab49ea3ec5c4cc33b49c12" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void iCarousel::scrollToItemAtIndex:animated:</definition>
+        <argsstring>(NSInteger index,[animated] BOOL animated)</argsstring>
+        <name>scrollToItemAtIndex:animated:</name>
+        <param>
+          <type>NSInteger</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <attributes>[animated]</attributes>
+          <type>BOOL</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="111" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.m" bodystart="919" bodyend="922"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacei_carousel_1a7a5514e7ef0d9eb5ebb453a0a61b44de" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void iCarousel::removeItemAtIndex:animated:</definition>
+        <argsstring>(NSInteger index,[animated] BOOL animated)</argsstring>
+        <name>removeItemAtIndex:animated:</name>
+        <param>
+          <type>NSInteger</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <attributes>[animated]</attributes>
+          <type>BOOL</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="112" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.m" bodystart="924" bodyend="990"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacei_carousel_1a46a2e5d4ed6e043855252f2621c9d89b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void iCarousel::insertItemAtIndex:animated:</definition>
+        <argsstring>(NSInteger index,[animated] BOOL animated)</argsstring>
+        <name>insertItemAtIndex:animated:</name>
+        <param>
+          <type>NSInteger</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <attributes>[animated]</attributes>
+          <type>BOOL</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="113" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.m" bodystart="1013" bodyend="1059"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacei_carousel_1a0677279abc3188c434f825970eea06eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void iCarousel::reloadItemAtIndex:animated:</definition>
+        <argsstring>(NSInteger index,[animated] BOOL animated)</argsstring>
+        <name>reloadItemAtIndex:animated:</name>
+        <param>
+          <type>NSInteger</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <attributes>[animated]</attributes>
+          <type>BOOL</type>
+          <declname>animated</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="114" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.m" bodystart="1061" bodyend="1078"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacei_carousel_1a90df60ca7e6ff4ad1c654d54d7ef4f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>UIView *</type>
+        <definition>UIView * iCarousel::itemViewAtIndex:</definition>
+        <argsstring>(NSInteger index)</argsstring>
+        <name>itemViewAtIndex:</name>
+        <param>
+          <type>NSInteger</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="115" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.m" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacei_carousel_1aa2017ad3deb8cd0c5ad89b8f97a29bbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSInteger</type>
+        <definition>NSInteger iCarousel::indexOfItemView:</definition>
+        <argsstring>(UIView *view)</argsstring>
+        <name>indexOfItemView:</name>
+        <param>
+          <type>UIView *</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="116" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.m" bodystart="257" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacei_carousel_1a876975b04d95417e794eda30876185ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void iCarousel::reloadData</definition>
+        <argsstring>()</argsstring>
+        <name>reloadData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="117" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.m" bodystart="761" bodyend="799"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="166">
+        <label>UIView</label>
+      </node>
+      <node id="165">
+        <label>iCarousel</label>
+        <link refid="interfacei_carousel"/>
+        <childnode refid="166" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="168">
+        <label>UIView</label>
+      </node>
+      <node id="167">
+        <label>iCarousel</label>
+        <link refid="interfacei_carousel"/>
+        <childnode refid="168" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" line="39" bodyfile="/Users/dengkawakou/Desktop/AppJoin/iCarousel.h" bodystart="38" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interfacei_carousel_1abc23e4479a36a9a4f44855add9a7bb98" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>__deprecated</name></member>
+      <member refid="interfacei_carousel_1abd605dc751d9653c8f809d17cecc7b67" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>bounceDistance</name></member>
+      <member refid="interfacei_carousel_1a90a750b16e48dd04e1b5edf1fe8b6d79" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>bounces</name></member>
+      <member refid="interfacei_carousel_1aed10d4318ae4aa99437d608ff96e00f1" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>contentOffset</name></member>
+      <member refid="interfacei_carousel_1ad71bdf138b9ee8fad0fa44ac1f0470d8" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>contentView</name></member>
+      <member refid="interfacei_carousel_1a5d02fffedc7d4c7feaf3f1c563eb59ee" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>currentItemIndex</name></member>
+      <member refid="interfacei_carousel_1ab76146200a524b70c049cca4f064bebe" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>currentItemView</name></member>
+      <member refid="interfacei_carousel_1a01932ed8ad51ec7c851ec2c16d7dbf88" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>dataSource</name></member>
+      <member refid="interfacei_carousel_1ab00e8633c7b9b8bc69d36cbfaa67e590" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>decelerationRate</name></member>
+      <member refid="interfacei_carousel_1ac92c2f2737dd0a4c113d198bb9e4120c" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>delegate</name></member>
+      <member refid="interfacei_carousel_1a6df2060533a766470385dd68bb1866cd" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>indexesForVisibleItems</name></member>
+      <member refid="interfacei_carousel_1aa2017ad3deb8cd0c5ad89b8f97a29bbb" prot="public" virt="virtual"><scope>iCarousel</scope><name>indexOfItemView:</name></member>
+      <member refid="interfacei_carousel_1a46a2e5d4ed6e043855252f2621c9d89b" prot="public" virt="virtual"><scope>iCarousel</scope><name>insertItemAtIndex:animated:</name></member>
+      <member refid="interfacei_carousel_1a90df60ca7e6ff4ad1c654d54d7ef4f49" prot="public" virt="virtual"><scope>iCarousel</scope><name>itemViewAtIndex:</name></member>
+      <member refid="interfacei_carousel_1ae50617941b46e4151a634d7096f0e6e9" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>itemWidth</name></member>
+      <member refid="interfacei_carousel_1aa8c944ddd47066517f4141d7e17dd05a" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>numberOfItems</name></member>
+      <member refid="interfacei_carousel_1a4c3e9ccf410bf5c6f5ce207eef0dea8b" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>numberOfPlaceholders</name></member>
+      <member refid="interfacei_carousel_1ae37c7c8ac4f466a968482d37fc26be78" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>numberOfVisibleItems</name></member>
+      <member refid="interfacei_carousel_1aaf6980aea3c75edde39b58c60328ba18" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>offsetMultiplier</name></member>
+      <member refid="interfacei_carousel_1a8d8abcfd2ddafba0637ff5ca9531e92e" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>perspective</name></member>
+      <member refid="interfacei_carousel_1a876975b04d95417e794eda30876185ce" prot="public" virt="virtual"><scope>iCarousel</scope><name>reloadData</name></member>
+      <member refid="interfacei_carousel_1a0677279abc3188c434f825970eea06eb" prot="public" virt="virtual"><scope>iCarousel</scope><name>reloadItemAtIndex:animated:</name></member>
+      <member refid="interfacei_carousel_1a7a5514e7ef0d9eb5ebb453a0a61b44de" prot="public" virt="virtual"><scope>iCarousel</scope><name>removeItemAtIndex:animated:</name></member>
+      <member refid="interfacei_carousel_1a70d756ca9733de264576ad1609b0670c" prot="public" virt="virtual"><scope>iCarousel</scope><name>scrollByNumberOfItems:duration:</name></member>
+      <member refid="interfacei_carousel_1a97df41172333d67ef60bf700503c6578" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>scrollEnabled</name></member>
+      <member refid="interfacei_carousel_1a918aae33af04ca1c98e7542e6ab0faa4" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>scrollOffset</name></member>
+      <member refid="interfacei_carousel_1a990b3ebf8b1d389bd0ed42a7a9258e5f" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>scrollSpeed</name></member>
+      <member refid="interfacei_carousel_1abae537074eab49ea3ec5c4cc33b49c12" prot="public" virt="virtual"><scope>iCarousel</scope><name>scrollToItemAtIndex:animated:</name></member>
+      <member refid="interfacei_carousel_1a317c3bf4ceb4d0621ee6727dfdd611a1" prot="public" virt="virtual"><scope>iCarousel</scope><name>scrollToItemAtIndex:duration:</name></member>
+      <member refid="interfacei_carousel_1afc597b9e6b4bbfdca43c5febd82836fb" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>scrollToItemBoundary</name></member>
+      <member refid="interfacei_carousel_1ac73948a13f3fdf9f4412cec8460b8a33" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>stopAtItemBoundary</name></member>
+      <member refid="interfacei_carousel_1a7ddbb5c814af239e1e93e1a9636593f5" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>toggle</name></member>
+      <member refid="interfacei_carousel_1ad0a1baa683ced94711f696e393ba8ff5" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>type</name></member>
+      <member refid="interfacei_carousel_1ad9baef9d291ca37b0cdaad7c3fd17f2a" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>viewpointOffset</name></member>
+      <member refid="interfacei_carousel_1a3ee29168fea90f140bf9e42e8f19116a" prot="public" virt="non-virtual"><scope>iCarousel</scope><name>visibleItemViews</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

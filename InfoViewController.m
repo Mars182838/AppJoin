@@ -30,7 +30,7 @@
     
     _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     
-    _topBar.navLabel.text = _navTitle;
+    _topBar.navLabel.text = self.title;
     
     [_topBar.backBtn addTarget:self action:@selector(backPress:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_topBar];
@@ -38,6 +38,7 @@
     NSURL *url = [NSURL URLWithString:_urlString];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
+    
     _infoWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 44, WIDTH, HEIGHT - 49 - 44)];
     _infoWebView.scalesPageToFit = YES;
     _infoWebView.delegate = self;
@@ -76,10 +77,33 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+-(void)dealloc
+{
+    [_infoWebView release];
+    [_urlString   release];
+    [super dealloc];
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

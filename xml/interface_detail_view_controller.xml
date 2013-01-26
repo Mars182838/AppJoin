@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_detail_view_controller" kind="class" prot="public">
+    <compoundname>DetailViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_detail_view_controller_1abbfe3bd7006a8d1bc65ab912baba010c" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIImageView *</type>
+        <definition>UIImageView* DetailViewController::imageView</definition>
+        <argsstring></argsstring>
+        <name>imageView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>imageView 显示图片 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DetailViewController.h" line="16" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DetailViewController.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_detail_view_controller_1a3dc13cf075c44441185fc0f91e363607" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITextView *</type>
+        <definition>UITextView* DetailViewController::messageString</definition>
+        <argsstring></argsstring>
+        <name>messageString</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>messageString 用于显示图片下面文字介绍 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DetailViewController.h" line="19" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DetailViewController.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_detail_view_controller_1afb801097cbef8f865adaffba99e24fc3" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* DetailViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DetailViewController.h" line="21" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DetailViewController.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="93">
+        <label>DetailViewController</label>
+        <link refid="interface_detail_view_controller"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>UIViewController</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="97">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>DetailViewController</label>
+        <link refid="interface_detail_view_controller"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+        <childnode refid="97" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+      </node>
+      <node id="96">
+        <label>UIViewController</label>
+      </node>
+      <node id="98">
+        <label>UIView</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/DetailViewController.h" line="14" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DetailViewController.h" bodystart="13" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_detail_view_controller_1abbfe3bd7006a8d1bc65ab912baba010c" prot="public" virt="non-virtual"><scope>DetailViewController</scope><name>imageView</name></member>
+      <member refid="interface_detail_view_controller_1a3dc13cf075c44441185fc0f91e363607" prot="public" virt="non-virtual"><scope>DetailViewController</scope><name>messageString</name></member>
+      <member refid="interface_detail_view_controller_1afb801097cbef8f865adaffba99e24fc3" prot="public" virt="non-virtual"><scope>DetailViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

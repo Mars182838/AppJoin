@@ -1,0 +1,1317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="qrencode_8h" kind="file">
+    <compoundname>qrencode.h</compoundname>
+    <includedby refid="mask_8c" local="yes">mask.c</includedby>
+    <includedby refid="qrspec_8h" local="yes">qrspec.h</includedby>
+    <includedby refid="qrinput_8h" local="yes">qrinput.h</includedby>
+    <includedby refid="_q_r_code_generator_8m" local="yes">QRCodeGenerator.m</includedby>
+    <includedby refid="qrencode_8c" local="yes">qrencode.c</includedby>
+    <includedby refid="split_8h" local="yes">split.h</includedby>
+    <includedby refid="qrinput_8c" local="yes">qrinput.c</includedby>
+    <includedby refid="split_8c" local="yes">split.c</includedby>
+    <invincdepgraph>
+      <node id="360">
+        <label>split.h</label>
+        <link refid="split_8h_source"/>
+      </node>
+      <node id="359">
+        <label>mask.h</label>
+        <link refid="mask_8h_source"/>
+      </node>
+      <node id="357">
+        <label>qrspec.h</label>
+        <link refid="qrspec_8h_source"/>
+      </node>
+      <node id="358">
+        <label>qrinput.h</label>
+        <link refid="qrinput_8h_source"/>
+        <childnode refid="359" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>qrencode.h</label>
+        <link refid="qrencode.h"/>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_q_rcode" prot="public">QRcode</innerclass>
+    <innerclass refid="struct___q_rcode___list" prot="public">_QRcode_List</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55db" prot="public" static="no">
+        <name>QRencodeMode</name>
+        <enumvalue id="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dbad442f5c4a903268048cc1db855c8b172" prot="public">
+          <name>QR_MODE_NUL</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+<para>Terminator (NUL character). Internal use only. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dbafddb4ee544b4f25b48a057644aa8ab33" prot="public">
+          <name>QR_MODE_NUM</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Numeric mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dbab3edce4288e06c11609faa541e98031a" prot="public">
+          <name>QR_MODE_AN</name>
+          <briefdescription>
+<para>Alphabet-numeric mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dbaba5e662298585e60c652ca66148544ee" prot="public">
+          <name>QR_MODE_8</name>
+          <briefdescription>
+<para>8-bit data mode </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dba3f9798e93fa2f727b5296120ad9dda0f" prot="public">
+          <name>QR_MODE_KANJI</name>
+          <briefdescription>
+<para>Kanji (shift-jis) mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrencode_8h_1ab7ec78b96e63c8f019bb328a8d4f55dba43d08a5e6ca772cf62b325b2f9014d84" prot="public">
+          <name>QR_MODE_STRUCTURE</name>
+          <briefdescription>
+<para>Internal use only. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Encoding mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="109" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="109" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="enum" id="qrencode_8h_1a35d70229ba985c61bbdab27b0f65740e" prot="public" static="no">
+        <name>QRecLevel</name>
+        <enumvalue id="qrencode_8h_1a35d70229ba985c61bbdab27b0f65740eab121be4d707624ee65e83b716a36e874" prot="public">
+          <name>QR_ECLEVEL_L</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>lowest </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrencode_8h_1a35d70229ba985c61bbdab27b0f65740ea532918e050ecd31af29ea4b28c8da0cf" prot="public">
+          <name>QR_ECLEVEL_M</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrencode_8h_1a35d70229ba985c61bbdab27b0f65740ea15eb4ec163410ed3cb043a3a45b7280d" prot="public">
+          <name>QR_ECLEVEL_Q</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="qrencode_8h_1a35d70229ba985c61bbdab27b0f65740eaa1de39c2d4d36f713710b23c21990b0f" prot="public">
+          <name>QR_ECLEVEL_H</name>
+          <briefdescription>
+<para>highest </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Level of error correction. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="121" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="121" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="qrencode_8h_1aa38b3b77c71bad313e427df5b53536fb" prot="public" static="no">
+        <type>struct <ref refid="struct___q_rinput" kindref="compound">_QRinput</ref></type>
+        <definition>typedef struct _QRinput QRinput</definition>
+        <argsstring></argsstring>
+        <name>QRinput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Singly linked list to contain input strings. An instance of this class contains its version and error correction level too. It is required to set them by QRinput_setVersion() and QRinput_setErrorCorrectionLevel(), or use QRinput_new2() to instantiate an object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="138" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="qrencode_8h_1af6d15281e7867626cabd67dc6b89411c" prot="public" static="no">
+        <type>struct <ref refid="struct___q_rinput___struct" kindref="compound">_QRinput_Struct</ref></type>
+        <definition>typedef struct _QRinput_Struct QRinput_Struct</definition>
+        <argsstring></argsstring>
+        <name>QRinput_Struct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set of QRinput for structured symbols. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="228" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="qrencode_8h_1a292119ec03496da65463d3e3a1d672f8" prot="public" static="no">
+        <type>struct <ref refid="struct___q_rcode___list" kindref="compound">_QRcode_List</ref></type>
+        <definition>typedef struct _QRcode_List QRcode_List</definition>
+        <argsstring></argsstring>
+        <name>QRcode_List</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Singly-linked list of <ref refid="struct_q_rcode" kindref="compound">QRcode</ref>. Used to represent a structured symbols. A list is terminated with NULL. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="320" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="qrencode_8h_1ab774facc2deb2ae0746d6da45577682c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+        <definition>QRinput* QRinput_new</definition>
+        <argsstring>(void)</argsstring>
+        <name>QRinput_new</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate an input data object. The version is set to 0 (auto-select) and the error correction level is set to QR_ECLEVEL_L. <simplesect kind="return"><para>an input object (initialized). On error, NULL is returned and errno is set to indicate the error. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unable to allocate memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="147" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1afa4345b633ec19c2fbf8ec6a4358682b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+        <definition>QRinput* QRinput_new2</definition>
+        <argsstring>(int version, QRecLevel level)</argsstring>
+        <name>QRinput_new2</name>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate an input data object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version number. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error correction level. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an input object (initialized). On error, NULL is returned and errno is set to indicate the error. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unable to allocate memory for input objects. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid arguments. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="158" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="102" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a62f745c8ad2d489ca9d17f12b0c28663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_append</definition>
+        <argsstring>(QRinput *input, QRencodeMode mode, int size, const unsigned char *data)</argsstring>
+        <name>QRinput_append</name>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>QRencodeMode</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append data to an input object. The data is copied and appended to the input object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>encoding mode. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of data (byte). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the memory area of the input data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an error occurred and errno is set to indeicate the error. See Execptions for the details. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unable to allocate memory. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input data is invalid. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="174" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="168" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a35050445687bd7e9c74dd2bb18146e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_getVersion</definition>
+        <argsstring>(QRinput *input)</argsstring>
+        <name>QRinput_getVersion</name>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current version. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>current version. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="181" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a477e6a738c27d5610b6a44368efd2a7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_setVersion</definition>
+        <argsstring>(QRinput *input, int version)</argsstring>
+        <name>QRinput_setVersion</name>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set version of the QR-code that is to be encoded. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version number (0 = auto) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid argument. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="190" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="127" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a237c5e057be55fa3eb7ab605760131c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QRecLevel</type>
+        <definition>QRecLevel QRinput_getErrorCorrectionLevel</definition>
+        <argsstring>(QRinput *input)</argsstring>
+        <name>QRinput_getErrorCorrectionLevel</name>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get current error correction level. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Current error correcntion level. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="197" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1af7dc14905a33c5bc41af445d05b4d7ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_setErrorCorrectionLevel</definition>
+        <argsstring>(QRinput *input, QRecLevel level)</argsstring>
+        <name>QRinput_setErrorCorrectionLevel</name>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set error correction level of the QR-code that is to be encoded. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Error correction level. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid argument. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="206" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="144" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a49404b1ca0e1d58a2d8ae18544606252" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QRinput_free</definition>
+        <argsstring>(QRinput *input)</argsstring>
+        <name>QRinput_free</name>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the input object. All of data chunks in the input object are freed too. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="213" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="222" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a5b852c04d7473def993cfa2a85dc9155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_check</definition>
+        <argsstring>(QRencodeMode mode, int size, const unsigned char *data)</argsstring>
+        <name>QRinput_check</name>
+        <param>
+          <type>QRencodeMode</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Validate the input data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>encoding mode. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of data (byte). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to the memory area of the input data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid arguments. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="223" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="650" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a80d3a56ef46e66b580ef67d77cefa85c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref> *</type>
+        <definition>QRinput_Struct* QRinput_Struct_new</definition>
+        <argsstring>(void)</argsstring>
+        <name>QRinput_Struct_new</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate a set of input data object. <simplesect kind="return"><para>an instance of QRinput_Struct. On error, NULL is returned and errno is set to indicate the error. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unable to allocate memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="236" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="1113" bodyend="1126"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a4dc1398316f9a790ab7b556b06f8c1f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QRinput_Struct_setParity</definition>
+        <argsstring>(QRinput_Struct *s, unsigned char parity)</argsstring>
+        <name>QRinput_Struct_setParity</name>
+        <param>
+          <type><ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>parity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set parity of structured symbols. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>structured input object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parity of s. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="243" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="1128" bodyend="1131"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a482cfafbe7fb23618af525c7ab80deed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_Struct_appendInput</definition>
+        <argsstring>(QRinput_Struct *s, QRinput *input)</argsstring>
+        <name>QRinput_Struct_appendInput</name>
+        <param>
+          <type><ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Append a QRinput object to the set. <simplesect kind="warning"><para>never append the same QRinput object twice or more. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>structured input object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an input object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>&gt;0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of input objects in the structure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an error occurred. See Exceptions for the details. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unable to allocate memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="254" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="1133" bodyend="1150"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1ae0b2b92a9987bec0e3f6204684857bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QRinput_Struct_free</definition>
+        <argsstring>(QRinput_Struct *s)</argsstring>
+        <name>QRinput_Struct_free</name>
+        <param>
+          <type><ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free all of QRinput in the set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a structured input object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="260" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="1152" bodyend="1165"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1af086adb0e9cbb76a61eba71572288c3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref> *</type>
+        <definition>QRinput_Struct* QRinput_splitQRinputToStruct</definition>
+        <argsstring>(QRinput *input)</argsstring>
+        <name>QRinput_splitQRinputToStruct</name>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Split a QRinput to QRinput_Struct. It calculates a parity, set it, then insert structured-append headers. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input object. Version number and error correction level must be set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a set of input data. On error, NULL is returned, and errno is set to indicate the error. See Exceptions for the details. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ERANGE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input data is too large. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid input data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unable to allocate memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="273" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="1221" bodyend="1309"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a9912785be23a4cf3503707e87e909e8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_Struct_insertStructuredAppendHeaders</definition>
+        <argsstring>(QRinput_Struct *s)</argsstring>
+        <name>QRinput_Struct_insertStructuredAppendHeaders</name>
+        <param>
+          <type><ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Insert structured-append headers to the input structure. It calculates a parity and set it if the parity is not set yet. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input structure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>success. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an error occurred and errno is set to indeicate the error. See Execptions for the details. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid input object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unable to allocate memory. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="285" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="1311" bodyend="1335"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a7e3d85c72fed82f0fc08aff3bcda9053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_q_rcode" kindref="compound">QRcode</ref> *</type>
+        <definition>QRcode* QRcode_encodeInput</definition>
+        <argsstring>(QRinput *input)</argsstring>
+        <name>QRcode_encodeInput</name>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a symbol from the input data. <simplesect kind="warning"><para>This function is THREAD UNSAFE. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an instance of <ref refid="struct_q_rcode" kindref="compound">QRcode</ref> class. The version of the result <ref refid="struct_q_rcode" kindref="compound">QRcode</ref> may be larger than the designated version. On error, NULL is returned, and errno is set to indicate the error. See Exceptions for the details. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid input object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unable to allocate memory for input objects. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="338" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="422" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a4cebc3c670efe1b8866b14c42737fc8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_q_rcode" kindref="compound">QRcode</ref> *</type>
+        <definition>QRcode* QRcode_encodeString</definition>
+        <argsstring>(const char *string, int version, QRecLevel level, QRencodeMode hint, int casesensitive)</argsstring>
+        <name>QRcode_encodeString</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>QRencodeMode</type>
+          <declname>hint</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>casesensitive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a symbol from the string. The library automatically parses the input string and encodes in a QR Code symbol. <simplesect kind="warning"><para>This function is THREAD UNSAFE. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input string. It must be NULL terminated. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version of the symbol. If 0, the library chooses the minimum version for the given input data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error correction level. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tell the library how non-alphanumerical characters should be encoded. If QR_MODE_KANJI is given, kanji characters will be encoded as Shif-JIS characters. If QR_MODE_8 is given, all of non-alphanumerical characters will be encoded as is. If you want to embed UTF-8 string, choose this. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>casesensitive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>case-sensitive(1) or not(0). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an instance of <ref refid="struct_q_rcode" kindref="compound">QRcode</ref> class. The version of the result <ref refid="struct_q_rcode" kindref="compound">QRcode</ref> may be larger than the designated version. On error, NULL is returned, and errno is set to indicate the error. See Exceptions for the details. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid input object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unable to allocate memory for input objects. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="361" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="452" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a85dc467ee77d8524b508aea064699a82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_q_rcode" kindref="compound">QRcode</ref> *</type>
+        <definition>QRcode* QRcode_encodeString8bit</definition>
+        <argsstring>(const char *string, int version, QRecLevel level)</argsstring>
+        <name>QRcode_encodeString8bit</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same to QRcode_encodeString(), but encode whole data in 8-bit mode. <simplesect kind="warning"><para>This function is THREAD UNSAFE. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="367" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="427" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1af724395da2e575b3d9c1f616df534d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QRcode_free</definition>
+        <argsstring>(QRcode *qrcode)</argsstring>
+        <name>QRcode_free</name>
+        <param>
+          <type><ref refid="struct_q_rcode" kindref="compound">QRcode</ref> *</type>
+          <declname>qrcode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the instance of <ref refid="struct_q_rcode" kindref="compound">QRcode</ref> class. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>qrcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an instance of <ref refid="struct_q_rcode" kindref="compound">QRcode</ref> class. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="373" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="343" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a2f8a7dac1451170721a14e00952d3fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref> *</type>
+        <definition>QRcode_List* QRcode_encodeInputStructured</definition>
+        <argsstring>(QRinput_Struct *s)</argsstring>
+        <name>QRcode_encodeInputStructured</name>
+        <param>
+          <type><ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create structured symbols from the input data. <simplesect kind="warning"><para>This function is THREAD UNSAFE. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a singly-linked list of <ref refid="struct_q_rcode" kindref="compound">QRcode</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="381" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="541" bodyend="571"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a61b52b2057480cd1f0a58e8d294c68a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref> *</type>
+        <definition>QRcode_List* QRcode_encodeStringStructured</definition>
+        <argsstring>(const char *string, int version, QRecLevel level, QRencodeMode hint, int casesensitive)</argsstring>
+        <name>QRcode_encodeStringStructured</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>QRencodeMode</type>
+          <declname>hint</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>casesensitive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create structured symbols from the string. The library automatically parses the input string and encodes in a QR Code symbol. <simplesect kind="warning"><para>This function is THREAD UNSAFE. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input string. It should be NULL terminated. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version of the symbol. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>error correction level. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tell the library how non-alphanumerical characters should be encoded. If QR_MODE_KANJI is given, kanji characters will be encoded as Shif-JIS characters. If QR_MODE_8 is given, all of non-alphanumerical characters will be encoded as is. If you want to embed UTF-8 string, choose this. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>casesensitive</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>case-sensitive(1) or not(0). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a singly-linked list of <ref refid="struct_q_rcode" kindref="compound">QRcode</ref>. On error, NULL is returned, and errno is set to indicate the error. See Exceptions for the details. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>invalid input object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ENOMEM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unable to allocate memory for input objects. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="401" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="612" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a62438c11e91a3e43928d4ceaf5803f33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref> *</type>
+        <definition>QRcode_List* QRcode_encodeString8bitStructured</definition>
+        <argsstring>(const char *string, int version, QRecLevel level)</argsstring>
+        <name>QRcode_encodeString8bitStructured</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <param>
+          <type>QRecLevel</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Same to QRcode_encodeStringStructured(), but encode whole data in 8-bit mode. <simplesect kind="warning"><para>This function is THREAD UNSAFE. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="407" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="587" bodyend="610"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1afc435991bbd7392c390624b084af514e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRcode_List_size</definition>
+        <argsstring>(QRcode_List *qrlist)</argsstring>
+        <name>QRcode_List_size</name>
+        <param>
+          <type><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref> *</type>
+          <declname>qrlist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the number of symbols included in a QRcode_List. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>qrlist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a head entry of a QRcode_List. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of symbols in the list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="414" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="514" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="qrencode_8h_1a14d58ac55f4d8c9e63667c6ef3a27af2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QRcode_List_free</definition>
+        <argsstring>(QRcode_List *qrlist)</argsstring>
+        <name>QRcode_List_free</name>
+        <param>
+          <type><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref> *</type>
+          <declname>qrlist</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Free the QRcode_List. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>qrlist</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a head entry of a QRcode_List. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h" line="420" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrencode.c" bodystart="503" bodyend="512"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="99"><highlight class="preprocessor">#ifndef<sp/>__QRENCODE_H__</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__QRENCODE_H__</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="109"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>QR_MODE_NUL<sp/>=<sp/>-1,<sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>QR_MODE_NUM<sp/>=<sp/>0,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>QR_MODE_AN,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>QR_MODE_8,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>QR_MODE_KANJI,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>QR_MODE_STRUCTURE,<sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}<sp/>QRencodeMode;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>QR_ECLEVEL_L<sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>QR_ECLEVEL_M,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>QR_ECLEVEL_Q,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>QR_ECLEVEL_H<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}<sp/>QRecLevel;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*<sp/>Input<sp/>data<sp/>(qrinput.c)</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___q_rinput" kindref="compound">_QRinput</ref><sp/><ref refid="struct___q_rinput" kindref="compound">QRinput</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*QRinput_new(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*QRinput_new2(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version,<sp/>QRecLevel<sp/>level);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_append(<ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input,<sp/>QRencodeMode<sp/>mode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_getVersion(<ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_setVersion(<ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>QRecLevel<sp/>QRinput_getErrorCorrectionLevel(<ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_setErrorCorrectionLevel(<ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input,<sp/>QRecLevel<sp/>level);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QRinput_free(<ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_check(QRencodeMode<sp/>mode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___q_rinput___struct" kindref="compound">_QRinput_Struct</ref><sp/><ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref><sp/>*QRinput_Struct_new(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QRinput_Struct_setParity(<ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>parity);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_Struct_appendInput(<ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref><sp/>*s,<sp/><ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QRinput_Struct_free(<ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref><sp/>*QRinput_splitQRinputToStruct(<ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_Struct_insertStructuredAppendHeaders(<ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="288"><highlight class="comment"><sp/>*<sp/>QRcode<sp/>output<sp/>(qrencode.c)</highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="struct_q_rcode" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="311" refid="struct_q_rcode_1aa84ee8368a0cb437726e4eb4497784c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_q_rcode_1aa84ee8368a0cb437726e4eb4497784c0" kindref="member" tooltip="version of the symbol">version</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="312" refid="struct_q_rcode_1a70faea92be5450849d2252f286fc4cb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_q_rcode_1a70faea92be5450849d2252f286fc4cb2" kindref="member" tooltip="width of the symbol">width</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="313" refid="struct_q_rcode_1ae6f826314cfb99f4926c4c5734997c35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="struct_q_rcode_1ae6f826314cfb99f4926c4c5734997c35" kindref="member" tooltip="symbol data">data</ref>;<sp/></highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}<sp/><ref refid="struct_q_rcode" kindref="compound">QRcode</ref>;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___q_rcode___list" kindref="compound">_QRcode_List</ref><sp/><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref>;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="struct___q_rcode___list" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___q_rcode___list" kindref="compound">_QRcode_List</ref><sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_q_rcode" kindref="compound">QRcode</ref><sp/>*code;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref><sp/>*next;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_q_rcode" kindref="compound">QRcode</ref><sp/>*QRcode_encodeInput(<ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_q_rcode" kindref="compound">QRcode</ref><sp/>*QRcode_encodeString(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version,<sp/>QRecLevel<sp/>level,<sp/>QRencodeMode<sp/>hint,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>casesensitive);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct_q_rcode" kindref="compound">QRcode</ref><sp/>*QRcode_encodeString8bit(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version,<sp/>QRecLevel<sp/>level);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QRcode_free(<ref refid="struct_q_rcode" kindref="compound">QRcode</ref><sp/>*qrcode);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref><sp/>*QRcode_encodeInputStructured(<ref refid="struct___q_rinput___struct" kindref="compound">QRinput_Struct</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref><sp/>*QRcode_encodeStringStructured(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version,<sp/>QRecLevel<sp/>level,<sp/>QRencodeMode<sp/>hint,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>casesensitive);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref><sp/>*QRcode_encodeString8bitStructured(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version,<sp/>QRecLevel<sp/>level);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRcode_List_size(<ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref><sp/>*qrlist);</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QRcode_List_free(<ref refid="struct___q_rcode___list" kindref="compound">QRcode_List</ref><sp/>*qrlist);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight></codeline>
+<codeline lineno="423"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="425"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__QRENCODE_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/qrencode.h"/>
+  </compounddef>
+</doxygen>

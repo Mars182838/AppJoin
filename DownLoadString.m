@@ -7,19 +7,22 @@
 //
 
 #import "DownLoadString.h"
-#import "MBProgressHUD.h"
 
 @implementation DownLoadString
 
-static DownLoadString *instance;
+///实现单利模式步骤
+static DownLoadString *instance = nil;
 
 +(DownLoadString *)shareInstanceWithNSStringWithUrl:(NSStringWithUrl)target
 {
-    if (instance == nil) {
-        instance = [[DownLoadString alloc] initWithShareTarget:target];
+    @synchronized(self){
+        if (instance == nil) {
+            instance = [[self alloc] initWithShareTarget:target];
+        }
     }
     return instance;
 }
+
 
 -(id)initWithShareTarget:(NSStringWithUrl)astarget
 {
@@ -33,6 +36,15 @@ static DownLoadString *instance;
         {
             _url = [NSURL URLWithString:KRURLWithStringFirst];
         }
+        else if (astarget == NSStringWithUrlSecond)
+        {
+             _url = [NSURL URLWithString:KRURLWithStringSecond];
+        }
+        else if (astarget == NSStringWithUrlThird)
+        {
+            _url = [NSURL URLWithString:KRURLWithStringThird];
+        }
+        
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:_url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f];
         connection = [NSURLConnection connectionWithRequest:request delegate:self];
         if (connection) {
@@ -44,43 +56,21 @@ static DownLoadString *instance;
 
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-//    _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    _hud.labelText = @"下载中，请稍后";
-    expectedLength = [response expectedContentLength];
-    currentLength = 0;
-    _hud.delegate = self;
-    
     [mutableData setLength:0];
 }
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-    currentLength += [data length];
-    _hud.progress = currentLength/(float)expectedLength;
-    
     [mutableData appendData:data];
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    [_hud hide:YES afterDelay:1.0f];
-
     NSError *error = nil;
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:mutableData options:NSJSONReadingAllowFragments error:&error];
     [self.delegate downLoadFinished:dic];
 }
 
--(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
-{
-//    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//    hud.mode = MBProgressHUDModeText;
-//    hud.delegate = self;
-//    hud.labelText = @"下载失败，请查看网络连接状态";
-//    [hud hide:YES afterDelay:1.0f];
-}
 
--(void)hudWasHidden:(MBProgressHUD *)hud
-{
-    [hud removeFromSuperview];
-}
+
 @end

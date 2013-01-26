@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="category_e_g_o_refresh_table_header_view_07_private_08" kind="category" prot="public">
+    <compoundname>EGORefreshTableHeaderView(Private)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="category_e_g_o_refresh_table_header_view_07_private_08_1ad082392bbd824297918c74251a01e227" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EGORefreshTableHeaderView(Private)::setState:</definition>
+        <argsstring>(EGOPullRefreshState aState)</argsstring>
+        <name>setState:</name>
+        <param>
+          <type>EGOPullRefreshState</type>
+          <declname>aState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.m" line="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.m" line="34" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.m" bodystart="34" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="category_e_g_o_refresh_table_header_view_07_private_08_1ad082392bbd824297918c74251a01e227" prot="public" virt="virtual"><scope>EGORefreshTableHeaderView(Private)</scope><name>setState:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

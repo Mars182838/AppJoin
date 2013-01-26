@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_m_scan_view_controller_8m" kind="file">
+    <compoundname>MScanViewController.m</compoundname>
+    <includes refid="_m_scan_view_controller_8h" local="yes">MScanViewController.h</includes>
+    <includes refid="_m_b_progress_h_u_d_8h" local="yes">MBProgressHUD.h</includes>
+    <includes refid="_q_rcode_data_8h" local="yes">QRcodeData.h</includes>
+    <incdepgraph>
+      <node id="297">
+        <label>MScanViewController.h</label>
+        <link refid="_m_scan_view_controller_8h_source"/>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>MScanViewController.m</label>
+        <link refid="MScanViewController.m"/>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>UIKit/UIKit.h</label>
+      </node>
+      <node id="302">
+        <label>CoreGraphics/CoreGraphics.h</label>
+      </node>
+      <node id="303">
+        <label>QRcodeData.h</label>
+        <link refid="_q_rcode_data_8h_source"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>ZBarSDK.h</label>
+      </node>
+      <node id="301">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="300">
+        <label>MBProgressHUD.h</label>
+        <link refid="_m_b_progress_h_u_d_8h_source"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>MScanViewController.m</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>QRCodeDemo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Mars<sp/>on<sp/>12-11-25.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2012年<sp/>?.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;MScanViewController.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;MBProgressHUD.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;QRcodeData.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">@implementation<sp/></highlight><highlight class="normal"><ref refid="interface_m_scan_view_controller" kindref="compound">MScanViewController</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">@synthesize</highlight><highlight class="normal"><sp/><ref refid="interface_m_scan_view_controller_1a594c0296e470ac8c970f15e65b6d0588" kindref="member" tooltip="二维码视图">readerView</ref>,<sp/><ref refid="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" kindref="member" tooltip="显示二维码信息的TextView">resultText</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/>lifeCycle</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">-<sp/>(void)<sp/>viewDidLoad</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">super</highlight><highlight class="normal"><sp/>viewDidLoad];</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">.view.backgroundColor<sp/>=<sp/>[UIColor<sp/>scrollViewTexturedBackgroundColor];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>_topBar<sp/>=<sp/>[[<ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref><sp/>alloc]<sp/>initWithFrame:CGRectMake(0,<sp/>0,<sp/>WIDTH,<sp/>HEIGHT)];</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>_topBar.navLabel.text<sp/>=<sp/></highlight><highlight class="stringliteral">@&quot;扫一扫&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>[_topBar.backBtn<sp/>addTarget:self<sp/>action:@selector(backPress:)<sp/>forControlEvents:UIControlEventTouchUpInside];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.view<sp/>addSubview:_topBar];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_m_scan_view_controller_1a594c0296e470ac8c970f15e65b6d0588" kindref="member" tooltip="二维码视图">readerView</ref>.readerDelegate<sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_m_scan_view_controller_1a594c0296e470ac8c970f15e65b6d0588" kindref="member" tooltip="二维码视图">readerView</ref>.zoom<sp/>=<sp/>0.5;</highlight><highlight class="comment">//调整扫描区域</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_m_scan_view_controller_1a594c0296e470ac8c970f15e65b6d0588" kindref="member" tooltip="二维码视图">readerView</ref>.trackingColor<sp/>=<sp/>[UIColor<sp/>orangeColor];</highlight><highlight class="comment">//扫描框颜色</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>[readerView<sp/>start];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>UIButton<sp/>*saveBtn<sp/>=<sp/>[UIButton<sp/>buttonWithType:UIButtonTypeCustom];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>saveBtn.frame<sp/>=<sp/>CGRectMake(265,<sp/>6,<sp/>50,<sp/>30);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>[saveBtn<sp/>setImage:[UIImage<sp/>imageNamed:@&quot;finish.png&quot;]<sp/>forState:UIControlStateNormal];</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>[saveBtn<sp/>addTarget:self<sp/>action:@selector(editerPress:)<sp/>forControlEvents:UIControlEventTouchUpInside];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.view<sp/>addSubview:saveBtn];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>_messageTextField<sp/>=<sp/>[[UITextField<sp/>alloc]<sp/>initWithFrame:CGRectMake(30,<sp/>80,<sp/>WIDTH<sp/>-<sp/>60,<sp/>30)];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>_messageTextField.keyboardType<sp/>=<sp/>UIKeyboardTypeDefault;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>_messageTextField.returnKeyType<sp/>=<sp/>UIReturnKeyDone;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>_messageTextField.borderStyle<sp/>=<sp/>UITextBorderStyleRoundedRect;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>_messageTextField.delegate<sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.view<sp/>addSubview:_messageTextField];</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" kindref="member" tooltip="显示二维码信息的TextView">resultText</ref><sp/>=<sp/>[[UITextView<sp/>alloc]<sp/>initWithFrame:CGRectMake(30,<sp/><sp/>HEIGHT-<sp/>100,<sp/>260,<sp/>100)];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" kindref="member" tooltip="显示二维码信息的TextView">resultText</ref>.keyboardType<sp/>=<sp/>UIKeyboardTypeDefault;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" kindref="member" tooltip="显示二维码信息的TextView">resultText</ref>.scrollEnabled<sp/>=<sp/>YES;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" kindref="member" tooltip="显示二维码信息的TextView">resultText</ref>.backgroundColor<sp/>=<sp/>[UIColor<sp/>scrollViewTexturedBackgroundColor];</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" kindref="member" tooltip="显示二维码信息的TextView">resultText</ref>.textColor<sp/>=<sp/>[UIColor<sp/>whiteColor];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" kindref="member" tooltip="显示二维码信息的TextView">resultText</ref>.font<sp/>=<sp/>[UIFont<sp/>systemFontOfSize:16.0f];</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.view<sp/>addSubview:resultText];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">-(void)backPress:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)sender</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">self</highlight><highlight class="normal">.navigationController<sp/>popViewControllerAnimated:YES];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">-<sp/>(void)dealloc</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>[readerView<sp/>release];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>[resultText<sp/>release];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>[_messageTextField<sp/>release];</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>[</highlight><highlight class="keyword">super</highlight><highlight class="normal"><sp/>dealloc];</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">-<sp/>(void)<ref refid="interface_m_scan_view_controller_1a594c0296e470ac8c970f15e65b6d0588" kindref="member" tooltip="二维码视图">readerView</ref>:(ZBarReaderView*)view<sp/>didReadSymbols:(ZBarSymbolSet*)syms<sp/><sp/>fromImage:<sp/>(UIImage*)<sp/>img</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(ZBarSymbol<sp/>*sym<sp/>in<sp/>syms)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_m_scan_view_controller_1a03e3b368cea92a3b44c1d2185b8bf588" kindref="member" tooltip="显示二维码信息的TextView">resultText</ref>.text<sp/>=<sp/>sym.data;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>[readerView<sp/>stop];</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/>UIPickImage<sp/>Delegate<sp/>Methods</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">-(void)editerPress:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)sender</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>([_messageTextField.text<sp/>isEqualToString:</highlight><highlight class="stringliteral">@&quot;&quot;</highlight><highlight class="normal">])<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UIAlertView<sp/>*alterView<sp/>=<sp/>[[UIAlertView<sp/>alloc]<sp/>initWithTitle:@&quot;提示&quot;<sp/>message:@&quot;你没有输入任何信息&quot;<sp/>delegate:self<sp/>cancelButtonTitle:@&quot;取消&quot;<sp/>otherButtonTitles:@&quot;确定&quot;,<sp/>nil];</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[alterView<sp/>show];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[alterView<sp/>release];</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[<ref refid="interface_q_rcode_data" kindref="compound">QRcodeData</ref><sp/><ref refid="interface_q_rcode_data_1afea0ce0931f83205b1bbc08ab5567211" kindref="member">addMessageWithName</ref>:_messageTextField.text<sp/><ref refid="interface_q_rcode_data_1afea0ce0931f83205b1bbc08ab5567211" kindref="member">andMessage</ref>:resultText.text];</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interface_m_b_progress_h_u_d" kindref="compound">MBProgressHUD</ref><sp/>*hud<sp/>=<sp/>[<ref refid="interface_m_b_progress_h_u_d" kindref="compound">MBProgressHUD</ref><sp/><ref refid="interface_m_b_progress_h_u_d_1a5387f186ec82ed2877553b930071c377" kindref="member">showHUDAddedTo</ref>:self.navigationController.view<sp/><ref refid="interface_m_b_progress_h_u_d_1a5387f186ec82ed2877553b930071c377" kindref="member">animated</ref>:YES];</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hud.<ref refid="interface_m_b_progress_h_u_d_1a531706887f08881c7f13b4309521b299" kindref="member">labelText</ref><sp/>=<sp/></highlight><highlight class="stringliteral">@&quot;名片保存成功&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hud.<ref refid="interface_m_b_progress_h_u_d_1ad6fee32939fa55fc1a341aba117aa28f" kindref="member">delegate</ref><sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hud.<ref refid="interface_m_b_progress_h_u_d_1a36639aa18a70f2734942695c32ec5e91" kindref="member">removeFromSuperViewOnHide</ref><sp/>=<sp/>YES;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[hud<sp/><ref refid="interface_m_b_progress_h_u_d_1aec6533c21bf8a9f3e552cb133ef6aeed" kindref="member">hide</ref>:YES<sp/><ref refid="interface_m_b_progress_h_u_d_1aec6533c21bf8a9f3e552cb133ef6aeed" kindref="member">afterDelay</ref>:1.0f];</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/>MBProgressHUD<sp/>Delegate<sp/>Methods</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">-(void)hudWasHidden:(<ref refid="interface_m_b_progress_h_u_d" kindref="compound">MBProgressHUD</ref><sp/>*)hud</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>[hud<sp/>removeFromSuperview];</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>hud<sp/>=<sp/>nil;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>mark<sp/>-<sp/>UITextFieldDelegate<sp/>Methods</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">-(BOOL)textFieldShouldReturn:(UITextField<sp/>*)textField</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>[_messageTextField<sp/>resignFirstResponder];</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>YES;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">-(void)touchesBegan:(NSSet<sp/>*)touches<sp/>withEvent:(UIEvent<sp/>*)event</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>[_messageTextField<sp/>resignFirstResponder];</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>[resultText<sp/>resignFirstResponder];</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/MScanViewController.m"/>
+  </compounddef>
+</doxygen>

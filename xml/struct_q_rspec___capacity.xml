@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="struct_q_rspec___capacity" kind="struct" prot="public">
+    <compoundname>QRspec_Capacity</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_q_rspec___capacity_1af8a2a90900cef176ab483f664f2f7824" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRspec_Capacity::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" line="41" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_rspec___capacity_1a6dd21331c64ef65310427ca28bf29777" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRspec_Capacity::words</definition>
+        <argsstring></argsstring>
+        <name>words</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" line="42" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_rspec___capacity_1af7d1ce2bdce5518b2a3e3f67cdba68c7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRspec_Capacity::remainder</definition>
+        <argsstring></argsstring>
+        <name>remainder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" line="43" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_q_rspec___capacity_1a379849c2096a48444813b7878ada4624" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int QRspec_Capacity::ec[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>ec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" line="44" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" line="40" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrspec.c" bodystart="40" bodyend="45"/>
+    <listofallmembers>
+      <member refid="struct_q_rspec___capacity_1a379849c2096a48444813b7878ada4624" prot="public" virt="non-virtual"><scope>QRspec_Capacity</scope><name>ec</name></member>
+      <member refid="struct_q_rspec___capacity_1af7d1ce2bdce5518b2a3e3f67cdba68c7" prot="public" virt="non-virtual"><scope>QRspec_Capacity</scope><name>remainder</name></member>
+      <member refid="struct_q_rspec___capacity_1af8a2a90900cef176ab483f664f2f7824" prot="public" virt="non-virtual"><scope>QRspec_Capacity</scope><name>width</name></member>
+      <member refid="struct_q_rspec___capacity_1a6dd21331c64ef65310427ca28bf29777" prot="public" virt="non-virtual"><scope>QRspec_Capacity</scope><name>words</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

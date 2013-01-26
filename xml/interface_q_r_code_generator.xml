@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_q_r_code_generator" kind="class" prot="public">
+    <compoundname>QRCodeGenerator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">NSObject</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_q_r_code_generator_1ae879aaa95e0c29807ef8f1266f6f138b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>UIImage *</type>
+        <definition>UIImage * QRCodeGenerator::qrImageForString:imageSize:</definition>
+        <argsstring>(NSString *string,[imageSize] CGFloat size)</argsstring>
+        <name>qrImageForString:imageSize:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>string</declname>
+        </param>
+        <param>
+          <attributes>[imageSize]</attributes>
+          <type>CGFloat</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/QRCodeGenerator.h" line="28" bodyfile="/Users/dengkawakou/Desktop/AppJoin/QRCodeGenerator.m" bodystart="55" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="309">
+        <label>QRCodeGenerator</label>
+        <link refid="interface_q_r_code_generator"/>
+        <childnode refid="310" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>NSObject</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="311">
+        <label>QRCodeGenerator</label>
+        <link refid="interface_q_r_code_generator"/>
+        <childnode refid="312" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/QRCodeGenerator.h" line="27" bodyfile="/Users/dengkawakou/Desktop/AppJoin/QRCodeGenerator.h" bodystart="26" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_q_r_code_generator_1ae879aaa95e0c29807ef8f1266f6f138b" prot="public" virt="virtual"><scope>QRCodeGenerator</scope><name>qrImageForString:imageSize:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

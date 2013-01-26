@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_date_view_controller" kind="class" prot="public">
+    <compoundname>DateViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITableViewDataSource&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITableViewDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSURLConnectionDataDelegate&gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_date_view_controller_1aff4f3095196456defce55a638c87b1d8" prot="protected" static="no" mutable="no">
+        <type>NSURLConnection *</type>
+        <definition>NSURLConnection* DateViewController::connect</definition>
+        <argsstring></argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="25" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_date_view_controller_1a5a2976ac7064733832735e5bd310bdfb" prot="protected" static="no" mutable="no">
+        <type>NSMutableData *</type>
+        <definition>NSMutableData* DateViewController::messageData</definition>
+        <argsstring></argsstring>
+        <name>messageData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="26" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_date_view_controller_1ac977fba71126dc96513743e8db033743" prot="protected" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long DateViewController::expectedLength</definition>
+        <argsstring></argsstring>
+        <name>expectedLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>下在数据的总长度 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="29" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_date_view_controller_1a10154a7a8d6c08b5e8149c2678264c7e" prot="protected" static="no" mutable="no">
+        <type>long long</type>
+        <definition>long long DateViewController::currentLength</definition>
+        <argsstring></argsstring>
+        <name>currentLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>当前数据的下载长度 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="32" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_date_view_controller_1a43e1f8941f6b66644d17937f4f7e80ec" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL DateViewController::isEditer</definition>
+        <argsstring></argsstring>
+        <name>isEditer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="34" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_date_view_controller_1affc6bc47987609044725e6692653f811" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITableView *</type>
+        <definition>UITableView* DateViewController::dateTableView</definition>
+        <argsstring></argsstring>
+        <name>dateTableView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="37" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_date_view_controller_1a0de9fdaa624e38578022994f50ade97a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray* DateViewController::dateArray</definition>
+        <argsstring></argsstring>
+        <name>dateArray</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="39" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_date_view_controller_1a90af4c151aa03c5b7a3aca5fd075f63a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray* DateViewController::detailArray</definition>
+        <argsstring></argsstring>
+        <name>detailArray</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="41" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_date_view_controller_1adb68a544ccdbac21ae0bd3ee08d868f3" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_m_b_progress_h_u_d" kindref="compound">MBProgressHUD</ref> *</type>
+        <definition>MBProgressHUD* DateViewController::hud</definition>
+        <argsstring></argsstring>
+        <name>hud</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>hud 是第三方库 用于提醒用户正在请求网络下载数据 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="44" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_date_view_controller_1a854035a2c42ee52b470e208fefac81aa" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* DateViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="46" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_date_view_controller_1ae5758cdfcd72e39f4123e52761addaf2" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no">
+        <type><ref refid="interface_place" kindref="compound">Place</ref></type>
+        <definition>Place DateViewController::placeName</definition>
+        <argsstring></argsstring>
+        <name>placeName</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="48" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="75">
+        <label>DateViewController</label>
+        <link refid="interface_date_view_controller"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>&lt;UITableViewDataSource&gt;</label>
+      </node>
+      <node id="78">
+        <label>&lt;UITableViewDelegate&gt;</label>
+      </node>
+      <node id="79">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="76">
+        <label>UIViewController</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="88">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>DateViewController</label>
+        <link refid="interface_date_view_controller"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>placeName</edgelabel>
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>hud</edgelabel>
+        </childnode>
+      </node>
+      <node id="82">
+        <label>&lt;UITableViewDataSource&gt;</label>
+      </node>
+      <node id="83">
+        <label>&lt;UITableViewDelegate&gt;</label>
+      </node>
+      <node id="84">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="81">
+        <label>UIViewController</label>
+      </node>
+      <node id="87">
+        <label>&lt;MKAnnotation&gt;</label>
+      </node>
+      <node id="85">
+        <label>Place</label>
+        <link refid="interface_place"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>MBProgressHUD</label>
+        <link refid="interface_m_b_progress_h_u_d"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>UIView</label>
+      </node>
+      <node id="86">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" line="24" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DateViewController.h" bodystart="22" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_date_view_controller_1aff4f3095196456defce55a638c87b1d8" prot="protected" virt="non-virtual"><scope>DateViewController</scope><name>connect</name></member>
+      <member refid="interface_date_view_controller_1a10154a7a8d6c08b5e8149c2678264c7e" prot="protected" virt="non-virtual"><scope>DateViewController</scope><name>currentLength</name></member>
+      <member refid="interface_date_view_controller_1a0de9fdaa624e38578022994f50ade97a" prot="public" virt="non-virtual"><scope>DateViewController</scope><name>dateArray</name></member>
+      <member refid="interface_date_view_controller_1affc6bc47987609044725e6692653f811" prot="public" virt="non-virtual"><scope>DateViewController</scope><name>dateTableView</name></member>
+      <member refid="interface_date_view_controller_1a90af4c151aa03c5b7a3aca5fd075f63a" prot="public" virt="non-virtual"><scope>DateViewController</scope><name>detailArray</name></member>
+      <member refid="interface_date_view_controller_1ac977fba71126dc96513743e8db033743" prot="protected" virt="non-virtual"><scope>DateViewController</scope><name>expectedLength</name></member>
+      <member refid="interface_date_view_controller_1adb68a544ccdbac21ae0bd3ee08d868f3" prot="public" virt="non-virtual"><scope>DateViewController</scope><name>hud</name></member>
+      <member refid="interface_date_view_controller_1a43e1f8941f6b66644d17937f4f7e80ec" prot="protected" virt="non-virtual"><scope>DateViewController</scope><name>isEditer</name></member>
+      <member refid="interface_date_view_controller_1a5a2976ac7064733832735e5bd310bdfb" prot="protected" virt="non-virtual"><scope>DateViewController</scope><name>messageData</name></member>
+      <member refid="interface_date_view_controller_1ae5758cdfcd72e39f4123e52761addaf2" prot="public" virt="non-virtual"><scope>DateViewController</scope><name>placeName</name></member>
+      <member refid="interface_date_view_controller_1a854035a2c42ee52b470e208fefac81aa" prot="public" virt="non-virtual"><scope>DateViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

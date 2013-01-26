@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_second_view_controller" kind="class" prot="public">
+    <compoundname>SecondViewController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIViewController</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITableViewDataSource&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;UITableViewDelegate&gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">&lt;NSURLConnectionDataDelegate&gt;</basecompoundref>
+    <basecompoundref refid="protocoldown_load_string_protocal-p" prot="public" virt="non-virtual">&lt;downLoadStringProtocal&gt;</basecompoundref>
+    <basecompoundref refid="protocol_e_g_o_refresh_table_header_delegate-p" prot="public" virt="non-virtual">&lt;EGORefreshTableHeaderDelegate&gt;</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_second_view_controller_1a0e7a868f901538fd366c8492bdbc1542" prot="protected" static="no" mutable="no">
+        <type>NSURLConnection *</type>
+        <definition>NSURLConnection* SecondViewController::connect</definition>
+        <argsstring></argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="18" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_second_view_controller_1a879106d38ca66508fba5e5fe1b003aa0" prot="protected" static="no" mutable="no">
+        <type>NSMutableData *</type>
+        <definition>NSMutableData* SecondViewController::mutableData</definition>
+        <argsstring></argsstring>
+        <name>mutableData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="19" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_second_view_controller_1af8ad1b44c796a199ab2fd06992a9c461" prot="protected" static="no" mutable="no">
+        <type><ref refid="interface_e_g_o_refresh_table_header_view" kindref="compound">EGORefreshTableHeaderView</ref> *</type>
+        <definition>EGORefreshTableHeaderView* SecondViewController::_refreshHeaderView</definition>
+        <argsstring></argsstring>
+        <name>_refreshHeaderView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="21" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_second_view_controller_1ad5e1aad7f8a7015f997435ff115aceb9" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL SecondViewController::_reloading</definition>
+        <argsstring></argsstring>
+        <name>_reloading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="22" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_second_view_controller_1a4c51889ba60022a7e70280749e537614" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UITableView *</type>
+        <definition>UITableView* SecondViewController::infoTableView</definition>
+        <argsstring></argsstring>
+        <name>infoTableView</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>infoTableView 用于显示从服务器中下载的数据 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="27" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_second_view_controller_1aaaeee06f2e27a9862fe8cd8b4baec9f3" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray* SecondViewController::messageArray</definition>
+        <argsstring></argsstring>
+        <name>messageArray</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>messageArray 用于存储从服务其中下载的数据， 并且通过TabelView显示给用户 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="32" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_second_view_controller_1a97d1a2f53dae600be38c7910811e72da" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_top_bar_view" kindref="compound">TopBarView</ref> *</type>
+        <definition>TopBarView* SecondViewController::topBar</definition>
+        <argsstring></argsstring>
+        <name>topBar</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>自定义的导航栏 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="35" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_second_view_controller_1aa1379f16650312a6e80315959ebec22a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_down_load_string" kindref="compound">DownLoadString</ref> *</type>
+        <definition>DownLoadString* SecondViewController::downLoad</definition>
+        <argsstring></argsstring>
+        <name>downLoad</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>下载类 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="38" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_second_view_controller_1a7c5a17ea9b727325d7ec6b24dfa0c655" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SecondViewController::reloadTableViewDataSource</definition>
+        <argsstring>()</argsstring>
+        <name>reloadTableViewDataSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="41" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.m" bodystart="67" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_second_view_controller_1a16d7a7efe31a5f0a3109b2b3bbf9a398" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SecondViewController::doneLoadingTableViewData</definition>
+        <argsstring>()</argsstring>
+        <name>doneLoadingTableViewData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="42" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.m" bodystart="76" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="328">
+        <label>&lt;UITableViewDataSource&gt;</label>
+      </node>
+      <node id="331">
+        <label>&lt;downLoadStringProtocal&gt;</label>
+        <link refid="protocoldown_load_string_protocal-p"/>
+        <childnode refid="332" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>SecondViewController</label>
+        <link refid="interface_second_view_controller"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+        <childnode refid="328" relation="public-inheritance">
+        </childnode>
+        <childnode refid="329" relation="public-inheritance">
+        </childnode>
+        <childnode refid="330" relation="public-inheritance">
+        </childnode>
+        <childnode refid="331" relation="public-inheritance">
+        </childnode>
+        <childnode refid="333" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="333">
+        <label>&lt;EGORefreshTableHeaderDelegate&gt;</label>
+        <link refid="protocol_e_g_o_refresh_table_header_delegate-p"/>
+      </node>
+      <node id="329">
+        <label>&lt;UITableViewDelegate&gt;</label>
+      </node>
+      <node id="330">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="327">
+        <label>UIViewController</label>
+      </node>
+      <node id="332">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="342">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="343" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="336">
+        <label>&lt;UITableViewDataSource&gt;</label>
+      </node>
+      <node id="339">
+        <label>&lt;downLoadStringProtocal&gt;</label>
+        <link refid="protocoldown_load_string_protocal-p"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>SecondViewController</label>
+        <link refid="interface_second_view_controller"/>
+        <childnode refid="335" relation="public-inheritance">
+        </childnode>
+        <childnode refid="336" relation="public-inheritance">
+        </childnode>
+        <childnode refid="337" relation="public-inheritance">
+        </childnode>
+        <childnode refid="338" relation="public-inheritance">
+        </childnode>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+        <childnode refid="341" relation="public-inheritance">
+        </childnode>
+        <childnode refid="342" relation="usage">
+          <edgelabel>topBar</edgelabel>
+        </childnode>
+        <childnode refid="344" relation="usage">
+          <edgelabel>downLoad</edgelabel>
+        </childnode>
+        <childnode refid="346" relation="usage">
+          <edgelabel>_refreshHeaderView</edgelabel>
+        </childnode>
+      </node>
+      <node id="341">
+        <label>&lt;EGORefreshTableHeaderDelegate&gt;</label>
+        <link refid="protocol_e_g_o_refresh_table_header_delegate-p"/>
+      </node>
+      <node id="337">
+        <label>&lt;UITableViewDelegate&gt;</label>
+      </node>
+      <node id="338">
+        <label>&lt;NSURLConnectionDataDelegate&gt;</label>
+      </node>
+      <node id="344">
+        <label>DownLoadString</label>
+        <link refid="interface_down_load_string"/>
+        <childnode refid="345" relation="public-inheritance">
+        </childnode>
+        <childnode refid="338" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>UIViewController</label>
+      </node>
+      <node id="346">
+        <label>EGORefreshTableHeaderView</label>
+        <link refid="interface_e_g_o_refresh_table_header_view"/>
+        <childnode refid="343" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="340">
+        <label>&lt;NSObject&gt;</label>
+      </node>
+      <node id="343">
+        <label>UIView</label>
+      </node>
+      <node id="345">
+        <label>NSObject</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" line="17" bodyfile="/Users/dengkawakou/Desktop/AppJoin/SecondViewController.h" bodystart="15" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_second_view_controller_1af8ad1b44c796a199ab2fd06992a9c461" prot="protected" virt="non-virtual"><scope>SecondViewController</scope><name>_refreshHeaderView</name></member>
+      <member refid="interface_second_view_controller_1ad5e1aad7f8a7015f997435ff115aceb9" prot="protected" virt="non-virtual"><scope>SecondViewController</scope><name>_reloading</name></member>
+      <member refid="interface_second_view_controller_1a0e7a868f901538fd366c8492bdbc1542" prot="protected" virt="non-virtual"><scope>SecondViewController</scope><name>connect</name></member>
+      <member refid="interface_second_view_controller_1a16d7a7efe31a5f0a3109b2b3bbf9a398" prot="public" virt="virtual"><scope>SecondViewController</scope><name>doneLoadingTableViewData</name></member>
+      <member refid="interface_second_view_controller_1aa1379f16650312a6e80315959ebec22a" prot="public" virt="non-virtual"><scope>SecondViewController</scope><name>downLoad</name></member>
+      <member refid="protocoldown_load_string_protocal-p_1a4ce73ee56600cc02c8a245cc21286277" prot="public" virt="virtual"><scope>SecondViewController</scope><name>downLoadFinished:</name></member>
+      <member refid="protocol_e_g_o_refresh_table_header_delegate-p_1a6e51969fde015d59e9314a4ec41c21b8" prot="public" virt="virtual"><scope>SecondViewController</scope><name>egoRefreshTableHeaderDataSourceIsLoading:</name></member>
+      <member refid="protocol_e_g_o_refresh_table_header_delegate-p_1aaa03c7c1a490ebb17fcff24f7f1c5d35" prot="public" virt="virtual"><scope>SecondViewController</scope><name>egoRefreshTableHeaderDataSourceLastUpdated:</name></member>
+      <member refid="protocol_e_g_o_refresh_table_header_delegate-p_1a3a71311636e9d10813ffeabe19d6adb7" prot="public" virt="virtual"><scope>SecondViewController</scope><name>egoRefreshTableHeaderDidTriggerRefresh:</name></member>
+      <member refid="interface_second_view_controller_1a4c51889ba60022a7e70280749e537614" prot="public" virt="non-virtual"><scope>SecondViewController</scope><name>infoTableView</name></member>
+      <member refid="interface_second_view_controller_1aaaeee06f2e27a9862fe8cd8b4baec9f3" prot="public" virt="non-virtual"><scope>SecondViewController</scope><name>messageArray</name></member>
+      <member refid="interface_second_view_controller_1a879106d38ca66508fba5e5fe1b003aa0" prot="protected" virt="non-virtual"><scope>SecondViewController</scope><name>mutableData</name></member>
+      <member refid="interface_second_view_controller_1a7c5a17ea9b727325d7ec6b24dfa0c655" prot="public" virt="virtual"><scope>SecondViewController</scope><name>reloadTableViewDataSource</name></member>
+      <member refid="interface_second_view_controller_1a97d1a2f53dae600be38c7910811e72da" prot="public" virt="non-virtual"><scope>SecondViewController</scope><name>topBar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

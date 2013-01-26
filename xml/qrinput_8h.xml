@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="qrinput_8h" kind="file">
+    <compoundname>qrinput.h</compoundname>
+    <includes refid="qrencode_8h" local="yes">qrencode.h</includes>
+    <includes refid="bitstream_8h" local="yes">bitstream.h</includes>
+    <includedby refid="mask_8h" local="yes">mask.h</includedby>
+    <includedby refid="qrencode_8c" local="yes">qrencode.c</includedby>
+    <includedby refid="qrinput_8c" local="yes">qrinput.c</includedby>
+    <includedby refid="split_8c" local="yes">split.c</includedby>
+    <incdepgraph>
+      <node id="373">
+        <label>bitstream.h</label>
+        <link refid="bitstream_8h_source"/>
+      </node>
+      <node id="371">
+        <label>qrinput.h</label>
+        <link refid="qrinput.h"/>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+      </node>
+      <node id="372">
+        <label>qrencode.h</label>
+        <link refid="qrencode_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="375">
+        <label>mask.h</label>
+        <link refid="mask_8h_source"/>
+      </node>
+      <node id="374">
+        <label>qrinput.h</label>
+        <link refid="qrinput.h"/>
+        <childnode refid="375" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct___q_rinput___list" prot="public">_QRinput_List</innerclass>
+    <innerclass refid="struct___q_rinput" prot="public">_QRinput</innerclass>
+    <innerclass refid="struct___q_rinput___input_list" prot="public">_QRinput_InputList</innerclass>
+    <innerclass refid="struct___q_rinput___struct" prot="public">_QRinput_Struct</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="qrinput_8h_1a9e2d936e288098a4a764623bf7abc7fd" prot="public" static="no">
+        <name>QRinput_lookAnTable</name>
+        <param><defname>__c__</defname></param>
+        <initializer>((__c__ &amp; 0x80)?-1:QRinput_anTable[(int)__c__])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Look up the alphabet-numeric convesion table (see JIS X0510:2004, pp.19). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&lt;strong&gt;c&lt;/strong&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>character </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>value </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="91" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrinput_8h_1ad07886d1a7e10ca87ab0ab85fada6401" prot="public" static="no">
+        <name>STRUCTURE_HEADER_BITS</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Length of a segment of structured-append header. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="96" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="qrinput_8h_1a2f2ca0fd50e5eec29b9c5324cc055548" prot="public" static="no">
+        <name>MAX_STRUCTURED_SYMBOLS</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of symbols in a set of structured-appended symbols. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="101" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="qrinput_8h_1abc9c94c601f4a3d57fd858bcb123de96" prot="public" static="no">
+        <type>struct <ref refid="struct___q_rinput___list" kindref="compound">_QRinput_List</ref></type>
+        <definition>typedef struct _QRinput_List QRinput_List</definition>
+        <argsstring></argsstring>
+        <name>QRinput_List</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="31" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="qrinput_8h_1a39d76f4ec8a2d6ceaeeb88c08dce6cb9" prot="public" static="no">
+        <type>struct <ref refid="struct___q_rinput___input_list" kindref="compound">_QRinput_InputList</ref></type>
+        <definition>typedef struct _QRinput_InputList QRinput_InputList</definition>
+        <argsstring></argsstring>
+        <name>QRinput_InputList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="54" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="qrinput_8h_1a33b49f1bb7e5407f2e3379816dfd1f9d" prot="public" static="no" mutable="no">
+        <type>const signed char</type>
+        <definition>const signed char QRinput_anTable[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>QRinput_anTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="83" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="qrinput_8h_1a575ced3650564b461c7eb0eee5c5e313" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char *</type>
+        <definition>unsigned char* QRinput_getByteStream</definition>
+        <argsstring>(QRinput *input)</argsstring>
+        <name>QRinput_getByteStream</name>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pack all bit streams padding bits into a byte array. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>padded merged byte stream </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="73" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="1073" bodyend="1086"/>
+      </memberdef>
+      <memberdef kind="function" id="qrinput_8h_1a0376efa1c1148a60c7e40ac7c47655a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_estimateBitsModeNum</definition>
+        <argsstring>(int size)</argsstring>
+        <name>QRinput_estimateBitsModeNum</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Estimates the length of the encoded bit stream of numeric data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of bits </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="76" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="305" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="qrinput_8h_1acc5691d3dcadd396201ada466d3c8407" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_estimateBitsModeAn</definition>
+        <argsstring>(int size)</argsstring>
+        <name>QRinput_estimateBitsModeAn</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Estimates the length of the encoded bit stream of alphabet-numeric data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of bits </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="77" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="416" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="qrinput_8h_1ac84491797827e336704017988ea52bbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_estimateBitsMode8</definition>
+        <argsstring>(int size)</argsstring>
+        <name>QRinput_estimateBitsMode8</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Estimates the length of the encoded bit stream of 8 bit data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of bits </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="78" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="486" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="qrinput_8h_1a22f22cf8a89dc6109ffa94669bfe1329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int QRinput_estimateBitsModeKanji</definition>
+        <argsstring>(int size)</argsstring>
+        <name>QRinput_estimateBitsModeKanji</name>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Estimates the length of the encoded bit stream of kanji data. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of bits </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="79" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="537" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="qrinput_8h_1a56e3451b2bcd3a08157f4532979fe19e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+        <definition>QRinput* QRinput_dup</definition>
+        <argsstring>(QRinput *input)</argsstring>
+        <name>QRinput_dup</name>
+        <param>
+          <type><ref refid="struct___q_rinput" kindref="compound">QRinput</ref> *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h" line="81" bodyfile="/Users/dengkawakou/Desktop/AppJoin/qrinput.c" bodystart="256" bodyend="276"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>qrencode<sp/>-<sp/>QR<sp/>Code<sp/>encoder</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Input<sp/>data<sp/>chunk<sp/>class</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2006,<sp/>2007,<sp/>2008,<sp/>2009<sp/>Kentaro<sp/>Fukuchi<sp/>&lt;fukuchi@megaui.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__QRINPUT_H__</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__QRINPUT_H__</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;qrencode.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;bitstream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>Entry<sp/>of<sp/>input<sp/>data</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___q_rinput___list" kindref="compound">_QRinput_List</ref><sp/><ref refid="struct___q_rinput___list" kindref="compound">QRinput_List</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="struct___q_rinput___list" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___q_rinput___list" kindref="compound">_QRinput_List</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>QRencodeMode<sp/>mode;</highlight></codeline>
+<codeline lineno="35" refid="struct___q_rinput___list_1a0e95d1f205d72e7f8ed60d0f3c612b7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct___q_rinput___list_1a0e95d1f205d72e7f8ed60d0f3c612b7d" kindref="member" tooltip="Size of data chunk (byte).">size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="struct___q_rinput___list_1ab1b2193ef5cbbc3ebac66c403c1e0d86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="struct___q_rinput___list_1ab1b2193ef5cbbc3ebac66c403c1e0d86" kindref="member" tooltip="Data chunk.">data</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_bit_stream" kindref="compound">BitStream</ref><sp/>*bstream;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___q_rinput___list" kindref="compound">QRinput_List</ref><sp/>*next;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>Input<sp/>Data</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="struct___q_rinput" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___q_rinput" kindref="compound">_QRinput</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>QRecLevel<sp/>level;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___q_rinput___list" kindref="compound">QRinput_List</ref><sp/>*head;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___q_rinput___list" kindref="compound">QRinput_List</ref><sp/>*tail;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/>Structured<sp/>append<sp/>input<sp/>data</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___q_rinput___input_list" kindref="compound">_QRinput_InputList</ref><sp/><ref refid="struct___q_rinput___input_list" kindref="compound">QRinput_InputList</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="struct___q_rinput___input_list" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___q_rinput___input_list" kindref="compound">_QRinput_InputList</ref><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___q_rinput___input_list" kindref="compound">QRinput_InputList</ref><sp/>*next;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="struct___q_rinput___struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct___q_rinput___struct" kindref="compound">_QRinput_Struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="62" refid="struct___q_rinput___struct_1ae1b68ea889ffbcf415ed531f54bd189e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct___q_rinput___struct_1ae1b68ea889ffbcf415ed531f54bd189e" kindref="member" tooltip="number of structured symbols">size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>parity;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___q_rinput___input_list" kindref="compound">QRinput_InputList</ref><sp/>*head;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct___q_rinput___input_list" kindref="compound">QRinput_InputList</ref><sp/>*tail;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*QRinput_getByteStream(<ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_estimateBitsModeNum(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_estimateBitsModeAn(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_estimateBitsMode8(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>QRinput_estimateBitsModeKanji(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*QRinput_dup(<ref refid="struct___q_rinput" kindref="compound">QRinput</ref><sp/>*input);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>QRinput_anTable[128];</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor">#define<sp/>QRinput_lookAnTable(__c__)<sp/>\</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>((__c__<sp/>&amp;<sp/>0x80)?-1:QRinput_anTable[(int)__c__])</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor">#define<sp/>STRUCTURE_HEADER_BITS<sp/>20</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor">#define<sp/>MAX_STRUCTURED_SYMBOLS<sp/>16</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__QRINPUT_H__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/qrinput.h"/>
+  </compounddef>
+</doxygen>

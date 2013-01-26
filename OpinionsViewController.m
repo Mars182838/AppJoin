@@ -182,11 +182,6 @@
     NSUInteger number = [regulare numberOfMatchesInString:self.emailTextField.text options:NSMatchingReportProgress range:NSMakeRange(0, self.emailTextField.text.length)];
     [regulare release];
     
-//    NSRegularExpression *phoneRegulare = [[NSRegularExpression alloc] initWithPattern:@"((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)" options:NSRegularExpressionCaseInsensitive error:nil];
-//    
-//    NSUInteger phoneNumber = [phoneRegulare numberOfMatchesInString:self.phoneTextField.text options:NSMatchingReportProgress range:NSMakeRange(0, self.phoneTextField.text.length)];
-//    [phoneRegulare release];
-    
     if (number > 0) {
         NSString *postString = [NSString stringWithFormat:@"act=advise&dev=ios&ver=1.1&email=%@&advise=%@",self.emailTextField.text,[URLEncode encodeUrlStr:self.opinionTextView.text]];
         
@@ -229,6 +224,22 @@
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"连接超时，请检查网络" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
 	[alert show];
 	[alert release];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end

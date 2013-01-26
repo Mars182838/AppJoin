@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_top_bar_view" kind="class" prot="public">
+    <compoundname>TopBarView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIView</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_top_bar_view_1ab3afddca39563afaa00478a3d8736b7c" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIImageView *</type>
+        <definition>UIImageView* TopBarView::navImage</definition>
+        <argsstring></argsstring>
+        <name>navImage</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>导航栏上的图片 红色 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/TopBarView.h" line="14" bodyfile="/Users/dengkawakou/Desktop/AppJoin/TopBarView.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_top_bar_view_1a97c5a62e2380ce2a44674149aeafc9e4" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UILabel *</type>
+        <definition>UILabel* TopBarView::navLabel</definition>
+        <argsstring></argsstring>
+        <name>navLabel</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>导航栏上面的字体 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/TopBarView.h" line="17" bodyfile="/Users/dengkawakou/Desktop/AppJoin/TopBarView.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_top_bar_view_1a082f6b7cb92d805f874187dbf8175b5d" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIButton *</type>
+        <definition>UIButton* TopBarView::backBtn</definition>
+        <argsstring></argsstring>
+        <name>backBtn</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>导航栏上面的返回按钮 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/TopBarView.h" line="20" bodyfile="/Users/dengkawakou/Desktop/AppJoin/TopBarView.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_top_bar_view_1a019b7bc20208794affcc681f89e63149" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>UIButton *</type>
+        <definition>UIButton* TopBarView::saveBtn</definition>
+        <argsstring></argsstring>
+        <name>saveBtn</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>导航栏上的编辑按钮 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/TopBarView.h" line="23" bodyfile="/Users/dengkawakou/Desktop/AppJoin/TopBarView.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="377">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>UIView</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="379">
+        <label>TopBarView</label>
+        <link refid="interface_top_bar_view"/>
+        <childnode refid="380" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>UIView</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/TopBarView.h" line="12" bodyfile="/Users/dengkawakou/Desktop/AppJoin/TopBarView.h" bodystart="11" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_top_bar_view_1a082f6b7cb92d805f874187dbf8175b5d" prot="public" virt="non-virtual"><scope>TopBarView</scope><name>backBtn</name></member>
+      <member refid="interface_top_bar_view_1ab3afddca39563afaa00478a3d8736b7c" prot="public" virt="non-virtual"><scope>TopBarView</scope><name>navImage</name></member>
+      <member refid="interface_top_bar_view_1a97c5a62e2380ce2a44674149aeafc9e4" prot="public" virt="non-virtual"><scope>TopBarView</scope><name>navLabel</name></member>
+      <member refid="interface_top_bar_view_1a019b7bc20208794affcc681f89e63149" prot="public" virt="non-virtual"><scope>TopBarView</scope><name>saveBtn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

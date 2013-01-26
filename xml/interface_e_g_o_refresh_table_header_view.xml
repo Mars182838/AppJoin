@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="interface_e_g_o_refresh_table_header_view" kind="class" prot="public">
+    <compoundname>EGORefreshTableHeaderView</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">UIView</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_e_g_o_refresh_table_header_view_1acb4d08ef643849d35f3608dc83bc77e6" prot="protected" static="no" mutable="no">
+        <type>id</type>
+        <definition>id EGORefreshTableHeaderView::_delegate</definition>
+        <argsstring></argsstring>
+        <name>_delegate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="39" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_e_g_o_refresh_table_header_view_1a7e3364bb70f2ccceaabff9637849ae4d" prot="protected" static="no" mutable="no">
+        <type>EGOPullRefreshState</type>
+        <definition>EGOPullRefreshState EGORefreshTableHeaderView::_state</definition>
+        <argsstring></argsstring>
+        <name>_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="40" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_e_g_o_refresh_table_header_view_1ad2cad787cbd4f7e14e460f70140cc2e3" prot="protected" static="no" mutable="no">
+        <type>UILabel *</type>
+        <definition>UILabel* EGORefreshTableHeaderView::_lastUpdatedLabel</definition>
+        <argsstring></argsstring>
+        <name>_lastUpdatedLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="42" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_e_g_o_refresh_table_header_view_1a845f097294717d7ad7b4aa2042f33504" prot="protected" static="no" mutable="no">
+        <type>UILabel *</type>
+        <definition>UILabel* EGORefreshTableHeaderView::_statusLabel</definition>
+        <argsstring></argsstring>
+        <name>_statusLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="43" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_e_g_o_refresh_table_header_view_1a3796bb4d359154e73b536bc64246a060" prot="protected" static="no" mutable="no">
+        <type>CALayer *</type>
+        <definition>CALayer* EGORefreshTableHeaderView::_arrowImage</definition>
+        <argsstring></argsstring>
+        <name>_arrowImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="44" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_e_g_o_refresh_table_header_view_1ab2c575e05450facb6ce9a60e825bb592" prot="protected" static="no" mutable="no">
+        <type>UIActivityIndicatorView *</type>
+        <definition>UIActivityIndicatorView* EGORefreshTableHeaderView::_activityView</definition>
+        <argsstring></argsstring>
+        <name>_activityView</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="45" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_e_g_o_refresh_table_header_view_1aff6b41496977b54fa89624f638ed0ab9" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>UILabel *</type>
+        <definition>UILabel* EGORefreshTableHeaderView::lastUpdatedLabel</definition>
+        <argsstring></argsstring>
+        <name>lastUpdatedLabel</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="48" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_e_g_o_refresh_table_header_view_1aebd6c3498e21afd2c0df86a20a981298" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>UILabel *</type>
+        <definition>UILabel* EGORefreshTableHeaderView::statusLabel</definition>
+        <argsstring></argsstring>
+        <name>statusLabel</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="50" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_e_g_o_refresh_table_header_view_1a0793fad79d25582192f37fcf2e3aa925" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>CALayer *</type>
+        <definition>CALayer* EGORefreshTableHeaderView::arrowImage</definition>
+        <argsstring></argsstring>
+        <name>arrowImage</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="52" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_e_g_o_refresh_table_header_view_1aecc4d26af6e45bfc93927ddfd3242149" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>UIActivityIndicatorView *</type>
+        <definition>UIActivityIndicatorView* EGORefreshTableHeaderView::activityView</definition>
+        <argsstring></argsstring>
+        <name>activityView</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="54" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_e_g_o_refresh_table_header_view_1a0ac65ad5457e9999ecdd6d05a7806d49" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>id&lt; <ref refid="protocol_e_g_o_refresh_table_header_delegate-p" kindref="compound">EGORefreshTableHeaderDelegate</ref> &gt;</type>
+        <definition>id&lt;EGORefreshTableHeaderDelegate&gt; EGORefreshTableHeaderView::delegate</definition>
+        <argsstring></argsstring>
+        <name>delegate</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="56" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_e_g_o_refresh_table_header_view_1a629409b8affc67385b5857ba9f3968ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id EGORefreshTableHeaderView::initWithFrame:arrowImageName:textColor:</definition>
+        <argsstring>(CGRect frame,[arrowImageName] NSString *arrow,[textColor] UIColor *textColor)</argsstring>
+        <name>initWithFrame:arrowImageName:textColor:</name>
+        <param>
+          <type>CGRect</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <attributes>[arrowImageName]</attributes>
+          <type>NSString *</type>
+          <declname>arrow</declname>
+        </param>
+        <param>
+          <attributes>[textColor]</attributes>
+          <type>UIColor *</type>
+          <declname>textColor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="58" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.m" bodystart="48" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_e_g_o_refresh_table_header_view_1a194cd65e46e4f0e1a87eed587ecbd5ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EGORefreshTableHeaderView::refreshLastUpdatedDate</definition>
+        <argsstring>()</argsstring>
+        <name>refreshLastUpdatedDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="60" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.m" bodystart="114" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_e_g_o_refresh_table_header_view_1a8e555a74ee13195926251f84795e4e23" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EGORefreshTableHeaderView::egoRefreshScrollViewDidScroll:</definition>
+        <argsstring>(UIScrollView *scrollView)</argsstring>
+        <name>egoRefreshScrollViewDidScroll:</name>
+        <param>
+          <type>UIScrollView *</type>
+          <declname>scrollView</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="61" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.m" bodystart="190" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_e_g_o_refresh_table_header_view_1a0f4a7b4d3a63a9d15156ce37295f8865" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EGORefreshTableHeaderView::egoRefreshScrollViewDidEndDragging:</definition>
+        <argsstring>(UIScrollView *scrollView)</argsstring>
+        <name>egoRefreshScrollViewDidEndDragging:</name>
+        <param>
+          <type>UIScrollView *</type>
+          <declname>scrollView</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="62" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.m" bodystart="219" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_e_g_o_refresh_table_header_view_1a368b0e8d966a4b8613925ffce1b9eb8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EGORefreshTableHeaderView::egoRefreshScrollViewDataSourceDidFinishedLoading:</definition>
+        <argsstring>(UIScrollView *scrollView)</argsstring>
+        <name>egoRefreshScrollViewDataSourceDidFinishedLoading:</name>
+        <param>
+          <type>UIScrollView *</type>
+          <declname>scrollView</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="63" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.m" bodystart="242" bodyend="251"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="123">
+        <label>EGORefreshTableHeaderView</label>
+        <link refid="interface_e_g_o_refresh_table_header_view"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>UIView</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="125">
+        <label>EGORefreshTableHeaderView</label>
+        <link refid="interface_e_g_o_refresh_table_header_view"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>UIView</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" line="37" bodyfile="/Users/dengkawakou/Desktop/AppJoin/EGORefreshTableHeaderView.h" bodystart="37" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_e_g_o_refresh_table_header_view_1ab2c575e05450facb6ce9a60e825bb592" prot="protected" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>_activityView</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1a3796bb4d359154e73b536bc64246a060" prot="protected" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>_arrowImage</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1acb4d08ef643849d35f3608dc83bc77e6" prot="protected" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>_delegate</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1ad2cad787cbd4f7e14e460f70140cc2e3" prot="protected" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>_lastUpdatedLabel</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1a7e3364bb70f2ccceaabff9637849ae4d" prot="protected" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>_state</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1a845f097294717d7ad7b4aa2042f33504" prot="protected" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>_statusLabel</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1aecc4d26af6e45bfc93927ddfd3242149" prot="public" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>activityView</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1a0793fad79d25582192f37fcf2e3aa925" prot="public" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>arrowImage</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1a0ac65ad5457e9999ecdd6d05a7806d49" prot="public" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>delegate</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1a368b0e8d966a4b8613925ffce1b9eb8e" prot="public" virt="virtual"><scope>EGORefreshTableHeaderView</scope><name>egoRefreshScrollViewDataSourceDidFinishedLoading:</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1a0f4a7b4d3a63a9d15156ce37295f8865" prot="public" virt="virtual"><scope>EGORefreshTableHeaderView</scope><name>egoRefreshScrollViewDidEndDragging:</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1a8e555a74ee13195926251f84795e4e23" prot="public" virt="virtual"><scope>EGORefreshTableHeaderView</scope><name>egoRefreshScrollViewDidScroll:</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1a629409b8affc67385b5857ba9f3968ec" prot="public" virt="virtual"><scope>EGORefreshTableHeaderView</scope><name>initWithFrame:arrowImageName:textColor:</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1aff6b41496977b54fa89624f638ed0ab9" prot="public" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>lastUpdatedLabel</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1a194cd65e46e4f0e1a87eed587ecbd5ce" prot="public" virt="virtual"><scope>EGORefreshTableHeaderView</scope><name>refreshLastUpdatedDate</name></member>
+      <member refid="interface_e_g_o_refresh_table_header_view_1aebd6c3498e21afd2c0df86a20a981298" prot="public" virt="non-virtual"><scope>EGORefreshTableHeaderView</scope><name>statusLabel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

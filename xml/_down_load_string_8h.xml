@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_down_load_string_8h" kind="file">
+    <compoundname>DownLoadString.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includedby refid="_down_load_string_8m" local="yes">DownLoadString.m</includedby>
+    <includedby refid="_four_view_controller_8h" local="yes">FourViewController.h</includedby>
+    <includedby refid="_four_view_controller_8m" local="yes">FourViewController.m</includedby>
+    <includedby refid="_main_view_controller_8h" local="yes">MainViewController.h</includedby>
+    <includedby refid="_main_view_controller_8m" local="yes">MainViewController.m</includedby>
+    <includedby refid="_second_view_controller_8h" local="yes">SecondViewController.h</includedby>
+    <includedby refid="_second_view_controller_8m" local="yes">SecondViewController.m</includedby>
+    <includedby refid="_third_view_controller_8h" local="yes">ThirdViewController.h</includedby>
+    <incdepgraph>
+      <node id="118">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="117">
+        <label>DownLoadString.h</label>
+        <link refid="DownLoadString.h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="120">
+        <label>FourViewController.h</label>
+        <link refid="_four_view_controller_8h_source"/>
+      </node>
+      <node id="123">
+        <label>ThirdViewController.h</label>
+        <link refid="_third_view_controller_8h_source"/>
+      </node>
+      <node id="121">
+        <label>MainViewController.h</label>
+        <link refid="_main_view_controller_8h_source"/>
+      </node>
+      <node id="122">
+        <label>SecondViewController.h</label>
+        <link refid="_second_view_controller_8h_source"/>
+      </node>
+      <node id="119">
+        <label>DownLoadString.h</label>
+        <link refid="DownLoadString.h"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="protocoldown_load_string_protocal-p" prot="public">downLoadStringProtocal-p</innerclass>
+    <innerclass refid="interface_down_load_string" prot="public">DownLoadString</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_down_load_string_8h_1a1bf110f0580dceb5af2dfb3ce7c0bbbc" prot="public" static="no">
+        <name>KRURLWithStringMain</name>
+        <initializer>@&quot;http://42.121.237.116/customapp/?cat=1&amp;author=2&amp;json=1&quot;</initializer>
+        <briefdescription>
+<para>首页展示 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="12" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_down_load_string_8h_1a873233573d43d2216fa5d08a3022f13c" prot="public" static="no">
+        <name>KRURLWithStringFirst</name>
+        <initializer>@&quot;http://42.121.237.116/customapp/?cat=3&amp;author=2&amp;json=2&quot;</initializer>
+        <briefdescription>
+<para>新闻资讯 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="15" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_down_load_string_8h_1ae0d8556107bd561a2302ae9eb61f0f71" prot="public" static="no">
+        <name>KRURLWithStringSecond</name>
+        <initializer>@&quot;http://42.121.237.116/customapp/?cat=6&amp;author=2&amp;json=2&quot;</initializer>
+        <briefdescription>
+<para>展商列表 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="18" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_down_load_string_8h_1ad49c49b82a281b935c9cc1ab6950e404" prot="public" static="no">
+        <name>KRURLWithStringThird</name>
+        <initializer>@&quot;http://42.121.237.116/customapp/?cat=5&amp;author=2&amp;json=2&quot;</initializer>
+        <briefdescription>
+<para>关于大会 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="21" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_down_load_string_8h_1a32a0dcec070fd5af05ee2ad737118331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>typedef</type>
+        <definition>typedef NS_ENUM</definition>
+        <argsstring>(NSInteger, NSStringWithUrl)</argsstring>
+        <name>NS_ENUM</name>
+        <param>
+          <type>NSInteger</type>
+        </param>
+        <param>
+          <type>NSStringWithUrl</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" line="24" bodyfile="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h" bodystart="23" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>DownLoadString.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AppJoin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Mars<sp/>on<sp/>13-1-14.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2013年<sp/>Mars.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//http://42.121.237.116/customapp/?cat=1&amp;author=2&amp;json=1</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>KRURLWithStringMain<sp/>@&quot;http://42.121.237.116/customapp/?cat=1&amp;author=2&amp;json=1&quot;</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor">#define<sp/>KRURLWithStringFirst<sp/>@&quot;http://42.121.237.116/customapp/?cat=3&amp;author=2&amp;json=2&quot;</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor">#define<sp/>KRURLWithStringSecond<sp/>@&quot;http://42.121.237.116/customapp/?cat=6&amp;author=2&amp;json=2&quot;</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor">#define<sp/>KRURLWithStringThird<sp/>@&quot;http://42.121.237.116/customapp/?cat=5&amp;author=2&amp;json=2&quot;</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>NS_ENUM(NSInteger,<sp/>NSStringWithUrl)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>NSStringWithUrlMain<sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>NSStringWithUrlFirst,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>NSStringWithUrlSecond,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>NSStringWithUrlThird</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="protocoldown_load_string_protocal-p" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@protocol<sp/></highlight><highlight class="normal"><ref refid="protocoldown_load_string_protocal-p" kindref="compound">downLoadStringProtocal</ref><sp/>&lt;NSObject&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">-(void)downLoadFinished:(NSDictionary<sp/>*)info;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="interface_down_load_string" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_down_load_string" kindref="compound">DownLoadString</ref><sp/>:<sp/>NSObject&lt;NSURLConnectionDataDelegate&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>NSURLConnection<sp/>*connection;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>NSMutableData<sp/><sp/><sp/>*mutableData;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>id&lt;downLoadStringProtocal&gt;delegate;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>NSStringWithUrl<sp/>shareTarget;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSURL<sp/>*url;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">+(<ref refid="interface_down_load_string" kindref="compound">DownLoadString</ref><sp/>*)shareInstanceWithNSStringWithUrl:(NSStringWithUrl)target;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">-(id)initWithShareTarget:(NSStringWithUrl)target;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/dengkawakou/Desktop/AppJoin/DownLoadString.h"/>
+  </compounddef>
+</doxygen>
