@@ -139,12 +139,15 @@
     }
     else if(indexPath.row == 5)
     {
-        
         OpinionsViewController *opinionView = [[OpinionsViewController alloc] initWithNibName:nil bundle:nil];
         [self.navigationController pushViewController:opinionView animated:YES];
         [opinionView release];
     }
-    else if (indexPath.row == 7)
+    else if (indexPath.row == 6)
+    {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=596273679&mt=8"]];
+    }
+    else
     {
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         hud.labelText = @"当前已是最新版本";

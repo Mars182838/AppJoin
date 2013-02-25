@@ -162,7 +162,6 @@
     
 }
 
-
 -(void)scanCard:(id)sender
 {
     CATransition *animation =[CATransition animation];
@@ -173,7 +172,6 @@
     animation.type = @"cube";
     animation.subtype = @"fromLeft";
     animation.removedOnCompletion = NO;
-    
     
     ///要从界面上移除
     [_qrImage removeFromSuperview];

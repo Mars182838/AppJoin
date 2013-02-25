@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     
-    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+    _topBar = [[TopBarView alloc] initWithFrame:CGRectMake(0, 0, WIDTH, 44)];
     
     _topBar.navLabel.text = self.title;
     
@@ -51,8 +51,10 @@
 
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
-    _hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-    _hud.labelText = @"加载中。。。";
+    _hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    _hud.labelText = @"加载中...";
+    _hud.delegate = self;
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView
@@ -62,10 +64,13 @@
 
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+    [_hud removeFromSuperview];
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.mode = MBProgressHUDModeText;
     hud.removeFromSuperViewOnHide = YES;
-    hud.labelText = [NSString stringWithFormat:@"%@",error];
+    hud.labelText = @"数据加载失败";
+    hud.delegate = self;
     [hud show:YES];
     [hud hide:YES afterDelay:1.0f];
 }
@@ -85,25 +90,16 @@
     
 }
 
+-(void)hudWasHidden:(MBProgressHUD *)hud
+{
+    [hud removeFromSuperview];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (BOOL)shouldAutorotate
-{
-    return YES;
-}
-
-- (NSUInteger)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskPortrait;
-}
 
 @end

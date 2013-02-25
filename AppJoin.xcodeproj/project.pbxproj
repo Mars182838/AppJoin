@@ -172,8 +172,8 @@
 		0A8C48FA168E9A8800615C6F /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 		0A8C4900168E9AB600615C6F /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
 		0A8C4901168E9AB600615C6F /* FourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
-		0A8C491C168EDB3000615C6F /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = ../InfoViewController.h; sourceTree = "<group>"; };
-		0A8C491D168EDB3000615C6F /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = ../InfoViewController.m; sourceTree = "<group>"; };
+		0A8C491C168EDB3000615C6F /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		0A8C491D168EDB3000615C6F /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		0A8C492D168EEA0500615C6F /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
 		0A8C4932168F0EA100615C6F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		0A8C4933168F0EA100615C6F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -356,8 +356,6 @@
 				0AFBBC2216952AFA003C29EB /* iCarousel.m */,
 				0AF8E8741693EBBF00C8C473 /* Place.h */,
 				0AF8E8751693EBBF00C8C473 /* Place.m */,
-				0A8C491C168EDB3000615C6F /* InfoViewController.h */,
-				0A8C491D168EDB3000615C6F /* InfoViewController.m */,
 				0AD677E816A505C80057D82F /* TopBarView.h */,
 				0AD677E916A505C80057D82F /* TopBarView.m */,
 				0AB8F28116AD185700700846 /* CustomCell.h */,
@@ -473,6 +471,8 @@
 				0A6262C816B0032700CAF430 /* CouponsViewController.m */,
 				0AAFAC9316A69382004DCEB9 /* OpinionsViewController.h */,
 				0AAFAC9416A69383004DCEB9 /* OpinionsViewController.m */,
+				0A8C491C168EDB3000615C6F /* InfoViewController.h */,
+				0A8C491D168EDB3000615C6F /* InfoViewController.m */,
 				0AF61D0B16A3B16C0061F957 /* DownLoadString */,
 			);
 			name = "View Controllers";
@@ -923,8 +923,8 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: DEYING ZHAO (GKB48HWMC8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DEYING ZHAO (GKB48HWMC8)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -939,8 +939,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "92BE8697-F424-4C44-AFD9-BBDA5CF86BBB";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -953,7 +951,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: DEYING ZHAO (GKB48HWMC8)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: DEYING ZHAO (GKB48HWMC8)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -963,8 +961,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "92BE8697-F424-4C44-AFD9-BBDA5CF86BBB";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "92BE8697-F424-4C44-AFD9-BBDA5CF86BBB";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

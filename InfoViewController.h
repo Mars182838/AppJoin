@@ -10,7 +10,7 @@
 #import "MBProgressHUD.h"
 @class TopBarView;
 
-@interface InfoViewController : UIViewController<UIWebViewDelegate>
+@interface InfoViewController : UIViewController<UIWebViewDelegate,MBProgressHUDDelegate>
 {
     /**  下载数据的总长度     */
     long long expectedLength;

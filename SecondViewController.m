@@ -138,6 +138,7 @@
 -(void)downLoadFinished:(NSDictionary *)info
 {
     NSDictionary *dic = info;
+    NSLog(@"%@",dic);
     self.messageArray = [dic objectForKey:@"posts"];
     [self.infoTableView reloadData];
 }

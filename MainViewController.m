@@ -89,6 +89,7 @@
     _detailLabel.font = [UIFont systemFontOfSize:18];
     _detailLabel.textAlignment =NSTextAlignmentCenter;
     [self.view addSubview:_detailLabel];
+    
     ///注册一个通知，为了检测单前用户的网络连接状态
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     hostReach = [[Reachability reachabilityWithHostname:@"http://baidu.com"] retain];

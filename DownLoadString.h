@@ -11,6 +11,7 @@
 ///首页展示
 #define KRURLWithStringMain @"http://42.121.237.116/customapp/?cat=1&author=2&json=1"
 
+///http://42.121.237.116/customapp/?cat=3&author=2&json=2
 ///新闻资讯
 #define KRURLWithStringFirst @"http://42.121.237.116/customapp/?cat=3&author=2&json=2"
 
@@ -41,7 +42,7 @@ typedef NS_ENUM(NSInteger, NSStringWithUrl)
     
 }
 
-@property (nonatomic, retain) id<downLoadStringProtocal>delegate;
+@property (nonatomic, assign) id<downLoadStringProtocal>delegate;
 
 
 @property NSStringWithUrl shareTarget;
