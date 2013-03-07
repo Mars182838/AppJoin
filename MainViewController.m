@@ -12,6 +12,7 @@
 #import "Reachability.h"
 #import "TopBarView.h"
 #import "DownLoadString.h"
+#import "Harpy.h"
 
 #define ITEM_SPACING 200
 
@@ -99,6 +100,9 @@
     _downLoad = [[DownLoadString alloc] initWithShareTarget:NSStringWithUrlMain];
     _downLoad.delegate = self;
     
+    Harpy *hap = [[Harpy alloc] init];
+//    [hap release];
+    
 }
 
 #pragma mark - 
@@ -161,6 +165,7 @@
     
     if (self.selectImageArray.count > 0) {
         NSURL *url = [NSURL URLWithString:[[self.selectImageArray objectAtIndex:index] objectForKey:@"src"]];
+        
         [_imageView setImageWithURL:url refreshCache:YES placeholderImage:[UIImage imageNamed:@"place.png"]];
     }
     

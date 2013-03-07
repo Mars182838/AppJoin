@@ -15,6 +15,7 @@
 #import "DataBase.h"
 #import <sqlite3.h>
 #import "ZBarSDK.h"
+#import "Harpy.h"
 
 @implementation AppDelegate
 
@@ -110,7 +111,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
-}
+    
+  }
 
 #pragma mark - CLLocationManager Delegate Methods
 
